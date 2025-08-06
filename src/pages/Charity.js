@@ -1,0 +1,162 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FiHeart, FiExternalLink, FiCalendar, FiMapPin } from 'react-icons/fi';
+import './Charity.css';
+
+const Charity = () => {
+  const charityProjects = [
+    {
+      id: 1,
+      title: 'DukeEngage - Community Service Initiative',
+      organization: 'Duke University',
+      description: 'Led a team of 15 students in developing educational programs for underprivileged youth in Durham, NC. Organized workshops on STEM education and career development.',
+      period: 'Summer 2023',
+      location: 'Durham, NC',
+      impact: 'Reached 200+ students',
+      link: 'https://dukeengage.duke.edu/',
+      featured: true
+    },
+    {
+      id: 2,
+      title: 'Food Bank Volunteer Coordinator',
+      organization: 'Durham Food Bank',
+      description: 'Coordinated weekly food distribution events, managed volunteer schedules, and organized donation drives. Helped distribute over 10,000 meals to families in need.',
+      period: '2022 - Present',
+      location: 'Durham, NC',
+      impact: '10,000+ meals distributed',
+      link: 'https://www.foodbankcenc.org/',
+      featured: false
+    },
+    {
+      id: 3,
+      title: 'STEM Education Outreach',
+      organization: 'Local High Schools',
+      description: 'Developed and delivered coding workshops for high school students from underrepresented communities. Taught Python programming basics and web development fundamentals.',
+      period: '2023 - Present',
+      location: 'Durham, NC',
+      impact: '50+ students mentored',
+      link: 'https://www.code.org/',
+      featured: false
+    },
+    {
+      id: 4,
+      title: 'Medical Equipment Donation Drive',
+      organization: 'JPcommerce Initiative',
+      description: 'Organized donation of refurbished medical equipment to rural healthcare facilities. Coordinated logistics and quality assurance for donated equipment.',
+      period: '2022 - 2023',
+      location: 'North Carolina',
+      impact: '15+ facilities supported',
+      link: null,
+      featured: false
+    },
+    {
+      id: 5,
+      title: 'Environmental Conservation Project',
+      organization: 'Duke Conservation Society',
+      description: 'Led campus-wide initiative to reduce plastic waste and promote sustainable practices. Organized awareness campaigns and implemented recycling programs.',
+      period: '2023',
+      location: 'Duke University',
+      impact: '30% waste reduction',
+      link: 'https://sustainability.duke.edu/',
+      featured: false
+    }
+  ];
+
+  return (
+    <div className="charity">
+      <div className="container">
+        {/* Header */}
+        <motion.div 
+          className="charity-header"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="page-title">Charity & Community Service</h1>
+          <p className="page-subtitle">
+            Making a positive impact through volunteer work, community service, and charitable initiatives
+          </p>
+        </motion.div>
+
+        {/* Charity Projects Grid */}
+        <motion.div 
+          className="charity-grid"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          {charityProjects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              className={`charity-card card ${project.featured ? 'featured' : ''}`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+            >
+              {project.featured && (
+                <div className="featured-badge">Featured</div>
+              )}
+              
+              <div className="charity-card-header">
+                <div className="charity-icon">
+                  <FiHeart />
+                </div>
+                <div className="charity-meta">
+                  <span className="charity-organization">{project.organization}</span>
+                  <div className="charity-details">
+                    <span className="charity-period">
+                      <FiCalendar />
+                      {project.period}
+                    </span>
+                    <span className="charity-location">
+                      <FiMapPin />
+                      {project.location}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="charity-content">
+                <h3 className="charity-title">{project.title}</h3>
+                <p className="charity-description">{project.description}</p>
+                
+                <div className="charity-impact">
+                  <span className="impact-badge">{project.impact}</span>
+                </div>
+              </div>
+
+              {project.link && (
+                <div className="charity-actions">
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="charity-link"
+                  >
+                    <FiExternalLink />
+                    Visit Organization
+                  </a>
+                </div>
+              )}
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Call to Action */}
+        <motion.div 
+          className="cta-section"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2>Interested in collaborating on community service?</h2>
+          <p>Let's work together to make a positive impact in our community</p>
+          <a href="/contact" className="btn btn-primary">Get In Touch</a>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default Charity; 
