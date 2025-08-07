@@ -7,13 +7,13 @@ const Charity = () => {
   const charityProjects = [
     {
       id: 1,
-      title: 'DukeEngage - Community Service Initiative',
-      organization: 'Duke University',
-      description: 'Led a team of 15 students in developing educational programs for underprivileged youth in Durham, NC. Organized workshops on STEM education and career development.',
-      period: 'Summer 2023',
-      location: 'Durham, NC',
-      impact: 'Reached 200+ students',
-      link: 'https://dukeengage.duke.edu/',
+      title: 'Project Pure - Rainwater Collection Systems',
+      organization: 'Inclusive Society',
+      description: 'CAD design and fabrication of rainwater collection systems in Panamanian villages, incorporating innovative techniques to filter water without access to electricity. Scheduled for December 2025.',
+      period: 'December 2025',
+      location: 'Panama',
+      impact: 'Sustainable water access',
+      link: 'https://inclusivesoc.org/',
       featured: true
     },
     {
