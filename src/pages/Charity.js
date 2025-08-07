@@ -18,13 +18,13 @@ const Charity = () => {
     },
     {
       id: 2,
-      title: 'Food Bank Volunteer Coordinator',
-      organization: 'Durham Food Bank',
-      description: 'Coordinated weekly food distribution events, managed volunteer schedules, and organized donation drives. Helped distribute over 10,000 meals to families in need.',
-      period: '2022 - Present',
-      location: 'Durham, NC',
-      impact: '10,000+ meals distributed',
-      link: 'https://www.foodbankcenc.org/',
+      title: 'Clinic Assistance Mission Trip',
+      organization: 'Inclusive Society',
+      description: 'Providing medical assistance and healthcare support in rural Panamanian communities during a mission trip. Working alongside local healthcare providers to deliver essential medical services.',
+      period: 'December 2025',
+      location: 'Panama',
+      impact: 'Healthcare access for rural communities',
+      link: 'https://inclusivesoc.org/',
       featured: false
     },
     {
