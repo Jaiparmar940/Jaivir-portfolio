@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiDownload, FiMail, FiMapPin, FiGlobe } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiGlobe } from 'react-icons/fi';
 import './Resume.css';
 
 const Resume = () => {
@@ -111,10 +111,6 @@ const Resume = () => {
           <p className="page-subtitle">
             Professional experience, skills, and achievements
           </p>
-          <a href="/resume.pdf" className="btn btn-primary" download>
-            <FiDownload />
-            Download PDF
-          </a>
         </motion.div>
 
         {/* Contact Information */}
@@ -146,31 +142,39 @@ const Resume = () => {
           </div>
         </motion.section>
 
-        {/* Skills */}
+        {/* Education */}
         <motion.section 
-          className="skills section"
+          className="education section"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Skills</h2>
-          <div className="skills-grid">
-            {Object.entries(skills).map(([category, skillList], index) => (
+          <h2 className="section-title">Education</h2>
+          <div className="education-list">
+            {education.map((edu, index) => (
               <motion.div
-                key={category}
-                className="skill-category card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                key={index}
+                className="education-item card"
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <h3 className="skill-category-title">{category}</h3>
-                <div className="skill-tags">
-                  {skillList.map(skill => (
-                    <span key={skill} className="skill-tag">{skill}</span>
-                  ))}
+                <div className="education-header">
+                  <div>
+                    <h3 className="education-degree">{edu.degree}</h3>
+                    <p className="education-school">{edu.school}</p>
+                  </div>
+                  <div className="education-meta">
+                    <span className="education-period">{edu.period}</span>
+                  </div>
                 </div>
+                <ul className="education-relevant">
+                  {edu.relevant.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
@@ -215,44 +219,6 @@ const Resume = () => {
           </div>
         </motion.section>
 
-        {/* Education */}
-        <motion.section 
-          className="education section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="section-title">Education</h2>
-          <div className="education-list">
-            {education.map((edu, index) => (
-              <motion.div
-                key={index}
-                className="education-item card"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div className="education-header">
-                  <div>
-                    <h3 className="education-degree">{edu.degree}</h3>
-                    <p className="education-school">{edu.school}</p>
-                  </div>
-                  <div className="education-meta">
-                    <span className="education-period">{edu.period}</span>
-                  </div>
-                </div>
-                <ul className="education-relevant">
-                  {edu.relevant.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
         {/* Projects */}
         <motion.section 
           className="projects section"
@@ -287,6 +253,36 @@ const Resume = () => {
                 <div className="project-tech">
                   {project.tech.map(tech => (
                     <span key={tech} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Skills */}
+        <motion.section 
+          className="skills section"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="section-title">Skills</h2>
+          <div className="skills-grid">
+            {Object.entries(skills).map(([category, skillList], index) => (
+              <motion.div
+                key={category}
+                className="skill-category card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="skill-category-title">{category}</h3>
+                <div className="skill-tags">
+                  {skillList.map(skill => (
+                    <span key={skill} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </motion.div>
