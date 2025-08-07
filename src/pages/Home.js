@@ -73,7 +73,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <img 
-                src="/profile.jpg" 
+                src={process.env.PUBLIC_URL + "/profile.jpg"} 
                 alt="Jaivir (Jay) Parmar" 
                 className="profile-image"
               />
