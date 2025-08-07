@@ -164,9 +164,9 @@ const Hobbies = () => {
               of balancing technical skills with personal development.
             </p>
             <p>
-              Whether it's the precision required in long-range shooting, the creativity in furniture making, 
-              or the strategic thinking in racing, these activities complement my academic and professional 
-              pursuits while providing valuable life skills and personal fulfillment.
+              Whether it's the meticulous attention to detail in computer building, the artistic vision in 
+              furniture crafting, or the calculated risk-taking in racing, these activities complement my 
+              academic and professional pursuits while providing valuable life skills and personal fulfillment.
             </p>
           </div>
         </motion.section>
