@@ -13,16 +13,16 @@ const Home = () => {
       link: '/projects'
     },
     {
-      icon: FiTrendingUp,
-      title: 'Quantitative Finance',
-      description: 'ANN-based derivatives forecasting, time-series analysis, and market modeling research',
-      link: '/projects'
-    },
-    {
       icon: FiSettings,
       title: 'Mechanical Engineering',
       description: 'CAD design with SolidWorks, CNC machining, and precision component fabrication',
       link: '/resume'
+    },
+    {
+      icon: FiTrendingUp,
+      title: 'Quantitative Finance',
+      description: 'ANN-based derivatives forecasting, time-series analysis, and market modeling research',
+      link: '/projects'
     }
   ];
 
