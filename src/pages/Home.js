@@ -37,33 +37,48 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
-          <motion.div 
-            className="hero-content"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Jaivir (Jay)</span>
-            </h1>
-            <p className="hero-subtitle">
-              Software Engineer • Quantitative Researcher • Mechanical Engineering Student
-            </p>
-            <p className="hero-description">
-              Dual-degree student at Duke University passionate about AI-driven applications, 
-              quantitative finance, and entrepreneurial ventures. Building solutions that create 
-              both technical and business value.
-            </p>
-            <div className="hero-actions">
-              <Link to="/projects" className="btn btn-primary">
-                View My Work
-                <FiArrowRight />
-              </Link>
-              <Link to="/resume" className="btn btn-secondary">
-                Download Resume
-              </Link>
-            </div>
-          </motion.div>
+          <div className="hero-layout">
+            <motion.div 
+              className="hero-content"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="hero-title">
+                Hi, I'm <span className="highlight">Jaivir (Jay)</span>
+              </h1>
+              <p className="hero-subtitle">
+                Software Engineer • Quantitative Researcher • Mechanical Engineering Student
+              </p>
+              <p className="hero-description">
+                Dual-degree student at Duke University passionate about AI-driven applications, 
+                quantitative finance, and entrepreneurial ventures. Building solutions that create 
+                both technical and business value.
+              </p>
+              <div className="hero-actions">
+                <Link to="/projects" className="btn btn-primary">
+                  View My Work
+                  <FiArrowRight />
+                </Link>
+                <Link to="/resume" className="btn btn-secondary">
+                  Download Resume
+                </Link>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="hero-image"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <img 
+                src="/profile.jpg" 
+                alt="Jaivir (Jay) Parmar" 
+                className="profile-image"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
