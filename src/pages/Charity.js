@@ -51,13 +51,13 @@ const Charity = () => {
     },
     {
       id: 5,
-      title: 'Environmental Conservation Project',
-      organization: 'Duke Conservation Society',
-      description: 'Led campus-wide initiative to reduce plastic waste and promote sustainable practices. Organized awareness campaigns and implemented recycling programs.',
-      period: '2023',
-      location: 'Duke University',
-      impact: '30% waste reduction',
-      link: 'https://sustainability.duke.edu/',
+      title: 'Project Hackerspace',
+      organization: 'Inclusive Society',
+      description: 'Started a public workshop with a variety of tools ranging from saws to CNC machines for the community to learn and increase their working knowledge of fabrication. The idea was to promote STEM knowledge in the community to increase occupational viability.',
+      period: '2023 - Present',
+      location: 'Community Workshop',
+      impact: 'STEM education and fabrication skills',
+      link: 'https://inclusivesoc.org/',
       featured: false
     }
   ];
