@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Jaivir-portfolio/static/css/main.848a71f8.css",
-    "main.js": "/Jaivir-portfolio/static/js/main.272f9539.js",
+    "main.js": "/Jaivir-portfolio/static/js/main.20a7c095.js",
     "index.html": "/Jaivir-portfolio/index.html",
     "main.848a71f8.css.map": "/Jaivir-portfolio/static/css/main.848a71f8.css.map",
-    "main.272f9539.js.map": "/Jaivir-portfolio/static/js/main.272f9539.js.map"
+    "main.20a7c095.js.map": "/Jaivir-portfolio/static/js/main.20a7c095.js.map"
   },
   "entrypoints": [
     "static/css/main.848a71f8.css",
-    "static/js/main.272f9539.js"
+    "static/js/main.20a7c095.js"
   ]
 }
