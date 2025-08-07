@@ -55,15 +55,15 @@ const Home = () => {
                 quantitative finance, and entrepreneurial ventures. Building solutions that create 
                 both technical and business value.
               </p>
-              <div className="hero-actions">
-                <Link to="/projects" className="btn btn-primary">
-                  View My Work
-                  <FiArrowRight />
-                </Link>
-                <Link to="/resume" className="btn btn-secondary">
-                  Download Resume
-                </Link>
-              </div>
+                          <div className="hero-actions">
+              <Link to="/projects" className="btn btn-primary">
+                View My Work
+                <FiArrowRight />
+              </Link>
+              <a href="https://linkedin.com/in/jaivir-parmar" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                View LinkedIn
+              </a>
+            </div>
             </motion.div>
             
             <motion.div 
