@@ -76,6 +76,11 @@ const Charity = () => {
           <p className="page-subtitle">
             Making a positive impact through volunteer work, community service, and charitable initiatives
           </p>
+          <div className="charity-founder-info">
+            <p>
+              I founded <strong>Inclusive Society</strong> in 2018 to remedy global inequities by employing innovative solutions and partnering with other organizations. Since then, I have raised over <strong>$45,000</strong> for various projects.
+            </p>
+          </div>
         </motion.div>
 
         {/* Charity Projects Grid */}

@@ -21,8 +21,28 @@
   font-size: 1.1rem;
   color: var(--text-secondary);
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
   line-height: 1.6;
+}
+
+.charity-founder-info {
+  background: var(--background-dark);
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 4px solid var(--primary-color);
+}
+
+.charity-founder-info p {
+  font-size: 1rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.charity-founder-info strong {
+  color: var(--primary-color);
 }
 
 /* Charity Grid */
