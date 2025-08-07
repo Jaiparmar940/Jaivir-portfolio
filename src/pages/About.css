@@ -21,9 +21,25 @@
 /* Personal Info Section */
 .info-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: auto 1fr 2fr;
   gap: 2rem;
   margin-bottom: 3rem;
+  align-items: start;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .info-card {
@@ -201,6 +217,16 @@
   
   .info-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .profile-image-container {
+    order: -1;
+  }
+  
+  .about-profile-image {
+    width: 150px;
+    height: 150px;
   }
   
   .skills-grid {

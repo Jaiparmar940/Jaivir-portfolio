@@ -66,6 +66,20 @@ const About = () => {
           viewport={{ once: true }}
         >
           <div className="info-grid">
+            <motion.div 
+              className="profile-image-container"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <img 
+                src={process.env.PUBLIC_URL + "/profile.jpg"} 
+                alt="Jaivir (Jay) Parmar" 
+                className="about-profile-image"
+              />
+            </motion.div>
+
             <div className="info-card card">
               <h3>Personal Information</h3>
               <div className="info-list">
