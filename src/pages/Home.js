@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiCode, FiTrendingUp, FiSettings, FiBook } from 'react-icons/fi';
+import { FiArrowRight, FiCode, FiTrendingUp, FiSettings } from 'react-icons/fi';
 import './Home.css';
 
 const Home = () => {
@@ -23,12 +23,6 @@ const Home = () => {
       title: 'Mechanical Engineering',
       description: 'CAD design with SolidWorks, CNC machining, and precision component fabrication',
       link: '/resume'
-    },
-    {
-      icon: FiBook,
-      title: 'Entrepreneurship',
-      description: 'Founder of JPcommerce medical equipment business and AI-driven startup ventures',
-      link: '/projects'
     }
   ];
 
