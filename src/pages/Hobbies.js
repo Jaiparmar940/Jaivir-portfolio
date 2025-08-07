@@ -91,8 +91,6 @@ const Hobbies = () => {
     }
   ];
 
-  const categories = [...new Set(hobbies.map(hobby => hobby.category))];
-
   return (
     <div className="hobbies">
       <div className="container">
@@ -143,38 +141,6 @@ const Hobbies = () => {
                 </motion.div>
               );
             })}
-          </div>
-        </motion.section>
-
-        {/* Categories Section */}
-        <motion.section 
-          className="categories-section section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="section-title">Interest Categories</h2>
-          <div className="categories-grid">
-            {categories.map((category, index) => (
-              <motion.div
-                key={index}
-                className="category-card card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="category-title">{category}</h3>
-                <div className="category-hobbies">
-                  {hobbies
-                    .filter(hobby => hobby.category === category)
-                    .map((hobby, i) => (
-                      <span key={i} className="category-hobby">{hobby.name}</span>
-                    ))}
-                </div>
-              </motion.div>
-            ))}
           </div>
         </motion.section>
 
