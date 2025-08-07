@@ -175,41 +175,7 @@ const Home = () => {
               <Link to="/lab-reports" className="btn btn-primary">View Research</Link>
             </motion.div>
 
-            <motion.div
-              className="quick-link-card card"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <h3>Charity</h3>
-              <p>Community service and volunteer work</p>
-              <Link to="/charity" className="btn btn-primary">View Charity</Link>
-            </motion.div>
 
-            <motion.div
-              className="quick-link-card card"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h3>Hobbies</h3>
-              <p>Personal interests and activities</p>
-              <Link to="/hobbies" className="btn btn-primary">View Hobbies</Link>
-            </motion.div>
-
-            <motion.div
-              className="quick-link-card card"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h3>LinkedIn</h3>
-              <p>Professional profile and network</p>
-              <a href="https://linkedin.com/in/jaivir-parmar" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View LinkedIn</a>
-            </motion.div>
           </div>
         </div>
       </section>
