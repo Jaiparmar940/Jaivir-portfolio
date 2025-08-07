@@ -21,7 +21,7 @@
 /* Personal Info Section */
 .info-grid {
   display: grid;
-  grid-template-columns: auto 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
   margin-bottom: 3rem;
   align-items: start;
@@ -30,7 +30,8 @@
 .profile-image-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .about-profile-image {
@@ -221,7 +222,7 @@
   }
   
   .profile-image-container {
-    order: -1;
+    margin-bottom: 1rem;
   }
   
   .about-profile-image {
