@@ -131,15 +131,25 @@
   transform: translateY(-2px);
 }
 
+.project-link.detail-link {
+  background: var(--accent-color);
+}
+
+.project-link.detail-link:hover {
+  background: var(--accent-color-dark, #0056b3);
+  transform: translateY(-2px);
+}
+
 .project-content {
   padding: 1.5rem;
 }
 
-.project-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
+.projects .project-card .project-content .project-title {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+  color: var(--text-primary) !important;
+  line-height: 1.2 !important;
 }
 
 .project-description {
@@ -152,7 +162,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
+
+
 
 .tech-tag {
   background: var(--background-dark);
@@ -161,6 +174,24 @@
   border-radius: 1rem;
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+.show-more-btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 0.5rem;
+}
+
+.show-more-btn:hover {
+  background: var(--accent-color-dark, #0056b3);
+  transform: translateY(-1px);
 }
 
 /* Call to Action */

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiMapPin, FiCalendar } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiCalendar, FiCode, FiFileText, FiBookOpen, FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import './About.css';
 
 const About = () => {
@@ -20,24 +21,27 @@ const About = () => {
     }
   ];
 
-  const experience = [
+  const navigationLinks = [
     {
-      title: 'Software Engineering Intern',
-      company: 'WisdomTree Investments',
-      period: 'May 2025 - August 2025',
-      description: 'Frontend React Developer in New York, NY. Designed responsive UI for commission-free trading platform, integrated real-time market data feeds, and implemented secure authentication flows.'
+      title: 'Projects',
+      description: 'Explore my portfolio of software, engineering, and business projects',
+      icon: FiCode,
+      link: '/projects',
+      color: '#3b82f6'
     },
     {
-      title: 'Data Manager & Frontend Developer',
-      company: 'Duke Health — Sense to Know Study',
-      period: 'May 2023 - May 2025',
-      description: 'Managed 5,000+ infant behavioral data entries for AI-driven autism detection application. Developed Java UI tool for model training pipeline visualization, reducing verification time by 40%.'
+      title: 'Resume',
+      description: 'View my professional experience, skills, and qualifications',
+      icon: FiFileText,
+      link: '/resume',
+      color: '#10b981'
     },
     {
-      title: 'CNC Operator & Design Intern',
-      company: 'Central City Machining',
-      period: 'May 2022 - August 2022',
-      description: 'Programmed CNC and laser cutters for precision components, designed SolidWorks models with FEA optimization, and led vehicle repair operations for profit generation.'
+      title: 'Research & Lab Reports',
+      description: 'Browse my academic research and engineering lab reports',
+      icon: FiBookOpen,
+      link: '/lab-reports',
+      color: '#f59e0b'
     }
   ];
 
@@ -177,31 +181,38 @@ const About = () => {
           </div>
         </motion.section>
 
-        {/* Experience Section */}
+        {/* Navigation Links Section */}
         <motion.section 
-          className="experience section"
+          className="navigation-links section"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Experience</h2>
-          <div className="experience-list">
-            {experience.map((exp, index) => (
+          <h2 className="section-title">Explore My Work</h2>
+          <div className="navigation-links-grid">
+            {navigationLinks.map((navItem, index) => (
               <motion.div
-                key={index}
-                className="experience-item card"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                key={navItem.title}
+                className="navigation-link-card card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
+                whileHover={{ y: -5, scale: 1.02 }}
               >
-                <div className="experience-header">
-                  <h3 className="experience-title">{exp.title}</h3>
-                  <span className="experience-period">{exp.period}</span>
-                </div>
-                <p className="experience-company">{exp.company}</p>
-                <p className="experience-description">{exp.description}</p>
+                <Link to={navItem.link} className="navigation-link-content">
+                  <div className="navigation-link-icon" style={{ color: navItem.color }}>
+                    <navItem.icon size={32} />
+                  </div>
+                  <div className="navigation-link-text">
+                    <h3 className="navigation-link-title">{navItem.title}</h3>
+                    <p className="navigation-link-description">{navItem.description}</p>
+                  </div>
+                  <div className="navigation-link-arrow">
+                    <FiArrowRight />
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>

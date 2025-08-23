@@ -1,68 +1,30 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiCode, FiTrendingUp, FiSettings } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiCode, FiTrendingUp, FiSettings, FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import { projectsData } from '../data/projectsData';
 import './Projects.css';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+  const [expandedProjects, setExpandedProjects] = useState(new Set());
 
-  const projects = [
-    {
-      id: 1,
-      title: 'Impression — AI-Driven Dating Profile Optimization',
-      category: 'software',
-      description: 'Founder & Lead Developer of an AI-driven platform for optimizing dating profiles using real-time A/B testing and GPT API integration.',
-      technologies: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
-      image: './icons/impression.png',
-      github: 'https://github.com/Jaiparmar940/SwipeFix',
-      live: 'https://impressiondating.com',
-      featured: true
-    },
-    {
-      id: 2,
-      title: 'Workly — Mobile Job Matching App',
-      category: 'software',
-      description: 'Full-featured SwiftUI and React Native application with real-time messaging, Firebase integration, and admin pipeline for job posting management.',
-      technologies: ['SwiftUI', 'React Native', 'Firebase', 'Python', 'Firestore'],
-      image: 'https://picsum.photos/400/250?random=2',
-      github: 'https://github.com/Jaiparmar940/workly.git',
-      live: null,
-      featured: true
-    },
-    {
-      id: 3,
-      title: 'Full-Stack Banking Application',
-      category: 'software',
-      description: 'Secure RESTful banking application with Spring Boot backend, React frontend, and comprehensive transaction management system.',
-      technologies: ['Spring Boot', 'React', 'Spring Security', 'JWT', 'REST APIs'],
-      image: 'https://picsum.photos/400/250?random=3',
-      github: 'https://github.com/Jaiparmar940/banking_application',
-      live: null,
-      featured: true
-    },
-    {
-      id: 4,
-      title: 'ANN Trade Programming',
-      category: 'finance',
-      description: 'Independent research project developing artificial neural networks for U.S. options price prediction using historical and sentiment data.',
-      technologies: ['Python', 'TensorFlow', 'Pandas', 'Sentiment Analysis', 'SARIMA'],
-      image: 'https://picsum.photos/400/250?random=4',
-      github: 'https://github.com/Jaiparmar940/ann-trading',
-      live: null,
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'JPcommerce — Medical Equipment Resale Business',
-      category: 'business',
-      description: 'Self-started business generating $100,000+ revenue through procurement, restoration, and resale of medical equipment with 42% profit margin.',
-      technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance'],
-      image: 'https://picsum.photos/400/250?random=5',
-      github: null,
-      live: null,
-      featured: false
-    }
-  ];
+  const projects = projectsData;
+  
+  console.log('Projects component loaded with data:', projects); // Debug log
+  console.log('Projects with detail pages:', projects.filter(p => p.hasDetailPage)); // Debug log
+
+  const toggleProjectExpansion = (projectId) => {
+    setExpandedProjects(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(projectId)) {
+        newSet.delete(projectId);
+      } else {
+        newSet.add(projectId);
+      }
+      return newSet;
+    });
+  };
 
   const filters = [
     { key: 'all', label: 'All Projects', icon: FiCode },
@@ -131,7 +93,31 @@ const Projects = () => {
               )}
               
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+                <img 
+                  src={project.images && project.images.length > 0 ? project.images[0] : project.image} 
+                  alt={project.title}
+                  onError={(e) => {
+                    // Fallback to original image if gallery image fails to load
+                    e.target.src = project.image;
+                  }}
+                />
+                {/* Image count indicator */}
+                {project.images && project.images.length > 1 && (
+                  <div style={{
+                    position: 'absolute',
+                    top: '10px',
+                    right: '10px',
+                    background: 'rgba(0, 0, 0, 0.8)',
+                    color: 'white',
+                    padding: '4px 8px',
+                    borderRadius: '12px',
+                    fontSize: '12px',
+                    fontWeight: '500',
+                    zIndex: 5
+                  }}>
+                    {project.images.length} images
+                  </div>
+                )}
                 <div className="project-overlay">
                   <div className="project-links">
                     {project.github && (
@@ -154,7 +140,34 @@ const Projects = () => {
                         <FiExternalLink />
                       </a>
                     )}
+                    {project.hasDetailPage && (
+                      <Link 
+                        to={`/project-detail/${project.detailSlug}`}
+                        className="project-link detail-link"
+                        onClick={() => console.log('Detail link clicked for:', project.title, 'slug:', project.detailSlug)}
+                      >
+                        <FiArrowRight />
+                      </Link>
+                    )}
                   </div>
+                  {/* Gallery hint for projects with multiple images */}
+                  {project.images && project.images.length > 1 && (
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '15px',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      background: 'rgba(0, 0, 0, 0.8)',
+                      color: 'white',
+                      padding: '6px 12px',
+                      borderRadius: '16px',
+                      fontSize: '11px',
+                      fontWeight: '500',
+                      whiteSpace: 'nowrap'
+                    }}>
+                      View Gallery ({project.images.length} images)
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -163,9 +176,33 @@ const Projects = () => {
                 <p className="project-description">{project.description}</p>
                 
                 <div className="project-technologies">
-                  {project.technologies.map((tech) => (
+                  {project.technologies.slice(0, 5).map((tech) => (
                     <span key={tech} className="tech-tag">{tech}</span>
                   ))}
+                  {project.technologies.length > 5 && (
+                    <>
+                      {expandedProjects.has(project.id) ? (
+                        <>
+                          {project.technologies.slice(5).map((tech) => (
+                            <span key={tech} className="tech-tag">{tech}</span>
+                          ))}
+                          <button 
+                            className="show-more-btn"
+                            onClick={() => toggleProjectExpansion(project.id)}
+                          >
+                            Show Less
+                          </button>
+                        </>
+                      ) : (
+                        <button 
+                          className="show-more-btn"
+                          onClick={() => toggleProjectExpansion(project.id)}
+                        >
+                          +{project.technologies.length - 5} more
+                        </button>
+                      )}
+                    </>
+                  )}
                 </div>
               </div>
             </motion.div>

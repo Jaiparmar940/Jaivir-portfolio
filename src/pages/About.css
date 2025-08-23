@@ -210,6 +210,85 @@
   line-height: 1.6;
 }
 
+/* Navigation Links Section */
+.navigation-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.navigation-link-card {
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.navigation-link-content {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.navigation-link-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.navigation-link-card:nth-child(1) .navigation-link-icon {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.navigation-link-card:nth-child(2) .navigation-link-icon {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.navigation-link-card:nth-child(3) .navigation-link-icon {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.navigation-link-text {
+  flex: 1;
+}
+
+.navigation-link-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.navigation-link-description {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.navigation-link-arrow {
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.navigation-link-card:hover .navigation-link-arrow {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.navigation-link-card:hover .navigation-link-icon {
+  transform: scale(1.1);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .page-title {
@@ -238,9 +317,23 @@
     grid-template-columns: 1fr;
   }
   
-  .education-header,
-  .experience-header {
+  .education-header {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  
+  .navigation-links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .navigation-link-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .navigation-link-icon {
+    width: 80px;
+    height: 80px;
   }
 } 

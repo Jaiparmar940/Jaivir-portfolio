@@ -9,6 +9,7 @@ import LabReports from './pages/LabReports';
 import Hobbies from './pages/Hobbies';
 import Charity from './pages/Charity';
 import Contact from './pages/Contact';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/project-detail/:slug" element={<ProjectDetailPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/lab-reports" element={<LabReports />} />
