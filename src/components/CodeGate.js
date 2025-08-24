@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiLock, FiArrowRight, FiEye, FiEyeOff } from 'react-icons/fi';
 import { personaFromCode } from '../lib/persona';
@@ -10,7 +9,6 @@ const CodeGate = () => {
   const [showCode, setShowCode] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,18 +16,18 @@ const CodeGate = () => {
     setIsLoading(true);
 
     // Simulate a small delay for better UX
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
     const persona = personaFromCode(code.trim());
     
     if (persona) {
-      // Valid code - redirect to the URL path with the code
-      // This will trigger the persona detection in the URL path
+      // Valid code - directly change the hash to trigger the hash change event
       setError('');
       setIsLoading(false);
       
-      // Redirect to the URL path with the code (e.g., /q312Fx09)
-      navigate(`/${code.trim()}`, { replace: true });
+      console.log('CodeGate: Valid code, changing hash to:', `#/${code.trim()}`);
+      // Use direct hash change instead of React Router navigate
+      window.location.hash = `/${code.trim()}`;
     } else {
       // Invalid code
       setError('Invalid access code. Please try again.');
