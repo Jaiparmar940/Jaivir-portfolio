@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiLogOut } from 'react-icons/fi';
+import { usePersona } from '../contexts/PersonaContext';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { config, logout } = usePersona();
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -21,6 +23,13 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleLogout = () => {
+    logout();
+  };
+
+  // Use fallback values if config is not loaded yet
+  const displayConfig = config || { shortName: 'Portfolio', name: 'Portfolio' };
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -32,6 +41,9 @@ const Navbar = () => {
         >
           <Link to="/" className="brand-link">
             <span className="brand-text">Jaivir</span>
+            <span className="persona-badge" style={{ backgroundColor: `var(--${config?.primaryColor || 'blue'}-500)` }}>
+              {displayConfig.shortName}
+            </span>
           </Link>
         </motion.div>
 
@@ -55,6 +67,18 @@ const Navbar = () => {
               </motion.li>
             ))}
           </ul>
+
+          {/* Logout Button */}
+          <div className="logout-section">
+            <button 
+              className="logout-btn"
+              onClick={handleLogout}
+              aria-label="Logout"
+            >
+              <FiLogOut />
+              <span className="logout-label">Logout</span>
+            </button>
+          </div>
         </div>
 
         <div className="nav-toggle" onClick={toggleMenu}>

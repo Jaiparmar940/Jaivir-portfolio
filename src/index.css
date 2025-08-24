@@ -32,10 +32,21 @@ code {
   --background-dark: #f9fafb;
   --bg-color: #fafafa;
   --bg-secondary: #f9fafb;
+  --bg-hover: #f3f4f6;
   --border-color: #e5e7eb;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  
+  /* Persona Colors */
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --green-500: #10b981;
+  --green-600: #059669;
+  --purple-500: #8b5cf6;
+  --purple-600: #7c3aed;
+  --orange-500: #f59e0b;
+  --orange-600: #d97706;
 }
 
 .container {
@@ -99,9 +110,5 @@ code {
 @media (max-width: 768px) {
   .container {
     padding: 0 0.5rem;
-  }
-  
-  .section {
-    padding: 2rem 0;
   }
 } 
