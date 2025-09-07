@@ -41,8 +41,8 @@ const Navbar = () => {
           </Link>
         </motion.div>
 
-        <div className="nav-menu">
-          <ul className={`nav-list ${isOpen ? 'active' : ''}`}>
+        <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
+          <ul className="nav-list">
             {navItems.map((item, index) => (
               <motion.li 
                 key={item.path}
