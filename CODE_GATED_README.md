@@ -20,7 +20,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 ### **2. Access via URL Path**
 - **URL**: `jaivir.com/q312Fx09` → Automatically authenticates and shows Quant persona
 - **URL**: `jaivir.com/9462sweA` → Automatically authenticates and shows SWE persona
-- **URL**: `jaivir.com/c0ns1ltX` → Automatically authenticates and shows Consulting persona
+- **URL**: `jaivir.com/strategy` → Automatically authenticates and shows Consulting persona
 - **URL**: `jaivir.com/eng9A2bZ` → Automatically authenticates and shows Engineering persona
 
 ### **3. Access via Form Input**
@@ -40,7 +40,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 ```javascript
 '9462sweA'     → Software Engineer
 'q312Fx09'     → Quantitative Researcher  
-'c0ns1ltX'     → Consulting & Strategy
+'strategy'     → Consulting & Strategy
 'eng9A2bZ'     → Mechanical Engineer
 ```
 
@@ -63,7 +63,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 #### **URL Path Access**
 - `http://localhost:3000/q312Fx09` → Quant persona
 - `http://localhost:3000/9462sweA` → SWE persona
-- `http://localhost:3000/c0ns1ltX` → Consulting persona
+- `http://localhost:3000/strategy` → Consulting persona
 - `http://localhost:3000/eng9A2bZ` → Engineering persona
 
 #### **Form Input Access**
@@ -124,7 +124,7 @@ const {
 jaivir.com/                    → CodeGate (no access)
 jaivir.com/q312Fx09           → Quant persona portfolio
 jaivir.com/9462sweA           → SWE persona portfolio
-jaivir.com/c0ns1ltX           → Consulting persona portfolio
+jaivir.com/strategy           → Consulting persona portfolio
 jaivir.com/eng9A2bZ           → Engineering persona portfolio
 ```
 

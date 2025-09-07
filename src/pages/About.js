@@ -57,7 +57,7 @@ const About = () => {
         >
           <h1 className="page-title">About Me</h1>
           <p className="page-subtitle">
-            Passionate about technology, finance, and engineering with a drive to create innovative solutions
+            Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution
           </p>
         </motion.div>
 
@@ -105,18 +105,22 @@ const About = () => {
               <h3>Bio</h3>
               <p>
                 I'm a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
-                with a focus on Innovation & Entrepreneurship. My academic journey has equipped me with a unique 
-                blend of technical skills across software development, quantitative finance, and mechanical engineering.
+                with a focus on Innovation & Entrepreneurship. My unique technical and analytical foundation enables 
+                me to approach complex business problems with both quantitative rigor and creative problem-solving.
               </p>
               <p>
-                I've had the opportunity to work in diverse environments - from software engineering at WisdomTree 
-                Investments to AI research at Duke Health, and entrepreneurial ventures like JPcommerce. This 
-                multidisciplinary experience has shaped my approach to problem-solving and innovation.
+                I've demonstrated proven business impact through founding Impression, an AI-driven platform that 
+                identified a $2.8B market opportunity and generated measurable results through data-driven optimization. 
+                Additionally, I built JPcommerce from the ground up, generating $100,000+ in revenue with 42% profit 
+                margins through strategic market analysis and operational excellence. These experiences taught me to 
+                think like a consultant - identifying opportunities, analyzing data, and executing solutions that drive 
+                real business value.
               </p>
               <p>
-                I'm particularly interested in fintech, AI-driven applications, and the intersection of 
-                technology and business. I believe in creating solutions that not only solve technical 
-                challenges but also create positive societal impact and business value.
+                I'm passionate about solving complex business challenges at the intersection of technology and strategy. 
+                My experience spans quantitative analysis, market research, operational optimization, and stakeholder 
+                management - skills that translate directly to helping clients navigate their most critical business 
+                decisions and drive sustainable growth.
               </p>
             </div>
           </div>

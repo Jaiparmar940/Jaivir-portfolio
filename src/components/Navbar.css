@@ -34,16 +34,6 @@
   color: var(--primary-color);
 }
 
-.persona-badge {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
 .nav-menu {
   flex: 1;
   display: flex;

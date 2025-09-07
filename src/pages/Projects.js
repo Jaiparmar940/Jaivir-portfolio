@@ -57,10 +57,11 @@ const Projects = () => {
   }
 
   // Get persona-specific project organization
-  const { featured, others } = getPersonaProjects(persona, projectsData);
+  const { featured, others, personal } = getPersonaProjects(persona, projectsData);
   
   console.log('Projects component: featured =', featured);
   console.log('Projects component: others =', others);
+  console.log('Projects component: personal =', personal);
 
   const filters = [
     { key: 'all', label: 'All Projects', icon: FiCode },
@@ -208,6 +209,86 @@ const Projects = () => {
               viewport={{ once: true }}
             >
               {filteredOthers.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  className="project-card card"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="project-image">
+                    <img 
+                      src={project.images && project.images.length > 0 ? project.images[0] : project.image} 
+                      alt={project.title}
+                      onError={(e) => {
+                        e.target.src = project.image;
+                      }}
+                    />
+                  </div>
+                  
+                  <div className="project-content">
+                    <h3 className="project-title">{project.title}</h3>
+                    <p className="project-description">{project.description}</p>
+                    
+                    <div className="project-technologies">
+                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                        <span key={techIndex} className="tech-tag">{tech}</span>
+                      ))}
+                    </div>
+
+                    <div className="project-actions">
+                      {project.hasDetailPage ? (
+                        <Link to={`/project-detail/${project.detailSlug}`} className="btn btn-primary">
+                          View Details <FiArrowRight />
+                        </Link>
+                      ) : (
+                        <div className="project-links">
+                          {project.github && (
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                              <FiGithub /> Code
+                            </a>
+                          )}
+                          {project.live && (
+                            <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                              <FiExternalLink /> Live
+                            </a>
+                            )}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </section>
+        )}
+
+        {/* Personal Projects Section */}
+        {personal && personal.length > 0 && (
+          <section className="personal-projects-section">
+            <motion.div 
+              className="section-header"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="section-title">Personal Projects</h2>
+              <p className="section-subtitle">
+                Personal engineering and creative projects
+              </p>
+            </motion.div>
+
+            {/* Personal Projects Grid */}
+            <motion.div 
+              className="projects-grid"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              {personal.map((project, index) => (
                 <motion.div
                   key={project.id}
                   className="project-card card"

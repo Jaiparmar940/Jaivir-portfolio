@@ -14,6 +14,104 @@ const ProjectDetail = ({ project }) => {
   console.log('First image path:', project?.images?.[0]); // Debug log
   console.log('All image paths:', project?.images?.map(img => img)); // Debug log
 
+  // Function to format rich text content
+  const formatRichText = (text) => {
+    if (!text) return null;
+    
+    // Split by lines to handle the new format
+    const lines = text.split('\n');
+    const elements = [];
+    let currentIndex = 0;
+    
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].trim();
+      
+      // Skip empty lines
+      if (line === '') continue;
+      
+      // Check if it's a main heading (starts with #)
+      if (line.startsWith('# ')) {
+        const headingText = line.replace('# ', '');
+        elements.push(
+          <h1 key={currentIndex++} style={{ 
+            fontSize: '2rem', 
+            fontWeight: '700', 
+            color: '#1f2937', 
+            marginTop: '2rem', 
+            marginBottom: '1.5rem',
+            borderBottom: '3px solid #3b82f6',
+            paddingBottom: '0.5rem'
+          }}>
+            {headingText}
+          </h1>
+        );
+      }
+      // Check if it's a section heading (starts with ** and ends with **)
+      else if (line.startsWith('**') && line.endsWith('**')) {
+        const headingText = line.replace(/\*\*/g, '');
+        elements.push(
+          <h2 key={currentIndex++} style={{ 
+            fontSize: '1.5rem', 
+            fontWeight: '600', 
+            color: '#1f2937', 
+            marginTop: '2rem', 
+            marginBottom: '1rem',
+            borderBottom: '2px solid #e5e7eb',
+            paddingBottom: '0.5rem'
+          }}>
+            {headingText}
+          </h2>
+        );
+      }
+      // Check if it's a bullet point (starts with -)
+      else if (line.startsWith('- ')) {
+        const bulletText = line.replace('- ', '');
+        elements.push(
+          <div key={currentIndex++} style={{ 
+            marginBottom: '0.75rem',
+            paddingLeft: '1.5rem',
+            position: 'relative',
+            display: 'flex',
+            alignItems: 'flex-start'
+          }}>
+            <span style={{
+              position: 'absolute',
+              left: '0',
+              top: '0.5rem',
+              width: '6px',
+              height: '6px',
+              backgroundColor: '#3b82f6',
+              borderRadius: '50%'
+            }}></span>
+            <span style={{ 
+              fontSize: '1rem', 
+              lineHeight: '1.6', 
+              color: '#4b5563' 
+            }}>
+              {bulletText}
+            </span>
+          </div>
+        );
+      }
+      // Regular paragraph
+      else {
+        elements.push(
+          <p key={currentIndex++} style={{ 
+            fontSize: '1rem', 
+            lineHeight: '1.7', 
+            color: '#4b5563', 
+            marginBottom: '1.5rem',
+            textAlign: 'left'
+          }}>
+            {line}
+          </p>
+        );
+      }
+    }
+    
+    return elements;
+  };
+
   if (!project) {
     return (
       <div className="project-detail">
@@ -326,10 +424,16 @@ const ProjectDetail = ({ project }) => {
         {/* Project Content */}
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ marginBottom: '2rem' }}>
-            <h2 style={{ fontSize: '1.8rem', fontWeight: '600', marginBottom: '1rem', color: '#1f2937' }}>Project Overview</h2>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.7', color: '#6b7280', marginBottom: '1.5rem' }}>
-              {project.longDescription || project.description}
-            </p>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: '600', marginBottom: '1.5rem', color: '#1f2937' }}>Project Overview</h2>
+            <div style={{ 
+              backgroundColor: '#f9fafb', 
+              padding: '2rem', 
+              borderRadius: '12px', 
+              border: '1px solid #e5e7eb',
+              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
+            }}>
+              {formatRichText(project.longDescription || project.description)}
+            </div>
           </div>
 
           <div style={{ marginBottom: '2rem' }}>

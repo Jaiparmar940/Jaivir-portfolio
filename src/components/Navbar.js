@@ -8,7 +8,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const { config, logout } = usePersona();
+  const { logout } = usePersona();
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -27,9 +27,6 @@ const Navbar = () => {
     logout();
   };
 
-  // Use fallback values if config is not loaded yet
-  const displayConfig = config || { shortName: 'Portfolio', name: 'Portfolio' };
-
   return (
     <nav className="navbar">
       <div className="container">
@@ -41,9 +38,6 @@ const Navbar = () => {
         >
           <Link to="/" className="brand-link">
             <span className="brand-text">Jaivir</span>
-            <span className="persona-badge" style={{ backgroundColor: `var(--${config?.primaryColor || 'blue'}-500)` }}>
-              {displayConfig.shortName}
-            </span>
           </Link>
         </motion.div>
 

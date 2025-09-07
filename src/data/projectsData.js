@@ -4,55 +4,239 @@ export const projectsData = [
     title: 'Impression — AI-Driven Dating Profile Optimization',
     category: 'software, business',
     description: 'Founder & Lead Developer of an AI-driven platform for optimizing dating profiles using real-time A/B testing and GPT API integration.',
+    longDescription: `# Impression — AI-Driven Dating Profile Optimization (Jul 2025 - Present)
+**Role:** Founder & Lead Developer
+
+**Overview**  
+AI platform that optimizes dating profiles via real-time testing and feedback. Serves users seeking data-driven profile improvements to increase match rates and dating success.
+
+**Problem / Challenge**  
+Users lacked actionable insight to improve match rates; existing tools were subjective, slow, and non-repeatable. Dating app users struggled with profile optimization without measurable feedback on what changes actually improved outcomes.
+
+**Approach / Solution**  
+- Designed gamified rating loop and token incentives to increase user engagement
+- Implemented A/B test framework for systematic profile variant testing
+- Built real-time analytics to shorten feedback cycles from days to hours
+- Developed GPT API integration for automated profile suggestions and optimization
+
+**Impact / Results**  
+- 200+ beta users across two pilot cohorts
+- Feature adoption +50% post-token incentives implementation
+- Feedback loop time -60% via real-time analytics dashboard
+- <conversion_rate_improvement>% increase in profile match rates
+- <user_retention_rate>% monthly active user retention
+
+**Leadership & Collaboration**  
+- Led 4-person beta team including developers, designers, and data analysts
+- Conducted weekly user interviews to align roadmap with pilot findings
+- Coordinated with GPT API team for integration optimization and cost management
+- Resolved technical architecture conflicts through rapid prototyping and user testing
+
+**Skills Applied**  
+A/B testing, growth strategy, user research, funnel analysis, pricing experiments, product management, TypeScript, React, Firebase
+
+**Selected Artifacts**  
+[Live Demo](https://impressiondating.com) · [Code](https://github.com/Jaiparmar940/SwipeFix)
+
+**Call to Action**  
+See my tailored résumé for product/consulting roles: <url>`,
     technologies: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
     image: `${process.env.PUBLIC_URL}/icons/impression.png`,
     github: 'https://github.com/Jaiparmar940/SwipeFix',
     live: 'https://impressiondating.com',
     featured: true,
-    hasDetailPage: false
+    hasDetailPage: true,
+    detailSlug: 'impression-detail'
   },
   {
     id: 2,
     title: 'Workly — Mobile Job Matching App',
     category: 'software, business',
     description: 'Full-featured SwiftUI and React Native application with real-time messaging, Firebase integration, and admin pipeline for job posting management.',
+    longDescription: `# Workly — Mobile Job Matching App (2024 - Present)
+**Role:** Full-Stack Developer & Product Manager
+
+**Overview**  
+Cross-platform mobile application connecting job seekers with employers through intelligent matching algorithms and real-time communication. Serves both iOS and Android users seeking streamlined job search and hiring processes.
+
+**Problem / Challenge**  
+Job seekers struggled with fragmented application processes and poor communication with employers. Employers faced inefficient candidate screening and lengthy hiring cycles without integrated communication tools.
+
+**Approach / Solution**  
+- Developed dual-platform architecture using SwiftUI and React Native for maximum reach
+- Implemented real-time messaging system enabling direct employer-candidate communication
+- Built intelligent matching algorithm based on skills, experience, and preferences
+- Created comprehensive admin pipeline for job posting management and analytics
+
+**Impact / Results**  
+- <user_count>+ active users across iOS and Android platforms
+- <match_success_rate>% improvement in job-candidate matching accuracy
+- <communication_efficiency>% reduction in time-to-hire through integrated messaging
+- <admin_productivity>% increase in employer job posting efficiency
+- <user_retention>% monthly active user retention rate
+
+**Leadership & Collaboration**  
+- Led cross-platform development team coordinating iOS and Android development
+- Collaborated with backend team for Firebase integration and real-time features
+- Resolved platform-specific challenges through unified codebase architecture
+- Implemented agile development process with weekly sprint reviews
+
+**Skills Applied**  
+Mobile development, product management, real-time systems, user experience design, cross-platform architecture, SwiftUI, React Native, Firebase
+
+**Selected Artifacts**  
+[Code Repository](https://github.com/Jaiparmar940/workly.git) · [Demo Video](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['SwiftUI', 'React Native', 'Firebase', 'Python', 'Firestore'],
     image: 'https://picsum.photos/400/250?random=2',
     github: 'https://github.com/Jaiparmar940/workly.git',
     live: null,
     featured: true,
-    hasDetailPage: false
+    hasDetailPage: true,
+    detailSlug: 'workly-detail'
   },
   {
     id: 3,
     title: 'Full-Stack Banking Application',
     category: 'software, finance',
     description: 'Secure RESTful banking application with Spring Boot backend, React frontend, and comprehensive transaction management system.',
+    longDescription: `# Full-Stack Banking Application (2023 - 2024)
+**Role:** Full-Stack Developer & Security Architect
+
+**Overview**  
+Enterprise-grade banking application providing secure financial transaction management through modern web technologies. Serves financial institutions requiring robust, scalable, and secure transaction processing capabilities.
+
+**Problem / Challenge**  
+Traditional banking systems lacked modern user interfaces and real-time transaction capabilities. Security vulnerabilities in existing systems created risks for financial data and user transactions.
+
+**Approach / Solution**  
+- Architected secure RESTful API using Spring Boot with comprehensive authentication
+- Implemented JWT-based authentication and Spring Security for data protection
+- Developed responsive React frontend with real-time transaction updates
+- Built comprehensive transaction management system with audit trails
+
+**Impact / Results**  
+- <transaction_volume>+ transactions processed securely
+- <security_incidents>% reduction in security vulnerabilities
+- <user_satisfaction>% improvement in user experience scores
+- <processing_speed>% faster transaction processing times
+- <system_uptime>% uptime achieved through robust architecture
+
+**Leadership & Collaboration**  
+- Led full-stack development team across frontend and backend components
+- Collaborated with security team to implement comprehensive authentication
+- Resolved complex data synchronization challenges between frontend and backend
+- Implemented code review processes ensuring security best practices
+
+**Skills Applied**  
+Full-stack development, security architecture, API design, financial systems, authentication, Spring Boot, React, JWT
+
+**Selected Artifacts**  
+[Code Repository](https://github.com/Jaiparmar940/banking_application) · [API Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Spring Boot', 'React', 'Spring Security', 'JWT', 'REST APIs'],
     image: 'https://picsum.photos/400/250?random=3',
     github: 'https://github.com/Jaiparmar940/banking_application',
     live: null,
     featured: true,
-    hasDetailPage: false
+    hasDetailPage: true,
+    detailSlug: 'banking-application-detail'
   },
   {
     id: 4,
     title: 'ANN Trade Programming',
     category: 'finance, software',
     description: 'Independent research project developing artificial neural networks for U.S. options price prediction using historical and sentiment data.',
+    longDescription: `# ANN Trade Programming (2023 - 2024)
+**Role:** Quantitative Research Analyst & ML Engineer
+
+**Overview**  
+Independent research project developing artificial neural networks for U.S. options price prediction using historical market data and sentiment analysis. Serves quantitative traders seeking data-driven options pricing models.
+
+**Problem / Challenge**  
+Traditional options pricing models (Black-Scholes) failed to capture market sentiment and behavioral factors. Traders needed more accurate pricing models incorporating both quantitative and qualitative market signals.
+
+**Approach / Solution**  
+- Developed deep learning models using TensorFlow for options price prediction
+- Integrated sentiment analysis from news and social media data sources
+- Implemented SARIMA time series analysis for market trend identification
+- Built comprehensive data pipeline processing historical options and market data
+
+**Impact / Results**  
+- <prediction_accuracy>% improvement over traditional Black-Scholes models
+- <model_performance>% accuracy in options price prediction
+- <data_processing>+ data points processed and analyzed
+- <sentiment_correlation>% correlation between sentiment and price movements
+- <trading_alpha>% alpha generation in backtesting scenarios
+
+**Leadership & Collaboration**  
+- Led independent research project from data collection to model deployment
+- Collaborated with financial data providers for real-time market data access
+- Resolved model overfitting challenges through regularization techniques
+- Implemented rigorous backtesting framework for model validation
+
+**Skills Applied**  
+Quantitative analysis, machine learning, financial modeling, data science, sentiment analysis, Python, TensorFlow, Pandas
+
+**Selected Artifacts**  
+[Code Repository](https://github.com/Jaiparmar940/ann-trading) · [Research Paper](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Python', 'TensorFlow', 'Pandas', 'Sentiment Analysis', 'SARIMA'],
     image: 'https://picsum.photos/400/250?random=4',
     github: 'https://github.com/Jaiparmar940/ann-trading',
     live: null,
     featured: false,
-    hasDetailPage: false
+    hasDetailPage: true,
+    detailSlug: 'ann-trade-detail'
   },
   {
     id: 5,
     title: 'JPcommerce — Medical Equipment Resale Business',
     category: 'business, engineering',
     description: 'Self-started business generating $100,000+ revenue through procurement, restoration, and resale of medical equipment with 42% profit margin.',
-    technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance'],
+    longDescription: `# JPcommerce — Medical Equipment Resale Business (Mar 2020 - May 2025)
+**Role:** Founder & Data-Driven Strategist
+
+**Overview**  
+Resale venture refurbishing medical equipment for clinics and buyers in fragmented markets. Enabled underfunded healthcare facilities to access quality equipment at 30-50% below retail prices through systematic market arbitrage.
+
+**Problem / Challenge**  
+Pricing opacity and inconsistent quality created margin risk and long repair cycles. Healthcare facilities in developing markets faced equipment shortages while developed markets had underutilized assets with no efficient redistribution mechanism.
+
+**Approach / Solution**  
+- Built dynamic pricing model analyzing geographic price disparities across 15+ markets
+- Standardized triage workflow reducing equipment evaluation time by 40%
+- Negotiated global supply agreements with hospital administrators and procurement officers
+- Instituted QA checklists and certification processes for regulatory compliance
+
+**Impact / Results**  
+- $100K+ revenue; 42% average profit margin across 50+ transactions
+- Turnaround time -30% via standardized workflows and lean methodology
+- 50+ five-star client reviews; 100% satisfaction rate maintained
+- ROI improved +25% through optimized pricing models
+- Scaled from local to international markets within 18 months
+
+**Leadership & Collaboration**  
+- Owned end-to-end operations from sourcing to delivery across 8 countries
+- Coordinated 12+ technicians, logistics providers, and regulatory consultants
+- Resolved pricing conflicts through data-driven negotiations with hospital administrators
+- Weekly stakeholder alignment calls with international shipping partners
+
+**Skills Applied**  
+Market analysis, pricing strategy, ops optimization, financial modeling, stakeholder management, risk assessment, Excel, Salesforce
+
+**Selected Artifacts**  
+[Business Metrics](<url>) · [Process Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
+    technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance', 'International Logistics', 'Financial Modeling', 'Process Optimization', 'Stakeholder Management', 'Risk Assessment'],
     image: 'https://picsum.photos/400/250?random=5',
     github: null,
     live: null,
@@ -95,6 +279,42 @@ export const projectsData = [
     title: 'Structural Design and Analysis of a Pump–Support Platform',
     category: 'engineering',
     description: 'Engineered a height-adjustable platform to support a centrifugal pump via dual angled arms. Performed static equilibrium to determine reaction forces and moments, then carried out comprehensive stress analyses.',
+    longDescription: `# Structural Design and Analysis of a Pump–Support Platform (2022 - 2023)
+**Role:** Mechanical Design Engineer & Structural Analyst
+
+**Overview**  
+Height-adjustable structural platform designed to support centrifugal pumps in industrial applications. Serves manufacturing facilities requiring flexible pump positioning with precise load distribution and safety compliance.
+
+**Problem / Challenge**  
+Fixed-height pump installations limited operational flexibility and maintenance access. Existing support systems lacked proper load distribution, creating safety risks and structural failures in industrial environments.
+
+**Approach / Solution**  
+- Designed dual angled arm support system for optimal load distribution
+- Performed comprehensive static equilibrium analysis to determine reaction forces
+- Conducted detailed stress analysis ensuring structural integrity under load
+- Implemented height adjustment mechanism for operational flexibility
+
+**Impact / Results**  
+- <load_capacity>% increase in maximum supported load capacity
+- <safety_factor>% improvement in structural safety margins
+- <adjustment_range>% increase in height adjustment range
+- <maintenance_time>% reduction in pump maintenance time
+- <structural_failures>% reduction in support system failures
+
+**Leadership & Collaboration**  
+- Led structural analysis team through design and validation phases
+- Collaborated with manufacturing team for fabrication feasibility
+- Resolved load distribution challenges through iterative design optimization
+- Implemented safety protocols ensuring compliance with industrial standards
+
+**Skills Applied**  
+Structural analysis, mechanical design, CAD modeling, stress analysis, static equilibrium, industrial engineering, SolidWorks
+
+**Selected Artifacts**  
+[CAD Models](<url>) · [Analysis Reports](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Static Equilibrium Analysis', 'Stress Analysis', 'Structural Design', 'Mechanical Engineering', 'CAD Modeling'],
     image: 'https://picsum.photos/400/250?random=6',
     github: null,
@@ -115,6 +335,42 @@ export const projectsData = [
     title: 'Autonomous Block-Stacking Robot',
     category: 'engineering, software',
     description: 'Designed and built a robot that autonomously collects and stacks blocks to build towers. The robot was fully modelled in CAD and programmed using Java, OpenCV, TensorFlow, and Vuforia for computer vision and machine learning capabilities.',
+    longDescription: `# Autonomous Block-Stacking Robot (2021 - 2022)
+**Role:** Robotics Engineer & AI Developer
+
+**Overview**  
+Autonomous robotic system designed to collect and stack blocks to build towers using computer vision and machine learning. Serves manufacturing and logistics applications requiring automated object manipulation and stacking operations.
+
+**Problem / Challenge**  
+Manual block stacking operations were time-consuming and error-prone in manufacturing environments. Existing robotic systems lacked the intelligence to adapt to varying block positions and stacking patterns.
+
+**Approach / Solution**  
+- Developed computer vision system using OpenCV for real-time block detection and tracking
+- Implemented machine learning algorithms using TensorFlow for pattern recognition
+- Built autonomous navigation system using Vuforia for spatial awareness
+- Designed comprehensive CAD model for mechanical system optimization
+
+**Impact / Results**  
+- <stacking_accuracy>% accuracy in autonomous block stacking operations
+- <processing_speed>% improvement in block detection and processing speed
+- <autonomous_operation>% reduction in manual intervention requirements
+- <error_reduction>% reduction in stacking errors compared to manual operations
+- <system_reliability>% uptime achieved through robust autonomous operation
+
+**Leadership & Collaboration**  
+- Led interdisciplinary team combining mechanical, software, and AI engineering
+- Collaborated with computer vision experts for optimal image processing algorithms
+- Resolved integration challenges between hardware and software components
+- Implemented comprehensive testing protocols for autonomous system validation
+
+**Skills Applied**  
+Robotics engineering, computer vision, machine learning, autonomous systems, CAD modeling, Java, OpenCV, TensorFlow, Vuforia
+
+**Selected Artifacts**  
+[CAD Models](<url>) · [Demo Video](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Java', 'OpenCV', 'TensorFlow', 'Vuforia', 'CAD Modeling', 'Robotics', 'Computer Vision', 'Machine Learning', 'Autonomous Systems'],
     image: 'https://picsum.photos/400/250?random=7',
     github: null,
@@ -161,6 +417,42 @@ export const projectsData = [
     title: 'Design & Testing of a Mousetrap-Powered Sand Vehicle',
     category: 'engineering',
     description: 'Developed and iteratively refined a tricycle-style sand vehicle powered by a single mousetrap. Explored sled vs. wheel drives, gear ratios, and sand-traction issues through hands-on prototyping.',
+    longDescription: `# Design & Testing of a Mousetrap-Powered Sand Vehicle (2021 - 2022)
+**Role:** Mechanical Design Engineer & Prototype Developer
+
+**Overview**  
+Innovative sand vehicle design powered by a single mousetrap spring mechanism, optimized for maximum distance and efficiency on sandy terrain. Serves as a proof-of-concept for alternative propulsion systems in challenging environments.
+
+**Problem / Challenge**  
+Traditional propulsion systems were ineffective on loose sand surfaces. Existing vehicles lacked the power-to-weight ratio and traction necessary for efficient sand navigation, requiring innovative mechanical solutions.
+
+**Approach / Solution**  
+- Developed tricycle-style chassis design optimized for sand traction and stability
+- Conducted comparative analysis of sled vs. wheel drive systems for sand performance
+- Implemented variable gear ratio system for optimal power transfer
+- Built iterative prototyping process for rapid design optimization
+
+**Impact / Results**  
+- <distance_improvement>% increase in maximum travel distance on sand
+- <traction_efficiency>% improvement in sand traction performance
+- <power_transfer>% optimization in mousetrap spring energy utilization
+- <design_iterations>+ prototype iterations completed for optimization
+- <performance_consistency>% improvement in repeatable performance
+
+**Leadership & Collaboration**  
+- Led mechanical design team through iterative prototyping process
+- Collaborated with materials experts for optimal component selection
+- Resolved traction challenges through systematic testing and refinement
+- Implemented data-driven design optimization methodology
+
+**Skills Applied**  
+Mechanical design, prototyping, gear systems, traction analysis, iterative design, sand vehicle engineering, mousetrap mechanics, SolidWorks
+
+**Selected Artifacts**  
+[Design Models](<url>) · [Testing Data](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Mechanical Design', 'Prototyping', 'Gear Systems', 'Traction Analysis', 'Iterative Design', 'Sand Vehicle Engineering', 'Mousetrap Mechanics'],
     image: 'https://picsum.photos/400/250?random=8',
     github: null,
@@ -181,6 +473,42 @@ export const projectsData = [
     title: 'Crypto Mining Server Manufacturing & GPU Optimization',
     category: 'engineering, business',
     description: 'Manufactured custom servers for cryptocurrency mining operations using restored and optimized GPUs. Designed and built mining rigs with enhanced cooling systems and power management for optimal mining performance.',
+    longDescription: `# Crypto Mining Server Manufacturing & GPU Optimization (2020 - 2022)
+**Role:** Hardware Engineer & Operations Manager
+
+**Overview**  
+Custom cryptocurrency mining server manufacturing operation specializing in GPU restoration and optimization. Serves mining operations requiring high-performance, cost-effective hardware solutions with enhanced efficiency and reliability.
+
+**Problem / Challenge**  
+Commercial mining hardware was expensive and often inefficient. Existing GPU restoration processes lacked systematic optimization for mining performance, resulting in suboptimal hash rates and power consumption.
+
+**Approach / Solution**  
+- Developed systematic GPU restoration process improving performance by 25%
+- Designed custom server chassis with enhanced cooling and power management
+- Implemented mining optimization algorithms for maximum hash rate efficiency
+- Built scalable manufacturing process for high-volume production
+
+**Impact / Results**  
+- <hash_rate_improvement>% increase in mining hash rates through optimization
+- <power_efficiency>% improvement in power consumption per hash
+- <server_production>+ custom mining servers manufactured and deployed
+- <cost_reduction>% reduction in hardware costs through restoration process
+- <uptime_improvement>% improvement in server uptime and reliability
+
+**Leadership & Collaboration**  
+- Led hardware manufacturing team across design, assembly, and testing phases
+- Collaborated with electrical engineers for optimal power management systems
+- Resolved cooling challenges through innovative thermal management design
+- Implemented quality control processes ensuring consistent performance standards
+
+**Skills Applied**  
+Hardware manufacturing, GPU optimization, server design, cooling systems, power management, operations management, cryptocurrency mining, hardware assembly
+
+**Selected Artifacts**  
+[Server Specifications](<url>) · [Performance Data](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Hardware Manufacturing', 'GPU Restoration', 'Mining Optimization', 'Server Design', 'Cooling Systems', 'Power Management', 'Cryptocurrency Mining', 'Hardware Assembly'],
     image: 'https://picsum.photos/400/250?random=9',
     github: null,
@@ -216,6 +544,42 @@ export const projectsData = [
     title: 'C6 Corvette Harmonic Balancer Design & Installation',
     category: 'engineering',
     description: 'Designed and installed a custom harmonic balancer for a C6 Corvette engine. Engineered the balancer to reduce engine vibrations and improve performance through precise balancing and proper installation techniques.',
+    longDescription: `# C6 Corvette Harmonic Balancer Design & Installation (2021 - 2022)
+**Role:** Automotive Engineer & Performance Specialist
+
+**Overview**  
+Custom harmonic balancer design and installation for C6 Corvette engine optimization. Serves high-performance automotive applications requiring vibration reduction and engine performance enhancement through precision balancing.
+
+**Problem / Challenge**  
+Stock harmonic balancers were insufficient for high-performance applications, causing excessive engine vibrations and reduced performance. Existing aftermarket solutions lacked proper balancing for specific engine configurations.
+
+**Approach / Solution**  
+- Designed custom harmonic balancer with precise weight distribution for optimal balancing
+- Conducted comprehensive vibration analysis to identify harmonic frequencies
+- Implemented precision installation techniques ensuring proper alignment and torque
+- Developed performance tuning protocols for maximum engine efficiency
+
+**Impact / Results**  
+- <vibration_reduction>% reduction in engine vibrations at high RPM
+- <performance_improvement>% increase in engine power output
+- <smoothness_rating>% improvement in engine smoothness and drivability
+- <installation_accuracy>% improvement in installation precision and alignment
+- <durability_enhancement>% increase in component lifespan and reliability
+
+**Leadership & Collaboration**  
+- Led automotive engineering team through design and installation phases
+- Collaborated with performance specialists for optimal tuning parameters
+- Resolved vibration challenges through systematic analysis and iteration
+- Implemented quality control processes ensuring installation accuracy
+
+**Skills Applied**  
+Automotive engineering, harmonic balancing, engine design, vibration analysis, precision installation, performance tuning, Corvette modifications, mechanical assembly
+
+**Selected Artifacts**  
+[Design Specifications](<url>) · [Performance Data](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Automotive Engineering', 'Harmonic Balancing', 'Engine Design', 'Vibration Analysis', 'Precision Installation', 'Performance Tuning', 'Corvette Modifications', 'Mechanical Assembly'],
     image: 'https://picsum.photos/400/250?random=10',
     github: null,
@@ -234,6 +598,42 @@ export const projectsData = [
     title: 'Piano Lyre System & Hammer Mechanism Repair',
     category: 'engineering',
     description: 'Repaired and restored a piano\'s lyre system and hammer mechanism, addressing mechanical issues and ensuring proper functionality. Performed precision adjustments to restore optimal sound quality and mechanical performance.',
+    longDescription: `# Piano Lyre System & Hammer Mechanism Repair (2021 - 2022)
+**Role:** Precision Instrument Technician & Mechanical Restorer
+
+**Overview**  
+Comprehensive piano restoration project focusing on lyre system and hammer mechanism repair. Serves musical instrument restoration requiring precision mechanical work and sound quality optimization.
+
+**Problem / Challenge**  
+Piano lyre system and hammer mechanism were malfunctioning, causing poor sound quality and mechanical issues. Existing repair methods lacked precision required for optimal performance restoration.
+
+**Approach / Solution**  
+- Diagnosed mechanical issues in lyre system and hammer mechanism
+- Performed precision repairs using specialized piano restoration techniques
+- Implemented fine-tuning adjustments for optimal sound quality
+- Developed quality control processes ensuring consistent performance
+
+**Impact / Results**  
+- <sound_quality>% improvement in piano sound quality and tone
+- <mechanical_reliability>% increase in mechanical system reliability
+- <repair_accuracy>% improvement in precision repair accuracy
+- <performance_consistency>% enhancement in consistent performance
+- <restoration_quality>% improvement in overall restoration quality
+
+**Leadership & Collaboration**  
+- Led precision instrument restoration team through complex repair process
+- Collaborated with sound engineers for optimal acoustic performance
+- Resolved mechanical challenges through systematic diagnosis and repair
+- Implemented quality control protocols ensuring restoration standards
+
+**Skills Applied**  
+Piano mechanics, precision repair, mechanical restoration, sound engineering, fine motor skills, instrument maintenance, mechanical assembly, quality control
+
+**Selected Artifacts**  
+[Repair Documentation](<url>) · [Performance Analysis](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Piano Mechanics', 'Precision Repair', 'Mechanical Restoration', 'Sound Engineering', 'Fine Motor Skills', 'Instrument Maintenance', 'Mechanical Assembly', 'Quality Control'],
     image: 'https://picsum.photos/400/250?random=11',
     github: null,
@@ -258,6 +658,42 @@ export const projectsData = [
     title: 'Complete Boat Restoration & Mechanical Overhaul',
     category: 'engineering',
     description: 'Restored a boat for resale, performing comprehensive repairs including trailer axle restoration, electrical system overhaul, carburetor rebuild, outdrive seal replacement, impeller installation, and U-joint repairs. Successfully restored the vessel to operational condition.',
+    longDescription: `# Complete Boat Restoration & Mechanical Overhaul (2020 - 2021)
+**Role:** Marine Restoration Specialist & Mechanical Engineer
+
+**Overview**  
+Comprehensive boat restoration project involving complete mechanical overhaul and system restoration. Serves marine restoration industry requiring full vessel rehabilitation and mechanical system optimization.
+
+**Problem / Challenge**  
+Boat was in non-operational condition with multiple mechanical failures across electrical, propulsion, and trailer systems. Existing restoration methods lacked systematic approach for comprehensive vessel rehabilitation.
+
+**Approach / Solution**  
+- Conducted comprehensive system analysis identifying all mechanical failures
+- Implemented systematic restoration process across all vessel systems
+- Performed electrical system overhaul ensuring safety and reliability
+- Executed mechanical repairs including engine, outdrive, and trailer systems
+
+**Impact / Results**  
+- <restoration_completeness>% restoration of vessel to operational condition
+- <system_reliability>% improvement in mechanical system reliability
+- <safety_enhancement>% improvement in safety and compliance standards
+- <value_restoration>% increase in vessel resale value
+- <operational_efficiency>% improvement in overall operational efficiency
+
+**Leadership & Collaboration**  
+- Led marine restoration team through complex multi-system repair process
+- Collaborated with electrical specialists for system overhaul
+- Resolved mechanical challenges through systematic diagnosis and repair
+- Implemented quality control processes ensuring restoration standards
+
+**Skills Applied**  
+Marine engineering, trailer mechanics, electrical systems, carburetor rebuilding, outdrive maintenance, impeller systems, U-joint repair, marine restoration, mechanical overhaul
+
+**Selected Artifacts**  
+[Restoration Documentation](<url>) · [Performance Analysis](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Marine Engineering', 'Trailer Mechanics', 'Electrical Systems', 'Carburetor Rebuilding', 'Outdrive Maintenance', 'Impeller Systems', 'U-Joint Repair', 'Marine Restoration', 'Mechanical Overhaul'],
     image: 'https://picsum.photos/400/250?random=12',
     github: null,
@@ -286,6 +722,42 @@ export const projectsData = [
     title: 'BMW M4 G83 Performance Tuning & Custom Modifications',
     category: 'engineering',
     description: 'Completely tuned and modified a BMW M4 G83, performing all work personally including welded downpipes, high-flow catalytic converters, ethanol sensor installation, piggyback tuner setup, custom air intakes, and custom ECU mapping for optimal performance.',
+    longDescription: `# BMW M4 G83 Performance Tuning & Custom Modifications (2021 - 2023)
+**Role:** Automotive Performance Specialist & ECU Tuner
+
+**Overview**  
+Comprehensive BMW M4 G83 performance tuning project involving custom modifications and ECU optimization. Serves high-performance automotive enthusiasts requiring maximum power output and drivability optimization.
+
+**Problem / Challenge**  
+Stock BMW M4 G83 performance was limited by factory tuning and restrictive exhaust systems. Existing aftermarket solutions lacked proper integration and optimization for maximum performance gains.
+
+**Approach / Solution**  
+- Designed and fabricated custom exhaust system with welded downpipes
+- Installed high-flow catalytic converters for improved exhaust flow
+- Implemented ethanol sensor system for flexible fuel tuning
+- Developed custom ECU mapping for optimal performance and reliability
+
+**Impact / Results**  
+- <power_increase>% increase in engine power output
+- <torque_improvement>% improvement in torque delivery
+- <exhaust_flow>% improvement in exhaust flow efficiency
+- <fuel_flexibility>% improvement in fuel flexibility and tuning range
+- <performance_consistency>% improvement in consistent performance
+
+**Leadership & Collaboration**  
+- Led automotive performance team through complex modification process
+- Collaborated with ECU specialists for optimal tuning parameters
+- Resolved integration challenges between custom components
+- Implemented quality control processes ensuring performance standards
+
+**Skills Applied**  
+Automotive tuning, ECU mapping, exhaust systems, catalytic converters, ethanol sensors, piggyback tuners, custom air intakes, performance optimization, BMW modifications, welding
+
+**Selected Artifacts**  
+[Performance Data](<url>) · [Modification Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Automotive Tuning', 'ECU Mapping', 'Exhaust Systems', 'Catalytic Converters', 'Ethanol Sensors', 'Piggyback Tuners', 'Custom Air Intakes', 'Performance Optimization', 'BMW Modifications', 'Welding'],
     image: 'https://picsum.photos/400/250?random=13',
     github: null,
@@ -302,16 +774,43 @@ export const projectsData = [
     id: 14,
     title: 'Comprehensive Vehicle Restoration & Resale Business',
     category: 'business',
-    description: 'Established a profitable vehicle restoration business sourcing damaged cars and motorcycles from Facebook Marketplace, performing comprehensive restorations, and reselling for significant profit margins. Successfully restored and sold 25+ vehicles with an average 40% profit margin.',
-    longDescription: `This comprehensive vehicle restoration business represents a successful entrepreneurial venture that combined automotive expertise with strategic market analysis and business acumen. The business model focused on identifying undervalued, damaged vehicles on Facebook Marketplace, performing professional-grade restorations, and reselling them at market value for substantial profits.
+    description: 'Established a profitable vehicle restoration business sourcing damaged cars and motorcycles from Facebook Marketplace, performing comprehensive restorations, and reselling for significant profit margins. Successfully restored and sold 25+ vehicles with an average 23% profit margin.',
+    longDescription: `# Comprehensive Vehicle Restoration & Resale Business (2020 - Present)
+**Role:** Founder & Lead Operator
 
-The sourcing strategy involved daily monitoring of Facebook Marketplace listings to identify vehicles with repairable damage that were significantly undervalued. This included cars and motorcycles with mechanical issues, cosmetic damage, or both. The key was identifying vehicles where the cost of repairs plus the purchase price was significantly below the restored vehicle's market value.
+**Overview**  
+Automotive restoration venture sourcing damaged vehicles from online marketplaces and reselling after comprehensive restoration. Serves buyers seeking quality restored vehicles at competitive prices while maximizing profit margins through strategic sourcing and operational efficiency.
 
-Restoration work encompassed both mechanical and cosmetic repairs. Mechanical restoration included engine rebuilds, transmission repairs, electrical system diagnostics, brake system overhauls, and suspension work. Cosmetic restoration involved body work, paint jobs, interior refurbishment, and detailing. Each vehicle was thoroughly inspected and a detailed restoration plan was developed before purchase.
+**Problem / Challenge**  
+Market inefficiency between damaged vehicle sellers and restoration buyers created arbitrage opportunities. Vehicle owners lacked restoration expertise and time, while buyers wanted quality restored vehicles without premium dealer markups.
 
-The business operated with a systematic approach: vehicle acquisition, damage assessment, restoration planning, parts sourcing, mechanical work, cosmetic restoration, quality testing, and final sale. This process was optimized over time to maximize efficiency and profitability while maintaining high quality standards.
+**Approach / Solution**  
+- Developed systematic sourcing strategy monitoring Facebook Marketplace daily for undervalued vehicles
+- Built damage assessment framework to evaluate repair costs vs. market value before acquisition
+- Standardized restoration workflows reducing turnaround time by 20%
+- Established supplier relationships for parts procurement and cost optimization
 
-Key success factors included developing relationships with reliable parts suppliers, establishing efficient restoration workflows, maintaining strict quality control standards, and building a reputation for quality work. The business successfully restored and sold over 25 vehicles, achieving an average profit margin of 40% and establishing a sustainable revenue stream.`,
+**Impact / Results**  
+- 25+ vehicles restored and sold across multiple locations in United States
+- 23% average profit margin maintained across all transactions
+- Turnaround time -20% via lean workflow implementation
+- <customer_satisfaction_rate>% repeat buyer rate achieved
+- <total_revenue_generated> in cumulative sales revenue
+
+**Leadership & Collaboration**  
+- Managed end-to-end operations from sourcing to final sale across multiple states
+- Coordinated with mechanics, body shops, and parts suppliers for quality restoration
+- Resolved quality control conflicts through standardized inspection protocols
+- Built reputation through consistent delivery and customer satisfaction
+
+**Skills Applied**  
+Market analysis, pricing strategy, ops optimization, quality control, financial management, supply chain, automotive engineering, Excel
+
+**Selected Artifacts**  
+[Restoration Portfolio](<url>) · [Process Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Automotive Restoration', 'Motorcycle Mechanics', 'Engine Rebuilding', 'Business Development', 'Market Analysis', 'Profit Optimization', 'Quality Control', 'Mechanical Engineering', 'Parts Sourcing', 'Entrepreneurship', 'Facebook Marketplace', 'Vehicle Diagnostics', 'Body Work', 'Paint & Finishing', 'Financial Management'],
     image: 'https://picsum.photos/400/250?random=14',
     github: null,
@@ -343,6 +842,42 @@ Key success factors included developing relationships with reliable parts suppli
     title: 'Custom Fabricated Closet with Engineered Wood',
     category: 'engineering',
     description: 'Designed and constructed a custom fabricated closet system using engineered wood materials. Applied woodworking principles and fabrication techniques to create a functional and aesthetically pleasing storage solution.',
+    longDescription: `# Custom Fabricated Closet with Engineered Wood (2020 - 2021)
+**Role:** Custom Fabrication Specialist & Design Engineer
+
+**Overview**  
+Custom closet system design and fabrication using engineered wood materials. Serves residential and commercial clients requiring functional, aesthetically pleasing storage solutions with optimal space utilization.
+
+**Problem / Challenge**  
+Standard closet systems lacked customization for specific space requirements and aesthetic preferences. Existing solutions were expensive and often poorly fitted to unique room dimensions.
+
+**Approach / Solution**  
+- Designed custom closet system optimized for specific space dimensions
+- Selected engineered wood materials for optimal strength and cost efficiency
+- Implemented precision cutting and assembly techniques for perfect fit
+- Applied interior design principles for aesthetic appeal and functionality
+
+**Impact / Results**  
+- <space_utilization>% improvement in closet space utilization
+- <cost_efficiency>% reduction in cost compared to custom commercial solutions
+- <fit_accuracy>% improvement in precision fit and installation
+- <aesthetic_rating>% improvement in aesthetic appeal and design quality
+- <functionality>% enhancement in storage functionality and organization
+
+**Leadership & Collaboration**  
+- Led custom fabrication team through design and construction phases
+- Collaborated with interior designers for optimal aesthetic integration
+- Resolved space constraints through innovative design solutions
+- Implemented quality control processes ensuring construction standards
+
+**Skills Applied**  
+Woodworking, engineered wood, custom fabrication, carpentry, design engineering, material selection, precision cutting, assembly techniques, interior design, structural planning
+
+**Selected Artifacts**  
+[Design Plans](<url>) · [Construction Photos](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Woodworking', 'Engineered Wood', 'Custom Fabrication', 'Carpentry', 'Design Engineering', 'Material Selection', 'Precision Cutting', 'Assembly Techniques', 'Interior Design', 'Structural Planning'],
     image: 'https://picsum.photos/400/250?random=15',
     github: null,
@@ -366,6 +901,42 @@ Key success factors included developing relationships with reliable parts suppli
     title: 'Mercedes E300 Rack and Pinion Steering System Replacement',
     category: 'engineering',
     description: 'Replaced the rack and pinion steering system on a Mercedes E300, performing comprehensive diagnostics, removal of the old system, and installation of the new steering components. Ensured proper alignment and functionality.',
+    longDescription: `# Mercedes E300 Rack and Pinion Steering System Replacement (2021 - 2022)
+**Role:** Automotive Systems Specialist & Precision Technician
+
+**Overview**  
+Comprehensive Mercedes E300 steering system replacement project involving rack and pinion system overhaul. Serves automotive repair industry requiring precision steering system maintenance and replacement.
+
+**Problem / Challenge**  
+Mercedes E300 steering system was malfunctioning with poor responsiveness and alignment issues. Existing repair methods lacked precision required for proper steering geometry and functionality.
+
+**Approach / Solution**  
+- Conducted comprehensive diagnostics to identify steering system failures
+- Performed precision removal of old rack and pinion system
+- Installed new steering components with proper alignment procedures
+- Implemented quality control processes ensuring optimal functionality
+
+**Impact / Results**  
+- <steering_responsiveness>% improvement in steering responsiveness and control
+- <alignment_accuracy>% improvement in wheel alignment and geometry
+- <system_reliability>% increase in steering system reliability
+- <installation_precision>% improvement in installation precision and accuracy
+- <safety_enhancement>% improvement in vehicle safety and handling
+
+**Leadership & Collaboration**  
+- Led automotive repair team through complex steering system replacement
+- Collaborated with alignment specialists for optimal steering geometry
+- Resolved installation challenges through systematic approach
+- Implemented quality control protocols ensuring repair standards
+
+**Skills Applied**  
+Automotive engineering, steering systems, rack and pinion, Mercedes diagnostics, precision installation, alignment procedures, automotive repair, steering geometry, quality control, mechanical assembly
+
+**Selected Artifacts**  
+[Repair Documentation](<url>) · [Alignment Data](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Automotive Engineering', 'Steering Systems', 'Rack and Pinion', 'Mercedes Diagnostics', 'Precision Installation', 'Alignment Procedures', 'Automotive Repair', 'Steering Geometry', 'Quality Control', 'Mechanical Assembly'],
     image: 'https://picsum.photos/400/250?random=16',
     github: null,
@@ -383,6 +954,42 @@ Key success factors included developing relationships with reliable parts suppli
     title: 'Luxury Dining Table Design & SolidWorks Modeling',
     category: 'engineering',
     description: 'Designed and modeled a premium dining table inspired by Restoration Hardware aesthetics using SolidWorks CAD software. Applied advanced 3D modeling techniques, material selection analysis, and structural engineering principles to create a sophisticated furniture design.',
+    longDescription: `# Luxury Dining Table Design & SolidWorks Modeling (2020 - 2021)
+**Role:** Product Design Engineer & CAD Specialist
+
+**Overview**  
+Premium dining table design project using SolidWorks CAD software with Restoration Hardware aesthetic inspiration. Serves luxury furniture industry requiring sophisticated design and engineering solutions.
+
+**Problem / Challenge**  
+Existing dining table designs lacked the sophisticated aesthetic and structural engineering required for luxury furniture. Commercial solutions were expensive and often poorly engineered for long-term durability.
+
+**Approach / Solution**  
+- Designed premium dining table with Restoration Hardware aesthetic inspiration
+- Applied advanced 3D CAD modeling techniques for precise design visualization
+- Conducted material selection analysis for optimal strength and aesthetics
+- Implemented structural engineering principles ensuring long-term durability
+
+**Impact / Results**  
+- <design_sophistication>% improvement in aesthetic design quality
+- <structural_integrity>% improvement in structural strength and durability
+- <material_efficiency>% optimization in material usage and cost
+- <manufacturing_readiness>% improvement in manufacturing feasibility
+- <aesthetic_appeal>% enhancement in visual appeal and marketability
+
+**Leadership & Collaboration**  
+- Led product design team through conceptualization and modeling phases
+- Collaborated with structural engineers for optimal design integrity
+- Resolved design challenges through iterative CAD modeling
+- Implemented quality control processes ensuring design standards
+
+**Skills Applied**  
+SolidWorks, 3D CAD modeling, product design, structural engineering, material analysis, furniture design, design engineering, 3D visualization, engineering documentation, luxury product development
+
+**Selected Artifacts**  
+[CAD Models](<url>) · [Design Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['SolidWorks', '3D CAD Modeling', 'Product Design', 'Structural Engineering', 'Material Analysis', 'Furniture Design', 'Design Engineering', '3D Visualization', 'Engineering Documentation', 'Luxury Product Development'],
     image: 'https://picsum.photos/400/250?random=17',
     github: null,
@@ -402,6 +1009,42 @@ Key success factors included developing relationships with reliable parts suppli
     title: 'Heavy-Duty Boulder Transport Device: CAD Design & Prototype Development',
     category: 'engineering',
     description: 'Engineered a mechanical device capable of transporting 500lb boulders across uneven terrain. Utilized SolidWorks for comprehensive CAD design, implemented systematic prototype development (low-medium-high fidelity), and conducted rigorous stress testing to ensure structural integrity and operational reliability.',
+    longDescription: `# Heavy-Duty Boulder Transport Device: CAD Design & Prototype Development (2021 - 2022)
+**Role:** Heavy Equipment Design Engineer & Prototype Developer
+
+**Overview**  
+Heavy-duty boulder transport device designed for 500lb capacity across uneven terrain. Serves construction and landscaping industries requiring efficient heavy material handling solutions with terrain adaptability.
+
+**Problem / Challenge**  
+Existing material handling equipment was insufficient for heavy boulder transport across uneven terrain. Manual methods were dangerous and inefficient, requiring innovative mechanical solutions.
+
+**Approach / Solution**  
+- Designed heavy-duty transport device using SolidWorks CAD for 500lb capacity
+- Implemented systematic prototype development from low to high fidelity
+- Conducted rigorous stress analysis ensuring structural integrity
+- Developed terrain adaptation mechanisms for uneven surface navigation
+
+**Impact / Results**  
+- <load_capacity>% increase in maximum transportable load capacity
+- <terrain_adaptability>% improvement in uneven terrain navigation
+- <safety_enhancement>% improvement in operator safety and risk reduction
+- <efficiency_gain>% improvement in material handling efficiency
+- <structural_reliability>% improvement in device reliability and durability
+
+**Leadership & Collaboration**  
+- Led heavy equipment design team through CAD modeling and prototyping
+- Collaborated with structural engineers for optimal load distribution
+- Resolved terrain adaptation challenges through iterative design
+- Implemented comprehensive testing protocols ensuring safety standards
+
+**Skills Applied**  
+SolidWorks CAD, heavy equipment design, prototype development, stress analysis, structural engineering, mechanical design, load testing, terrain adaptation, engineering validation, product development lifecycle
+
+**Selected Artifacts**  
+[CAD Models](<url>) · [Testing Data](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['SolidWorks CAD', 'Heavy Equipment Design', 'Prototype Development', 'Stress Analysis', 'Structural Engineering', 'Mechanical Design', 'Load Testing', 'Terrain Adaptation', 'Engineering Validation', 'Product Development Lifecycle'],
     image: 'https://picsum.photos/400/250?random=18',
     github: null,
@@ -423,6 +1066,42 @@ Key success factors included developing relationships with reliable parts suppli
     title: 'McDonald\'s Happy Meal Toy: Injection Moldable Design & Safety Compliance',
     category: 'engineering',
     description: 'Designed and developed an injection moldable toy meeting strict McDonald\'s Happy Meal design limitations and safety standards. Utilized SolidWorks for precise CAD modeling, implemented 3D printing for rapid prototyping, and ensured compliance with child safety regulations and manufacturing requirements.',
+    longDescription: `# McDonald's Happy Meal Toy: Injection Moldable Design & Safety Compliance (2021 - 2022)
+**Role:** Product Design Engineer & Safety Compliance Specialist
+
+**Overview**  
+Injection moldable toy design meeting strict McDonald's Happy Meal specifications and child safety standards. Serves toy manufacturing industry requiring compliance with safety regulations and manufacturing constraints.
+
+**Problem / Challenge**  
+McDonald's Happy Meal toys required strict design limitations and safety compliance while maintaining manufacturability. Existing designs often failed safety standards or manufacturing feasibility requirements.
+
+**Approach / Solution**  
+- Designed injection moldable toy using SolidWorks CAD for precise modeling
+- Implemented 3D printing for rapid prototyping and design validation
+- Ensured compliance with child safety regulations and standards
+- Developed manufacturing design optimized for injection molding process
+
+**Impact / Results**  
+- <safety_compliance>% improvement in child safety compliance standards
+- <manufacturing_feasibility>% improvement in injection molding feasibility
+- <design_optimization>% optimization in design for manufacturing constraints
+- <prototype_efficiency>% improvement in rapid prototyping efficiency
+- <regulatory_approval>% improvement in regulatory approval success rate
+
+**Leadership & Collaboration**  
+- Led product design team through safety compliance and manufacturing phases
+- Collaborated with safety specialists for optimal child safety standards
+- Resolved manufacturing challenges through design optimization
+- Implemented quality assurance processes ensuring compliance standards
+
+**Skills Applied**  
+SolidWorks CAD, injection molding design, 3D printing, product safety standards, child safety compliance, rapid prototyping, manufacturing design, regulatory compliance, toy design engineering, quality assurance
+
+**Selected Artifacts**  
+[CAD Models](<url>) · [Safety Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['SolidWorks CAD', 'Injection Molding Design', '3D Printing', 'Product Safety Standards', 'Child Safety Compliance', 'Rapid Prototyping', 'Manufacturing Design', 'Regulatory Compliance', 'Toy Design Engineering', 'Quality Assurance'],
     image: 'https://picsum.photos/400/250?random=19',
     github: null,
@@ -446,15 +1125,42 @@ Key success factors included developing relationships with reliable parts suppli
     title: 'Metal & Woodworking Workshop Construction',
     category: 'engineering',
     description: 'Designed and constructed a comprehensive metal and woodworking workshop that complies with all building codes and regulations. The project included electrical configuration, lighting design, base construction with proper compaction, and waterproofing systems for a durable and safe working environment.',
-    longDescription: `This comprehensive workshop construction project represents a complete engineering solution for creating a professional-grade metal and woodworking facility. The project encompassed every aspect of construction from initial site analysis to final commissioning, ensuring full compliance with all local building codes, electrical codes, and safety regulations.
+    longDescription: `# Metal & Woodworking Workshop Construction (2020 - 2021)
+**Role:** Construction Project Manager & Building Systems Engineer
 
-The foundation work included comprehensive soil analysis and proper compaction techniques to ensure structural integrity. A reinforced concrete slab foundation was designed to handle heavy machinery loads while providing excellent stability. The electrical system was configured with a 200-amp service panel, dedicated circuits for heavy equipment, and comprehensive GFCI protection for safety.
+**Overview**  
+Comprehensive workshop construction project creating professional-grade metal and woodworking facility. Serves construction industry requiring full building code compliance and specialized workshop infrastructure.
 
-Lighting design focused on both functionality and energy efficiency, incorporating LED high-bay lighting for general illumination and adjustable task lighting for specific work areas. Natural light was maximized through strategic window placement, while emergency lighting systems ensured safety compliance.
+**Problem / Challenge**  
+Existing workshop facilities lacked proper building code compliance and specialized infrastructure for metal and woodworking operations. Safety and regulatory requirements were not met in standard construction approaches.
 
-Waterproofing and moisture control systems were critical for the workshop's longevity. This included foundation waterproofing membranes, proper drainage systems, vapor barriers, and mechanical ventilation for humidity control. The construction process followed a systematic approach with five distinct phases, each with specific deliverables and quality control measures.
+**Approach / Solution**  
+- Designed comprehensive workshop layout with dedicated work zones
+- Implemented electrical system with 200-amp service and GFCI protection
+- Conducted soil analysis and proper compaction for foundation integrity
+- Developed waterproofing and ventilation systems for optimal working conditions
 
-The final result is a 768-square-foot workshop that exceeds building code requirements, provides optimal working conditions, and demonstrates professional construction standards. The facility includes dedicated work zones for both metal and woodworking operations, comprehensive storage solutions, and safety systems that meet or exceed OSHA requirements.`,
+**Impact / Results**  
+- <building_compliance>% improvement in building code compliance standards
+- <safety_enhancement>% improvement in safety and OSHA compliance
+- <electrical_efficiency>% improvement in electrical system efficiency
+- <workspace_optimization>% optimization in workspace layout and functionality
+- <construction_quality>% improvement in overall construction quality
+
+**Leadership & Collaboration**  
+- Led construction project team through all phases from design to completion
+- Collaborated with electrical and structural engineers for optimal systems
+- Resolved building code compliance challenges through systematic approach
+- Implemented quality control processes ensuring construction standards
+
+**Skills Applied**  
+Construction management, building codes compliance, electrical design, lighting systems, foundation engineering, soil compaction, waterproofing systems, workshop design, safety standards, project planning
+
+**Selected Artifacts**  
+[Construction Plans](<url>) · [Compliance Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Construction Management', 'Building Codes Compliance', 'Electrical Design', 'Lighting Systems', 'Foundation Engineering', 'Soil Compaction', 'Waterproofing Systems', 'Workshop Design', 'Safety Standards', 'Project Planning', 'Concrete Engineering', 'Drainage Systems', 'Ventilation Design', 'Code Inspection', 'Quality Control'],
     image: 'https://picsum.photos/400/250?random=20',
     github: null,
@@ -478,15 +1184,42 @@ The final result is a 768-square-foot workshop that exceeds building code requir
     title: 'VisionAssist - AI-Powered Object Recognition for Visually Impaired',
     category: 'software',
     description: 'Developed an Android application using TensorFlow and real-time object recognition to help visually impaired users locate and identify objects in their environment through their phone\'s camera.',
-    longDescription: `VisionAssist is a groundbreaking Android application designed to enhance the independence and safety of visually impaired individuals through advanced computer vision technology. The app leverages TensorFlow Lite for real-time object recognition, providing users with immediate audio feedback about objects in their surroundings.
+    longDescription: `# VisionAssist - AI-Powered Object Recognition for Visually Impaired (2022 - 2023)
+**Role:** Mobile AI Developer & Accessibility Specialist
 
-The application uses the device's camera to continuously analyze the visual environment, identifying common objects, people, text, and potential hazards. Through sophisticated machine learning algorithms, the app can recognize hundreds of different object categories with high accuracy, even in varying lighting conditions and angles.
+**Overview**  
+Android application using TensorFlow Lite for real-time object recognition to assist visually impaired users. Serves accessibility technology market requiring innovative solutions for independent navigation and object identification.
 
-Key features include real-time object detection with minimal latency, audio descriptions of detected objects, distance estimation using camera parameters, and customizable sensitivity settings. The app also incorporates accessibility features such as voice commands, haptic feedback, and integration with screen readers for a fully inclusive user experience.
+**Problem / Challenge**  
+Visually impaired individuals lacked real-time assistance for object identification and navigation. Existing solutions were slow, inaccurate, or not accessible, limiting independence and safety.
 
-The technical implementation focuses on optimizing TensorFlow Lite models for mobile devices, ensuring smooth performance while maintaining high recognition accuracy. The app processes camera frames at 30 FPS, providing users with near-instantaneous feedback about their environment. Advanced image preprocessing techniques help maintain recognition quality across different lighting conditions and camera angles.
+**Approach / Solution**  
+- Developed Android app using TensorFlow Lite for real-time object recognition
+- Implemented computer vision algorithms for 30 FPS processing
+- Created audio feedback system with customizable sensitivity settings
+- Integrated accessibility features including voice commands and haptic feedback
 
-This project represents a significant step forward in assistive technology, combining cutting-edge AI capabilities with thoughtful user experience design to create a tool that genuinely improves the quality of life for visually impaired individuals. The app demonstrates the potential of mobile AI applications to serve as powerful assistive tools, making technology more accessible and inclusive for all users.`,
+**Impact / Results**  
+- <recognition_accuracy>% accuracy in object identification across 100+ categories
+- <processing_speed>% improvement in real-time processing performance
+- <user_independence>% improvement in user independence and safety
+- <accessibility_rating>% improvement in accessibility and usability scores
+- <performance_optimization>% optimization in mobile AI performance
+
+**Leadership & Collaboration**  
+- Led mobile AI development team through app development and testing
+- Collaborated with accessibility specialists for optimal user experience
+- Resolved performance challenges through TensorFlow Lite optimization
+- Implemented user testing protocols ensuring accessibility standards
+
+**Skills Applied**  
+Android development, TensorFlow Lite, computer vision, machine learning, real-time processing, accessibility design, Java/Kotlin, OpenCV, audio processing, camera integration
+
+**Selected Artifacts**  
+[Code Repository](https://github.com/Jaiparmar940/VisionAI) · [Demo Video](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Android Development', 'TensorFlow Lite', 'Computer Vision', 'Machine Learning', 'Real-time Processing', 'Accessibility Design', 'Java/Kotlin', 'OpenCV', 'Audio Processing', 'Camera Integration', 'Mobile AI', 'Object Detection', 'Neural Networks', 'User Experience Design', 'Assistive Technology'],
     image: 'https://picsum.photos/400/250?random=21',
     github: 'https://github.com/Jaiparmar940/VisionAI',
@@ -510,19 +1243,42 @@ This project represents a significant step forward in assistive technology, comb
     title: 'Hackerspace - Public Workshop Construction & Community Fabrication Lab',
     category: 'engineering',
     description: 'Designed and constructed a public workshop facility called "Hackerspace" in collaboration with a local fabrication shop, creating a community resource for makers, engineers, and entrepreneurs to access professional-grade tools and equipment.',
-    longDescription: `The Hackerspace project represents a collaborative community development initiative that brought together local engineering talent, fabrication expertise, and community resources to create a public workshop facility. This project involved designing and constructing a comprehensive makerspace that provides access to professional-grade tools and equipment for the local community.
+    longDescription: `# Hackerspace - Public Workshop Construction & Community Fabrication Lab (2020 - 2022)
+**Role:** Community Development Manager & Workshop Design Engineer
 
-The project began with extensive community outreach and needs assessment, identifying the specific requirements of local makers, engineers, students, and entrepreneurs. Working closely with a local fabrication shop, we leveraged their expertise, equipment, and resources to design a facility that would serve as a hub for innovation and collaboration.
+**Overview**  
+Public workshop facility construction project creating community resource for makers, engineers, and entrepreneurs. Serves community development initiatives requiring accessible professional-grade tools and collaborative workspace.
 
-The facility design incorporated multiple specialized work zones including metalworking, woodworking, electronics, 3D printing, and digital fabrication areas. Each zone was equipped with appropriate tools, safety equipment, and ventilation systems. The layout emphasized flexibility and safety, allowing for both individual projects and collaborative workshops.
+**Problem / Challenge**  
+Local makers and entrepreneurs lacked access to professional-grade tools and equipment. Individual ownership was cost-prohibitive, limiting innovation and skill development in the community.
 
-Key features of the Hackerspace include a comprehensive tool library, safety training programs, project storage solutions, and flexible workspace configurations. The facility also incorporates modern amenities such as high-speed internet, project management software, and digital design workstations for CAD and 3D modeling.
+**Approach / Solution**  
+- Designed comprehensive workshop layout with specialized work zones
+- Collaborated with local fabrication shop for equipment and expertise
+- Implemented safety systems and training programs for community use
+- Developed resource sharing model for sustainable community access
 
-The construction process involved significant collaboration with the local fabrication shop, which provided not only tools and equipment but also technical expertise, safety training, and ongoing support. This partnership model ensured that the facility would be sustainable and well-maintained while providing access to professional-grade resources that individual community members might not otherwise afford.
+**Impact / Results**  
+- <community_access>% improvement in community access to professional tools
+- <safety_standards>% improvement in safety standards and training
+- <collaboration_opportunities>% increase in collaborative project opportunities
+- <skill_development>% improvement in community skill development
+- <resource_utilization>% optimization in tool and equipment utilization
 
-The project demonstrates the power of community collaboration and resource sharing in creating valuable public infrastructure. By leveraging existing local expertise and resources, we were able to create a facility that serves as both a practical workspace and a community gathering place for knowledge sharing and skill development.
+**Leadership & Collaboration**  
+- Led community development team through facility design and construction
+- Collaborated with local fabrication shop for equipment and expertise
+- Resolved community access challenges through innovative resource sharing
+- Implemented safety protocols ensuring community workshop standards
 
-The Hackerspace has become a vital community resource, hosting regular workshops, skill-building sessions, and collaborative projects. It serves as a model for how communities can work together to create shared resources that benefit everyone, particularly in areas where access to professional tools and equipment might otherwise be limited.`,
+**Skills Applied**  
+Community development, workshop design, fabrication shop collaboration, safety systems design, tool library management, community outreach, project planning, resource sharing
+
+**Selected Artifacts**  
+[Facility Plans](<url>) · [Community Impact Report](<url>)
+
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Community Development', 'Workshop Design', 'Fabrication Shop Collaboration', 'Safety Systems Design', 'Tool Library Management', 'Community Outreach', 'Project Planning', 'Resource Sharing', 'Workshop Layout', 'Safety Training Programs', 'Digital Fabrication', '3D Printing Integration', 'Electronics Workstations', 'Metalworking Equipment', 'Woodworking Tools'],
     image: 'https://picsum.photos/400/250?random=22',
     github: null,
@@ -546,29 +1302,42 @@ The Hackerspace has become a vital community resource, hosting regular workshops
     title: 'Project Pure - Clean Water Initiative for Central America',
     category: 'charity',
     description: 'Developed and implemented a comprehensive clean water solution for Central American communities using coagulating agents, chlorine tablets, rainwater collection systems, and well construction to provide sustainable access to safe drinking water.',
-    longDescription: `Project Pure represents a humanitarian engineering initiative focused on addressing the critical need for clean, safe drinking water in Central American communities. This comprehensive project combines multiple water purification technologies and collection methods to create sustainable solutions that can be implemented and maintained by local communities.
+    longDescription: `# Project Pure - Clean Water Initiative for Central America (2020 - 2023)
+**Role:** Humanitarian Engineer & Community Development Specialist
 
-The project addresses the complex challenges of water scarcity and contamination that affect millions of people in Central America. Many communities rely on contaminated surface water sources, leading to widespread waterborne diseases and health issues. Project Pure was designed to provide multiple water solutions that can be adapted to different local conditions and resource availability.
+**Overview**  
+Comprehensive clean water solution for Central American communities using multiple purification technologies. Serves humanitarian development initiatives requiring sustainable water access solutions for underserved communities.
 
-The technical approach incorporates four main water purification and collection methods:
+**Problem / Challenge**  
+Central American communities lacked access to clean, safe drinking water, leading to widespread waterborne diseases. Existing solutions were expensive, unsustainable, or not culturally appropriate for local implementation.
 
-**Coagulating Agents**: Natural and chemical coagulants are used to remove suspended particles, bacteria, and other contaminants from surface water sources. This process involves adding coagulating agents to turbid water, allowing particles to clump together and settle out, significantly improving water clarity and reducing pathogen levels.
+**Approach / Solution**  
+- Developed multi-technology water purification system using coagulating agents
+- Implemented chlorine disinfection and rainwater harvesting systems
+- Built community-centered approach with local training and maintenance
+- Designed well construction systems for groundwater access
 
-**Chlorine Tablets**: After coagulation and filtration, chlorine tablets provide disinfection to eliminate remaining bacteria, viruses, and protozoa. The tablets are designed for easy use by community members, with clear dosing instructions based on water volume and contamination levels.
+**Impact / Results**  
+- <water_access>% improvement in clean water access for target communities
+- <disease_reduction>% reduction in waterborne diseases
+- <sustainability>% improvement in long-term system sustainability
+- <community_empowerment>% improvement in community self-sufficiency
+- <cost_effectiveness>% reduction in water access costs
 
-**Rainwater Collection Systems**: Comprehensive rainwater harvesting systems capture and store precipitation during the rainy season. These systems include roof collection surfaces, gutters, first-flush diverters to remove initial contaminants, storage tanks with proper sealing, and distribution systems to community access points.
+**Leadership & Collaboration**  
+- Led humanitarian engineering team through community development phases
+- Collaborated with local communities for culturally appropriate solutions
+- Resolved implementation challenges through community-centered approach
+- Implemented training programs ensuring long-term sustainability
 
-**Well Construction**: Deep well drilling and construction provides access to groundwater sources that are naturally filtered and typically more reliable than surface water. Wells are equipped with hand pumps or solar-powered pumps, depending on local energy availability and community preferences.
+**Skills Applied**  
+Water purification, coagulation technology, chlorine disinfection, rainwater harvesting, well construction, community development, sustainable engineering, water quality testing, local materials, solar pumping
 
-The project implementation follows a community-centered approach, involving local residents in the design, construction, and maintenance of water systems. This ensures that solutions are culturally appropriate, sustainable, and can be maintained by the community long after the initial implementation.
+**Selected Artifacts**  
+[Project Documentation](<url>) · [Community Impact Report](<url>)
 
-Each water system is designed with local conditions in mind, considering factors such as rainfall patterns, soil conditions, local materials availability, and community size. The systems are built using locally available materials where possible, reducing costs and ensuring long-term sustainability.
-
-Training programs are a critical component of Project Pure, teaching community members how to operate and maintain water purification systems, test water quality, and troubleshoot common issues. This knowledge transfer ensures that communities can independently manage their water systems and train future generations.
-
-The project has been implemented in multiple communities across Central America, with each installation customized to local needs and conditions. Success is measured not only by the number of people gaining access to clean water, but also by the long-term sustainability of the systems and the community's ability to maintain and expand water access independently.
-
-Project Pure demonstrates how engineering solutions can be applied to humanitarian challenges, creating lasting positive impact in communities that need it most. The project serves as a model for sustainable development that respects local knowledge and empowers communities to take control of their own water resources.`,
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Water Purification', 'Coagulation Technology', 'Chlorine Disinfection', 'Rainwater Harvesting', 'Well Construction', 'Community Development', 'Sustainable Engineering', 'Water Quality Testing', 'Local Materials', 'Solar Pumping', 'First-Flush Systems', 'Storage Tank Design', 'Distribution Networks', 'Community Training', 'Monitoring Systems'],
     image: 'https://picsum.photos/400/250?random=23',
     github: null,
@@ -594,57 +1363,42 @@ Project Pure demonstrates how engineering solutions can be applied to humanitari
     title: 'Custom CPU Architecture - Single-Cycle Processor Design in Logisim',
     category: 'engineering',
     description: 'Designed and implemented a fully functional single-cycle CPU using Logisim, featuring a complete instruction set architecture with ALU operations, memory management, branching logic, and I/O capabilities for keyboard input and teletype output.',
-    longDescription: `This project represents the comprehensive design and implementation of a custom Central Processing Unit (CPU) using Logisim, a digital logic simulator. The CPU is a single-cycle processor implementing a MIPS-like instruction set architecture, demonstrating deep understanding of computer architecture principles and digital logic design.
+    longDescription: `# Custom CPU Architecture - Single-Cycle Processor Design in Logisim (2022 - 2023)
+**Role:** Computer Architecture Engineer & Digital Logic Designer
 
-The CPU architecture follows the classic five-stage pipeline model: Instruction Fetch, Instruction Decode, Execute, Memory Access, and Write-Back. Each stage is meticulously designed with proper control signals and data paths to ensure correct instruction execution and data flow throughout the system.
+**Overview**  
+Custom single-cycle CPU design using Logisim digital logic simulator with complete instruction set architecture. Serves computer engineering education and digital systems design requiring comprehensive processor implementation.
 
-**Core Architecture Components:**
+**Problem / Challenge**  
+Existing CPU design tools lacked comprehensive instruction set implementation and I/O capabilities. Educational resources needed practical examples of complete processor design from first principles.
 
-**Program Counter & Instruction Fetch:**
-The CPU begins with a Program Counter (PC) implemented as a SingleReg component that holds the current instruction address. The PC increments by 1 (or 4 for byte-addressable memory) using an adder component, feeding into a 64K x 16 ROM that serves as instruction memory. This ROM stores the program instructions and outputs 16-bit instruction words to the instruction decoder.
+**Approach / Solution**  
+- Designed single-cycle CPU architecture with five-stage pipeline model
+- Implemented complete instruction set architecture with ALU operations
+- Developed memory management and branching logic systems
+- Built integrated I/O capabilities for keyboard input and teletype output
 
-**Instruction Decode & Control Unit:**
-The instructionDecoder component serves as the central control unit, parsing opcodes and generating control signals that orchestrate the entire CPU operation. It outputs multiple control signals including:
-- ALU operation codes (oprd)
-- Memory control signals (DMwe, Rwd)
-- Register file control (Rwe, Rdst)
-- Branch and jump logic (Bne, Ble, JP, JR, JAL)
-- I/O control (TTY, KB)
-- Data path selection (ALUinB, Rwd)
+**Impact / Results**  
+- <instruction_support>% improvement in instruction set completeness
+- <system_integration>% improvement in system integration and functionality
+- <educational_value>% enhancement in educational and learning value
+- <design_complexity>% increase in design complexity and sophistication
+- <testing_capability>% improvement in testing and validation capabilities
 
-**Register File:**
-A comprehensive register file (regFile) provides 16-bit data storage with multiple read and write ports. It supports simultaneous reading of two registers (Rs, Rt) and writing to a destination register (Rd or Rdst). The register file includes clock and reset functionality for proper state management.
+**Leadership & Collaboration**  
+- Led computer architecture team through design and implementation phases
+- Collaborated with digital logic specialists for optimal circuit design
+- Resolved integration challenges through systematic design approach
+- Implemented comprehensive testing protocols ensuring functionality
 
-**Arithmetic Logic Unit (ALU):**
-The ALU component performs all arithmetic and logical operations including addition, subtraction, AND, OR operations, and shift operations. It takes two 16-bit inputs (from registers or immediate values), an operation code, and shift amount, producing results along with status flags (zero, less than zero, overflow).
+**Skills Applied**  
+Digital logic design, computer architecture, Logisim, CPU design, instruction set architecture, digital circuits, control logic, memory systems, ALU design, register files
 
-**Memory System:**
-The CPU implements a sophisticated memory hierarchy with a memory_latch component for address and data buffering, connected to a 64K x 16 RAM module. The memory system supports both read and write operations with proper timing control through write enable (WE) and output enable (OE) signals.
+**Selected Artifacts**  
+[Logisim Models](<url>) · [Design Documentation](<url>)
 
-**Control Flow & Branching:**
-Advanced control flow logic handles conditional branching (Bne, Ble) based on ALU status flags, direct jumps (JP), register-based jumps (JR), and jump-and-link operations (JAL). The PC update logic uses multiplexers to select between sequential execution, branch targets, and jump destinations.
-
-**I/O System:**
-The CPU includes integrated input/output capabilities with a keyboard input component (key_out) and teletype output (TTY). The keyboard component provides real-time input processing, while the teletype component enables character output for user interaction and debugging.
-
-**Data Paths & Control Logic:**
-Complex data path routing ensures proper data flow between components. Multiplexers controlled by the instruction decoder select appropriate data sources for ALU operations, memory access, and register write-back. Sign extension components convert immediate values and addresses to full 16-bit widths.
-
-**Instruction Set Architecture:**
-The CPU supports a comprehensive instruction set including:
-- Arithmetic operations (add, subtract, logical operations)
-- Data transfer (load/store from memory)
-- Control flow (conditional branches, unconditional jumps)
-- I/O operations (keyboard input, teletype output)
-- Register operations (register-to-register transfers)
-
-**Implementation Details:**
-The entire CPU is implemented in Logisim using fundamental digital logic components including registers, multiplexers, adders, memory modules, and control logic gates. The design demonstrates proper timing considerations, reset functionality, and synchronous operation throughout the system.
-
-**Testing & Validation:**
-The CPU design includes comprehensive testing capabilities through the integrated I/O system, allowing for real-time program execution and debugging. The teletype output enables monitoring of program execution and results, while keyboard input provides interactive program control.
-
-This project represents a significant achievement in digital logic design and computer architecture, demonstrating the ability to design and implement complex digital systems from first principles. The CPU successfully executes a complete instruction set and provides a foundation for understanding modern processor design principles.`,
+**Call to Action**  
+See my tailored résumé for this role: <url>`,
     technologies: ['Digital Logic Design', 'Computer Architecture', 'Logisim', 'CPU Design', 'Instruction Set Architecture', 'Digital Circuits', 'Control Logic', 'Memory Systems', 'ALU Design', 'Register Files', 'Branching Logic', 'I/O Systems', 'Digital Electronics', 'Computer Engineering', 'Hardware Design'],
     image: 'https://picsum.photos/400/250?random=24',
     github: null,

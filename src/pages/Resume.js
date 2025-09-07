@@ -5,9 +5,9 @@ import './Resume.css';
 
 const Resume = () => {
   const contactInfo = [
-    { icon: FiMail, label: 'Email', value: 'jay.parmar@duke.edu' },
+    { icon: FiMail, label: 'Email', value: 'jay.parmar@duke.edu', link: 'mailto:jay.parmar@duke.edu' },
     { icon: FiMapPin, label: 'Location', value: 'Durham, NC' },
-    { icon: FiGlobe, label: 'LinkedIn', value: 'linkedin.com/in/Jaivir-Parmar' }
+    { icon: FiGlobe, label: 'LinkedIn', value: 'linkedin.com/in/Jaivir-Parmar', link: 'https://linkedin.com/in/Jaivir-Parmar' }
   ];
 
   const skills = {
@@ -20,26 +20,50 @@ const Resume = () => {
 
   const experience = [
     {
-      title: 'Software Engineering Intern',
-      company: 'WisdomTree Investments',
-      period: 'May 2025 - August 2025',
-      location: 'New York, NY',
+      title: 'Founder & Lead Developer',
+      company: 'Impression AI',
+      period: 'Jul 2025 - Present',
+      location: 'Santa Maria, CA',
       description: [
-        'Designed and implemented responsive React UI for commission-free trading platform',
-        'Integrated real-time market data feeds with socket-based updates for live charts and portfolio metrics',
-        'Collaborated with compliance and security teams to implement secure authentication flows (OAuth, multi-factor)',
-        'Optimized performance using code-splitting, lazy loading, and list virtualization for large portfolios'
+        'Launched mobile platform with 200+ pilot users for real-time A/B testing of dating profiles',
+        'Designed gamified rating and token system, improving feature adoption by 50% during beta',
+        'Conducted competitor benchmarking and developed growth roadmap including premium features and influencer-driven marketing',
+        'Led 4-person beta team, iterating weekly on usability to refine product-market fit'
+      ]
+    },
+    {
+      title: 'Founder & Data-Driven Strategist',
+      company: 'JPcommerce — Market Arbitrage Business',
+      period: 'Mar 2020 - May 2025',
+      location: 'Santa Maria, CA',
+      description: [
+        'Built and scaled medical equipment resale business, generating $100K+ revenue with 42% profit margin',
+        'Applied pricing and arbitrage models across fragmented marketplaces, improving ROI by 25%',
+        'Negotiated global procurement, oversaw repairs, and delivered to underfunded healthcare systems, achieving 50+ five-star client reviews',
+        'Directed operations across sourcing, restoration, logistics, and sales, reducing repair cycle time by 30%'
+      ]
+    },
+    {
+      title: 'Founder & Lead Operator',
+      company: 'Comprehensive Vehicle Restoration & Resale Business',
+      period: '2020 - Present',
+      location: 'Multiple Locations, United States',
+      description: [
+        'Procured, restored, and resold 25+ vehicles, consistently achieving 23% average profit margins',
+        'Managed sourcing, diagnostics, budgeting, restoration, and client negotiations in full end-to-end business model',
+        'Introduced lean workflows and standardized repair practices, reducing turnaround time by 20%'
       ]
     },
     {
       title: 'Data Manager & Frontend Developer',
-      company: 'Duke Health — Sense to Know Study',
+      company: 'Duke Health — Sense to Know AI Study',
       period: 'May 2023 - May 2025',
       location: 'Durham, NC',
       description: [
-        'Managed and validated 5,000+ infant behavioral data entries for AI-driven autism detection application',
-        'Developed Java user interface tool to visualize and verify model training pipelines, cutting manual verification time by 40%',
-        'Trained 10 research assistants on efficient use of the new UI system'
+        'Managed and validated 5,000+ infant behavioral data entries for AI-driven autism detection platform',
+        'Developed Java tool to visualize and verify ML pipelines, reducing manual verification time by 40%',
+        'Designed scalable time-series ingestion pipeline for anomaly detection across 5,000+ labeled inputs',
+        'Applied statistical validation metrics (F1 score, AUC-ROC) to ensure reliability of models for live deployment'
       ]
     },
     {
@@ -66,6 +90,12 @@ const Resume = () => {
 
   const projects = [
     {
+      title: 'JPcommerce — Medical Equipment Resale Business',
+      description: 'Self-started business generating $100,000+ revenue through medical equipment restoration and resale',
+      tech: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance'],
+      link: null
+    },
+    {
       title: 'Impression — AI-Driven Dating Profile Optimization',
       description: 'Founder & Lead Developer of AI-driven platform with real-time A/B testing and GPT API integration',
       tech: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
@@ -88,12 +118,6 @@ const Resume = () => {
       description: 'Independent research project for U.S. options price prediction using neural networks and sentiment data',
       tech: ['Python', 'TensorFlow', 'Pandas', 'Sentiment Analysis', 'SARIMA'],
       link: 'https://github.com/jaivir/ann-trading'
-    },
-    {
-      title: 'JPcommerce — Medical Equipment Resale Business',
-      description: 'Self-started business generating $100,000+ revenue through medical equipment restoration and resale',
-      tech: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance'],
-      link: null
     }
   ];
 
@@ -135,7 +159,13 @@ const Resume = () => {
                 <info.icon />
                 <div>
                   <span className="contact-label">{info.label}</span>
-                  <span className="contact-value">{info.value}</span>
+                  {info.link ? (
+                    <a href={info.link} target="_blank" rel="noopener noreferrer" className="contact-value contact-link">
+                      {info.value}
+                    </a>
+                  ) : (
+                    <span className="contact-value">{info.value}</span>
+                  )}
                 </div>
               </motion.div>
             ))}

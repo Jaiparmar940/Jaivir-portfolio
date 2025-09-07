@@ -169,8 +169,10 @@ export const personaConfigs = {
     cta: 'View My Work',
     ctaLink: '/projects',
     primaryColor: 'purple',
-    featuredHomeProjects: [5, 14, 23], // JPcommerce, Vehicle Restoration, Project Pure
-    featuredProjectsPage: [5, 14, 23, 9, 22], // Top business/consulting projects
+    featuredHomeProjects: [5, 14, 22, 1], // JPcommerce, Vehicle Restoration Business, Hackerspace, Impression
+    featuredProjectsPage: [1, 2, 5, 14, 23, 22], // Impression, Workly, JPcommerce, Vehicle Restoration, Project Pure, Hackerspace
+    otherProjects: [9, 3, 4, 21, 24, 18, 6, 19, 8], // Crypto Mining, Banking App, ANN Trade, Vision AI, CPU, Boulder Movement, Pump Platform, Happy Meal, Mousetrap
+    personalProjects: [7, 10, 11, 12, 13, 15, 16, 17, 20], // All remaining projects
     description: 'Business consultant and entrepreneur with proven track record of building profitable ventures, optimizing operations, and driving strategic growth.',
     resumeUrl: '/resume-consulting.pdf'
   },
@@ -221,24 +223,50 @@ export function getPersonaProjects(persona, allProjects) {
     
     if (!config || !allProjects) {
       console.warn('getPersonaProjects: Missing config or projects, returning empty arrays');
-      return { featured: [], others: [] };
+      return { featured: [], others: [], personal: [] };
     }
     
     // Get featured projects for this persona
     const featuredIds = new Set(config.featuredProjectsPage);
     console.log('getPersonaProjects: Featured project IDs:', Array.from(featuredIds));
     
-    // Separate featured and other projects
+    // Get other projects (ordered) if they exist, otherwise fall back to all non-featured
+    let otherIds;
+    if (config.otherProjects && config.otherProjects.length > 0) {
+      otherIds = new Set(config.otherProjects);
+    } else {
+      otherIds = new Set();
+    }
+    
+    // Get personal projects if they exist
+    let personalIds = new Set();
+    if (config.personalProjects && config.personalProjects.length > 0) {
+      personalIds = new Set(config.personalProjects);
+    }
+    
+    // Separate projects into categories
     const featured = allProjects.filter(p => featuredIds.has(p.id));
-    const others = allProjects.filter(p => !featuredIds.has(p.id));
+    
+    let others, personal;
+    if (config.otherProjects && config.otherProjects.length > 0) {
+      // Use ordered other projects
+      others = config.otherProjects.map(id => allProjects.find(p => p.id === id)).filter(Boolean);
+      // Personal projects are the remaining ones
+      personal = allProjects.filter(p => !featuredIds.has(p.id) && !otherIds.has(p.id));
+    } else {
+      // Fallback to original behavior
+      others = allProjects.filter(p => !featuredIds.has(p.id));
+      personal = [];
+    }
     
     console.log('getPersonaProjects: Featured projects count:', featured.length);
     console.log('getPersonaProjects: Other projects count:', others.length);
+    console.log('getPersonaProjects: Personal projects count:', personal.length);
     
-    return { featured, others };
+    return { featured, others, personal };
   } catch (error) {
     console.error('getPersonaProjects: Error getting projects:', error);
-    return { featured: [], others: [] }; // Fallback to empty arrays
+    return { featured: [], others: [], personal: [] }; // Fallback to empty arrays
   }
 }
 
