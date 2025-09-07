@@ -5,7 +5,8 @@
 name: Deploy React App to GitHub Pages
 
 on:
-  workflow_dispatch:  # Only run manually if needed
+  push:
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
