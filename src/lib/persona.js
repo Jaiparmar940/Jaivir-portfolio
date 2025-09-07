@@ -231,11 +231,9 @@ export function getPersonaProjects(persona, allProjects) {
     console.log('getPersonaProjects: Featured project IDs:', Array.from(featuredIds));
     
     // Get other projects (ordered) if they exist, otherwise fall back to all non-featured
-    let otherIds;
+    let otherIds = new Set();
     if (config.otherProjects && config.otherProjects.length > 0) {
       otherIds = new Set(config.otherProjects);
-    } else {
-      otherIds = new Set();
     }
     
     // Get personal projects if they exist
@@ -247,17 +245,19 @@ export function getPersonaProjects(persona, allProjects) {
     // Separate projects into categories
     const featured = allProjects.filter(p => featuredIds.has(p.id));
     
-    let others, personal;
+    let others;
     if (config.otherProjects && config.otherProjects.length > 0) {
       // Use ordered other projects
       others = config.otherProjects.map(id => allProjects.find(p => p.id === id)).filter(Boolean);
-      // Personal projects are the remaining ones
-      personal = allProjects.filter(p => !featuredIds.has(p.id) && !otherIds.has(p.id));
     } else {
-      // Fallback to original behavior
+      // No other projects specified, use all non-featured
       others = allProjects.filter(p => !featuredIds.has(p.id));
-      personal = [];
     }
+    
+    // Use personalIds to filter personal projects, or fallback to remaining projects
+    const personal = personalIds.size > 0 
+      ? allProjects.filter(p => personalIds.has(p.id))
+      : allProjects.filter(p => !featuredIds.has(p.id) && !otherIds.has(p.id));
     
     console.log('getPersonaProjects: Featured projects count:', featured.length);
     console.log('getPersonaProjects: Other projects count:', others.length);

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { FiArrowLeft, FiExternalLink, FiGithub } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 import './ProjectDetail.css';
@@ -306,7 +305,7 @@ const ProjectDetail = ({ project }) => {
             {project.images && project.images.length > 0 ? (
               <img 
                 src={project.images[selectedImage]} 
-                alt={`${project.title} - Image ${selectedImage + 1}`}
+                alt={`${project.title} ${selectedImage + 1}`}
                 style={{ 
                   width: '100%', 
                   height: '100%', 

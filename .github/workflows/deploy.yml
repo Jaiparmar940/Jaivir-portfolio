@@ -1,11 +1,8 @@
-# GitHub Actions workflow disabled
-# Using direct deployment from main branch root instead
-# This avoids conflicts with existing gh-pages branch and git submodules
-
 name: Deploy React App to GitHub Pages
 
 on:
-  workflow_dispatch:  # Manual trigger only
+  push:
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
