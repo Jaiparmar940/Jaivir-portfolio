@@ -1,12 +1,11 @@
-# GitHub Actions workflow disabled - using direct deployment from main branch
-# The React app is built locally and deployed directly to the main branch root
-# This avoids conflicts with existing gh-pages branch setup
+# GitHub Actions workflow disabled
+# Using direct deployment from main branch root instead
+# This avoids conflicts with existing gh-pages branch and git submodules
 
 name: Deploy React App to GitHub Pages
 
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:  # Manual trigger only
 
 jobs:
   build-and-deploy:
@@ -34,3 +33,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
         force_orphan: true
+        cname: jaivirparmar.com
