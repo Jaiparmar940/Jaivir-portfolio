@@ -1,10 +1,11 @@
+# GitHub Actions workflow disabled - using direct deployment from main branch
+# The React app is built locally and deployed directly to the main branch root
+# This avoids conflicts with existing gh-pages branch setup
+
 name: Deploy React App to GitHub Pages
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:  # Only run manually if needed
 
 jobs:
   build-and-deploy:
@@ -28,7 +29,7 @@ jobs:
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
+        force_orphan: true
