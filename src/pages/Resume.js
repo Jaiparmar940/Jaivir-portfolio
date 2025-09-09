@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiMail, FiMapPin, FiGlobe } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiGlobe, FiArrowRight } from 'react-icons/fi';
 import './Resume.css';
 
 const Resume = () => {
@@ -93,31 +94,36 @@ const Resume = () => {
       title: 'JPcommerce — Medical Equipment Resale Business',
       description: 'Self-started business generating $100,000+ revenue through medical equipment restoration and resale',
       tech: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance'],
-      link: null
+      detailSlug: 'jpcommerce-detail',
+      externalLink: null
     },
     {
       title: 'Impression — AI-Driven Dating Profile Optimization',
       description: 'Founder & Lead Developer of AI-driven platform with real-time A/B testing and GPT API integration',
       tech: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
-      link: 'https://impressiondating.com'
+      detailSlug: 'impression-detail',
+      externalLink: 'https://impressiondating.com'
     },
     {
       title: 'Workly — Mobile Job Matching App',
       description: 'Full-featured SwiftUI and React Native application with real-time messaging and admin pipeline',
       tech: ['SwiftUI', 'React Native', 'Firebase', 'Python', 'Firestore'],
-      link: 'https://github.com/Jaiparmar940/workly.git'
+      detailSlug: 'workly-detail',
+      externalLink: 'https://github.com/Jaiparmar940/workly.git'
     },
     {
       title: 'Full-Stack Banking Application',
       description: 'Secure RESTful banking application with Spring Boot backend and React frontend',
       tech: ['Spring Boot', 'React', 'Spring Security', 'JWT', 'REST APIs'],
-      link: 'https://github.com/Jaiparmar940/banking_application'
+      detailSlug: 'banking-application-detail',
+      externalLink: 'https://github.com/Jaiparmar940/banking_application'
     },
     {
       title: 'ANN Trade Programming',
       description: 'Independent research project for U.S. options price prediction using neural networks and sentiment data',
       tech: ['Python', 'TensorFlow', 'Pandas', 'Sentiment Analysis', 'SARIMA'],
-      link: 'https://github.com/jaivir/ann-trading'
+      detailSlug: 'ann-trade-detail',
+      externalLink: 'https://github.com/jaivir/ann-trading'
     }
   ];
 
@@ -270,14 +276,24 @@ const Resume = () => {
               >
                 <div className="project-header">
                   <h3 className="project-title">{project.title}</h3>
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                  >
-                    View Project
-                  </a>
+                  <div className="project-links">
+                    <Link 
+                      to={`/project-detail/${project.detailSlug}`}
+                      className="project-link primary"
+                    >
+                      View Details <FiArrowRight />
+                    </Link>
+                    {project.externalLink && (
+                      <a 
+                        href={project.externalLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link secondary"
+                      >
+                        External Link
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tech">
