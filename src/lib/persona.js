@@ -201,9 +201,9 @@ export const personaConfigs = {
     headline: 'Mechanical Engineer • Computer Scientist • Quantitative Researcher',
     subhead: 'Driving financial innovation through technology and data-driven decision making',
     proofStats: [
-      { label: 'Revenue Generated', value: '$100K+' },
-      { label: 'Financial Models', value: '5+' },
-      { label: 'Risk Assessments', value: '50+' }
+      { label: 'Revenue Generated', value: '$250K+' },
+      { label: 'Ventures Founded', value: '4' },
+      { label: 'Clients Served', value: '450+' }
     ],
     cta: 'View My Portfolio',
     ctaLink: '/projects',
