@@ -198,7 +198,7 @@ export const personaConfigs = {
   banking: {
     name: 'Banking & Financial Services',
     shortName: 'Banking',
-    headline: 'Banking Professional • Financial Analyst • Risk Management Specialist',
+    headline: 'Mechanical Engineer • Computer Scientist • Quantitative Researcher',
     subhead: 'Driving financial innovation through technology and data-driven decision making',
     proofStats: [
       { label: 'Revenue Generated', value: '$100K+' },
