@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiCode, FiTrendingUp, FiSettings, FiDownload } from 'react-icons/fi';
+import { FiArrowRight, FiCode, FiTrendingUp, FiSettings, FiFileText } from 'react-icons/fi';
 import { usePersona } from '../contexts/PersonaContext';
 import { projectsData } from '../data/projectsData';
 import './Home.css';
@@ -123,10 +123,10 @@ const Home = () => {
                   {config.cta}
                   <FiArrowRight />
                 </Link>
-                <a href={config.resumeUrl} className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                  <FiDownload />
-                  Download Resume
-                </a>
+                <Link to="/resume" className="btn btn-secondary">
+                  <FiFileText />
+                  View Resume
+                </Link>
               </div>
             </motion.div>
             
