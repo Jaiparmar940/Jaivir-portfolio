@@ -146,58 +146,60 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Projects Section */}
-      <section className="featured-projects section">
-        <div className="container">
-          <motion.div 
-            className="section-header"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="section-title">Featured {config.name} Projects</h2>
-            <p className="section-subtitle">
-              {config.subhead}
-            </p>
-          </motion.div>
+      {/* Featured Projects Section - Hidden for Banking Persona */}
+      {config.shortName !== 'Banking' && (
+        <section className="featured-projects section">
+          <div className="container">
+            <motion.div 
+              className="section-header"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="section-title">Featured {config.name} Projects</h2>
+              <p className="section-subtitle">
+                {config.subhead}
+              </p>
+            </motion.div>
 
-          <div className="featured-projects-grid">
-            {featuredProjects.map((project, index) => (
-              <motion.div
-                key={project.id}
-                className="featured-project-card card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div className="project-image">
-                  <img 
-                    src={project.images && project.images.length > 0 ? project.images[0] : project.image} 
-                    alt={project.title}
-                    onError={(e) => {
-                      e.target.src = project.image;
-                    }}
-                  />
-                </div>
-                <div className="project-content">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                  <div className="project-technologies">
-                    {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <span key={techIndex} className="tech-tag">{tech}</span>
-                    ))}
+            <div className="featured-projects-grid">
+              {featuredProjects.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  className="featured-project-card card"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="project-image">
+                    <img 
+                      src={project.images && project.images.length > 0 ? project.images[0] : project.image} 
+                      alt={project.title}
+                      onError={(e) => {
+                        e.target.src = project.image;
+                      }}
+                    />
                   </div>
-                  <Link to={`/project-detail/${project.detailSlug || project.id}`} className="project-link">
-                    View Project <FiArrowRight />
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
+                  <div className="project-content">
+                    <h3 className="project-title">{project.title}</h3>
+                    <p className="project-description">{project.description}</p>
+                    <div className="project-technologies">
+                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                        <span key={techIndex} className="tech-tag">{tech}</span>
+                      ))}
+                    </div>
+                    <Link to={`/project-detail/${project.detailSlug || project.id}`} className="project-link">
+                      View Project <FiArrowRight />
+                    </Link>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Features Section */}
       <section className="features section">
