@@ -56,6 +56,7 @@ const CodeGate = () => {
             </div>
             <h1>Portfolio Access</h1>
             <p>Enter your access code to view the portfolio</p>
+            <p className="access-code-hint">Access code is the word following "jaivirparmar.com/" in your URL</p>
           </div>
 
           <form onSubmit={handleSubmit} className="code-form">
