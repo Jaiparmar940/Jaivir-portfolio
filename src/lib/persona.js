@@ -158,23 +158,23 @@ export const personaConfigs = {
     resumeUrl: '/resume-quant.pdf'
   },
   consulting: {
-    name: 'Consulting & Strategy',
-    shortName: 'Consulting',
-    headline: 'Entrepreneur • Mechanical Engineer • Computer Scientist',
-    subhead: 'Building innovative solutions through engineering and technology',
+    name: 'Investment Analysis & Strategy',
+    shortName: 'Investment Analysis',
+    headline: 'Financial Analyst • Investment Researcher • Business Strategist',
+    subhead: 'Driving value creation through data-driven analysis and strategic thinking',
     proofStats: [
       { label: 'Revenue Generated', value: '$250K+' },
-      { label: 'Businesses Built', value: '3+' },
-      { label: 'Years in Business', value: '5+' }
+      { label: 'Financial Models', value: '10+' },
+      { label: 'Investment Analysis', value: '25+' }
     ],
-    cta: 'View My Work',
+    cta: 'View My Analysis',
     ctaLink: '/projects',
     primaryColor: 'purple',
     featuredHomeProjects: [5, 14, 22, 1], // JPcommerce, Vehicle Restoration Business, Hackerspace, Impression
     featuredProjectsPage: [1, 2, 5, 14, 23, 22], // Impression, Workly, JPcommerce, Vehicle Restoration, Project Pure, Hackerspace
     otherProjects: [9, 3, 4, 21, 24, 18, 6, 19, 8], // Crypto Mining, Banking App, ANN Trade, Vision AI, CPU, Boulder Movement, Pump Platform, Happy Meal, Mousetrap
     personalProjects: [7, 10, 11, 12, 13, 15, 16, 17, 20], // All remaining projects
-    description: 'Business consultant and entrepreneur with proven track record of building profitable ventures, optimizing operations, and driving strategic growth.',
+    description: 'Financial analyst with expertise in investment research, business valuation, and strategic planning. Proven ability to identify value creation opportunities and drive operational improvements.',
     resumeUrl: '/resume-consulting.pdf'
   },
   engineering: {
