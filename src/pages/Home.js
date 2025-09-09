@@ -62,22 +62,22 @@ const Home = () => {
 
   const features = [
     {
+      icon: FiTrendingUp,
+      title: 'Investment Analysis',
+      description: 'Financial modeling, valuation analysis, and market research to identify value creation opportunities',
+      link: '/projects'
+    },
+    {
       icon: FiCode,
-      title: 'Software Engineering',
-      description: 'Full-stack development with React, mobile apps with SwiftUI/React Native, and AI-driven applications',
+      title: 'Data-Driven Strategy',
+      description: 'Quantitative analysis and AI-powered insights to drive strategic decision-making and operational improvements',
       link: '/projects'
     },
     {
       icon: FiSettings,
-      title: 'Mechanical Engineering',
-      description: 'CAD design with SolidWorks, CNC machining, and precision component fabrication',
+      title: 'Business Operations',
+      description: 'Proven track record of building profitable ventures and optimizing operations for sustainable growth',
       link: '/resume'
-    },
-    {
-      icon: FiTrendingUp,
-      title: 'Quantitative Finance',
-      description: 'ANN-based derivatives forecasting, time-series analysis, and market modeling research',
-      link: '/projects'
     }
   ];
 
@@ -211,7 +211,7 @@ const Home = () => {
           >
             <h2 className="section-title">What I Do</h2>
             <p className="section-subtitle">
-              Exploring the intersection of technology, finance, and engineering
+              Driving value creation through investment analysis, strategic thinking, and operational excellence
             </p>
           </motion.div>
 
@@ -251,7 +251,7 @@ const Home = () => {
           >
             <h2 className="section-title">Quick Access</h2>
             <p className="section-subtitle">
-              Navigate to different sections of my portfolio
+              Explore my investment analysis and business strategy work
             </p>
           </motion.div>
 
@@ -263,9 +263,9 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3>Projects</h3>
-              <p>Software, finance, and engineering projects</p>
-              <Link to="/projects" className="btn btn-primary">View Projects</Link>
+              <h3>Investment Analysis</h3>
+              <p>Financial modeling, valuation, and market research projects</p>
+              <Link to="/projects" className="btn btn-primary">View Analysis</Link>
             </motion.div>
 
             <motion.div
@@ -276,7 +276,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h3>Resume</h3>
-              <p>Professional experience and skills</p>
+              <p>Investment analysis experience and qualifications</p>
               <a href={config.resumeUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Resume</a>
             </motion.div>
 
@@ -288,7 +288,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h3>Research</h3>
-              <p>Technical documentation and certifications</p>
+              <p>Quantitative analysis and financial modeling research</p>
               <Link to="/lab-reports" className="btn btn-primary">View Research</Link>
             </motion.div>
           </div>

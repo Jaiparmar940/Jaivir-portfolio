@@ -104,23 +104,26 @@ const About = () => {
             <div className="bio-card card">
               <h3>Bio</h3>
               <p>
-                I'm a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
-                with a focus on Innovation & Entrepreneurship. My unique technical and analytical foundation enables 
+                I am a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
+                with a focus on Innovation & Entrepreneurship. This blend of technical and analytical training equips 
                 me to approach complex business problems with both quantitative rigor and creative problem-solving.
               </p>
               <p>
-                I've demonstrated proven business impact through founding Impression, an AI-driven platform that 
-                identified a $2.8B market opportunity and generated measurable results through data-driven optimization. 
-                Additionally, I built JPcommerce from the ground up, generating $100,000+ in revenue with 42% profit 
-                margins through strategic market analysis and operational excellence. These experiences taught me to 
-                think like a consultant - identifying opportunities, analyzing data, and executing solutions that drive 
-                real business value.
+                I have a track record of building ventures that generate measurable business value. As founder of 
+                Impression, an AI-driven optimization platform, I identified a $2.8B market opportunity and delivered 
+                tangible user outcomes through data-driven experimentation and product strategy. Earlier, I launched 
+                JPcommerce, a resale and market arbitrage business that generated $100,000+ in revenue with 42% profit 
+                margins by uncovering inefficiencies in fragmented markets and implementing operational improvements.
               </p>
               <p>
-                I'm passionate about solving complex business challenges at the intersection of technology and strategy. 
-                My experience spans quantitative analysis, market research, operational optimization, and stakeholder 
-                management - skills that translate directly to helping clients navigate their most critical business 
-                decisions and drive sustainable growth.
+                Across these experiences, I learned to think like an investor and consultant: spotting opportunities 
+                in overlooked markets, analyzing data to guide strategic decisions, and executing with operational 
+                discipline to unlock value.
+              </p>
+              <p>
+                I am passionate about solving high-impact business challenges at the intersection of technology, 
+                strategy, and investment, whether that means optimizing growth, improving operations, or guiding 
+                organizations through their most critical decisions to achieve sustainable results.
               </p>
             </div>
           </div>
