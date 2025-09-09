@@ -27,6 +27,12 @@ const Navbar = () => {
     logout();
   };
 
+  const handleNavClick = () => {
+    setIsOpen(false);
+    // Scroll to top of page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -36,7 +42,7 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link to="/" className="brand-link">
+          <Link to="/" className="brand-link" onClick={handleNavClick}>
             <span className="brand-text">Jaivir</span>
           </Link>
         </motion.div>
@@ -54,7 +60,7 @@ const Navbar = () => {
                 <Link 
                   to={item.path} 
                   className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleNavClick}
                 >
                   {item.label}
                 </Link>

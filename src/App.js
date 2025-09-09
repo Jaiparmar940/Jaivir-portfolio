@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { PersonaProvider, usePersona } from './contexts/PersonaContext';
 import CodeGate from './components/CodeGate';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -38,6 +39,7 @@ const AppContent = () => {
   
   return (
     <div className="App">
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>
