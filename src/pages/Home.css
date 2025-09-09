@@ -318,6 +318,11 @@
   
   .hero-content {
     text-align: center;
+    order: 2;
+  }
+  
+  .hero-image {
+    order: 1;
   }
   
   .hero-actions {

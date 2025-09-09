@@ -5,6 +5,7 @@ export const CODE_MAP = {
   'q312Fx09': 'quant',
   'strategy': 'consulting',
   'eng9A2bZ': 'engineering',
+  'portfolio': 'banking',
 };
 
 // Helper to validate access codes and return persona

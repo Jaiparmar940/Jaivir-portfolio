@@ -22,6 +22,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 - **URL**: `jaivir.com/9462sweA` → Automatically authenticates and shows SWE persona
 - **URL**: `jaivir.com/strategy` → Automatically authenticates and shows Consulting persona
 - **URL**: `jaivir.com/eng9A2bZ` → Automatically authenticates and shows Engineering persona
+- **URL**: `jaivir.com/portfolio` → Automatically authenticates and shows Banking persona
 
 ### **3. Access via Form Input**
 - Visit `jaivir.com/` (any invalid/empty path)
@@ -42,6 +43,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 'q312Fx09'     → Quantitative Researcher  
 'strategy'     → Consulting & Strategy
 'eng9A2bZ'     → Mechanical Engineer
+'portfolio'    → Banking & Financial Services
 ```
 
 ### **Code Requirements**
@@ -65,6 +67,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 - `http://localhost:3000/9462sweA` → SWE persona
 - `http://localhost:3000/strategy` → Consulting persona
 - `http://localhost:3000/eng9A2bZ` → Engineering persona
+- `http://localhost:3000/portfolio` → Banking persona
 
 #### **Form Input Access**
 - Visit `http://localhost:3000/` (shows CodeGate)
@@ -77,6 +80,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 - `http://localhost:3000/?track=quant`
 - `http://localhost:3000/?track=consulting`
 - `http://localhost:3000/?track=engineering`
+- `http://localhost:3000/?track=banking`
 
 ## 🏗️ **Technical Implementation**
 
@@ -126,6 +130,7 @@ jaivir.com/q312Fx09           → Quant persona portfolio
 jaivir.com/9462sweA           → SWE persona portfolio
 jaivir.com/strategy           → Consulting persona portfolio
 jaivir.com/eng9A2bZ           → Engineering persona portfolio
+jaivir.com/portfolio          → Banking persona portfolio
 ```
 
 ### **Security Considerations**

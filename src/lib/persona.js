@@ -6,19 +6,20 @@ const subToPersona = {
   'consulting': 'consulting',
   'eng': 'engineering',
   'engineering': 'engineering',
+  'banking': 'banking',
 };
 
 export function getStickyPersona() {
   try {
     const v = (localStorage.getItem('persona') || '').toLowerCase();
-    if (['swe','quant','consulting','engineering'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking'].includes(v)) return v;
   } catch {}
   
   // cookie fallback
   const m = document.cookie.match(/(?:^|;\s*)persona=([^;]+)/);
   if (m) {
     const v = decodeURIComponent(m[1]).toLowerCase();
-    if (['swe','quant','consulting','engineering'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking'].includes(v)) return v;
   }
   return null;
 }
@@ -91,7 +92,7 @@ export function detectPersona() {
     const q = params.get('track');
     console.log('detectPersona: Query param track =', q);
     
-    if (q && ['swe','quant','consulting','engineering'].includes(q)) {
+    if (q && ['swe','quant','consulting','engineering','banking'].includes(q)) {
       console.log('detectPersona: Using query param persona:', q);
       setStickyPersona(q);
       return q;
@@ -159,12 +160,12 @@ export const personaConfigs = {
   consulting: {
     name: 'Consulting & Strategy',
     shortName: 'Consulting',
-    headline: 'Business Consultant • Operations Strategist • Entrepreneur',
-    subhead: 'Driving business growth through strategic analysis and operational optimization',
+    headline: 'Entrepreneur • Mechanical Engineer • Computer Scientist',
+    subhead: 'Building innovative solutions through engineering and technology',
     proofStats: [
-      { label: 'Revenue Generated', value: '$100K+' },
+      { label: 'Revenue Generated', value: '$250K+' },
       { label: 'Businesses Built', value: '3+' },
-      { label: 'Profit Margins', value: '40%+' }
+      { label: 'Years in Business', value: '5+' }
     ],
     cta: 'View My Work',
     ctaLink: '/projects',
@@ -193,6 +194,24 @@ export const personaConfigs = {
     featuredProjectsPage: [7, 18, 20, 6, 8, 9], // Top engineering projects
     description: 'Mechanical engineer specializing in CAD design, prototyping, and fabrication. Experience with SolidWorks, CNC machining, and precision component design.',
     resumeUrl: '/resume-engineering.pdf'
+  },
+  banking: {
+    name: 'Banking & Financial Services',
+    shortName: 'Banking',
+    headline: 'Banking Professional • Financial Analyst • Risk Management Specialist',
+    subhead: 'Driving financial innovation through technology and data-driven decision making',
+    proofStats: [
+      { label: 'Revenue Generated', value: '$100K+' },
+      { label: 'Financial Models', value: '5+' },
+      { label: 'Risk Assessments', value: '50+' }
+    ],
+    cta: 'View My Portfolio',
+    ctaLink: '/projects',
+    primaryColor: 'navy',
+    featuredHomeProjects: [5, 4, 1], // JPcommerce, ANN Trading, Impression
+    featuredProjectsPage: [5, 4, 1, 3, 14], // JPcommerce, ANN Trading, Impression, Banking App, Vehicle Restoration
+    description: 'Banking professional with expertise in financial analysis, risk management, and business development. Experience in building profitable ventures, developing predictive models, and optimizing financial operations.',
+    resumeUrl: '/resume-banking.pdf'
   }
 };
 
