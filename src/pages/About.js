@@ -2,16 +2,33 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiMapPin, FiCalendar, FiCode, FiFileText, FiBookOpen, FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { usePersona } from '../contexts/PersonaContext';
 import './About.css';
 
 const About = () => {
-  const skills = {
-    'Programming Languages': ['Java', 'JavaScript', 'Python', 'C++', 'TypeScript', 'Swift'],
-    'Web & Mobile Development': ['React', 'React Native', 'SwiftUI', 'Firebase', 'Spring Boot', 'Node.js'],
-    'Finance & Analytics': ['Time-series Analysis', 'ANN Forecasting', 'Sentiment Analysis', 'Market Modeling', 'SARIMA'],
-    'Engineering Tools': ['SolidWorks', 'AutoCAD', 'CNC Machining', 'FEA', 'MATLAB', 'Fusion360'],
-    'Business & Leadership': ['Entrepreneurship', 'Project Management', 'Technical Leadership', 'Problem Solving']
+  const { config } = usePersona();
+  
+  // Dynamic skills based on persona
+  const getSkills = () => {
+    if (config?.shortName === 'YC') {
+      return {
+        'Entrepreneurship': ['Venture Building', 'Market Research', 'Business Strategy', 'Product Development', 'Growth Hacking', 'Fundraising'],
+        'Technical Skills': ['Full-Stack Development', 'AI/ML Implementation', 'Data Analysis', 'System Architecture', 'Cloud Computing', 'Mobile Development'],
+        'Business Operations': ['Financial Modeling', 'Operations Management', 'Team Leadership', 'Strategic Planning', 'Customer Acquisition', 'Revenue Optimization'],
+        'Engineering & Design': ['CAD Design', 'Prototyping', 'Manufacturing', 'Quality Control', 'Process Optimization', 'Innovation Management']
+      };
+    } else {
+      return {
+        'Programming Languages': ['Java', 'JavaScript', 'Python', 'C++', 'TypeScript', 'Swift'],
+        'Web & Mobile Development': ['React', 'React Native', 'SwiftUI', 'Firebase', 'Spring Boot', 'Node.js'],
+        'Finance & Analytics': ['Time-series Analysis', 'ANN Forecasting', 'Sentiment Analysis', 'Market Modeling', 'SARIMA'],
+        'Engineering Tools': ['SolidWorks', 'AutoCAD', 'CNC Machining', 'FEA', 'MATLAB', 'Fusion360'],
+        'Business & Leadership': ['Entrepreneurship', 'Project Management', 'Technical Leadership', 'Problem Solving']
+      };
+    }
   };
+
+  const skills = getSkills();
 
   const education = [
     {
@@ -21,29 +38,60 @@ const About = () => {
     }
   ];
 
-  const navigationLinks = [
-    {
-      title: 'Projects',
-      description: 'Explore my portfolio of software, engineering, and business projects',
-      icon: FiCode,
-      link: '/projects',
-      color: '#3b82f6'
-    },
-    {
-      title: 'Resume',
-      description: 'View my professional experience, skills, and qualifications',
-      icon: FiFileText,
-      link: '/resume',
-      color: '#10b981'
-    },
-    {
-      title: 'Research & Lab Reports',
-      description: 'Browse my academic research and engineering lab reports',
-      icon: FiBookOpen,
-      link: '/lab-reports',
-      color: '#f59e0b'
+  // Dynamic navigation links based on persona
+  const getNavigationLinks = () => {
+    if (config?.shortName === 'YC') {
+      return [
+        {
+          title: 'My Ventures',
+          description: 'Explore the businesses and ventures I\'ve founded and scaled',
+          icon: FiCode,
+          link: '/projects',
+          color: '#3b82f6'
+        },
+        {
+          title: 'Resume',
+          description: 'View my entrepreneurial experience and business track record',
+          icon: FiFileText,
+          link: '/resume',
+          color: '#10b981'
+        },
+        {
+          title: 'About My Journey',
+          description: 'Learn more about my entrepreneurial philosophy and approach',
+          icon: FiBookOpen,
+          link: '/about',
+          color: '#f59e0b'
+        }
+      ];
+    } else {
+      return [
+        {
+          title: 'Projects',
+          description: 'Explore my portfolio of software, engineering, and business projects',
+          icon: FiCode,
+          link: '/projects',
+          color: '#3b82f6'
+        },
+        {
+          title: 'Resume',
+          description: 'View my professional experience, skills, and qualifications',
+          icon: FiFileText,
+          link: '/resume',
+          color: '#10b981'
+        },
+        {
+          title: 'Research & Lab Reports',
+          description: 'Browse my academic research and engineering lab reports',
+          icon: FiBookOpen,
+          link: '/lab-reports',
+          color: '#f59e0b'
+        }
+      ];
     }
-  ];
+  };
+
+  const navigationLinks = getNavigationLinks();
 
   return (
     <div className="about">
@@ -57,7 +105,10 @@ const About = () => {
         >
           <h1 className="page-title">About Me</h1>
           <p className="page-subtitle">
-            Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution
+            {config?.shortName === 'YC' 
+              ? 'Serial entrepreneur building scalable ventures that solve real problems and create lasting impact'
+              : 'Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution'
+            }
           </p>
         </motion.div>
 
@@ -103,28 +154,59 @@ const About = () => {
 
             <div className="bio-card card">
               <h3>Bio</h3>
-              <p>
-                I am a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
-                with a focus on Innovation & Entrepreneurship. This blend of technical and analytical training equips 
-                me to approach complex business problems with both quantitative rigor and creative problem-solving.
-              </p>
-              <p>
-                I have a track record of building ventures that generate measurable business value. As founder of 
-                Impression, an AI-driven optimization platform, I identified a $2.8B market opportunity and delivered 
-                tangible user outcomes through data-driven experimentation and product strategy. Earlier, I launched 
-                JPcommerce, a resale and market arbitrage business that generated $100,000+ in revenue with 42% profit 
-                margins by uncovering inefficiencies in fragmented markets and implementing operational improvements.
-              </p>
-              <p>
-                Across these experiences, I learned to think like an investor and consultant: spotting opportunities 
-                in overlooked markets, analyzing data to guide strategic decisions, and executing with operational 
-                discipline to unlock value.
-              </p>
-              <p>
-                I am passionate about solving high-impact business challenges at the intersection of technology, 
-                strategy, and investment, whether that means optimizing growth, improving operations, or guiding 
-                organizations through their most critical decisions to achieve sustainable results.
-              </p>
+              {config?.shortName === 'YC' ? (
+                <>
+                  <p>
+                    I'm a serial entrepreneur and dual-degree student at Duke University pursuing Computer Science and 
+                    Mechanical Engineering with a focus on Innovation & Entrepreneurship. My unique blend of technical 
+                    expertise and business acumen allows me to identify market opportunities and build scalable ventures 
+                    that solve real problems.
+                  </p>
+                  <p>
+                    I've founded and scaled multiple profitable businesses, starting with JPcommerce, a resale and 
+                    market arbitrage venture that generated $100,000+ in revenue with 42% profit margins. Most recently, 
+                    I launched Impression, an AI-driven optimization platform where I identified a $2.8B market 
+                    opportunity and built a product that delivers measurable value to users through data-driven 
+                    experimentation and strategic product development.
+                  </p>
+                  <p>
+                    My approach to entrepreneurship combines technical innovation with market validation. I believe in 
+                    building products that people actually want, using data to guide decisions, and executing with 
+                    operational discipline to achieve sustainable growth and impact.
+                  </p>
+                  <p>
+                    I'm passionate about creating ventures that not only generate revenue but also make a meaningful 
+                    difference in people's lives. Whether it's optimizing business processes, building AI-powered 
+                    solutions, or identifying untapped market opportunities, I thrive on the challenge of turning 
+                    ideas into successful, scalable businesses.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p>
+                    I am a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
+                    with a focus on Innovation & Entrepreneurship. This blend of technical and analytical training equips 
+                    me to approach complex business problems with both quantitative rigor and creative problem-solving.
+                  </p>
+                  <p>
+                    I have a track record of building ventures that generate measurable business value. As founder of 
+                    Impression, an AI-driven optimization platform, I identified a $2.8B market opportunity and delivered 
+                    tangible user outcomes through data-driven experimentation and product strategy. Earlier, I launched 
+                    JPcommerce, a resale and market arbitrage business that generated $100,000+ in revenue with 42% profit 
+                    margins by uncovering inefficiencies in fragmented markets and implementing operational improvements.
+                  </p>
+                  <p>
+                    Across these experiences, I learned to think like an investor and consultant: spotting opportunities 
+                    in overlooked markets, analyzing data to guide strategic decisions, and executing with operational 
+                    discipline to unlock value.
+                  </p>
+                  <p>
+                    I am passionate about solving high-impact business challenges at the intersection of technology, 
+                    strategy, and investment, whether that means optimizing growth, improving operations, or guiding 
+                    organizations through their most critical decisions to achieve sustainable results.
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </motion.section>

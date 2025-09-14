@@ -7,19 +7,20 @@ const subToPersona = {
   'eng': 'engineering',
   'engineering': 'engineering',
   'banking': 'banking',
+  'yc': 'yc',
 };
 
 export function getStickyPersona() {
   try {
     const v = (localStorage.getItem('persona') || '').toLowerCase();
-    if (['swe','quant','consulting','engineering','banking'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc'].includes(v)) return v;
   } catch {}
   
   // cookie fallback
   const m = document.cookie.match(/(?:^|;\s*)persona=([^;]+)/);
   if (m) {
     const v = decodeURIComponent(m[1]).toLowerCase();
-    if (['swe','quant','consulting','engineering','banking'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc'].includes(v)) return v;
   }
   return null;
 }
@@ -92,7 +93,7 @@ export function detectPersona() {
     const q = params.get('track');
     console.log('detectPersona: Query param track =', q);
     
-    if (q && ['swe','quant','consulting','engineering','banking'].includes(q)) {
+    if (q && ['swe','quant','consulting','engineering','banking','yc'].includes(q)) {
       console.log('detectPersona: Using query param persona:', q);
       setStickyPersona(q);
       return q;
@@ -202,7 +203,7 @@ export const personaConfigs = {
     subhead: 'Driving financial innovation through technology and data-driven decision making',
     proofStats: [
       { label: 'Revenue Generated', value: '$250K+' },
-      { label: 'Ventures Founded', value: '4' },
+      { label: 'Ventures Founded', value: '4+' },
       { label: 'Clients Served', value: '450+' }
     ],
     cta: 'View My Portfolio',
@@ -210,8 +211,26 @@ export const personaConfigs = {
     primaryColor: 'navy',
     featuredHomeProjects: [5, 4, 1], // JPcommerce, ANN Trading, Impression
     featuredProjectsPage: [5, 4, 1, 3, 14], // JPcommerce, ANN Trading, Impression, Banking App, Vehicle Restoration
-    description: 'Banking professional with expertise in financial analysis, risk management, and business development. Experience in building profitable ventures, developing predictive models, and optimizing financial operations.',
+    description: 'Emerging professional with experience in financial analysis, market strategy, and venture building. Founded and scaled profitable businesses, developed pricing and predictive models, and applied data-driven methods to optimize operations and evaluate growth opportunities.',
     resumeUrl: '/resume-banking.pdf'
+  },
+  yc: {
+    name: 'Y Combinator Entrepreneur',
+    shortName: 'YC',
+    headline: 'Entrepreneur • Mechanical Engineer • Computer Scientist',
+    subhead: 'Building scalable ventures that solve real problems and create lasting impact',
+    proofStats: [
+      { label: 'Ventures Founded', value: '4+' },
+      { label: 'Revenue Generated', value: '$250K+' },
+      { label: 'Users Impacted', value: '10K+' }
+    ],
+    cta: 'View My Ventures',
+    ctaLink: '/projects',
+    primaryColor: 'green',
+    featuredHomeProjects: [1, 5, 14], // Impression, JPcommerce, Vehicle Restoration
+    featuredProjectsPage: [1, 5, 14, 2, 22], // Impression, JPcommerce, Vehicle Restoration, Workly, Hackerspace
+    description: 'Serial entrepreneur with a track record of identifying market opportunities and building profitable ventures. Founded and scaled multiple businesses from concept to revenue, with expertise in product development, market strategy, and operational execution.',
+    resumeUrl: '/resume.pdf'
   }
 };
 

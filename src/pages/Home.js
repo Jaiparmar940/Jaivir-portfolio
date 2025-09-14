@@ -60,26 +60,54 @@ const Home = () => {
 
   console.log('Home component: featuredProjects =', featuredProjects);
 
-  const features = [
-    {
-      icon: FiTrendingUp,
-      title: 'Investment Analysis',
-      description: 'Financial modeling, valuation analysis, and market research to identify value creation opportunities',
-      link: '/projects'
-    },
-    {
-      icon: FiCode,
-      title: 'Data-Driven Strategy',
-      description: 'Quantitative analysis and AI-powered insights to drive strategic decision-making and operational improvements',
-      link: '/projects'
-    },
-    {
-      icon: FiSettings,
-      title: 'Business Operations',
-      description: 'Proven track record of building profitable ventures and optimizing operations for sustainable growth',
-      link: '/resume'
+  // Dynamic features based on persona
+  const getFeatures = () => {
+    if (config.shortName === 'YC') {
+      return [
+        {
+          icon: FiTrendingUp,
+          title: 'Venture Building',
+          description: 'Identifying market opportunities and building scalable businesses from concept to revenue',
+          link: '/projects'
+        },
+        {
+          icon: FiCode,
+          title: 'Product Development',
+          description: 'Creating innovative solutions that solve real problems and deliver measurable value to users',
+          link: '/projects'
+        },
+        {
+          icon: FiSettings,
+          title: 'Growth & Operations',
+          description: 'Scaling ventures through strategic execution, operational excellence, and data-driven decision making',
+          link: '/resume'
+        }
+      ];
+    } else {
+      return [
+        {
+          icon: FiTrendingUp,
+          title: 'Investment Analysis',
+          description: 'Financial modeling, valuation analysis, and market research to identify value creation opportunities',
+          link: '/projects'
+        },
+        {
+          icon: FiCode,
+          title: 'Data-Driven Strategy',
+          description: 'Quantitative analysis and AI-powered insights to drive strategic decision-making and operational improvements',
+          link: '/projects'
+        },
+        {
+          icon: FiSettings,
+          title: 'Business Operations',
+          description: 'Proven track record of building profitable ventures and optimizing operations for sustainable growth',
+          link: '/resume'
+        }
+      ];
     }
-  ];
+  };
+
+  const features = getFeatures();
 
   return (
     <div className="home">
@@ -213,7 +241,10 @@ const Home = () => {
           >
             <h2 className="section-title">What I Do</h2>
             <p className="section-subtitle">
-              Driving value creation through investment analysis, strategic thinking, and operational excellence
+              {config.shortName === 'YC' 
+                ? 'Building and scaling ventures that solve real problems and create lasting impact'
+                : 'Driving value creation through investment analysis, strategic thinking, and operational excellence'
+              }
             </p>
           </motion.div>
 
@@ -253,7 +284,10 @@ const Home = () => {
           >
             <h2 className="section-title">Quick Access</h2>
             <p className="section-subtitle">
-              Explore my investment analysis and business strategy work
+              {config.shortName === 'YC' 
+                ? 'Explore my entrepreneurial ventures and business building experience'
+                : 'Explore my investment analysis and business strategy work'
+              }
             </p>
           </motion.div>
 
@@ -265,9 +299,9 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3>Investment Analysis</h3>
-              <p>Financial modeling, valuation, and market research projects</p>
-              <Link to="/projects" className="btn btn-primary">View Analysis</Link>
+              <h3>{config.shortName === 'YC' ? 'My Ventures' : 'Investment Analysis'}</h3>
+              <p>{config.shortName === 'YC' ? 'Entrepreneurial projects and business ventures I\'ve founded and scaled' : 'Financial modeling, valuation, and market research projects'}</p>
+              <Link to="/projects" className="btn btn-primary">{config.shortName === 'YC' ? 'View Ventures' : 'View Analysis'}</Link>
             </motion.div>
 
             <motion.div
@@ -278,7 +312,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h3>Resume</h3>
-              <p>Investment analysis experience and qualifications</p>
+              <p>{config.shortName === 'YC' ? 'Entrepreneurial experience and business building track record' : 'Investment analysis experience and qualifications'}</p>
               <a href={config.resumeUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Resume</a>
             </motion.div>
 
@@ -289,9 +323,9 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h3>Research</h3>
-              <p>Quantitative analysis and financial modeling research</p>
-              <Link to="/lab-reports" className="btn btn-primary">View Research</Link>
+              <h3>{config.shortName === 'YC' ? 'About Me' : 'Research'}</h3>
+              <p>{config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : 'Quantitative analysis and financial modeling research'}</p>
+              <Link to={config.shortName === 'YC' ? '/about' : '/lab-reports'} className="btn btn-primary">{config.shortName === 'YC' ? 'Learn More' : 'View Research'}</Link>
             </motion.div>
           </div>
         </div>
