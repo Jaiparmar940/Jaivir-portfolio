@@ -185,7 +185,9 @@ const Home = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="section-title">Featured {config.name} Projects</h2>
+              <h2 className="section-title">
+                {config.shortName === 'YC' ? 'Featured Projects' : `Featured ${config.name} Projects`}
+              </h2>
               <p className="section-subtitle">
                 {config.subhead}
               </p>

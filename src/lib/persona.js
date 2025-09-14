@@ -227,8 +227,10 @@ export const personaConfigs = {
     cta: 'View My Ventures',
     ctaLink: '/projects',
     primaryColor: 'green',
-    featuredHomeProjects: [1, 5, 14], // Impression, JPcommerce, Vehicle Restoration
-    featuredProjectsPage: [1, 5, 14, 2, 22], // Impression, JPcommerce, Vehicle Restoration, Workly, Hackerspace
+    featuredHomeProjects: [1, 2, 5], // Impression, Workly, JPcommerce
+    featuredProjectsPage: [1, 2, 5, 14, 22], // Impression, Workly, JPcommerce, Vehicle Restoration, Hackerspace
+    otherProjects: [3, 4, 21, 23, 24, 6, 7, 8, 9], // Banking App, ANN Trade, Vision AI, Project Pure, CPU, Pump Platform, Autonomous Robot, Mousetrap, Crypto Mining
+    personalProjects: [10, 11, 12, 13, 15, 16, 17, 20, 18, 19], // All the moved projects plus remaining personal ones
     description: 'Serial entrepreneur with a track record of identifying market opportunities and building profitable ventures. Founded and scaled multiple businesses from concept to revenue, with expertise in product development, market strategy, and operational execution.',
     resumeUrl: '/resume.pdf'
   }
