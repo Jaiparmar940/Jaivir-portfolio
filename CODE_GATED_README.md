@@ -23,7 +23,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 - **URL**: `jaivir.com/strategy` → Automatically authenticates and shows Consulting persona
 - **URL**: `jaivir.com/eng9A2bZ` → Automatically authenticates and shows Engineering persona
 - **URL**: `jaivir.com/portfolio` → Automatically authenticates and shows Banking persona
-- **URL**: `jaivir.com/yc2024` → Automatically authenticates and shows Y Combinator Entrepreneur persona
+- **URL**: `jaivir.com/yc2025` → Automatically authenticates and shows Entrepreneur persona
 
 ### **3. Access via Form Input**
 - Visit `jaivir.com/` (any invalid/empty path)
@@ -45,7 +45,7 @@ This portfolio now implements a **secure, code-gated system** that only reveals 
 'strategy'     → Consulting & Strategy
 'eng9A2bZ'     → Mechanical Engineer
 'portfolio'    → Banking & Financial Services
-'yc2024'       → Y Combinator Entrepreneur
+'yc2025'       → Entrepreneur
 ```
 
 ### **Code Requirements**
@@ -133,7 +133,7 @@ jaivir.com/9462sweA           → SWE persona portfolio
 jaivir.com/strategy           → Consulting persona portfolio
 jaivir.com/eng9A2bZ           → Engineering persona portfolio
 jaivir.com/portfolio          → Banking persona portfolio
-jaivir.com/yc2024             → Y Combinator Entrepreneur persona portfolio
+jaivir.com/yc2025             → Entrepreneur persona portfolio
 ```
 
 ### **Security Considerations**

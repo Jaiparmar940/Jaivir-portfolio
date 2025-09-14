@@ -215,7 +215,7 @@ export const personaConfigs = {
     resumeUrl: '/resume-banking.pdf'
   },
   yc: {
-    name: 'Y Combinator Entrepreneur',
+    name: 'Entrepreneur',
     shortName: 'YC',
     headline: 'Entrepreneur • Mechanical Engineer • Computer Scientist',
     subhead: 'Building scalable ventures that solve real problems and create lasting impact',
