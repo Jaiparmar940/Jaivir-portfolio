@@ -101,9 +101,6 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <h2 className="section-title">Featured {config.name} Projects</h2>
-              <p className="section-subtitle">
-                My most impactful work in {config.name.toLowerCase()}
-              </p>
             </motion.div>
 
             <motion.div 
