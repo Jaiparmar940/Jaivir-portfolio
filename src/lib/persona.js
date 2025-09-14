@@ -222,7 +222,7 @@ export const personaConfigs = {
     proofStats: [
       { label: 'Ventures Founded', value: '4+' },
       { label: 'Revenue Generated', value: '$250K+' },
-      { label: 'Users Impacted', value: '10K+' }
+      { label: 'Projects Delivered', value: '15+' }
     ],
     cta: 'View My Ventures',
     ctaLink: '/projects',
