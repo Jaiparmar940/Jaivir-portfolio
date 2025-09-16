@@ -8,19 +8,20 @@ const subToPersona = {
   'engineering': 'engineering',
   'banking': 'banking',
   'yc': 'yc',
+  'code': 'code',
 };
 
 export function getStickyPersona() {
   try {
     const v = (localStorage.getItem('persona') || '').toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','code'].includes(v)) return v;
   } catch {}
   
   // cookie fallback
   const m = document.cookie.match(/(?:^|;\s*)persona=([^;]+)/);
   if (m) {
     const v = decodeURIComponent(m[1]).toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','code'].includes(v)) return v;
   }
   return null;
 }
@@ -93,7 +94,7 @@ export function detectPersona() {
     const q = params.get('track');
     console.log('detectPersona: Query param track =', q);
     
-    if (q && ['swe','quant','consulting','engineering','banking','yc'].includes(q)) {
+    if (q && ['swe','quant','consulting','engineering','banking','yc','code'].includes(q)) {
       console.log('detectPersona: Using query param persona:', q);
       setStickyPersona(q);
       return q;
@@ -232,6 +233,26 @@ export const personaConfigs = {
     otherProjects: [3, 4, 21, 23, 24, 6, 7, 8, 9], // Banking App, ANN Trade, Vision AI, Project Pure, CPU, Pump Platform, Autonomous Robot, Mousetrap, Crypto Mining
     personalProjects: [10, 11, 12, 13, 15, 16, 17, 20, 18, 19], // All the moved projects plus remaining personal ones
     description: 'Serial entrepreneur with a track record of identifying market opportunities and building profitable ventures. Founded and scaled multiple businesses from concept to revenue, with expertise in product development, market strategy, and operational execution.',
+    resumeUrl: '/resume.pdf'
+  },
+  code: {
+    name: 'Computer Science Engineer',
+    shortName: 'CS',
+    headline: 'Computer Science Engineer • Full-Stack Developer • AI/ML Specialist',
+    subhead: 'Building scalable software solutions and AI-driven applications with modern technologies',
+    proofStats: [
+      { label: 'Projects Built', value: '20+' },
+      { label: 'Languages', value: '4+' },
+      { label: 'Years Coding', value: '5+' }
+    ],
+    cta: 'View My Code',
+    ctaLink: '/projects',
+    primaryColor: 'blue',
+    featuredHomeProjects: [1, 2, 3, 21], // Impression, Workly, Banking App, VisionAssist
+    featuredProjectsPage: [1, 2, 3, 4, 21, 24], // Top CS projects: Impression, Workly, Banking App, ANN Trade Programming, VisionAssist, CPU Design
+    otherProjects: [5, 6, 7, 9, 14, 18, 19, 22, 23], // JPcommerce, Pump Support Platform, Autonomous Robot, Crypto Mining, Vehicle Restoration, Boulder Transport, McDonald's Toy, Hackerspace, Project Pure
+    personalProjects: [8, 10, 11, 12, 13, 15, 16, 17, 20], // All remaining projects including Workshop
+    description: 'Computer Science engineer passionate about building scalable software solutions, AI/ML applications, and full-stack development. Experience with modern web technologies, mobile development, and cloud platforms.',
     resumeUrl: '/resume.pdf'
   }
 };

@@ -83,6 +83,27 @@ const Home = () => {
           link: '/resume'
         }
       ];
+    } else if (config.shortName === 'CS') {
+      return [
+        {
+          icon: FiCode,
+          title: 'Full-Stack Development',
+          description: 'Building scalable web and mobile applications using modern technologies and best practices',
+          link: '/projects'
+        },
+        {
+          icon: FiTrendingUp,
+          title: 'AI/ML Engineering',
+          description: 'Developing intelligent systems and machine learning solutions for real-world applications',
+          link: '/projects'
+        },
+        {
+          icon: FiSettings,
+          title: 'System Architecture',
+          description: 'Designing robust, scalable systems with cloud technologies and DevOps practices',
+          link: '/resume'
+        }
+      ];
     } else {
       return [
         {
@@ -245,6 +266,8 @@ const Home = () => {
             <p className="section-subtitle">
               {config.shortName === 'YC' 
                 ? 'Building and scaling ventures that solve real problems and create lasting impact'
+                : config.shortName === 'CS'
+                ? 'Building scalable software solutions and AI-driven applications with modern technologies'
                 : 'Driving value creation through investment analysis, strategic thinking, and operational excellence'
               }
             </p>
@@ -288,6 +311,8 @@ const Home = () => {
             <p className="section-subtitle">
               {config.shortName === 'YC' 
                 ? 'Explore my entrepreneurial ventures and business building experience'
+                : config.shortName === 'CS'
+                ? 'Explore my software development and AI/ML engineering projects'
                 : 'Explore my investment analysis and business strategy work'
               }
             </p>
@@ -301,9 +326,9 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3>{config.shortName === 'YC' ? 'My Ventures' : 'Investment Analysis'}</h3>
-              <p>{config.shortName === 'YC' ? 'Entrepreneurial projects and business ventures I\'ve founded and scaled' : 'Financial modeling, valuation, and market research projects'}</p>
-              <Link to="/projects" className="btn btn-primary">{config.shortName === 'YC' ? 'View Ventures' : 'View Analysis'}</Link>
+              <h3>{config.shortName === 'YC' ? 'My Ventures' : config.shortName === 'CS' ? 'My Code' : 'Investment Analysis'}</h3>
+              <p>{config.shortName === 'YC' ? 'Entrepreneurial projects and business ventures I\'ve founded and scaled' : config.shortName === 'CS' ? 'Software development projects and AI/ML applications I\'ve built' : 'Financial modeling, valuation, and market research projects'}</p>
+              <Link to="/projects" className="btn btn-primary">{config.shortName === 'YC' ? 'View Ventures' : config.shortName === 'CS' ? 'View Code' : 'View Analysis'}</Link>
             </motion.div>
 
             <motion.div
@@ -314,7 +339,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h3>Resume</h3>
-              <p>{config.shortName === 'YC' ? 'Entrepreneurial experience and business building track record' : 'Investment analysis experience and qualifications'}</p>
+              <p>{config.shortName === 'YC' ? 'Entrepreneurial experience and business building track record' : config.shortName === 'CS' ? 'Computer Science experience and technical qualifications' : 'Investment analysis experience and qualifications'}</p>
               <a href={config.resumeUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Resume</a>
             </motion.div>
 
@@ -325,9 +350,9 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h3>{config.shortName === 'YC' ? 'About Me' : 'Research'}</h3>
-              <p>{config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : 'Quantitative analysis and financial modeling research'}</p>
-              <Link to={config.shortName === 'YC' ? '/about' : '/lab-reports'} className="btn btn-primary">{config.shortName === 'YC' ? 'Learn More' : 'View Research'}</Link>
+              <h3>{config.shortName === 'YC' ? 'About Me' : config.shortName === 'CS' ? 'About Me' : 'Research'}</h3>
+              <p>{config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : config.shortName === 'CS' ? 'My technical background and software engineering journey' : 'Quantitative analysis and financial modeling research'}</p>
+              <Link to={config.shortName === 'YC' ? '/about' : config.shortName === 'CS' ? '/about' : '/lab-reports'} className="btn btn-primary">{config.shortName === 'YC' ? 'Learn More' : config.shortName === 'CS' ? 'Learn More' : 'View Research'}</Link>
             </motion.div>
           </div>
         </div>

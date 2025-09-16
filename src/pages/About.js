@@ -17,6 +17,15 @@ const About = () => {
         'Business Operations': ['Financial Modeling', 'Operations Management', 'Team Leadership', 'Strategic Planning', 'Customer Acquisition', 'Revenue Optimization'],
         'Engineering & Design': ['CAD Design', 'Prototyping', 'Manufacturing', 'Quality Control', 'Process Optimization', 'Innovation Management']
       };
+    } else if (config?.shortName === 'CS') {
+      return {
+        'Programming Languages': ['Java', 'JavaScript', 'Python', 'TypeScript', 'Swift', 'C++'],
+        'Web & Mobile Development': ['React', 'React Native', 'SwiftUI', 'Node.js', 'Express.js', 'Firebase'],
+        'AI/ML & Data Science': ['TensorFlow', 'PyTorch', 'OpenCV', 'Pandas', 'NumPy', 'Scikit-learn'],
+        'Cloud & DevOps': ['AWS', 'Google Cloud', 'Docker', 'Kubernetes', 'CI/CD', 'Microservices'],
+        'Databases & Backend': ['MongoDB', 'PostgreSQL', 'Redis', 'REST APIs', 'GraphQL', 'Spring Boot'],
+        'System Design': ['Distributed Systems', 'Load Balancing', 'Caching', 'Message Queues', 'API Design', 'Security']
+      };
     } else {
       return {
         'Programming Languages': ['Java', 'JavaScript', 'Python', 'C++', 'TypeScript', 'Swift'],
@@ -59,6 +68,30 @@ const About = () => {
         {
           title: 'About My Journey',
           description: 'Learn more about my entrepreneurial philosophy and approach',
+          icon: FiBookOpen,
+          link: '/about',
+          color: '#f59e0b'
+        }
+      ];
+    } else if (config?.shortName === 'CS') {
+      return [
+        {
+          title: 'My Code',
+          description: 'Explore my software development projects and AI/ML applications',
+          icon: FiCode,
+          link: '/projects',
+          color: '#3b82f6'
+        },
+        {
+          title: 'Resume',
+          description: 'View my technical experience and computer science qualifications',
+          icon: FiFileText,
+          link: '/resume',
+          color: '#10b981'
+        },
+        {
+          title: 'About My Journey',
+          description: 'Learn more about my technical background and engineering journey',
           icon: FiBookOpen,
           link: '/about',
           color: '#f59e0b'
@@ -107,6 +140,8 @@ const About = () => {
           <p className="page-subtitle">
             {config?.shortName === 'YC' 
               ? 'Serial entrepreneur building scalable ventures that solve real problems and create lasting impact'
+              : config?.shortName === 'CS'
+              ? 'Computer Science engineer passionate about building scalable software solutions and AI-driven applications'
               : 'Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution'
             }
           </p>
@@ -179,6 +214,33 @@ const About = () => {
                     difference in people's lives. Whether it's optimizing business processes, building AI-powered 
                     solutions, or identifying untapped market opportunities, I thrive on the challenge of turning 
                     ideas into successful, scalable businesses.
+                  </p>
+                </>
+              ) : config?.shortName === 'CS' ? (
+                <>
+                  <p>
+                    I'm a Computer Science and Mechanical Engineering student at Duke University with a passion for 
+                    building scalable software solutions and AI-driven applications. My dual-degree background gives me 
+                    a unique perspective on solving complex technical challenges with both software engineering rigor 
+                    and systems thinking.
+                  </p>
+                  <p>
+                    I have extensive experience in full-stack development, having built multiple production applications 
+                    including Impression, an AI-driven optimization platform, and Workly, a cross-platform mobile job 
+                    matching app. My technical projects span from computer vision applications using TensorFlow to 
+                    custom CPU architecture design, demonstrating both breadth and depth in software engineering.
+                  </p>
+                  <p>
+                    I'm particularly passionate about AI/ML engineering and have developed applications like VisionAssist, 
+                    which uses real-time object recognition to help visually impaired users. I enjoy working on projects 
+                    that combine cutting-edge technology with real-world impact, whether that's building scalable web 
+                    applications, developing machine learning models, or designing distributed systems.
+                  </p>
+                  <p>
+                    My approach to software engineering emphasizes clean code, scalable architecture, and user-centric 
+                    design. I believe in building robust, maintainable systems that can grow with user needs while 
+                    maintaining high performance and reliability. I'm always eager to learn new technologies and 
+                    tackle challenging problems in the intersection of software engineering and artificial intelligence.
                   </p>
                 </>
               ) : (
