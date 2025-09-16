@@ -26,6 +26,15 @@ const About = () => {
         'Databases & Backend': ['MongoDB', 'PostgreSQL', 'Redis', 'REST APIs', 'GraphQL', 'Spring Boot'],
         'System Design': ['Distributed Systems', 'Load Balancing', 'Caching', 'Message Queues', 'API Design', 'Security']
       };
+    } else if (config?.shortName === 'Build') {
+      return {
+        'Mechanical Design': ['SolidWorks', 'AutoCAD', 'Fusion 360', 'CAD Modeling', 'FEA Analysis', '3D Printing'],
+        'Manufacturing & Prototyping': ['CNC Machining', 'Rapid Prototyping', 'Quality Control', 'Process Optimization', 'Lean Manufacturing', 'GD&T'],
+        'Programming & Software': ['Python', 'MATLAB', 'C++', 'Arduino', 'Raspberry Pi', 'LabVIEW'],
+        'Systems Integration': ['IoT Development', 'Sensor Integration', 'Control Systems', 'Data Acquisition', 'Automation', 'Robotics'],
+        'Product Development': ['Design Thinking', 'Project Management', 'Testing & Validation', 'Regulatory Compliance', 'Cost Analysis', 'Supply Chain'],
+        'Engineering Analysis': ['Stress Analysis', 'Thermal Analysis', 'Fluid Dynamics', 'Vibration Analysis', 'Material Selection', 'Failure Analysis']
+      };
     } else {
       return {
         'Programming Languages': ['Java', 'JavaScript', 'Python', 'C++', 'TypeScript', 'Swift'],
@@ -97,6 +106,30 @@ const About = () => {
           color: '#f59e0b'
         }
       ];
+    } else if (config?.shortName === 'Build') {
+      return [
+        {
+          title: 'My Designs',
+          description: 'Explore my mechanical engineering projects and integrated systems',
+          icon: FiCode,
+          link: '/projects',
+          color: '#3b82f6'
+        },
+        {
+          title: 'Resume',
+          description: 'View my dual-degree Mechanical Engineering and Computer Science experience',
+          icon: FiFileText,
+          link: '/resume',
+          color: '#10b981'
+        },
+        {
+          title: 'About My Journey',
+          description: 'Learn more about my dual-degree engineering background and product development journey',
+          icon: FiBookOpen,
+          link: '/about',
+          color: '#f59e0b'
+        }
+      ];
     } else {
       return [
         {
@@ -142,6 +175,8 @@ const About = () => {
               ? 'Serial entrepreneur building scalable ventures that solve real problems and create lasting impact'
               : config?.shortName === 'CS'
               ? 'Computer Science engineer passionate about building scalable software solutions and AI-driven applications'
+              : config?.shortName === 'Build'
+              ? 'Dual-degree Mechanical Engineer and Computer Scientist building innovative products with integrated hardware and software solutions'
               : 'Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution'
             }
           </p>
@@ -241,6 +276,35 @@ const About = () => {
                     design. I believe in building robust, maintainable systems that can grow with user needs while 
                     maintaining high performance and reliability. I'm always eager to learn new technologies and 
                     tackle challenging problems in the intersection of software engineering and artificial intelligence.
+                  </p>
+                </>
+              ) : config?.shortName === 'Build' ? (
+                <>
+                  <p>
+                    I'm a dual-degree student at Duke University pursuing Mechanical Engineering and Computer Science 
+                    with a 75% mechanical engineering focus and 25% computer science integration. This unique combination 
+                    allows me to design and build innovative products that seamlessly integrate hardware and software 
+                    solutions for real-world applications.
+                  </p>
+                  <p>
+                    My mechanical engineering expertise spans from autonomous robotics and heavy equipment design to 
+                    precision manufacturing and structural analysis. I've designed and built complex systems like an 
+                    autonomous block-stacking robot with computer vision capabilities and a heavy-duty boulder transport 
+                    device capable of handling 500lb loads across uneven terrain. These projects demonstrate my ability 
+                    to solve challenging mechanical problems while integrating smart software solutions.
+                  </p>
+                  <p>
+                    The computer science component of my education enables me to create intelligent, connected systems. 
+                    I've developed custom CPU architectures, built IoT solutions for workshop automation, and integrated 
+                    sensors and control systems into mechanical designs. This combination of mechanical design and 
+                    software integration allows me to create products that are not just functional, but smart and adaptive.
+                  </p>
+                  <p>
+                    I'm passionate about product development and enjoy the entire lifecycle from initial concept through 
+                    manufacturing and deployment. My approach combines rigorous engineering analysis with creative 
+                    problem-solving, always considering both the mechanical and software aspects of any design challenge. 
+                    I believe the future of engineering lies in seamlessly integrated hardware-software systems that 
+                    can adapt, learn, and optimize their performance.
                   </p>
                 </>
               ) : (

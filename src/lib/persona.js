@@ -9,19 +9,20 @@ const subToPersona = {
   'banking': 'banking',
   'yc': 'yc',
   'code': 'code',
+  'build': 'build',
 };
 
 export function getStickyPersona() {
   try {
     const v = (localStorage.getItem('persona') || '').toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc','code'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','code','build'].includes(v)) return v;
   } catch {}
   
   // cookie fallback
   const m = document.cookie.match(/(?:^|;\s*)persona=([^;]+)/);
   if (m) {
     const v = decodeURIComponent(m[1]).toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc','code'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','code','build'].includes(v)) return v;
   }
   return null;
 }
@@ -94,7 +95,7 @@ export function detectPersona() {
     const q = params.get('track');
     console.log('detectPersona: Query param track =', q);
     
-    if (q && ['swe','quant','consulting','engineering','banking','yc','code'].includes(q)) {
+    if (q && ['swe','quant','consulting','engineering','banking','yc','code','build'].includes(q)) {
       console.log('detectPersona: Using query param persona:', q);
       setStickyPersona(q);
       return q;
@@ -136,8 +137,8 @@ export const personaConfigs = {
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [1, 2, 3], // Impression, Workly, Full-Stack Banking
-    featuredProjectsPage: [1, 2, 3, 21, 24], // Top SWE projects
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 1, 2, 3, 21], // Top SWE projects
     description: 'Full-stack developer passionate about building scalable applications, mobile apps, and AI-driven solutions. Experience with React, Node.js, Python, and cloud technologies.',
     resumeUrl: '/resume.pdf'
   },
@@ -154,8 +155,8 @@ export const personaConfigs = {
     cta: 'View My Research',
     ctaLink: '/projects',
     primaryColor: 'green',
-    featuredHomeProjects: [4, 5, 23], // ANN Trading, JPcommerce, Project Pure
-    featuredProjectsPage: [4, 5, 23, 21, 24], // Top quant/finance projects
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 4, 23, 21], // Top quant/finance projects
     description: 'Quantitative researcher focused on developing machine learning models for financial markets, time-series analysis, and algorithmic trading strategies.',
     resumeUrl: '/resume-quant.pdf'
   },
@@ -172,15 +173,15 @@ export const personaConfigs = {
     cta: 'View My Analysis',
     ctaLink: '/projects',
     primaryColor: 'purple',
-    featuredHomeProjects: [5, 14, 22, 1], // JPcommerce, Vehicle Restoration Business, Hackerspace, Impression
-    featuredProjectsPage: [1, 2, 5, 14, 23, 22], // Impression, Workly, JPcommerce, Vehicle Restoration, Project Pure, Hackerspace
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 1, 2, 23], // JPcommerce, Vehicle Restoration, Hackerspace, Impression, Workly, Project Pure
     otherProjects: [9, 3, 4, 21, 24, 18, 6, 19, 8], // Crypto Mining, Banking App, ANN Trade, Vision AI, CPU, Boulder Movement, Pump Platform, Happy Meal, Mousetrap
     personalProjects: [7, 10, 11, 12, 13, 15, 16, 17, 20], // All remaining projects
     description: 'Financial analyst with expertise in investment research, business valuation, and strategic planning. Proven ability to identify value creation opportunities and drive operational improvements.',
     resumeUrl: '/resume-consulting.pdf'
   },
   engineering: {
-    name: 'Mechanical Engineer',
+    name: 'Mechanical Engineering',
     shortName: 'Engineering',
     headline: 'Mechanical Engineer • CAD Designer • Hardware Developer',
     subhead: 'Designing and fabricating precision mechanical systems and components',
@@ -192,8 +193,8 @@ export const personaConfigs = {
     cta: 'View My Designs',
     ctaLink: '/projects',
     primaryColor: 'orange',
-    featuredHomeProjects: [7, 18, 20], // Autonomous Robot, Boulder Transport, Workshop
-    featuredProjectsPage: [7, 18, 20, 6, 8, 9], // Top engineering projects
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 7, 18, 6, 9], // Top engineering projects
     description: 'Mechanical engineer specializing in CAD design, prototyping, and fabrication. Experience with SolidWorks, CNC machining, and precision component design.',
     resumeUrl: '/resume-engineering.pdf'
   },
@@ -210,8 +211,8 @@ export const personaConfigs = {
     cta: 'View My Portfolio',
     ctaLink: '/projects',
     primaryColor: 'navy',
-    featuredHomeProjects: [5, 4, 1], // JPcommerce, ANN Trading, Impression
-    featuredProjectsPage: [5, 4, 1, 3, 14], // JPcommerce, ANN Trading, Impression, Banking App, Vehicle Restoration
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 4, 1, 3], // JPcommerce, Vehicle Restoration, Hackerspace, ANN Trading, Impression, Banking App
     description: 'Emerging professional with experience in financial analysis, market strategy, and venture building. Founded and scaled profitable businesses, developed pricing and predictive models, and applied data-driven methods to optimize operations and evaluate growth opportunities.',
     resumeUrl: '/resume-banking.pdf'
   },
@@ -228,15 +229,15 @@ export const personaConfigs = {
     cta: 'View My Ventures',
     ctaLink: '/projects',
     primaryColor: 'green',
-    featuredHomeProjects: [1, 2, 5, 14], // Impression, Workly, JPcommerce, Vehicle Restoration
-    featuredProjectsPage: [1, 2, 5, 14, 22], // Impression, Workly, JPcommerce, Vehicle Restoration, Hackerspace
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 1, 2], // JPcommerce, Vehicle Restoration, Hackerspace, Impression, Workly
     otherProjects: [3, 4, 21, 23, 24, 6, 7, 8, 9], // Banking App, ANN Trade, Vision AI, Project Pure, CPU, Pump Platform, Autonomous Robot, Mousetrap, Crypto Mining
     personalProjects: [10, 11, 12, 13, 15, 16, 17, 20, 18, 19], // All the moved projects plus remaining personal ones
     description: 'Serial entrepreneur with a track record of identifying market opportunities and building profitable ventures. Founded and scaled multiple businesses from concept to revenue, with expertise in product development, market strategy, and operational execution.',
     resumeUrl: '/resume.pdf'
   },
   code: {
-    name: 'Computer Science Engineer',
+    name: 'Computer Science',
     shortName: 'CS',
     headline: 'Computer Science Engineer • Full-Stack Developer • AI/ML Specialist',
     subhead: 'Building scalable software solutions and AI-driven applications with modern technologies',
@@ -248,12 +249,32 @@ export const personaConfigs = {
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [1, 2, 3, 21], // Impression, Workly, Banking App, VisionAssist
-    featuredProjectsPage: [1, 2, 3, 4, 21, 24], // Top CS projects: Impression, Workly, Banking App, ANN Trade Programming, VisionAssist, CPU Design
-    otherProjects: [5, 6, 7, 9, 14, 18, 19, 22, 23], // JPcommerce, Pump Support Platform, Autonomous Robot, Crypto Mining, Vehicle Restoration, Boulder Transport, McDonald's Toy, Hackerspace, Project Pure
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 1, 2, 3, 4, 21], // Top CS projects: JPcommerce, Vehicle Restoration, Hackerspace, Impression, Workly, Banking App, ANN Trade Programming, VisionAssist
+    otherProjects: [6, 7, 8, 9, 19, 23, 24], // Pump Support Platform, Autonomous Robot, Mousetrap Car, Crypto Mining, McDonald's Toy, Project Pure, CPU Design
     personalProjects: [8, 10, 11, 12, 13, 15, 16, 17, 20], // All remaining projects including Workshop
     description: 'Computer Science engineer passionate about building scalable software solutions, AI/ML applications, and full-stack development. Experience with modern web technologies, mobile development, and cloud platforms.',
     resumeUrl: '/resume.pdf'
+  },
+  build: {
+    name: 'Mechanical Engineering',
+    shortName: 'Build',
+    headline: 'Mechanical Engineer • Computer Scientist • Product Designer',
+    subhead: 'Building innovative mechanical systems and products with integrated software solutions',
+    proofStats: [
+      { label: 'Projects Built', value: '25+' },
+      { label: 'CAD Hours', value: '500+' },
+      { label: 'Years Engineering', value: '5+' }
+    ],
+    cta: 'View My Designs',
+    ctaLink: '/projects',
+    primaryColor: 'orange',
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 7, 18, 6], // Top engineering projects: JPcommerce, Vehicle Restoration, Hackerspace, Autonomous Robot, Boulder Transport, Pump Platform
+    otherProjects: [1, 2, 3, 4, 7, 8, 9, 19, 21, 23, 24], // Software, business, and technical projects
+    personalProjects: [10, 11, 12, 13, 15, 16, 17, 20], // Personal engineering and creative projects
+    description: 'Dual-degree Mechanical Engineer and Computer Scientist passionate about building innovative products and systems. 75% mechanical engineering focus with 25% computer science integration for smart, connected solutions.',
+    resumeUrl: '/resume-engineering.pdf'
   }
 };
 

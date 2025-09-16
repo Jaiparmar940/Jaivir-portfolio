@@ -8,6 +8,7 @@ export const CODE_MAP = {
   'portfolio': 'banking',
   'yc2025': 'yc',
   'code': 'code',
+  'build': 'build',
 };
 
 // Helper to validate access codes and return persona

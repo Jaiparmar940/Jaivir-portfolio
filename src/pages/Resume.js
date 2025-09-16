@@ -14,12 +14,24 @@ const Resume = () => {
   const skills = {
     'Programming Languages': ['Java', 'JavaScript', 'Python', 'C++', 'TypeScript', 'Swift'],
     'Web & Mobile Development': ['React', 'React Native', 'SwiftUI', 'Firebase', 'Spring Boot', 'Node.js'],
-    'Finance & Analytics': ['Time-series Analysis', 'ANN Forecasting', 'Sentiment Analysis', 'Market Modeling', 'SARIMA'],
+    'Finance & Analytics': ['Time-series Analysis', 'ANN Forecasting', 'Sentiment Analysis', 'Market Modeling', 'SARIMA', 'Portfolio Optimization', 'Risk Management', 'Backtesting'],
+    'Machine Learning': ['Hidden Markov Models', 'LSTMs', 'TensorFlow', 'PyTorch', 'Regime Detection', 'Neural Networks'],
     'Engineering Tools': ['SolidWorks', 'AutoCAD', 'CNC Machining', 'FEA', 'MATLAB', 'Fusion360'],
     'Business & Leadership': ['Entrepreneurship', 'Project Management', 'Technical Leadership', 'Problem Solving']
   };
 
   const experience = [
+    {
+      title: 'Quantitative Research Intern',
+      company: 'DeWitt Capital Management',
+      period: 'May 2025 - Aug 2025',
+      location: 'New York, NY',
+      description: [
+        'Built a regime-aware portfolio optimization engine that integrates minimum variance and Omega-ratio objectives under client policy constraints',
+        'Developed and backtested quant models across equities, bonds, and commodities; benchmarked strategies against Bridgewater\'s All Weather ETF (ALLW)',
+        'Implemented machine learning (Hidden Markov Models, LSTMs) for market regime detection, enabling dynamic shifts in risk models and asset allocations'
+      ]
+    },
     {
       title: 'Founder & Lead Developer',
       company: 'Impression AI',
