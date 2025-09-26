@@ -2,7 +2,7 @@
 export const CODE_MAP = {
   // Use 8-10 char mixed codes; these are sample placeholders:
   '9462sweA': 'swe',
-  'q312Fx09': 'quant',
+  'analyst': 'quant',
   'strategy': 'consulting',
   'eng9A2bZ': 'engineering',
   'portfolio': 'banking',

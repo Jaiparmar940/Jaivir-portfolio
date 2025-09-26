@@ -35,6 +35,15 @@ const About = () => {
         'Product Development': ['Design Thinking', 'Project Management', 'Testing & Validation', 'Regulatory Compliance', 'Cost Analysis', 'Supply Chain'],
         'Engineering Analysis': ['Stress Analysis', 'Thermal Analysis', 'Fluid Dynamics', 'Vibration Analysis', 'Material Selection', 'Failure Analysis']
       };
+    } else if (config?.shortName === 'Quant') {
+      return {
+        'Quantitative Analysis': ['Time Series Analysis', 'Statistical Modeling', 'Monte Carlo Simulation', 'Risk Management', 'Portfolio Optimization', 'Factor Analysis'],
+        'Trading & Markets': ['Market Microstructure', 'High-Frequency Trading', 'Options Pricing', 'Equity Research', 'Derivatives', 'Market Making'],
+        'Programming & Data': ['Python', 'R', 'MATLAB', 'C++', 'SQL', 'Pandas', 'NumPy', 'SciPy'],
+        'Machine Learning': ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Feature Engineering', 'Model Validation', 'Backtesting'],
+        'Financial Engineering': ['Black-Scholes', 'Binomial Models', 'Greeks Calculation', 'Volatility Modeling', 'Correlation Analysis', 'VaR'],
+        'Research & Development': ['Algorithm Development', 'Strategy Backtesting', 'Performance Attribution', 'Risk Metrics', 'Regulatory Compliance', 'Documentation']
+      };
     } else {
       return {
         'Programming Languages': ['Java', 'JavaScript', 'Python', 'C++', 'TypeScript', 'Swift'],
@@ -101,6 +110,30 @@ const About = () => {
         {
           title: 'About My Journey',
           description: 'Learn more about my technical background and engineering journey',
+          icon: FiBookOpen,
+          link: '/about',
+          color: '#f59e0b'
+        }
+      ];
+    } else if (config?.shortName === 'Quant') {
+      return [
+        {
+          title: 'My Trading Models',
+          description: 'Explore my quantitative models and algorithmic trading strategies',
+          icon: FiCode,
+          link: '/projects',
+          color: '#3b82f6'
+        },
+        {
+          title: 'Resume',
+          description: 'View my quantitative analysis experience and trading qualifications',
+          icon: FiFileText,
+          link: '/resume',
+          color: '#10b981'
+        },
+        {
+          title: 'About My Journey',
+          description: 'Learn more about my quantitative trading background and market analysis approach',
           icon: FiBookOpen,
           link: '/about',
           color: '#f59e0b'
@@ -175,6 +208,8 @@ const About = () => {
               ? 'Serial entrepreneur building scalable ventures that solve real problems and create lasting impact'
               : config?.shortName === 'CS'
               ? 'Computer Science engineer passionate about building scalable software solutions and AI-driven applications'
+              : config?.shortName === 'Quant'
+              ? 'Quantitative analyst specializing in systematic trading, algorithmic strategies, and risk management for financial markets'
               : config?.shortName === 'Build'
               ? 'Dual-degree Mechanical Engineer and Computer Scientist building innovative products with integrated hardware and software solutions'
               : 'Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution'
@@ -276,6 +311,40 @@ const About = () => {
                     design. I believe in building robust, maintainable systems that can grow with user needs while 
                     maintaining high performance and reliability. I'm always eager to learn new technologies and 
                     tackle challenging problems in the intersection of software engineering and artificial intelligence.
+                  </p>
+                </>
+              ) : config?.shortName === 'Quant' ? (
+                <>
+                  <p>
+                    I'm a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
+                    with a strong focus on quantitative analysis and algorithmic trading. My technical background in 
+                    both software engineering and mathematical modeling provides a unique foundation for developing 
+                    sophisticated trading strategies and risk management systems.
+                  </p>
+                  <p>
+                    I have hands-on experience building quantitative models and trading systems, including my ANN Trade 
+                    Programming project where I developed artificial neural networks for U.S. options price prediction 
+                    using historical and sentiment data. This project involved time-series analysis, feature engineering, 
+                    and backtesting methodologies that directly translate to systematic trading applications.
+                  </p>
+                  <p>
+                    My technical projects demonstrate proficiency in the quantitative skills essential for trading: 
+                    developing machine learning models for financial prediction, building full-stack applications for 
+                    data analysis and visualization, and implementing algorithmic solutions for complex problems. 
+                    I've worked with Python, R, MATLAB, and various ML frameworks to build models that can process 
+                    market data and generate actionable insights.
+                  </p>
+                  <p>
+                    I'm particularly drawn to the intersection of technology and finance, where quantitative rigor 
+                    meets market intuition. My approach combines statistical modeling with practical implementation, 
+                    always considering real-world market dynamics and risk constraints. I thrive on the challenge 
+                    of turning complex mathematical concepts into profitable trading strategies while maintaining 
+                    robust risk management protocols.
+                  </p>
+                  <p>
+                    I'm excited about the opportunity to contribute to Susquehanna's quantitative trading operations, 
+                    where I can apply my technical skills to develop innovative trading strategies, improve existing 
+                    models, and help drive the firm's competitive advantage in the markets.
                   </p>
                 </>
               ) : config?.shortName === 'Build' ? (

@@ -100,7 +100,9 @@ const Projects = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="section-title">Featured {config.name} Projects</h2>
+              <h2 className="section-title">
+                {config.shortName === 'Quant' ? 'Featured Projects' : `Featured ${config.name} Projects`}
+              </h2>
             </motion.div>
 
             <motion.div 

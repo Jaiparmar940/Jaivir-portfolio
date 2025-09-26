@@ -143,21 +143,23 @@ export const personaConfigs = {
     resumeUrl: '/resume.pdf'
   },
   quant: {
-    name: 'Quantitative Researcher',
+    name: 'Quantitative Analyst',
     shortName: 'Quant',
-    headline: 'Quantitative Researcher • Financial Engineer • Data Scientist',
-    subhead: 'Developing predictive models and quantitative strategies for financial markets',
+    headline: 'Quantitative Analyst • Financial Engineer • Trading Systems Developer',
+    subhead: 'Building systematic trading strategies and quantitative models for market making and proprietary trading',
     proofStats: [
-      { label: 'Models Built', value: '5+' },
-      { label: 'Accuracy', value: '85%+' },
-      { label: 'Research Papers', value: '3+' }
+      { label: 'Trading Models', value: '8+' },
+      { label: 'Business Revenue Generated', value: '$250K+' },
+      { label: 'Markets Covered', value: '15+' }
     ],
-    cta: 'View My Research',
+    cta: 'View My Projects',
     ctaLink: '/projects',
     primaryColor: 'green',
-    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
-    featuredProjectsPage: [5, 14, 22, 4, 23, 21], // Top quant/finance projects
-    description: 'Quantitative researcher focused on developing machine learning models for financial markets, time-series analysis, and algorithmic trading strategies.',
+    featuredHomeProjects: [5, 4, 1, 3], // JPcommerce, ANN Trade Programming, Impression, Full-Stack Banking Application
+    featuredProjectsPage: [5, 4, 1, 3, 2, 21], // JPcommerce, ANN Trade Programming, Impression, Full-Stack Banking Application, Workly, VisionAssist
+    otherProjects: [6, 7, 8, 9, 14, 18, 19, 22, 23, 24], // Pump Support Platform, Autonomous Robot, Mousetrap Car, Crypto Mining, Vehicle Restoration, Heavy Boulder, McDonald's Toy, Hackerspace, Project Pure, CPU Design
+    personalProjects: [10], // C6 Corvette Harmonic Balancer Design & Installation
+    description: 'Quantitative analyst specializing in systematic trading, market microstructure, and high-frequency strategies. Experience building proprietary trading models and risk management systems for equity and options markets.',
     resumeUrl: '/resume-quant.pdf'
   },
   consulting: {
@@ -324,8 +326,8 @@ export function getPersonaProjects(persona, allProjects) {
       personalIds = new Set(config.personalProjects);
     }
     
-    // Separate projects into categories
-    const featured = allProjects.filter(p => featuredIds.has(p.id));
+    // Separate projects into categories - use ordered featured projects
+    const featured = config.featuredProjectsPage.map(id => allProjects.find(p => p.id === id)).filter(Boolean);
     
     let others;
     if (config.otherProjects && config.otherProjects.length > 0) {

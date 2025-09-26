@@ -53,10 +53,10 @@ const Home = () => {
     );
   }
   
-  // Get featured projects for this persona
-  const featuredProjects = projectsData.filter(project => 
-    config.featuredHomeProjects.includes(project.id)
-  );
+  // Get featured projects for this persona in the specified order
+  const featuredProjects = config.featuredHomeProjects.map(id => 
+    projectsData.find(project => project.id === id)
+  ).filter(Boolean);
 
   console.log('Home component: featuredProjects =', featuredProjects);
 
@@ -228,7 +228,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="section-title">
-                {config.shortName === 'YC' ? 'Featured Projects' : `Featured ${config.name} Projects`}
+                {config.shortName === 'YC' || config.shortName === 'Quant' ? 'Featured Projects' : `Featured ${config.name} Projects`}
               </h2>
               <p className="section-subtitle">
                 {config.subhead}
