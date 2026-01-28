@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { PersonaProvider, usePersona } from './contexts/PersonaContext';
 import CodeGate from './components/CodeGate';
 import Navbar from './components/Navbar';
@@ -32,14 +32,16 @@ const AccessCodeHandler = () => {
 // Main App component
 const AppContent = () => {
   const { isAuthenticated } = usePersona();
-  
+  const location = useLocation();
+  const isIEPortfolio = location.pathname === '/ie-portfolio';
+
   if (!isAuthenticated) {
     return <CodeGate />;
   }
-  
+
   return (
     <div className="App">
-      <Navbar />
+      {!isIEPortfolio && <Navbar />}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -58,7 +60,7 @@ const AppContent = () => {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
-      <Footer />
+      {!isIEPortfolio && <Footer />}
     </div>
   );
 };
