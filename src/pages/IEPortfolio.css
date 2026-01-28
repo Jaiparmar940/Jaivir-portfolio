@@ -1,0 +1,282 @@
+/* I&E Portfolio – wide desktop-first layout, card sections, generous spacing */
+
+.ie-portfolio {
+  --ie-bg: #faf9f7;
+  --ie-surface: #ffffff;
+  --ie-text: #1a1a1a;
+  --ie-text-muted: #4a4a4a;
+  --ie-accent: #2563eb;
+  --ie-accent-soft: #eff6ff;
+  --ie-border: #e5e5e5;
+  --ie-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --ie-nav-bg: rgba(255, 255, 255, 0.96);
+  --ie-nav-border: rgba(0, 0, 0, 0.08);
+  min-height: 100vh;
+  background: var(--ie-bg);
+  color: var(--ie-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.ie-portfolio[data-theme="dark"] {
+  --ie-bg: #0f0f0f;
+  --ie-surface: #1a1a1a;
+  --ie-text: #f0f0f0;
+  --ie-text-muted: #a0a0a0;
+  --ie-accent: #60a5fa;
+  --ie-accent-soft: rgba(30, 58, 95, 0.5);
+  --ie-border: #2a2a2a;
+  --ie-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  --ie-nav-bg: rgba(15, 15, 15, 0.96);
+  --ie-nav-border: rgba(255, 255, 255, 0.08);
+}
+
+.ie-nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--ie-nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--ie-nav-border);
+}
+
+.ie-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ie-nav-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ie-text);
+}
+
+.ie-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ie-nav-links a {
+  color: var(--ie-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ie-nav-links a:hover {
+  background: var(--ie-accent-soft);
+  color: var(--ie-accent);
+}
+
+.ie-theme-btn {
+  background: var(--ie-surface);
+  border: 1px solid var(--ie-border);
+  color: var(--ie-text);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.ie-theme-btn:hover {
+  background: var(--ie-accent-soft);
+}
+
+.ie-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.ie-hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.ie-hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ie-text);
+}
+
+.ie-hero-meta {
+  color: var(--ie-text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.ie-hero-tagline {
+  font-size: 1.1rem;
+  color: var(--ie-text);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+/* Section cards – clear background, border, lots of spacing */
+.ie-section {
+  margin-bottom: 2.5rem;
+}
+
+.ie-section-card {
+  background: var(--ie-surface);
+  border: 1px solid var(--ie-border);
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+  box-shadow: var(--ie-card-shadow);
+}
+
+.ie-section-card h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ie-text);
+}
+
+.ie-section-card p {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+  font-size: 1.0625rem;
+  color: var(--ie-text);
+}
+
+.ie-section-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Experience sub-cards */
+.ie-exp-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.ie-exp-card {
+  background: var(--ie-bg);
+  border: 1px solid var(--ie-border);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.ie-portfolio[data-theme="dark"] .ie-exp-card {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: none;
+}
+
+.ie-exp-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ie-text);
+}
+
+.ie-exp-card .ie-hours {
+  font-size: 0.9rem;
+  color: var(--ie-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.ie-exp-card .ie-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ie-accent);
+  margin: 1.25rem 0 0.35rem;
+}
+
+.ie-exp-card .ie-label:first-of-type {
+  margin-top: 0;
+}
+
+.ie-exp-card p {
+  margin: 0 0 0.75rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.ie-exp-card p:last-child {
+  margin-bottom: 0;
+}
+
+.ie-back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--ie-surface);
+  border: 1px solid var(--ie-border);
+  color: var(--ie-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  box-shadow: var(--ie-card-shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s, background 0.2s;
+  z-index: 99;
+}
+
+.ie-back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ie-back-to-top:hover {
+  background: var(--ie-accent-soft);
+  color: var(--ie-accent);
+}
+
+@media (max-width: 768px) {
+  .ie-nav {
+    padding: 0.875rem 1.25rem;
+  }
+
+  .ie-container {
+    padding: 0 1.25rem;
+  }
+
+  .ie-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .ie-section-card {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .ie-exp-card {
+    padding: 1.35rem 1.5rem;
+  }
+
+  .ie-back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}

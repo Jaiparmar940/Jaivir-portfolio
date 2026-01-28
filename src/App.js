@@ -13,6 +13,7 @@ import Charity from './pages/Charity';
 import Contact from './pages/Contact';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import PersonaTest from './pages/PersonaTest';
+import IEPortfolio from './pages/IEPortfolio';
 import Footer from './components/Footer';
 
 // Component to handle access code routes
@@ -61,11 +62,14 @@ const AppContent = () => {
   );
 };
 
-// Root App component
+// Root App component – I&E portfolio is public at /ie-portfolio
 function App() {
   return (
     <PersonaProvider>
-      <AppContent />
+      <Routes>
+        <Route path="/ie-portfolio" element={<IEPortfolio />} />
+        <Route path="*" element={<AppContent />} />
+      </Routes>
     </PersonaProvider>
   );
 }
