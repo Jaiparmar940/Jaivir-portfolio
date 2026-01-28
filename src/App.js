@@ -51,6 +51,7 @@ const AppContent = () => {
           <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/charity" element={<Charity />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/ie-portfolio" element={<IEPortfolio />} />
           <Route path="/persona-test" element={<PersonaTest />} />
           {/* Handle access code paths - this will trigger persona detection */}
           <Route path="/:accessCode" element={<AccessCodeHandler />} />
@@ -62,14 +63,11 @@ const AppContent = () => {
   );
 };
 
-// Root App component – I&E portfolio is public at /ie-portfolio
+// Root App component – all routes (including /ie-portfolio) behind code gate
 function App() {
   return (
     <PersonaProvider>
-      <Routes>
-        <Route path="/ie-portfolio" element={<IEPortfolio />} />
-        <Route path="*" element={<AppContent />} />
-      </Routes>
+      <AppContent />
     </PersonaProvider>
   );
 }

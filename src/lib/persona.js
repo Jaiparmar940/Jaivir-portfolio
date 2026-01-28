@@ -10,19 +10,20 @@ const subToPersona = {
   'yc': 'yc',
   'code': 'code',
   'build': 'build',
+  'ie': 'ie',
 };
 
 export function getStickyPersona() {
   try {
     const v = (localStorage.getItem('persona') || '').toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc','code','build'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','code','build','ie'].includes(v)) return v;
   } catch {}
   
   // cookie fallback
   const m = document.cookie.match(/(?:^|;\s*)persona=([^;]+)/);
   if (m) {
     const v = decodeURIComponent(m[1]).toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc','code','build'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','code','build','ie'].includes(v)) return v;
   }
   return null;
 }
@@ -95,7 +96,7 @@ export function detectPersona() {
     const q = params.get('track');
     console.log('detectPersona: Query param track =', q);
     
-    if (q && ['swe','quant','consulting','engineering','banking','yc','code','build'].includes(q)) {
+    if (q && ['swe','quant','consulting','engineering','banking','yc','code','build','ie'].includes(q)) {
       console.log('detectPersona: Using query param persona:', q);
       setStickyPersona(q);
       return q;
@@ -277,6 +278,24 @@ export const personaConfigs = {
     personalProjects: [10, 11, 12, 13, 15, 16, 17, 20], // Personal engineering and creative projects
     description: 'Dual-degree Mechanical Engineer and Computer Scientist passionate about building innovative products and systems. 75% mechanical engineering focus with 25% computer science integration for smart, connected solutions.',
     resumeUrl: '/resume-engineering.pdf'
+  },
+  ie: {
+    name: 'I&E Portfolio',
+    shortName: 'I&E',
+    headline: 'Innovation & Entrepreneurship Portfolio',
+    subhead: 'I&E Certificate Assignment 1',
+    proofStats: [
+      { label: 'Experiences', value: '2' },
+      { label: 'Hours', value: '450+' },
+      { label: 'Work Products', value: '2' }
+    ],
+    cta: 'View I&E Portfolio',
+    ctaLink: '/ie-portfolio',
+    primaryColor: 'blue',
+    featuredHomeProjects: [5, 14, 22, 18],
+    featuredProjectsPage: [5, 14, 22, 1, 2],
+    description: 'I&E Certificate portfolio.',
+    resumeUrl: '/resume.pdf'
   }
 };
 

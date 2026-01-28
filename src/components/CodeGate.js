@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiLock, FiArrowRight, FiEye, FiEyeOff } from 'react-icons/fi';
-import { personaFromCode } from '../lib/persona';
+import { personaFromCode, setStickyPersona } from '../lib/persona';
 import './CodeGate.css';
 
 const CodeGate = () => {
@@ -21,13 +21,16 @@ const CodeGate = () => {
     const persona = personaFromCode(code.trim());
     
     if (persona) {
-      // Valid code - directly change the hash to trigger the hash change event
       setError('');
       setIsLoading(false);
-      
-      console.log('CodeGate: Valid code, changing hash to:', `#/${code.trim()}`);
-      // Use direct hash change instead of React Router navigate
-      window.location.hash = `/${code.trim()}`;
+      const trimmed = code.trim();
+      const isIEPortfolioCode = trimmed.toLowerCase() === 'innovation';
+      if (isIEPortfolioCode) {
+        setStickyPersona('ie');
+        window.location.hash = '#/ie-portfolio';
+      } else {
+        window.location.hash = `#/${trimmed}`;
+      }
     } else {
       // Invalid code
       setError('Invalid access code. Please try again.');

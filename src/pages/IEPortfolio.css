@@ -55,6 +55,24 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--ie-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ie-nav-lock {
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+.ie-protected-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ie-accent);
+  background: var(--ie-accent-soft);
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  margin-left: 0.25rem;
 }
 
 .ie-nav-links {

@@ -9,12 +9,15 @@ export const CODE_MAP = {
   'yc2025': 'yc',
   'code': 'code',
   'build': 'build',
+  'innovation': 'ie',
+  /* 'ie-portfolio' intentionally not a code — only "innovation" grants I&E access */
 };
 
-// Helper to validate access codes and return persona
+// Helper to validate access codes and return persona (case-insensitive)
 export function personaFromCode(code) {
   if (!code) return null;
-  const persona = CODE_MAP[code];
+  const c = code.trim();
+  const persona = CODE_MAP[c] ?? CODE_MAP[c.toLowerCase()];
   return persona || null;
 }
 

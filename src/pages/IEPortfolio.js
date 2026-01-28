@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiSun, FiMoon } from 'react-icons/fi';
+import { FiSun, FiMoon, FiLock } from 'react-icons/fi';
 import './IEPortfolio.css';
 
 const SECTION_CONTENT = {
@@ -43,7 +43,7 @@ const SECTION_CONTENT = {
     ],
   },
   failure: {
-    title: 'Failure + What I Learned',
+    title: 'Failure and What I Learned',
     id: 'failure',
     paragraphs: [
       "One failure was assuming that a sophisticated method would automatically produce better outcomes. In early iterations of regime detection and optimization, I tried adding complexity (more features, different models, more knobs) before I had a stable baseline and consistent evaluation. That caused confusion and \"performance\" that didn't generalize across backtests because the system wasn't controlled tightly enough.",
@@ -111,7 +111,11 @@ function IEPortfolio() {
     <div id="ie-portfolio-root" className="ie-portfolio">
       <header className="ie-nav-wrap">
         <nav className="ie-nav">
-          <span className="ie-nav-title">I&E Portfolio – Assignment 1</span>
+          <span className="ie-nav-title">
+            <FiLock className="ie-nav-lock" aria-hidden />
+            I&E Portfolio – Assignment 1
+            <span className="ie-protected-badge">Protected</span>
+          </span>
           <ul className="ie-nav-links">
             {NAV_LINKS.map(({ label, href }) => (
               <li key={href}>
