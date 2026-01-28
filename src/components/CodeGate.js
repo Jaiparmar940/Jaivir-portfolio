@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiLock, FiArrowRight, FiEye, FiEyeOff } from 'react-icons/fi';
+import { usePersona } from '../contexts/PersonaContext';
 import { personaFromCode, setStickyPersona } from '../lib/persona';
 import './CodeGate.css';
 
 const CodeGate = () => {
+  const { updatePersona } = usePersona();
   const [code, setCode] = useState('');
   const [showCode, setShowCode] = useState(false);
   const [error, setError] = useState('');
@@ -18,21 +20,21 @@ const CodeGate = () => {
     // Simulate a small delay for better UX
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    const persona = personaFromCode(code.trim());
-    
+    const trimmed = code.trim();
+    const persona = personaFromCode(trimmed);
+
     if (persona) {
       setError('');
-      setIsLoading(false);
-      const trimmed = code.trim();
       const isIEPortfolioCode = trimmed.toLowerCase() === 'innovation';
       if (isIEPortfolioCode) {
         setStickyPersona('ie');
+        updatePersona('ie');
         window.location.hash = '#/ie-portfolio';
-      } else {
-        window.location.hash = `#/${trimmed}`;
+        return;
       }
+      setIsLoading(false);
+      window.location.hash = `#/${trimmed}`;
     } else {
-      // Invalid code
       setError('Invalid access code. Please try again.');
       setIsLoading(false);
       setCode('');
