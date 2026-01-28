@@ -9,7 +9,7 @@ const SECTION_CONTENT = {
     id: 'my-story',
     paragraphs: [
       "I'm Jaivir Parmar from Santa Maria, California. I came to Duke wanting to build things that perform in the real world—first through engineering, and increasingly through entrepreneurship. I chose Mechanical Engineering and Computer Science because I'm obsessed with systems: how mechanical constraints, data, and human behavior interact. That shows up in what I like most—cars and performance engineering—and it extends naturally to AI predictors, where you can model reality, test assumptions, and iterate fast.",
-      "Over time, I realized I don't just want to solve technical problems; I want to build products people actually use. Entrepreneurship is the most direct path for me to turn technical skill into impact. Right now, I'm building Impression, a platform that helps people improve dating profiles through structured feedback, testing, and AI suggestions. I'm also developing quantitative finance tools like the Omega Portfolio Engine, which combines regime detection with portfolio optimization and backtesting.",
+      "Over time, I realized I don't just want to solve technical problems; I want to build products people actually use. Entrepreneurship is the most direct path for me to turn technical skill into impact. Previously, I built Impression, a platform that helps people improve dating profiles through structured feedback, testing, and AI suggestions. I also developed quantitative finance tools like the Omega Portfolio Engine, which combines regime detection with portfolio optimization and backtesting.",
       "Long-term, I want to start an impactful social entrepreneurship venture. My goal is to build technology that improves real human outcomes—connection, confidence, and opportunity—while staying grounded in measurable results, iteration, and accountability.",
     ],
   },
@@ -17,10 +17,10 @@ const SECTION_CONTENT = {
     title: 'Coursework',
     id: 'coursework',
     paragraphs: [
-      "My I&E coursework strengthened how I frame problems, validate solutions, and communicate value—skills that directly shaped my projects.",
+      "My I&E coursework strengthened how I frame problems, validate solutions, and communicate value, which are kills that directly shaped my projects.",
       "In I&E 263S (Problem Solving in Global Health), the biggest takeaway was disciplined problem framing: understanding stakeholders, constraints, and root causes before jumping to a solution. That mindset transfers directly to consumer products like Impression, where \"the problem\" is rarely what it looks like at first. It pushed me to think in terms of experimentation, feedback loops, and measurable improvement rather than vibes.",
-      "In I&E 690 (Global Health Studies – TOP), I focused on how innovation scales responsibly across complex systems. It reinforced that impact isn't just having a clever idea—it's designing around incentives, access, and unintended consequences. That lens influences how I think about building socially impactful products that people can actually adopt.",
-      "EGR 101 (Engineering Design & Communication) helped me operationalize execution: translating ideas into prototypes, testing quickly, and communicating clearly to different audiences. That maps directly to shipping real software, documenting decisions, and building something other people can use—not just something that works on my machine.",
+      "In I&E 690 (Global Health Studies – TOP), I focused on how innovation scales responsibly across complex systems. It reinforced that impact isn't just having a clever idea, it's designing around incentives, access, and unintended consequences. That lens influences how I think about building socially impactful products that people can actually adopt.",
+      "EGR 101 (Engineering Design & Communication) helped me operationalize execution: translating ideas into prototypes, testing quickly, and communicating clearly to different audiences. That maps directly to shipping real software, documenting decisions, and building something other people can use, not just something that works on my machine.",
       "Across these courses, the common thread was learning to move from insight to execution: identify a real problem, build a testable solution, learn quickly, and iterate.",
     ],
   },
@@ -31,8 +31,8 @@ const SECTION_CONTENT = {
       {
         title: 'Impression',
         hours: '150 hours',
-        description: "My 150-hour experience is building Impression, an AI-driven mobile app that helps users optimize dating profiles across platforms like Hinge, Tinder, and Bumble. The core idea is to treat a dating profile like a measurable, testable personal-branding system: users can upload profiles, receive structured peer or AI feedback, and test variations to learn what actually improves outcomes. I chose this experience because it combines product-building, human behavior, and applied machine learning in a real consumer setting. It's entrepreneurial because I'm responsible for the full loop—product design, development, user testing, and iteration—and innovative because it applies experimentation and feedback systems to an area where people usually rely on guesswork.",
-        reflection: "The biggest innovation was designing the product around incentives and feedback quality. It's easy to build \"ratings,\" but hard to build reliable signal. That forced me to think about trust, bias, UX, and how to structure prompts and scoring to produce actionable guidance. The experience taught me that execution quality matters more than the idea—especially when the product touches identity, confidence, and social dynamics.",
+        description: "My 150-hour experience is building Impression, an AI-driven mobile app that helps users optimize dating profiles across platforms like Hinge, Tinder, and Bumble. The core idea is to treat a dating profile like a measurable, testable personal-branding system: users can upload profiles, receive structured peer or AI feedback, and test variations to learn what actually improves outcomes. I chose this experience because it combines product-building, human behavior, and applied machine learning in a real consumer setting. It's entrepreneurial because I'm responsible for the full loop (product design, development, user testing, and iteration) and innovative because it applies experimentation and feedback systems to an area where people usually rely on guesswork.",
+        reflection: "The biggest innovation was designing the product around incentives and feedback quality. It's easy to build \"ratings,\" but hard to build reliable signal. That forced me to think about trust, bias, UX, and how to structure prompts and scoring to produce actionable guidance. The experience taught me that execution quality matters more than the idea, especially when the product touches identity, confidence, and social dynamics.",
       },
       {
         title: 'DeWitt Capital Management — Omega Portfolio Engine',
@@ -54,13 +54,14 @@ const SECTION_CONTENT = {
     title: 'Most Important Learnings',
     id: 'learnings',
     paragraphs: [
-      "Across both experiences, I learned that innovation is not just invention—it's turning uncertainty into a repeatable process. The consistent pattern was: define the real problem, build the simplest viable version, measure outcomes, and iterate. I also learned that product quality is inseparable from trust: whether you're advising someone on a dating profile or portfolio allocation, the value comes from clarity, reliability, and accountability.",
-      "Finally, these experiences strengthened my identity as a founder-engineer. I'm most effective when I can own the full loop—technical execution, user needs, and business logic—and keep moving toward real-world traction rather than abstract \"cool tech.\"",
+      "Across both experiences, I learned that innovation is not just invention, it's turning uncertainty into a repeatable process. The consistent pattern was: define the real problem, build the simplest viable version, measure outcomes, and iterate. I also learned that product quality is inseparable from trust: whether you're advising someone on a dating profile or portfolio allocation, the value comes from clarity, reliability, and accountability.",
+      "Finally, these experiences strengthened my identity as a founder-engineer. I'm most effective when I can own the full loop (technical execution, user needs, and business logic) and keep moving toward real-world traction rather than abstract \"cool tech.\"",
     ],
   },
   workProducts: {
     title: 'Work Products',
     id: 'work-products',
+    omegaRepoUrl: 'https://github.com/Jaiparmar940/allweather-quant-lab',
     paragraphs: [
       "Impression is a consumer-facing product that operationalizes feedback, experimentation, and AI guidance to help users improve dating profiles. The work product is the system itself: a structured feedback mechanism, profile variation testing, and AI-driven suggestions designed to produce actionable improvements.",
       "Omega Portfolio Engine is a full-stack quantitative platform: data ingestion (Yahoo Finance/FRED), regime feature extraction, regime detection (HMM/LSTM/GMM), optimization (GMV, Omega), risk constraints, and walk-forward backtesting with a web interface and API. The work product demonstrates how research can be engineered into a usable tool with reproducible evaluation and a clear user workflow.",
@@ -244,7 +245,14 @@ function IEPortfolio() {
           <div className="ie-section-card">
             <h2>{SECTION_CONTENT.workProducts.title}</h2>
             {SECTION_CONTENT.workProducts.paragraphs.map((p, i) => (
-              <p key={i}>{p}</p>
+              i === 1 ? (
+                <p key={i}>
+                  <a href={SECTION_CONTENT.workProducts.omegaRepoUrl} target="_blank" rel="noopener noreferrer" className="ie-ext-link">Omega Portfolio Engine</a>
+                  {' is a full-stack quantitative platform: data ingestion (Yahoo Finance/FRED), regime feature extraction, regime detection (HMM/LSTM/GMM), optimization (GMV, Omega), risk constraints, and walk-forward backtesting with a web interface and API. The work product demonstrates how research can be engineered into a usable tool with reproducible evaluation and a clear user workflow.'}
+                </p>
+              ) : (
+                <p key={i}>{p}</p>
+              )
             ))}
           </div>
         </motion.section>

@@ -104,7 +104,7 @@
 .ie-container {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem 6rem;
 }
 
 .ie-hero {
@@ -164,6 +164,15 @@
 
 .ie-section-card p:last-child {
   margin-bottom: 0;
+}
+
+.ie-ext-link {
+  color: var(--ie-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.ie-ext-link:hover {
+  text-decoration: underline;
 }
 
 /* Experience sub-cards */
@@ -260,7 +269,7 @@
   }
 
   .ie-container {
-    padding: 0 1.25rem;
+    padding: 0 1.25rem 4rem;
   }
 
   .ie-hero {
