@@ -1,0 +1,359 @@
+FluidsLab3.pdf
+Title: Falling Ball Viscometer Experiment
+Summary: Determined the viscosities of glycerol, vaseline oil, and SAE-30 vacuum-pump oil using a falling-ball viscometer. Recorded terminal velocities of a steel sphere in each fluid, computed viscosity via Stokes’ law, and validated creeping-flow assumptions by calculating Reynolds numbers. Also derived drag coefficients and analyzed flow regimes.
+Key Topics:
+• Viscosity Measurement
+• Falling-Ball Viscometer
+• Stokes’ Law
+• Reynolds Number
+• Drag Coefficient
+
+CTRLS_Project.pdf
+Title: Modeling and PID Disturbance Rejection in Quadcopter Control
+Summary: Developed a MATLAB/Simulink model of a quadcopter attitude loop incorporating sensor delays (via 4th-order Padé approximation) and wind gust disturbances (step torque). Designed and analyzed a PID controller to compensate for lag and reject external torques. Presented step-response metrics—rise time, overshoot, settling time—and interpreted the effects of delays and disturbances on stability.
+Key Topics:
+• Sensor Delay Modeling
+• Padé Approximation
+• Wind Disturbance Modeling
+• PID Control
+• Quadcopter Stability
+
+Fluids_Lab_4.pdf
+Title: Venturi Tube Flowmeter Characterization
+Summary: Investigated flow through a Venturi tube to verify Bernoulli’s principle and calibrate it as a flowmeter. Measured static-pressure drops with manometric tubes and total pressure with a Pitot tube at various flow rates. Calculated velocities, dynamic/total pressures, discharge coefficient (Cd), loss coefficient (Kv), and Reynolds numbers. Compared ideal vs. actual flow rates and quantified viscous losses.
+Key Topics:
+• Bernoulli’s Principle
+• Venturi Tube
+• Flow Rate Measurement
+• Discharge Coefficient
+• Reynolds Number
+
+ME_344_Lab_3.pdf
+Title: MATLAB Modeling and Simulation of Transfer-Function Systems
+Summary: Used MATLAB to model and simulate dynamic systems via transfer functions. Experiment 1 derived and stepped bridged-T filter responses; Experiment 2 simulated vehicle quarter-car suspension step response and compared simulated vs. experimental data to extract damped natural frequencies. Employed final-value theorem and pole analysis to interpret transient/steady-state behaviors.
+Key Topics:
+• Transfer Functions
+• MATLAB Simulation
+• Step & Ramp Responses
+• Filter Circuit Analysis
+• Suspension Modeling
+
+344_Lab_4.pdf
+Title: Loudspeaker Dynamics via Frequency-Domain Transfer Function Estimation
+Summary: Characterized a loudspeaker–accelerometer system by driving a Peerless CSX 145H speaker with LabVIEW signals and recording voltage/acceleration data. Used MATLAB’s tfestimate to extract the acceleration–voltage transfer function, converted to velocity response, and compared experimental Bode plots against a theoretical mass-spring-damper model. Identified discrepancies and refined the model to include accelerometer compliance.
+Key Topics:
+• Transfer Function Estimation
+• Loudspeaker Dynamics
+• tfestimate
+• Frequency-Response Analysis
+• Mass-Spring-Damper Modeling
+
+344_Lab_5.pdf
+Title: Validation Testing of a Suspension System
+Summary: Evaluated three candidate springs (A, B, C) for a vehicle-suspension setup. Measured step-response overshoot and settling times under 1 V input, then performed frequency sweeps and generated Bode plots to compare dynamic behavior across 1–7 Hz. Based on lower overshoot, moderate settling time, and predictable mid-range response, selected Spring A for optimal ride comfort.
+Key Topics:
+• Step Response Analysis
+• Overshoot & Settling Time
+• Frequency Response
+• Bode Plot
+• Suspension Validation
+
+MagLev_Report.pdf
+Title: PID Control of a Magnetic Levitation System
+Summary: Designed and tuned a closed-loop PID controller in LabVIEW to levitate a steel ball using an overhead electromagnet. Linearized the inherently nonlinear ball-magnet dynamics around equilibrium, implemented a 1 kHz control loop with low-pass filtering on the derivative term, and tested setpoint-tracking for constant height, sine, square, and random inputs. Reported settling times, overshoot, and steady-state errors.
+Key Topics:
+• Magnetic Levitation
+• PID Control
+• LabVIEW Implementation
+• System Linearization
+• Performance Metrics
+
+ME_221_Lab_4___5.pdf
+Title: Metallography and Steel Sample Identification
+Summary: Prepared three unknown metal specimens (annealed steel, quenched steel, cast iron) for microscopic and hardness analyses. Mounted, ground, polished, and etched with Nital to reveal microstructures. Performed Rockwell hardness testing and used optical microscopy (50× pre-etch, 500× post-etch) to identify martensite, pearlite, ferrite, and graphite phases. Estimated grain size and phase fractions via intercept and point-count methods.
+Key Topics:
+• Metallography
+• Hardness Testing
+• Microstructure Etching
+• Phase Identification
+• Grain-Size Measurement
+
+GA6.pdf
+Title: Structural Design and Analysis of a Pump–Support Platform
+Summary: Engineered a height-adjustable platform to support a centrifugal pump via dual angled arms. Performed static equilibrium to determine reaction forces and moments, then carried out axial, bending, torsional, and shear stress analyses—accounting for stress-concentration factors and potential buckling. Computed deflections, factors of safety (Max-Shear & von Mises theories), and critical buckling loads; validated design with FEA before fabricating in the machine shop.
+Key Topics:
+• Equilibrium Calculations
+• Stress Analysis
+• Buckling & Deflection
+• Factor of Safety
+• Finite Element Validation
+
+Thermo Lab 1 – Group A.pdf
+Title: Thermocouple Calibration & Steady-State Heat Conduction
+Summary: Calibrated Type-K thermocouples against a reference standard, then measured temperature profiles in a composite cylindrical rod under steady-state heat conduction. Compared experimental temperatures with analytical solutions to determine thermal conductivity and heat flux, and performed uncertainty analysis.
+Key Topics:
+• Thermocouple Calibration
+• Steady-State Conduction
+• Thermal Conductivity
+• Heat Flux
+• Uncertainty Analysis
+
+ME321 Group Work.pdf
+Title: Cantilever Beam Deflection & Stress Validation
+Summary: Analyzed deflection and bending stress in cantilever beams loaded with point and distributed forces. Conducted experiments on aluminum and steel specimens, measured tip deflections, and compared results to Euler-Bernoulli beam-theory predictions to validate the model.
+Key Topics:
+• Beam Deflection
+• Bending Stress
+• Cantilever Beams
+• Euler-Bernoulli Theory
+• Experimental Validation
+
+ME321 – Individual Assignment 5.pdf
+Title: Torsional Vibration of a Two-Mass Shaft System
+Summary: Modeled a two-mass, two-spring torsional system to derive natural frequencies and mode shapes. Simulated transient response to impulse torques, then compared theoretical predictions with experimental measurements to assess damping and stiffness parameters.
+Key Topics:
+• Torsional Vibration
+• Natural Frequencies
+• Mode Shapes
+• Rotational Dynamics
+• System Modeling
+
+ME 331_ Lab 3 Otto Cycle.pdf
+Title: Experimental Otto Cycle Efficiency Analysis
+Summary: Ran a single-cylinder spark-ignition engine to capture pressure–volume data throughout the cycle. Constructed PV diagrams, calculated thermal efficiency and specific work, and compared actual performance versus the ideal Otto cycle.
+Key Topics:
+• Otto Cycle
+• PV Diagram
+• Thermal Efficiency
+• Internal Combustion Engine
+• Cycle Analysis
+
+Coefficient_of_Restitution_Lab.pdf
+Title: Impact Testing & Coefficient of Restitution
+Summary: Dropped steel spheres onto different surfaces, recorded rebound heights, and calculated coefficients of restitution to quantify energy loss. Analyzed how material properties and impact velocity affect restitution.
+Key Topics:
+• Coefficient of Restitution
+• Impact Dynamics
+• Energy Loss
+• Rebound Testing
+• Material Properties
+
+Coefficient_of_Restitution_Lab__Curling_.pdf
+Title: Curling Stone Collision & Restitution Analysis
+Summary: Studied collisions between curling stones on ice. Measured pre- and post-impact velocities for head-on and glancing collisions, computed restitution coefficients, and assessed how ice surface conditions influence collision behavior.
+Key Topics:
+• Curling Stones
+• Collision Dynamics
+• Restitution Coefficient
+• Surface Friction
+• Kinematic Analysis
+
+Circuit_Analysis_Report.pdf
+Title: Transient & Steady-State RLC Circuit Analysis
+Summary: Examined an RLC circuit’s response to step and sinusoidal inputs. Derived time-domain expressions, measured overshoot and settling time, generated Bode plots for steady-state, and confirmed results with SPICE simulations.
+Key Topics:
+• RLC Circuits
+• Transient Response
+• Steady-State Analysis
+• Bode Plot
+• SPICE Simulation
+
+Dynamics_Final_Project.pdf
+Title: Differential-Drive Robot Dynamics & Control
+Summary: Developed kinematic and dynamic models for a differential-drive mobile robot. Designed a state-feedback controller for trajectory tracking, implemented the control in MATLAB/ROS, and conducted experiments to evaluate path-following accuracy and stability.
+Key Topics:
+• Robot Dynamics
+• Differential Drive
+• State-Feedback Control
+• Trajectory Tracking
+• ROS Implementation
+
+Fluids_L2.pdf
+Title: Laminar vs. Turbulent Pipe Flow Characterization
+Summary: Measured pressure drop across smooth and rough pipes at varying flow rates to identify laminar, transitional, and turbulent regimes. Calculated Reynolds numbers and friction factors, and compared experimental data to the Moody chart.
+Key Topics:
+• Pipe Flow
+• Reynolds Number
+• Friction Factor
+• Laminar-Turbulent Transition
+• Moody Chart
+
+EGR 201L Lab Report.pdf
+Title: Tensile Testing of 6061-T6 Aluminum
+Summary: Measured the tensile strength of a 6061-T6 aluminum specimen by recording force, displacement, and strain up to fracture. Generated stress–strain curves in MATLAB/Excel, determined Young’s modulus, 0.2% offset yield stress, and ultimate tensile stress, and constructed a Mohr’s circle to visualize failure stresses. Compared results against literature values and discussed discrepancies due to specimen defects and measurement error.
+Key Topics:
+• Tensile Testing
+• Stress–Strain Analysis
+• Young’s Modulus
+• Yield & Ultimate Strength
+• Mohr’s Circle
+
+Lab #2 - Torsion.pdf
+Title: Torsion Testing of Aluminum 6061
+Summary: Performed torsion tests on an Al 6061 specimen, recording torque and angular rotation (via video tracking). Converted rotations to shear strain, calculated shear stress (kg-cm→N·m), and plotted torque-vs-strain curves in MATLAB. Extracted the torsional stiffness (T/γ) from the initial linear region and discussed potential sources of error in data acquisition.
+Key Topics:
+• Torsion Test
+• Shear Strain & Stress
+• Torque Conversion
+• MATLAB Plotting
+• Stiffness Determination
+
+Lab 3 - Buckling of Columns.pdf
+Title: Euler Buckling of Aluminum Columns
+Summary: Tested four Al 6061 columns of varying lengths under axial compression to record critical failure loads. Calculated slenderness ratios (kL/r), plotted theoretical Euler buckling and yield lines versus experimental loads, and quantified percent errors. Discussed end-fixity, alignment errors, and sample preparation as error sources, and described the role of knife-edge notches.
+Key Topics:
+• Column Buckling
+• Slenderness Ratio
+• Euler’s Critical Load
+• Experimental Verification
+• Error Analysis
+
+Vibrating Clock Lab1.pdf
+Title: Cost & Design Analysis of Alarm Clocks
+Summary: Disassembled and benchmarked two consumer alarm clocks—standard and vibrating models. Documented materials, subassemblies, and part costs; proposed cost-saving design changes (smaller enclosure, simplified LCD, power supply revisions). Presented structured assembly tables, exploded views, and a bill of materials to guide a more competitive product design.
+Key Topics:
+• Product Teardown
+• Bill of Materials
+• Cost Analysis
+• Design Optimization
+• Assembly Documentation
+
+DC3 Mousetrap Racecar Memo.pdf
+Title: Design & Testing of a Mousetrap-Powered Sand Vehicle
+Summary: Developed and iteratively refined a tricycle-style sand vehicle powered by a single mousetrap. Explored sled vs. wheel drives, gear ratios, and sand-traction issues through hands-on prototyping. Final design—angled mousetrap with rubber-wrapped rear wheels—traveled 40″ on sand, achieving top performance in experimental trials.
+Key Topics:
+• Mechanical Design
+• Prototyping Iterations
+• Traction Optimization
+• Performance Testing
+• Experimental Memo
+
+Water Tank Discharge Lab Report.pdf
+Title: Nozzle Geometry Effects on Tank Discharge
+Summary: Measured quasi-steady discharge times from a cylindrical tank through three nozzle types (borda, sharp-edged, bare hole). Verified assumptions (quasi-steady flow, high Reynolds number), calculated contraction coefficients (α) via linear regression, and compared experimental vs. theoretical Torricelli discharge. Discussed deviations due to human timing errors and minimal viscous effects.
+Key Topics:
+• Tank Discharge
+• Nozzle Coefficient
+• Torricelli’s Law
+• Reynolds Number
+• Dimensional Analysis
+
+Jet Impact on Surfaces.pdf
+Title: Momentum-Transfer Forces of Water Jets
+Summary: Quantified forces exerted by a constant-flow water jet on flat, 30° inclined, and hemispherical targets. Balanced jet-force against calibrated masses, plotted F vs. Q, and determined experimental drag coefficients (Cd) by fitting theoretical momentum-equations. Found highest force/Cd for the hemispherical surface and discussed surface geometry effects on momentum transfer.
+Key Topics:
+• Jet Impact
+• Momentum Conservation
+• Force Measurement
+• Drag Coefficient
+• Surface Geometry
+
+Quadrotor Drone Control.pdf
+Title: PID Pitch Control of a Quadcopter
+Summary: Reviewed quadrotor dynamics and PID control literature, then developed a MATLAB/Simulink–based pitch control model. Derived the open-loop transfer function for pitch torque, designed a PID loop for set-point tracking, and planned gain-tuning to achieve minimal overshoot, fast rise time, and robustness to disturbances. Outlined simulation experiments, challenges, and energy-efficiency goals.
+Key Topics:
+• Quadcopter Dynamics
+• PID Control
+• Transfer Function Modeling
+• Simulation Design
+• Disturbance Rejection
+
+ME 344 Lab 1.pdf
+Title: LabVIEW Sequencer Design (“Let’s Go Duke!”)
+Summary: Introduced LabVIEW programming by building a continuous three-step sequencer that cycles three Boolean LEDs and a string indicator through “Let’s,” “Go,” and “Duke!” states. Employed loops with shift registers, 500 ms timers, case structures, and controls vs. indicators. Answered LabVIEW conceptual questions on dataflow, wire colors, and array splitting.
+Key Topics:
+• LabVIEW Basics
+• State Machine
+• Boolean & String Indicators
+• Dataflow Programming
+• Virtual Instruments
+
+annotated-ME_221_Lab_4.pdf
+Title: Metallography & Steel Sample Identification (Annotated)
+Summary: Identifies three unknown metal specimens (annealed steel, quenched steel, cast iron) via hardness testing and optical microscopy. Includes detailed procedure for mounting, grinding, polishing, and Nital etching, followed by 50× and 500× microstructural imaging. Uses Rockwell hardness values, grain-size intercepts, and point-count phase analysis to distinguish martensite, pearlite, ferrite, and graphite features.
+Key Topics:
+• Metallographic Preparation
+• Hardness Testing
+• Nital Etching
+• Microstructure Imaging
+• Phase Identification
+
+annotated-ME3212020Assignment20.pdf
+Title: Statistical & FEA Analysis of Pin Yield Strength (Annotated)
+Summary: Presents combined box-and-whisker and probability distribution plots for three pin types using yield-strength data. Calculates probabilities of failure below 230 MPa and of 9/10 samples exceeding 240 MPa via normal CDF and binomial models. Recommends the optimal manufacturer based on these metrics. Compares analytical stress predictions to FEA results (1.55% error) and discusses mesh convergence.
+Key Topics:
+• Box-and-Whisker Plots
+• Probability Distributions
+• Failure Probability
+• Binomial Modeling
+• FEA vs Analytical Validation
+
+Lab 02 Report - Corrosion.pdf
+Title: Corrosion in a Simulated Biological Environment
+Summary: Examines oxidation of steel (plain vs. zinc-coated) nails and a titanium screw embedded in gelatin electrolyte over 1 hr–7 days. Documents visual progression of corrosion and constructs galvanic cells in NaCl solution to measure voltage potentials between zinc, copper, nickel, and aluminum electrodes. Analyzes coating effectiveness and galvanic reactivity.
+Key Topics:
+• Corrosion Testing
+• Gelatin Electrolyte Model
+• Galvanic Series
+• Voltage Measurement
+• Coating Performance
+
+Lab 3 - Hardness.pdf
+Title: Hardness-Based Metal Identification
+Summary: Prepares and tests three unknown metal samples (cast iron, annealed steel, quenched steel) with Rockwell Hardness Scale A. Describes specimen mounting, sequential grinding (180–600 grit), and alumina polishing. Records 10 indents per specimen (inner vs. outer), computes average hardness values, and applies two-sample t-tests to assess surface variation.
+Key Topics:
+• Rockwell Hardness Test
+• Specimen Preparation
+• Statistical t-Test
+• Surface vs. Bulk Hardness
+• Data Analysis
+
+Privacy Precedes Caution.pdf
+Title: Privacy vs. Pre-emptive Surveillance in Tech
+Summary: Argues that individual online privacy rights must take precedence over government or corporate data-collection for crime prevention. Explores ethical tensions between personal liberty and collective security, warns against empowering “big-tech” to enforce law, and underscores democratic values in preserving privacy precedents.
+Key Topics:
+• Internet Privacy
+• Surveillance Ethics
+• Government–Tech Relations
+• Individual Rights
+• Democratic Principles
+
+Jaivir Parmar - Research Paper.pdf
+Title: American Acculturation & Depression in Asian Immigrants
+Summary: Reviews literature on depression prevalence among Asian migrants to the U.S., contrasting origin-country rates with post-immigration figures. Analyzes subculture variations (East, South, Southeast Asians), the role of bicultural identity strength, and impacts of COVID-19 and anti-Asian discrimination. Concludes that weakened cultural identification during acculturation chiefly drives elevated depression risk.
+Key Topics:
+• Acculturation
+• Depression Epidemiology
+• Asian Immigrants
+• Cultural Identity
+• COVID-19 Impact
+
+Landscape Report_ Final Draft.pdf
+Title: Solar & Maternal Health Landscape in Benin, South Sudan & Mozambique
+Summary: Provides a country-by-country assessment of rural electrification and health systems in Benin, South Sudan, and Mozambique. Covers energy access rates, ongoing solarization initiatives, maternal health metrics (mortality, antenatal care), language/literacy barriers, security/ease-of-doing-business factors, and identifies viable NGO and government partners for solar-powered maternal care solutions.
+Key Topics:
+• Energy Access
+• Solar Mini-Grids
+• Maternal Health Metrics
+• Partner Landscape
+• Socioeconomic Barriers
+
+gp2.pdf
+Title: Stress & Safety-Factor Analysis of a Support-Arm Mechanism
+Summary: This group project performed a comprehensive stress analysis on a structural support mechanism comprising aluminum support arms, clevis pins, and a platform. Using free-body diagrams, the team identified compressive stress in the arms, direct shear in the pins, and combined bending, shear, and torsion in the platform. Stress-concentration factors were applied for pin holes and edges, and Mohr’s-circle and distortion-energy theories were used to compute von Mises stresses. Finally, factors of safety were calculated for axial loading, bending, and buckling, leading to material and dimensional recommendations for aluminum 2024 and 6061-T6 components.
+Key Topics:
+• Compressive Stress Analysis
+• Shear & Torsional Loading
+• Stress Concentration Factors
+• von Mises Failure Theory
+• Factor of Safety Calculations
+
+annotated-ME_221_Lab_4___5281).pdf
+Title: Annotated Metallography & Solar Cell Fabrication (Lab 05)
+Summary: Combines metallographic sample identification with an annotated report on dye-sensitized solar-cell fabrication. The first part details mounting, grinding, polishing, and Nital etching, followed by hardness testing and microstructure imaging to distinguish annealed steel, quenched steel, and cast iron specimens. The second (annotated) section documents construction of a blackberry-dye TiO2 solar cell, including paste preparation, annealing, electrode assembly, and I–V/P–V measurements to determine peak power and ~0.41% efficiency.
+Key Topics:
+• Metallography & Hardness Testing
+• Nital Etching & Microstructure
+• Dye-Sensitized Solar Cell
+• I–V & P–V Characterization
+• Photovoltaic Efficiency Analysis
