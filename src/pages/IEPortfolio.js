@@ -8,9 +8,9 @@ const SECTION_CONTENT = {
     title: 'My Story',
     id: 'my-story',
     paragraphs: [
-      "I'm Jaivir Parmar from Santa Maria, California. I came to Duke wanting to build things that perform in the real world—first through engineering, and increasingly through entrepreneurship. I chose Mechanical Engineering and Computer Science because I'm obsessed with systems: how mechanical constraints, data, and human behavior interact. That shows up in what I like most—cars and performance engineering—and it extends naturally to AI predictors, where you can model reality, test assumptions, and iterate fast.",
+      "I'm Jaivir Parmar from Santa Maria, California. I came to Duke wanting to build things that perform in the real world, first through engineering, and increasingly through entrepreneurship. I chose Mechanical Engineering and Computer Science because I'm obsessed with systems: how mechanical constraints, data, and human behavior interact. That shows up in what I like most, cars and performance engineering, and it extends naturally to AI predictors, where you can model reality, test assumptions, and iterate fast.",
       "Over time, I realized I don't just want to solve technical problems; I want to build products people actually use. Entrepreneurship is the most direct path for me to turn technical skill into impact. Previously, I built Impression, a platform that helps people improve dating profiles through structured feedback, testing, and AI suggestions. I also developed quantitative finance tools like the Omega Portfolio Engine, which combines regime detection with portfolio optimization and backtesting.",
-      "Long-term, I want to start an impactful social entrepreneurship venture. My goal is to build technology that improves real human outcomes—connection, confidence, and opportunity—while staying grounded in measurable results, iteration, and accountability.",
+      "Long-term, I want to start an impactful social entrepreneurship venture. My goal is to build technology that improves real human outcomes while staying grounded in measurable results, iteration, and accountability.",
     ],
   },
   coursework: {
