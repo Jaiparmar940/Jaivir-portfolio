@@ -23,6 +23,16 @@ const SECTION_CONTENT = {
       "EGR 101 (Engineering Design & Communication) helped me operationalize execution: translating ideas into prototypes, testing quickly, and communicating clearly to different audiences. That maps directly to shipping real software, documenting decisions, and building something other people can use, not just something that works on my machine.",
       "Across these courses, the common thread was learning to move from insight to execution: identify a real problem, build a testable solution, learn quickly, and iterate.",
     ],
+    subsections: [
+      {
+        title: 'Biggest Takeaways from I&E 352 (Shep Moyle)',
+        paragraphs: [
+          "My biggest takeaway from I&E 352 was learning how innovation actually plays out in ambiguous, human-driven systems rather than clean technical environments. The Bike Ventures simulation forced me to confront tradeoffs between strategy, timing, and imperfect information, showing that good decisions can still lead to bad outcomes if assumptions or external conditions change. It emphasized execution, adaptability, and understanding incentives more than \"optimal\" theory.",
+          "The interactive play, where the audience collectively shaped the storyline through their phones, highlighted how innovation can be experiential and participatory. It reinforced that value is often created not just by the product itself, but by how users are engaged and empowered within the system.",
+          "Finally, my reflection on thanksgiving break helped me recognize how innovation and tradition can coexist. Observing AI tools alongside deep musical history in Nasheville clarified that successful innovation often enhances existing culture rather than replacing it. Overall, I&E 352 reshaped how I think about entrepreneurship as navigating uncertainty, designing for people, and integrating new technology responsibly into established systems.",
+        ],
+      },
+    ],
   },
   experiences: {
     title: 'Experiences',
@@ -61,6 +71,7 @@ const SECTION_CONTENT = {
   workProducts: {
     title: 'Work Products',
     id: 'work-products',
+    impressionUrl: 'https://impressiondating.com/',
     omegaRepoUrl: 'https://github.com/Jaiparmar940/allweather-quant-lab',
     paragraphs: [
       "Impression is a consumer-facing product that operationalizes feedback, experimentation, and AI guidance to help users improve dating profiles. The work product is the system itself: a structured feedback mechanism, profile variation testing, and AI-driven suggestions designed to produce actionable improvements.",
@@ -178,6 +189,14 @@ function IEPortfolio() {
             {SECTION_CONTENT.coursework.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
+            {SECTION_CONTENT.coursework.subsections?.map((sub, si) => (
+              <div key={si} className="ie-subsection">
+                <h3>{sub.title}</h3>
+                {sub.paragraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            ))}
           </div>
         </motion.section>
 
@@ -249,7 +268,12 @@ function IEPortfolio() {
           <div className="ie-section-card">
             <h2>{SECTION_CONTENT.workProducts.title}</h2>
             {SECTION_CONTENT.workProducts.paragraphs.map((p, i) => (
-              i === 1 ? (
+              i === 0 ? (
+                <p key={i}>
+                  <a href={SECTION_CONTENT.workProducts.impressionUrl} target="_blank" rel="noopener noreferrer" className="ie-ext-link">Impression</a>
+                  {' is a consumer-facing product that operationalizes feedback, experimentation, and AI guidance to help users improve dating profiles. The work product is the system itself: a structured feedback mechanism, profile variation testing, and AI-driven suggestions designed to produce actionable improvements.'}
+                </p>
+              ) : i === 1 ? (
                 <p key={i}>
                   <a href={SECTION_CONTENT.workProducts.omegaRepoUrl} target="_blank" rel="noopener noreferrer" className="ie-ext-link">Omega Portfolio Engine</a>
                   {' is a full-stack quantitative platform: data ingestion (Yahoo Finance/FRED), regime feature extraction, regime detection (HMM/LSTM/GMM), optimization (GMV, Omega), risk constraints, and walk-forward backtesting with a web interface and API. The work product demonstrates how research can be engineered into a usable tool with reproducible evaluation and a clear user workflow.'}

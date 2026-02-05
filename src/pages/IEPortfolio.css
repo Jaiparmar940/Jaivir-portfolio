@@ -173,6 +173,18 @@
   color: var(--ie-text);
 }
 
+.ie-subsection {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ie-border);
+}
+.ie-subsection h3 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ie-text);
+}
+
 .ie-section-card p {
   margin: 0 0 1rem;
   line-height: 1.75;
