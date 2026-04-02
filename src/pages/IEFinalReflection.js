@@ -68,6 +68,11 @@ function IEFinalReflection() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <div id="ie-final-reflection-root" className="ie-portfolio">
       <header className="ie-nav-wrap">
@@ -86,7 +91,13 @@ function IEFinalReflection() {
           <ul className="ie-nav-links">
             {SECTIONS.map((s) => (
               <li key={s.id}>
-                <a href={`#${s.id}`}>{s.title}</a>
+                <button
+                  type="button"
+                  className="ie-nav-scroll"
+                  onClick={() => scrollToSection(s.id)}
+                >
+                  {s.title}
+                </button>
               </li>
             ))}
           </ul>

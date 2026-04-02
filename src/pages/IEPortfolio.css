@@ -113,6 +113,25 @@
   color: var(--ie-accent);
 }
 
+.ie-nav-links button.ie-nav-scroll {
+  color: var(--ie-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.ie-nav-links button.ie-nav-scroll:hover {
+  background: var(--ie-accent-soft);
+  color: var(--ie-accent);
+}
+
 .ie-theme-btn {
   background: var(--ie-surface);
   border: 1px solid var(--ie-border);
@@ -169,6 +188,7 @@
 /* Section cards – clear background, border, lots of spacing */
 .ie-section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: 5.5rem;
 }
 
 .ie-section-card {

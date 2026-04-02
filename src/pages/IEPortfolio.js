@@ -82,13 +82,13 @@ const SECTION_CONTENT = {
 };
 
 const NAV_LINKS = [
-  { label: 'My Story', href: '#my-story' },
-  { label: 'Coursework', href: '#coursework' },
-  { label: 'Experiences', href: '#experiences' },
-  { label: 'Failure + Learning', href: '#failure' },
-  { label: 'Most Important Learnings', href: '#learnings' },
-  { label: 'Work Products', href: '#work-products' },
-  { label: 'Final Reflection', href: '/ie-portfolio/final-reflection', isRoute: true },
+  { label: 'My Story', sectionId: 'my-story' },
+  { label: 'Coursework', sectionId: 'coursework' },
+  { label: 'Experiences', sectionId: 'experiences' },
+  { label: 'Failure + Learning', sectionId: 'failure' },
+  { label: 'Most Important Learnings', sectionId: 'learnings' },
+  { label: 'Work Products', sectionId: 'work-products' },
+  { label: 'Final Reflection', to: '/ie-portfolio/final-reflection', isRoute: true },
 ];
 
 const THEME_KEY = 'ie-portfolio-theme';
@@ -120,6 +120,11 @@ function IEPortfolio() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <div id="ie-portfolio-root" className="ie-portfolio">
       <header className="ie-nav-wrap">
@@ -130,12 +135,18 @@ function IEPortfolio() {
             <span className="ie-protected-badge">Protected</span>
           </span>
           <ul className="ie-nav-links">
-            {NAV_LINKS.map(({ label, href, isRoute }) => (
-              <li key={href}>
-                {isRoute ? (
-                  <Link to={href}>{label}</Link>
+            {NAV_LINKS.map((item) => (
+              <li key={item.isRoute ? item.to : item.sectionId}>
+                {item.isRoute ? (
+                  <Link to={item.to}>{item.label}</Link>
                 ) : (
-                  <a href={href}>{label}</a>
+                  <button
+                    type="button"
+                    className="ie-nav-scroll"
+                    onClick={() => scrollToSection(item.sectionId)}
+                  >
+                    {item.label}
+                  </button>
                 )}
               </li>
             ))}
