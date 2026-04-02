@@ -75,6 +75,20 @@
   margin-left: 0.25rem;
 }
 
+.ie-nav-back {
+  color: var(--ie-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.ie-nav-back:hover {
+  text-decoration: underline;
+}
+.ie-nav-sep {
+  color: var(--ie-text-muted);
+  font-weight: 500;
+  margin: 0 0.15rem;
+}
+
 .ie-nav-links {
   display: flex;
   flex-wrap: wrap;

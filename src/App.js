@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import PersonaTest from './pages/PersonaTest';
 import IEPortfolio from './pages/IEPortfolio';
+import IEFinalReflection from './pages/IEFinalReflection';
 import Footer from './components/Footer';
 
 // Component to handle access code routes
@@ -33,7 +34,7 @@ const AccessCodeHandler = () => {
 const AppContent = () => {
   const { isAuthenticated } = usePersona();
   const location = useLocation();
-  const isIEPortfolio = location.pathname === '/ie-portfolio';
+  const isIEPortfolio = location.pathname.startsWith('/ie-portfolio');
 
   if (!isAuthenticated) {
     return <CodeGate />;
@@ -53,6 +54,7 @@ const AppContent = () => {
           <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/charity" element={<Charity />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/ie-portfolio/final-reflection" element={<IEFinalReflection />} />
           <Route path="/ie-portfolio" element={<IEPortfolio />} />
           <Route path="/persona-test" element={<PersonaTest />} />
           {/* Handle access code paths - this will trigger persona detection */}

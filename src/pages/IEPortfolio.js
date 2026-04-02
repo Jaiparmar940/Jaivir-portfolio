@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiLock } from 'react-icons/fi';
 import './IEPortfolio.css';
@@ -87,6 +88,7 @@ const NAV_LINKS = [
   { label: 'Failure + Learning', href: '#failure' },
   { label: 'Most Important Learnings', href: '#learnings' },
   { label: 'Work Products', href: '#work-products' },
+  { label: 'Final Reflection', href: '/ie-portfolio/final-reflection', isRoute: true },
 ];
 
 const THEME_KEY = 'ie-portfolio-theme';
@@ -128,9 +130,13 @@ function IEPortfolio() {
             <span className="ie-protected-badge">Protected</span>
           </span>
           <ul className="ie-nav-links">
-            {NAV_LINKS.map(({ label, href }) => (
+            {NAV_LINKS.map(({ label, href, isRoute }) => (
               <li key={href}>
-                <a href={href}>{label}</a>
+                {isRoute ? (
+                  <Link to={href}>{label}</Link>
+                ) : (
+                  <a href={href}>{label}</a>
+                )}
               </li>
             ))}
           </ul>
