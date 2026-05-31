@@ -22,6 +22,17 @@ const Resume = () => {
 
   const experience = [
     {
+      title: 'Technical Lead',
+      company: 'Grid Intelligence',
+      period: 'Aug 2025 - May 2026',
+      location: 'Durham, NC',
+      description: [
+        'Led technical team for early-stage B2B SaaS startup with Duke peers predicting localized energy demand and pricing to optimize utility battery storage charge/discharge cycles',
+        'Configured foundational ML model architecture and fine-tuned it across 7,000+ localized electrical nodes using 100M+ rows of ingested energy, weather, and market data',
+        'Contributed to raising $100k in non-dilutive funding while balancing model accuracy, scalability, real-time inference, and business requirements for grid decarbonization'
+      ]
+    },
+    {
       title: 'Quantitative Research Intern',
       company: 'DeWitt Capital Management',
       period: 'May 2025 - Aug 2025',
@@ -97,7 +108,7 @@ const Resume = () => {
       degree: 'B.S. Computer Science, B.S.E. Mechanical Engineering, Innovation & Entrepreneurship',
       school: 'Duke University',
       period: 'Expected May 2026',
-      relevant: ['Dual-degree program', 'Innovation & Entrepreneurship focus', 'Durham, NC']
+      relevant: ['Double Major BSE, 'Innovation & Entrepreneurship certificate', 'Durham, NC']
     }
   ];
 

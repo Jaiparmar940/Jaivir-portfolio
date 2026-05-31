@@ -51,6 +51,12 @@ const SECTION_CONTENT = {
         description: "My 300-hour experience is an internship with DeWitt Capital Management, where I built the Omega Portfolio Engine: a regime-aware portfolio optimization system that detects market regimes and optimizes portfolios using Global Minimum Variance and Omega ratio objectives. The platform integrates regime detection models (HMM, LSTM, GMM), walk-forward backtesting, risk constraints (e.g., CVaR, turnover penalties, sector limits), and a Streamlit + FastAPI interface for interactive use. I chose this experience because it sits at the intersection of quantitative finance, applied ML, and productization—turning research-grade ideas into usable tools.",
         reflection: "The key entrepreneurial challenge was bridging research and usability. A model that's \"interesting\" is not automatically a tool that's trustworthy or usable. I had to focus on reliability, error handling, repeatable backtests, and clear outputs so the system could support real decision-making. The innovative aspect is combining regime awareness with optimization and policy management in a system designed to be customizable, explainable, and usable rather than just a notebook experiment.",
       },
+      {
+        title: 'Grid Intelligence — Technical Lead',
+        hours: '400 hours',
+        description: "My 400-hour experience is serving as Technical Lead for Grid Intelligence, an early-stage B2B SaaS startup I co-founded with Duke peers. The platform predicts localized energy demand and real-time pricing to help utility battery storage operators optimize charge and discharge cycles for maximum economic and grid value. I configured the foundational ML model architecture and fine-tuned it to adapt across over 7,000 localized electrical nodes, training on a dataset of over 100 million rows of ingested energy, weather, and market data from multiple grid sources. I chose this experience because it combines cutting-edge ML engineering, energy systems domain knowledge, technical team leadership, and entrepreneurship in the critical area of grid decarbonization and storage optimization.",
+        reflection: "The core innovation was building hyper-localized predictive models that move beyond generic forecasts to account for nodal topology, microclimate effects, and real-time market dynamics—directly translating into measurable revenue for battery operators and better grid stability. Leading the technical team while raising $100k in non-dilutive funding taught me how to align sophisticated ML with business KPIs, manage data pipelines at scale, and communicate complex model outputs to non-technical stakeholders. This reinforced that true innovation in energy tech requires both technical rigor and entrepreneurial execution to bridge research and real-world deployment. It strengthened my identity as a founder-engineer focused on high-impact climate solutions.",
+      },
     ],
   },
   failure: {
@@ -61,11 +67,11 @@ const SECTION_CONTENT = {
       "The fix was going back to fundamentals: define baselines, lock down evaluation methodology (walk-forward splits, consistent metrics), and introduce changes one at a time. That experience reinforced a core entrepreneurship lesson: complexity is not progress. Progress is measured improvement under constraints you can explain and reproduce.",
     ],
   },
-  learnings: {
+    learnings: {
     title: 'Most Important Learnings',
     id: 'learnings',
     paragraphs: [
-      "Across both experiences, I learned that innovation is not just invention, it's turning uncertainty into a repeatable process. The consistent pattern was: define the real problem, build the simplest viable version, measure outcomes, and iterate. I also learned that product quality is inseparable from trust: whether you're advising someone on a dating profile or portfolio allocation, the value comes from clarity, reliability, and accountability.",
+      "Across these three experiences, I learned that innovation is not just invention, it's turning uncertainty into a repeatable process. The consistent pattern was: define the real problem, build the simplest viable version, measure outcomes, and iterate. Grid Intelligence in particular showed how technical ML models must be grounded in real business and regulatory constraints to create impact at scale. I also learned that product quality is inseparable from trust: whether you're advising on a dating profile, optimizing a portfolio, or predicting grid pricing, the value comes from clarity, reliability, and accountability.",
       "Finally, these experiences strengthened my identity as a founder-engineer. I'm most effective when I can own the full loop (technical execution, user needs, and business logic) and keep moving toward real-world traction rather than abstract \"cool tech.\"",
     ],
   },

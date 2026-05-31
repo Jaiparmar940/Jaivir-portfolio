@@ -150,14 +150,14 @@ const About = () => {
         },
         {
           title: 'Resume',
-          description: 'View my dual-degree Mechanical Engineering and Computer Science experience',
+          description: 'View my Mechanical Engineering and Computer Science experience',
           icon: FiFileText,
           link: '/resume',
           color: '#10b981'
         },
         {
           title: 'About My Journey',
-          description: 'Learn more about my dual-degree engineering background and product development journey',
+          description: 'Learn more about my engineering background and product development journey',
           icon: FiBookOpen,
           link: '/about',
           color: '#f59e0b'
@@ -211,7 +211,7 @@ const About = () => {
               : config?.shortName === 'Quant'
               ? 'Quantitative analyst specializing in systematic trading, algorithmic strategies, and risk management for financial markets'
               : config?.shortName === 'Build'
-              ? 'Dual-degree Mechanical Engineer and Computer Scientist building innovative products with integrated hardware and software solutions'
+              ? 'Double-major Mechanical Engineer and Computer Scientist building innovative products with integrated hardware and software solutions'
               : 'Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution'
             }
           </p>
@@ -262,8 +262,8 @@ const About = () => {
               {config?.shortName === 'YC' ? (
                 <>
                   <p>
-                    I'm a serial entrepreneur and dual-degree student at Duke University pursuing Computer Science and 
-                    Mechanical Engineering with a focus on Innovation & Entrepreneurship. My unique blend of technical 
+                    I'm a serial entrepreneur who recently graduated with a double major in Computer Science and 
+                    Mechanical Engineering at Duke University with a certificate in Innovation & Entrepreneurship. My unique blend of technical 
                     expertise and business acumen allows me to identify market opportunities and build scalable ventures 
                     that solve real problems.
                   </p>
@@ -290,7 +290,7 @@ const About = () => {
                 <>
                   <p>
                     I'm a Computer Science and Mechanical Engineering student at Duke University with a passion for 
-                    building scalable software solutions and AI-driven applications. My dual-degree background gives me 
+                    building scalable software solutions and AI-driven applications. My cross-technical background gives me 
                     a unique perspective on solving complex technical challenges with both software engineering rigor 
                     and systems thinking.
                   </p>
@@ -316,8 +316,8 @@ const About = () => {
               ) : config?.shortName === 'Quant' ? (
                 <>
                   <p>
-                    I'm a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
-                    with a strong focus on quantitative analysis and algorithmic trading. My technical background in 
+                    I recently graduated from Duke University with a double major in Computer Science and Mechanical Engineering 
+                    with a certificate in Innovation & Entrepreneurship. I have maintained a strong focus on quantitative analysis and algorithmic trading. My technical background in 
                     both software engineering and mathematical modeling provides a unique foundation for developing 
                     sophisticated trading strategies and risk management systems.
                   </p>
@@ -350,7 +350,7 @@ const About = () => {
               ) : config?.shortName === 'Build' ? (
                 <>
                   <p>
-                    I'm a dual-degree student at Duke University pursuing Mechanical Engineering and Computer Science 
+                    I recently graduated Duke University with a double major in Mechanical Engineering and Computer Science 
                     with a 75% mechanical engineering focus and 25% computer science integration. This unique combination 
                     allows me to design and build innovative products that seamlessly integrate hardware and software 
                     solutions for real-world applications.
@@ -379,16 +379,14 @@ const About = () => {
               ) : (
                 <>
                   <p>
-                    I am a dual-degree student at Duke University pursuing Computer Science and Mechanical Engineering 
-                    with a focus on Innovation & Entrepreneurship. This blend of technical and analytical training equips 
-                    me to approach complex business problems with both quantitative rigor and creative problem-solving.
+                    I am a recent graduate from Duke University who earned a double major in Computer Science and Mechanical Engineering 
+                    with a certificate in Innovation & Entrepreneurship. This blend of technical and analytical training equips 
+                    me to approach complex business problems with both quantitative rigor and creative problem-solving. I am currently spending time to explore the startup space, with a focus in financial technology.
                   </p>
                   <p>
                     I have a track record of building ventures that generate measurable business value. As founder of 
                     Impression, an AI-driven optimization platform, I identified a $2.8B market opportunity and delivered 
-                    tangible user outcomes through data-driven experimentation and product strategy. Earlier, I launched 
-                    JPcommerce, a resale and market arbitrage business that generated $100,000+ in revenue with 42% profit 
-                    margins by uncovering inefficiencies in fragmented markets and implementing operational improvements.
+                    tangible user outcomes through data-driven experimentation and product strategy. As Technical Lead at Grid Intelligence, I co-founded a B2B SaaS startup with Duke peers, configuring and fine-tuning ML models for localized energy demand and pricing prediction across 7,000+ electrical nodes using 100M+ rows of data; this informed battery storage optimization and helped raise $100k in non-dilutive funding. Earlier, I launched JPcommerce, a resale and market arbitrage business that generated $100,000+ in revenue with 42% profit margins by uncovering inefficiencies in fragmented markets and implementing operational improvements.
                   </p>
                   <p>
                     Across these experiences, I learned to think like an investor and consultant: spotting opportunities 
