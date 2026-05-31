@@ -1467,6 +1467,258 @@ See my tailored résumé for robotics, embedded systems, mechatronics, or automa
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image4.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image5.jpeg`
     ]
+  },
+  {
+    id: 26,
+    title: 'Grid Intelligence - Energy Market Forecasting & Battery Dispatch Optimization Platform',
+    category: 'energy, software, machine learning, finance',
+    description: 'Energy intelligence platform using congestion forecasting, LMP prediction, and optimization algorithms to maximize BESS arbitrage profits while enhancing grid reliability. Built ML pipeline with TFT, XGBoost, RL, and constrained optimization across 7k+ nodes and 100M+ rows of data.',
+    longDescription: `# Grid Intelligence - Energy Market Forecasting & Battery Dispatch Optimization Platform (Aug 2025 - May 2026)
+
+**Role:** Technical Lead & ML Engineer
+
+**Overview**  
+Worked directly on the architecture, market strategy, and machine-learning pipeline for an energy intelligence platform focused on optimizing battery energy storage systems (BESS) in wholesale electricity markets. The platform uses congestion forecasting, locational price prediction, and optimization algorithms to identify profitable charging and discharging opportunities while improving grid reliability.
+
+**Key Contributions**  
+* Researched and modeled wholesale electricity market mechanics, including PJM nodal pricing, congestion dynamics, negative pricing events, renewable curtailment, and battery arbitrage opportunities.  
+* Designed an end-to-end forecasting pipeline combining market data, weather forecasts, renewable generation forecasts, and transmission constraints to predict locational marginal prices (LMPs) and grid congestion events.  
+* Developed forecasting architecture using machine learning techniques including Temporal Fusion Transformers (TFT), LightGBM, XGBoost, quantile forecasting, and probabilistic congestion modeling.    
+* Designed battery dispatch optimization frameworks using constrained optimization, reinforcement learning, and genetic algorithm approaches to maximize energy arbitrage profits while accounting for battery degradation, efficiency losses, and operational constraints.  
+* Helped define the company’s product roadmap, positioning Grid Intelligence as a congestion-native intelligence layer spanning forecasting, dispatch recommendations, and financial congestion risk analytics.  
+* Conducted competitive analysis across major industry platforms including Tesla Autobidder, Fluence Mosaic, Tyba, Yes Energy, Wood Mackenzie, and S&P Global to identify market gaps and differentiation opportunities.  
+* Created system architecture for data ingestion, feature engineering, probabilistic forecasting, dispatch recommendation generation, dashboard visualization, and API-based integrations.  
+
+**Technical Highlights**  
+* Electricity market forecasting
+* Locational Marginal Pricing (LMP) modeling
+* Battery Energy Storage Systems (BESS)
+* Optimization & Operations Research
+* Time-series machine learning
+* Congestion forecasting
+* Reinforcement Learning (PPO/DQN)
+* Quantile prediction & uncertainty estimation
+* Energy market analytics
+* Product strategy and competitive intelligence
+
+**Problem / Challenge**  
+Wholesale electricity markets are volatile with complex nodal pricing, transmission congestion, renewable variability, and battery operational constraints. Battery storage operators lacked accurate localized forecasts and optimization tools to capitalize on arbitrage opportunities while supporting grid reliability and decarbonization.
+
+**Approach / Solution**  
+- Built market-mechanics research foundation and end-to-end data pipeline for multi-source forecasting (market, weather, renewables, transmission).
+- Implemented state-of-the-art ML (TFT, tree-based ensembles, quantile/probabilistic models) and advanced optimization (constrained solvers, RL with PPO/DQN, genetic algorithms).
+- Designed full system architecture with feature engineering, dashboard, API integrations, and competitive positioning.
+- Balanced technical model performance with business metrics (arbitrage profits, degradation costs, regulatory compliance).
+
+**Impact / Results**  
+- Robust forecasting and dispatch models capable of operating across 7,000+ nodes with 100M+ training rows.
+- Secured $100k in non-dilutive funding through demonstrated technical architecture and market differentiation.
+- Positioned the platform as a congestion-native intelligence layer against competitors like Tesla Autobidder and Fluence.
+- Contributed to improved grid reliability through better BESS utilization in wholesale markets.
+
+**Leadership & Collaboration**  
+- Led technical architecture and ML development for early-stage startup with Duke peers.
+- Defined product roadmap and conducted in-depth competitive analysis to carve differentiation.
+- Collaborated on market strategy while ensuring models were production-ready and explainable.
+
+**Skills Applied**  
+Electricity market forecasting, LMP modeling, BESS optimization, Temporal Fusion Transformers, XGBoost/LightGBM, Reinforcement Learning (PPO/DQN), Quantile Forecasting, Congestion Analysis, Operations Research, Time-Series ML, Product Strategy, Competitive Intelligence, Python, Energy Analytics
+
+**Selected Artifacts**  
+[Technical Documentation](https://github.com/Jaiparmar940/grid-intelligence) · [Model Architecture](<url>) · [Competitive Analysis](<url>)
+
+**Call to Action**  
+See my tailored résumé for energy tech, quantitative ML, or startup technical leadership roles.`,
+    technologies: ['Energy Markets', 'LMP Modeling', 'BESS', 'Temporal Fusion Transformers', 'XGBoost', 'LightGBM', 'Reinforcement Learning', 'PPO', 'Quantile Forecasting', 'Congestion Analysis', 'Operations Research', 'Python', 'Product Strategy'],
+    image: 'https://picsum.photos/400/250?random=26',
+    github: null,
+    live: null,
+    featured: true,
+    hasDetailPage: true,
+    detailSlug: 'grid-intelligence',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image1.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image2.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image3.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image4.jpeg`
+    ]
+  },
+  {
+    id: 27,
+    title: 'Omega Portfolio Engine - Regime-Aware Quantitative Optimization Platform',
+    category: 'finance, software, machine learning',
+    description: 'Regime-aware portfolio optimization engine with GMV and Omega ratio objectives, HMM/LSTM/GMM regime detection, walk-forward backtesting, custom policy management, Streamlit UI, FastAPI backend, risk constraints (CVaR, turnover, sectors), and Yahoo Finance integration.',
+    longDescription: `# Omega Portfolio Engine — Regime-Aware Quantitative Optimization Platform (2025)
+
+**Role:** Quantitative Research Analyst & ML Engineer
+
+**Overview**  
+A regime-aware, client-customizable portfolio optimization engine that detects market regimes and optimizes portfolios for Global Minimum Variance (GMV) and Omega ratio objectives. Features interactive Streamlit web UI, FastAPI backend, comprehensive walk-forward backtesting, policy management, risk constraints, and multiple data sources. Serves quantitative investors and portfolio managers seeking data-driven, regime-adaptive asset allocation.
+
+**Problem / Challenge**  
+Traditional portfolio optimization (e.g. mean-variance) fails to account for changing market regimes, leading to poor out-of-sample performance. Investors needed tools that dynamically detect regimes (via HMM, LSTM, GMM), incorporate custom policies and risk constraints (CVaR, turnover, sector limits), support robust backtesting, and provide an intuitive interface for real decision-making.
+
+**Approach / Solution**  
+- Implemented regime detection using Hidden Markov Models, LSTMs, and Gaussian Mixture Models with automated feature extraction from price and macro data.
+- Built dual-objective optimizers for GMV and Omega ratio with policy enforcement and risk constraints.
+- Developed full walk-forward backtesting engine with performance attribution, visualization, and fallback logic.
+- Created modern web interface (Streamlit) for portfolio upload, policy creation/editing, optimization, backtesting, and results dashboard; paired with FastAPI backend for API/CLI access.
+- Integrated Yahoo Finance, CSV, and sample data loaders with robust error handling and session management.
+- Added comprehensive testing, pre-commit hooks, and documentation for production readiness.
+
+**Impact / Results**  
+- Production-ready platform with interactive UI enabling rapid iteration on portfolios and policies.
+- Robust backtesting and regime-aware optimization that outperforms static approaches in varying market conditions.
+- Centralized results dashboard and export capabilities for analysis and client reporting.
+- Easy deployment via `make start` with full support for research notebooks, API, and web workflows.
+- Inspired by Bridgewater All Weather strategy; extensible for ESG, multi-currency, and real-time use cases.
+
+**Leadership & Collaboration**  
+- Owned full-stack implementation from data pipeline and ML models to UI/UX and deployment.
+- Collaborated with quant finance principles to ensure models were practical and explainable.
+- Iterated on user feedback to refine the interface for both technical and non-technical users.
+- Maintained high code quality with ruff, black, mypy, pytest, and pre-commit.
+
+**Skills Applied**  
+Quantitative Finance, Portfolio Optimization, Regime Detection (HMM/LSTM/GMM), Walk-Forward Backtesting, Risk Management (CVaR, Turnover), Machine Learning, Streamlit, FastAPI, Python, Pandas, Feature Engineering, Policy Management, Backtesting Frameworks, Data Visualization, API Development
+
+**Selected Artifacts**  
+[GitHub Repository](https://github.com/Jaiparmar940/allweather-quant-lab) · [Live Demo](http://localhost:8501) (via `make start`) · [Research Notebooks](https://github.com/Jaiparmar940/allweather-quant-lab/tree/main/research) · [API Documentation](<url>)
+
+**Call to Action**  
+See my tailored résumé for quantitative research, ML engineering, or fintech product roles.`,
+    technologies: ['Python', 'Streamlit', 'FastAPI', 'Pandas', 'HMM', 'LSTM', 'GMM', 'GMV Optimization', 'Omega Ratio', 'Walk-Forward Backtesting', 'CVaR', 'Regime Detection', 'Quantitative Finance', 'Risk Management'],
+    image: 'https://picsum.photos/400/250?random=27',
+    github: 'https://github.com/Jaiparmar940/allweather-quant-lab',
+    live: null,
+    featured: true,
+    hasDetailPage: true,
+    detailSlug: 'omega-portfolio-engine',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image1.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image2.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image3.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image4.jpeg`
+    ]
+  },
+  {
+    id: 28,
+    title: 'Autonomous Surgical Robotic Head Swapper',
+    category: 'robotics, medical, engineering, software',
+    description: 'Developed an autonomous 5-DOF robotic platform for multi-stage orthopedic surgery simulation (total knee arthroplasty workflow) with automatic end-effector exchange. Integrated ROS motion planning, kinematics, digital twin simulation, and a custom tool-changing system for probing, cutting, and debris removal without human intervention.',
+    longDescription: `# Autonomous Surgical Robotic Head Swapper (2024-2025)
+
+**Role:** Robotics Engineer & Autonomous Systems Developer
+
+**Overview**  
+Developed an autonomous robotic manipulation platform capable of performing multi-stage orthopedic surgery workflows through automatic end-effector exchange. The system was designed as a proof-of-concept for future autonomous surgical robotics, enabling a single robotic arm to sequentially perform surface mapping, bone cutting, and debris removal without human intervention.
+
+Inspired by limitations in existing robotic-assisted orthopedic systems, the project explored how a surgical robot could transition between specialized tools autonomously while maintaining precise positioning, repeatability, and operational safety throughout a procedure. The platform simulated key steps of a total knee arthroplasty (TKA) workflow using interchangeable robotic attachments and a custom-designed tool-changing interface.
+
+**Technical Contributions**
+
+#### ROS-Based Motion Planning and Robot Control
+Designed and implemented the complete robotics software stack using ROS, creating a digital twin of the robotic arm for simulation, planning, and execution.
+
+Key developments included:
+- Building a full kinematic model of a custom 5-DOF robotic manipulator.
+- Developing forward and inverse kinematics solutions for autonomous positioning.
+- Implementing trajectory generation and collision-aware motion planning between tool stations and surgical workspaces.
+- Creating automated calibration and homing routines to maintain positional accuracy throughout operation.
+- Developing tool-specific coordinate frame transformations to ensure consistent behavior across end-effector swaps.
+- Integrating motion planning with autonomous task sequencing to execute multi-step procedures without operator intervention.
+
+#### Autonomous Tool Changing System
+Engineered a robotic tool-changing architecture capable of automatically exchanging specialized surgical attachments.
+
+Features included:
+- Autonomous docking and undocking workflows.
+- Tool identification and verification using embedded sensing.
+- Repeatable attachment alignment through kinematic registration and mechanical locating features.
+- Automatic recovery and re-zeroing procedures following tool exchanges.
+- Software validation of successful tool engagement prior to task execution.
+
+The system was designed around strict repeatability requirements, targeting sub-millimeter tool positioning consistency after repeated attachment cycles.
+
+#### Surgical Procedure Automation
+Developed a complete autonomous workflow that coordinated multiple robotic capabilities into a single procedure:
+1. Surface scanning and geometry acquisition using a probing end effector.
+2. Path planning based on acquired workspace geometry.
+3. Autonomous tool exchange.
+4. Precision cutting operations using a powered saw attachment.
+5. Debris removal using a vacuum/grabber attachment.
+6. Autonomous transitions between each task without manual intervention.
+
+This required orchestrating perception, planning, motion control, tool management, and state-machine execution into a unified robotic system.
+
+#### Simulation and Digital Twin Development
+Created a simulation environment to validate robot behavior before deployment on physical hardware.
+
+The simulation stack supported:
+- Kinematic verification.
+- Workspace analysis.
+- Reachability studies.
+- Motion path validation.
+- Tool-changing sequence testing.
+- Repeatability and tolerance analysis.
+
+This enabled rapid iteration of both hardware and software while reducing development risk.
+
+**Engineering Highlights**
+- Full ROS-based robotics architecture.
+- Custom motion planning pipeline for a 5-DOF manipulator.
+- Autonomous tool-changing system with interchangeable end effectors.
+- Forward and inverse kinematics implementation.
+- Robot simulation and digital twin development.
+- Multi-stage autonomous surgical workflow execution.
+- Mechanical, electrical, and software integration across a complete robotic platform.
+- Designed for sub-millimeter positioning repeatability and high-reliability autonomous operation.
+
+**Technologies**  
+ROS • Python • C++ • Motion Planning • Inverse Kinematics • Robotics Simulation • CAD • Embedded Systems • Computer-Aided Manufacturing • Autonomous Systems • Mechatronics
+
+**Problem / Challenge**  
+Existing robotic-assisted surgery systems required manual tool changes and lacked full autonomy for multi-stage procedures. Achieving sub-millimeter repeatability across tool swaps, safe collision-free motion in constrained surgical workspaces, and seamless integration of perception, planning, and execution presented significant mechatronics, kinematics, and software challenges.
+
+**Approach / Solution**  
+- Built complete ROS stack with custom 5-DOF kinematic model, forward/inverse kinematics, collision-aware motion planning, and automated tool sequencing.
+- Designed and implemented an autonomous tool-changing system with sensing, kinematic registration, and validation routines for repeatable swaps.
+- Orchestrated a full TKA simulation workflow (scanning → planning → tool swap → cutting → debris removal) using state machines and digital twin validation.
+- Developed simulation environment for risk-free iteration of hardware/software designs.
+
+**Impact / Results**  
+- Demonstrated fully autonomous multi-stage orthopedic procedure with zero human intervention during execution.
+- Achieved target sub-millimeter repeatability across repeated tool exchanges.
+- Validated complex workflows in simulation before hardware deployment, accelerating development and reducing risk.
+- Created a scalable proof-of-concept architecture for next-generation autonomous surgical robots.
+
+**Leadership & Collaboration**  
+- Owned end-to-end development from mechanical design and kinematics to ROS software, simulation, and system integration.
+- Iterated rapidly using digital twin to validate mechanical, electrical, and software components.
+- Focused on safety, precision, and clinical relevance throughout the proof-of-concept.
+
+**Skills Applied**  
+ROS, Python, C++, Motion Planning, Inverse Kinematics, Robotics Simulation, CAD, Embedded Systems, Computer-Aided Manufacturing, Autonomous Systems, Mechatronics, State Machines, Digital Twins, Surgical Robotics, Kinematic Modeling
+
+**Selected Artifacts**  
+[Project Documentation](https://github.com/Jaiparmar940/surgical-robot-head-swapper) · [ROS Code & Simulation](<url>) · [Kinematic Models & Digital Twin Videos](<url>)
+
+**Call to Action**  
+See my tailored résumé for robotics, medical devices, autonomous systems, or surgical technology roles.`,
+    technologies: ['ROS', 'Python', 'C++', 'Motion Planning', 'Inverse Kinematics', 'Robotics Simulation', 'CAD', 'Embedded Systems', 'CAM', 'Autonomous Systems', 'Mechatronics', 'Digital Twin', 'State Machines', 'Surgical Robotics'],
+    image: 'https://picsum.photos/400/250?random=28',
+    github: null,
+    live: null,
+    featured: true,
+    hasDetailPage: true,
+    detailSlug: 'autonomous-surgical-robot',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image1.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image2.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image3.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image4.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image5.jpeg`
+    ]
   }
 ];
 

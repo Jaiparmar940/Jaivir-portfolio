@@ -20,13 +20,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: false  # Explicitly disable (removed orphaned Jaivir-portfolio gitlink)
+          clean: true
+          submodules: false  # Explicitly disable + clean to prevent post-checkout git 128 errors from any leftover submodule artifacts
         
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Updated from 18 to address Node 20 deprecation warnings (runner will default to 24 soon)
+          node-version: '20'  # Updated from 18; addresses Node 20 deprecation (runner defaults to 24 soon)
           cache: 'npm'
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Opt into Node 24 to suppress deprecation warnings
           
       - name: Install dependencies
         run: npm ci
