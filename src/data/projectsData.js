@@ -23,8 +23,7 @@ Users lacked actionable insight to improve match rates; existing tools were subj
 - 200+ beta users across two pilot cohorts
 - Feature adoption +50% post-token incentives implementation
 - Feedback loop time -60% via real-time analytics dashboard
-- <conversion_rate_improvement>% increase in profile match rates
-- <user_retention_rate>% monthly active user retention
+- 382% increase in profile match rates
 
 **Leadership & Collaboration**  
 - Led 4-person beta team including developers, designers, and data analysts
@@ -41,12 +40,19 @@ A/B testing, growth strategy, user research, funnel analysis, pricing experiment
 **Call to Action**  
 See my tailored résumé for product/consulting roles: <url>`,
     technologies: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
-    image: `${process.env.PUBLIC_URL}/icons/impression.png`,
+    image: `${process.env.PUBLIC_URL}/static/projects/impression/image1.jpeg`,
     github: 'https://github.com/Jaiparmar940/SwipeFix',
     live: 'https://impressiondating.com',
     featured: true,
     hasDetailPage: true,
-    detailSlug: 'impression-detail'
+    detailSlug: 'impression-detail',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/impression/image1.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/impression/image2.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/impression/image3.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/impression/image4.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/impression/image5.jpeg`
+    ]
   },
   {
     id: 2,
@@ -69,11 +75,12 @@ Job seekers struggled with fragmented application processes and poor communicati
 - Created comprehensive admin pipeline for job posting management and analytics
 
 **Impact / Results**  
-- <user_count>+ active users across iOS and Android platforms
-- <match_success_rate>% improvement in job-candidate matching accuracy
-- <communication_efficiency>% reduction in time-to-hire through integrated messaging
-- <admin_productivity>% increase in employer job posting efficiency
-- <user_retention>% monthly active user retention rate
+<!-- - <user_count>+ active users across iOS and Android platforms -->
+<!-- - <match_success_rate>% improvement in job-candidate matching accuracy -->
+<!-- - <communication_efficiency>% reduction in time-to-hire through integrated messaging -->
+<!-- - <admin_productivity>% increase in employer job posting efficiency -->
+<!-- - <user_retention>% monthly active user retention rate -->
+- Currently under construction
 
 **Leadership & Collaboration**  
 - Led cross-platform development team coordinating iOS and Android development
@@ -118,11 +125,12 @@ Traditional banking systems lacked modern user interfaces and real-time transact
 - Built comprehensive transaction management system with audit trails
 
 **Impact / Results**  
-- <transaction_volume>+ transactions processed securely
-- <security_incidents>% reduction in security vulnerabilities
-- <user_satisfaction>% improvement in user experience scores
-- <processing_speed>% faster transaction processing times
-- <system_uptime>% uptime achieved through robust architecture
+<!-- - <transaction_volume>+ transactions processed securely -->
+<!-- - <security_incidents>% reduction in security vulnerabilities -->
+<!-- - <user_satisfaction>% improvement in user experience scores -->
+<!-- - <processing_speed>% faster transaction processing times -->
+<!-- - <system_uptime>% uptime achieved through robust architecture -->
+- Currently under construction
 
 **Leadership & Collaboration**  
 - Led full-stack development team across frontend and backend components
@@ -167,11 +175,12 @@ Traditional options pricing models (Black-Scholes) failed to capture market sent
 - Built comprehensive data pipeline processing historical options and market data
 
 **Impact / Results**  
-- <prediction_accuracy>% improvement over traditional Black-Scholes models
-- <model_performance>% accuracy in options price prediction
-- <data_processing>+ data points processed and analyzed
-- <sentiment_correlation>% correlation between sentiment and price movements
-- <trading_alpha>% alpha generation in backtesting scenarios
+<!-- - <prediction_accuracy>% improvement over traditional Black-Scholes models -->
+<!-- - <model_performance>% accuracy in options price prediction -->
+<!-- - <data_processing>+ data points processed and analyzed -->
+<!-- - <sentiment_correlation>% correlation between sentiment and price movements -->
+<!-- - <trading_alpha>% alpha generation in backtesting scenarios -->
+- Currently under construction
 
 **Leadership & Collaboration**  
 - Led independent research project from data collection to model deployment
@@ -794,8 +803,7 @@ Market inefficiency between damaged vehicle sellers and restoration buyers creat
 - 25+ vehicles restored and sold across multiple locations in United States
 - 23% average profit margin maintained across all transactions
 - Turnaround time -20% via lean workflow implementation
-- <customer_satisfaction_rate>% repeat buyer rate achieved
-- <total_revenue_generated> in cumulative sales revenue
+- $132,520 in cumulative sales revenue
 
 **Leadership & Collaboration**  
 - Managed end-to-end operations from sourcing to final sale across multiple states
@@ -1200,11 +1208,12 @@ Visually impaired individuals lacked real-time assistance for object identificat
 - Integrated accessibility features including voice commands and haptic feedback
 
 **Impact / Results**  
-- <recognition_accuracy>% accuracy in object identification across 100+ categories
-- <processing_speed>% improvement in real-time processing performance
-- <user_independence>% improvement in user independence and safety
-- <accessibility_rating>% improvement in accessibility and usability scores
-- <performance_optimization>% optimization in mobile AI performance
+<!-- - <recognition_accuracy>% accuracy in object identification across 100+ categories -->
+<!-- - <processing_speed>% improvement in real-time processing performance -->
+<!-- - <user_independence>% improvement in user independence and safety -->
+<!-- - <accessibility_rating>% improvement in accessibility and usability scores -->
+<!-- - <performance_optimization>% optimization in mobile AI performance -->
+- Currently under construction
 
 **Leadership & Collaboration**  
 - Led mobile AI development team through app development and testing
@@ -1259,11 +1268,12 @@ Local makers and entrepreneurs lacked access to professional-grade tools and equ
 - Developed resource sharing model for sustainable community access
 
 **Impact / Results**  
-- <community_access>% improvement in community access to professional tools
-- <safety_standards>% improvement in safety standards and training
-- <collaboration_opportunities>% increase in collaborative project opportunities
-- <skill_development>% improvement in community skill development
-- <resource_utilization>% optimization in tool and equipment utilization
+<!-- - <community_access>% improvement in community access to professional tools -->
+<!-- - <safety_standards>% improvement in safety standards and training -->
+<!-- - <collaboration_opportunities>% increase in collaborative project opportunities -->
+<!-- - <skill_development>% improvement in community skill development -->
+<!-- - <resource_utilization>% optimization in tool and equipment utilization -->
+- Currently under construction
 
 **Leadership & Collaboration**  
 - Led community development team through facility design and construction
@@ -1449,7 +1459,10 @@ Implementing the 8 specific requirements for the ME424 final project required co
 Embedded C++, ESP32, PlatformIO, UART protocols, Stepper motor control, TB6600 drivers, MOSFET & PWM control, WebSocket, HTTP server, Web Serial API, OTA updates, real-time systems, robotics, mechatronics, motion planning, sensor integration, technical documentation, HMI development
 
 **Selected Artifacts**  
-[GitHub Repository](https://github.com/Jaiparmar940/me424-robot) · [Web Control Interface](https://github.com/Jaiparmar940/me424-robot/tree/main/app) · [Wokwi Model](https://wokwi.com/projects/new/esp32) · [Full Documentation](https://github.com/Jaiparmar940/me424-robot/blob/main/README.md)
+- [GitHub Repo](https://github.com/Jaiparmar940/me424-robot)
+- [App Interface](https://github.com/Jaiparmar940/me424-robot/tree/main/app)
+- [Wokwi Simulation](https://wokwi.com/projects/new/esp32)
+- [Full Documentation](https://github.com/Jaiparmar940/me424-robot/blob/main/README.md)
 
 **Call to Action**  
 See my tailored résumé for robotics, embedded systems, mechatronics, or automation engineering roles.`,

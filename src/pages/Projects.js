@@ -101,7 +101,7 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <h2 className="section-title">
-                {config.shortName === 'Quant' ? 'Featured Projects' : `Featured ${config.name} Projects`}
+                {persona === 'yc2026' ? 'Innovative Projects' : config.shortName === 'Quant' ? 'Featured Projects' : `Featured ${config.name} Projects`}
               </h2>
             </motion.div>
 

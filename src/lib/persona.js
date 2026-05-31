@@ -157,9 +157,9 @@ export const personaConfigs = {
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [5, 14, 22, 18],
-    featuredProjectsPage: [26, 1, 25, 5, 27, 2],
-    otherProjects: [14, 22, 3, 21, 4, 6, 7, 8, 9, 12, 18, 19, 23, 24],
+    featuredHomeProjects: [26, 1, 25, 5],
+    featuredProjectsPage: [26, 1, 25, 5],
+    otherProjects: [14, 22, 3, 21, 4, 6, 7, 8, 9, 12, 18, 19, 23, 24, 27, 2],
     personalProjects: [10, 11, 13, 17, 16, 15, 20],
     description: 'Full-stack developer passionate about building scalable applications, mobile apps, and AI-driven solutions. Experience with React, Node.js, Python, and cloud technologies.',
     resumeUrl: '/resume.pdf'
