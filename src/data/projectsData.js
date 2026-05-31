@@ -1412,10 +1412,10 @@ See my tailored résumé for this role: <url>`,
   },
   {
     id: 25,
-    title: 'ME424 5-DOF Robotic Arm with Multi-Board ESP32 Control',
+    title: 'Autonomous Surgical Robotic Head Swapper',
     category: 'engineering, robotics, embedded systems',
     description: 'Built firmware and web UI for a 5-DOF robotic arm using three ESP32 boards coordinated via UART. Features synchronized stepper control (TB6600), limit switch homing, hot-swappable tools (electromagnet, vacuum, circular saw), WebSocket/HTTP dashboard, sequence programming, OTA updates, and Web Serial interface.',
-    longDescription: `# ME424 5-DOF Robotic Arm — Multi-Board ESP32 Firmware (Spring 2026)
+    longDescription: `# Autonomous Surgical Robotic Head Swapper — Multi-Board ESP32 Control (Spring 2026)
 **Role:** Lead Embedded Systems & Robotics Engineer
 
 **Overview**  
@@ -1459,7 +1459,7 @@ See my tailored résumé for robotics, embedded systems, mechatronics, or automa
     live: null,
     featured: false,
     hasDetailPage: true,
-    detailSlug: 'me424-robot',
+    detailSlug: 'autonomous-surgical-robot',
     images: [
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image2.jpeg`,
@@ -1599,125 +1599,6 @@ See my tailored résumé for quantitative research, ML engineering, or fintech p
       `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image3.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image4.jpeg`
-    ]
-  },
-  {
-    id: 28,
-    title: 'Autonomous Surgical Robotic Head Swapper',
-    category: 'robotics, medical, engineering, software',
-    description: 'Developed an autonomous 5-DOF robotic platform for multi-stage orthopedic surgery simulation (total knee arthroplasty workflow) with automatic end-effector exchange. Integrated ROS motion planning, kinematics, digital twin simulation, and a custom tool-changing system for probing, cutting, and debris removal without human intervention.',
-    longDescription: `# Autonomous Surgical Robotic Head Swapper (2024-2025)
-
-**Role:** Robotics Engineer & Autonomous Systems Developer
-
-**Overview**  
-Developed an autonomous robotic manipulation platform capable of performing multi-stage orthopedic surgery workflows through automatic end-effector exchange. The system was designed as a proof-of-concept for future autonomous surgical robotics, enabling a single robotic arm to sequentially perform surface mapping, bone cutting, and debris removal without human intervention.
-
-Inspired by limitations in existing robotic-assisted orthopedic systems, the project explored how a surgical robot could transition between specialized tools autonomously while maintaining precise positioning, repeatability, and operational safety throughout a procedure. The platform simulated key steps of a total knee arthroplasty (TKA) workflow using interchangeable robotic attachments and a custom-designed tool-changing interface.
-
-**Technical Contributions**
-
-#### ROS-Based Motion Planning and Robot Control
-Designed and implemented the complete robotics software stack using ROS, creating a digital twin of the robotic arm for simulation, planning, and execution.
-
-Key developments included:
-- Building a full kinematic model of a custom 5-DOF robotic manipulator.
-- Developing forward and inverse kinematics solutions for autonomous positioning.
-- Implementing trajectory generation and collision-aware motion planning between tool stations and surgical workspaces.
-- Creating automated calibration and homing routines to maintain positional accuracy throughout operation.
-- Developing tool-specific coordinate frame transformations to ensure consistent behavior across end-effector swaps.
-- Integrating motion planning with autonomous task sequencing to execute multi-step procedures without operator intervention.
-
-#### Autonomous Tool Changing System
-Engineered a robotic tool-changing architecture capable of automatically exchanging specialized surgical attachments.
-
-Features included:
-- Autonomous docking and undocking workflows.
-- Tool identification and verification using embedded sensing.
-- Repeatable attachment alignment through kinematic registration and mechanical locating features.
-- Automatic recovery and re-zeroing procedures following tool exchanges.
-- Software validation of successful tool engagement prior to task execution.
-
-The system was designed around strict repeatability requirements, targeting sub-millimeter tool positioning consistency after repeated attachment cycles.
-
-#### Surgical Procedure Automation
-Developed a complete autonomous workflow that coordinated multiple robotic capabilities into a single procedure:
-1. Surface scanning and geometry acquisition using a probing end effector.
-2. Path planning based on acquired workspace geometry.
-3. Autonomous tool exchange.
-4. Precision cutting operations using a powered saw attachment.
-5. Debris removal using a vacuum/grabber attachment.
-6. Autonomous transitions between each task without manual intervention.
-
-This required orchestrating perception, planning, motion control, tool management, and state-machine execution into a unified robotic system.
-
-#### Simulation and Digital Twin Development
-Created a simulation environment to validate robot behavior before deployment on physical hardware.
-
-The simulation stack supported:
-- Kinematic verification.
-- Workspace analysis.
-- Reachability studies.
-- Motion path validation.
-- Tool-changing sequence testing.
-- Repeatability and tolerance analysis.
-
-This enabled rapid iteration of both hardware and software while reducing development risk.
-
-**Engineering Highlights**
-- Full ROS-based robotics architecture.
-- Custom motion planning pipeline for a 5-DOF manipulator.
-- Autonomous tool-changing system with interchangeable end effectors.
-- Forward and inverse kinematics implementation.
-- Robot simulation and digital twin development.
-- Multi-stage autonomous surgical workflow execution.
-- Mechanical, electrical, and software integration across a complete robotic platform.
-- Designed for sub-millimeter positioning repeatability and high-reliability autonomous operation.
-
-**Technologies**  
-ROS • Python • C++ • Motion Planning • Inverse Kinematics • Robotics Simulation • CAD • Embedded Systems • Computer-Aided Manufacturing • Autonomous Systems • Mechatronics
-
-**Problem / Challenge**  
-Existing robotic-assisted surgery systems required manual tool changes and lacked full autonomy for multi-stage procedures. Achieving sub-millimeter repeatability across tool swaps, safe collision-free motion in constrained surgical workspaces, and seamless integration of perception, planning, and execution presented significant mechatronics, kinematics, and software challenges.
-
-**Approach / Solution**  
-- Built complete ROS stack with custom 5-DOF kinematic model, forward/inverse kinematics, collision-aware motion planning, and automated tool sequencing.
-- Designed and implemented an autonomous tool-changing system with sensing, kinematic registration, and validation routines for repeatable swaps.
-- Orchestrated a full TKA simulation workflow (scanning → planning → tool swap → cutting → debris removal) using state machines and digital twin validation.
-- Developed simulation environment for risk-free iteration of hardware/software designs.
-
-**Impact / Results**  
-- Demonstrated fully autonomous multi-stage orthopedic procedure with zero human intervention during execution.
-- Achieved target sub-millimeter repeatability across repeated tool exchanges.
-- Validated complex workflows in simulation before hardware deployment, accelerating development and reducing risk.
-- Created a scalable proof-of-concept architecture for next-generation autonomous surgical robots.
-
-**Leadership & Collaboration**  
-- Owned end-to-end development from mechanical design and kinematics to ROS software, simulation, and system integration.
-- Iterated rapidly using digital twin to validate mechanical, electrical, and software components.
-- Focused on safety, precision, and clinical relevance throughout the proof-of-concept.
-
-**Skills Applied**  
-ROS, Python, C++, Motion Planning, Inverse Kinematics, Robotics Simulation, CAD, Embedded Systems, Computer-Aided Manufacturing, Autonomous Systems, Mechatronics, State Machines, Digital Twins, Surgical Robotics, Kinematic Modeling
-
-**Selected Artifacts**  
-[Project Documentation](https://github.com/Jaiparmar940/surgical-robot-head-swapper) · [ROS Code & Simulation](<url>) · [Kinematic Models & Digital Twin Videos](<url>)
-
-**Call to Action**  
-See my tailored résumé for robotics, medical devices, autonomous systems, or surgical technology roles.`,
-    technologies: ['ROS', 'Python', 'C++', 'Motion Planning', 'Inverse Kinematics', 'Robotics Simulation', 'CAD', 'Embedded Systems', 'CAM', 'Autonomous Systems', 'Mechatronics', 'Digital Twin', 'State Machines', 'Surgical Robotics'],
-    image: 'https://picsum.photos/400/250?random=28',
-    github: null,
-    live: null,
-    featured: true,
-    hasDetailPage: true,
-    detailSlug: 'autonomous-surgical-robot',
-    images: [
-      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image1.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image2.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image3.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image4.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/autonomous-surgical-robot/image5.jpeg`
     ]
   }
 ];

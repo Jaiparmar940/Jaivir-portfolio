@@ -23,10 +23,9 @@ This folder contains subfolders for each engineering and business project. Each 
 13. **boulder-transport-device/** - Heavy-Duty Boulder Transport Device
 14. **mcdonalds-toy/** - McDonald's Happy Meal Toy Design & Safety Compliance
 15. **jpcommerce/** - Medical Equipment Resale Business
-26. **me424-robot/** - ME424 5-DOF Robotic Arm with Multi-Board ESP32 Control
+26. **me424-robot/** - Autonomous Surgical Robotic Head Swapper (detail slug: autonomous-surgical-robot)
 27. **grid-intelligence/** - Grid Intelligence Energy Market Forecasting & Battery Dispatch Optimization
 28. **omega-portfolio-engine/** - Omega Portfolio Engine (Regime-Aware Quantitative Optimization)
-29. **autonomous-surgical-robot/** - Autonomous Surgical Robotic Head Swapper
 
 ## Image Requirements:
 - Recommended size: 800x600 pixels or larger

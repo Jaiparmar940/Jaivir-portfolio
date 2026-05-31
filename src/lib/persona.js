@@ -8,6 +8,7 @@ const subToPersona = {
   'engineering': 'engineering',
   'banking': 'banking',
   'yc': 'yc',
+  'yc2026': 'yc2026',
   'code': 'code',
   'build': 'build',
   'ie': 'ie',
@@ -16,14 +17,14 @@ const subToPersona = {
 export function getStickyPersona() {
   try {
     const v = (localStorage.getItem('persona') || '').toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc','code','build','ie'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','yc2026','code','build','ie'].includes(v)) return v;
   } catch {}
   
   // cookie fallback
   const m = document.cookie.match(/(?:^|;\s*)persona=([^;]+)/);
   if (m) {
     const v = decodeURIComponent(m[1]).toLowerCase();
-    if (['swe','quant','consulting','engineering','banking','yc','code','build','ie'].includes(v)) return v;
+    if (['swe','quant','consulting','engineering','banking','yc','yc2026','code','build','ie'].includes(v)) return v;
   }
   return null;
 }
@@ -96,7 +97,7 @@ export function detectPersona() {
     const q = params.get('track');
     console.log('detectPersona: Query param track =', q);
     
-    if (q && ['swe','quant','consulting','engineering','banking','yc','code','build','ie'].includes(q)) {
+    if (q && ['swe','quant','consulting','engineering','banking','yc','yc2026','code','build','ie'].includes(q)) {
       console.log('detectPersona: Using query param persona:', q);
       setStickyPersona(q);
       return q;
@@ -140,6 +141,26 @@ export const personaConfigs = {
     primaryColor: 'blue',
     featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
     featuredProjectsPage: [5, 14, 22, 1, 2, 3, 21], // Top SWE projects
+    description: 'Full-stack developer passionate about building scalable applications, mobile apps, and AI-driven solutions. Experience with React, Node.js, Python, and cloud technologies.',
+    resumeUrl: '/resume.pdf'
+  },
+  yc2026: {
+    name: 'Software Engineer',
+    shortName: 'SWE',
+    headline: 'Software Engineer • Full-Stack Developer • AI Specialist',
+    subhead: 'Building scalable applications and AI-driven solutions that create real business value',
+    proofStats: [
+      { label: 'Projects Built', value: '15+' },
+      { label: 'Technologies', value: '20+' },
+      { label: 'Years Experience', value: '3+' }
+    ],
+    cta: 'View My Code',
+    ctaLink: '/projects',
+    primaryColor: 'blue',
+    featuredHomeProjects: [5, 14, 22, 18],
+    featuredProjectsPage: [26, 1, 25, 5, 27, 2],
+    otherProjects: [14, 22, 3, 21, 4, 6, 7, 8, 9, 12, 18, 19, 23, 24],
+    personalProjects: [10, 11, 13, 17, 16, 15, 20],
     description: 'Full-stack developer passionate about building scalable applications, mobile apps, and AI-driven solutions. Experience with React, Node.js, Python, and cloud technologies.',
     resumeUrl: '/resume.pdf'
   },

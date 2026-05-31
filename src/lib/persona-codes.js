@@ -7,6 +7,7 @@ export const CODE_MAP = {
   'eng9A2bZ': 'engineering',
   'portfolio': 'banking',
   'yc2025': 'yc',
+  'yc2026': 'yc2026',
   'code': 'code',
   'build': 'build',
   'innovation': 'ie',
