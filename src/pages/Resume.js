@@ -108,7 +108,7 @@ const Resume = () => {
       degree: 'B.S. Computer Science, B.S.E. Mechanical Engineering, Innovation & Entrepreneurship',
       school: 'Duke University',
       period: 'Expected May 2026',
-      relevant: ['Double Major BSE, 'Innovation & Entrepreneurship certificate', 'Durham, NC']
+      relevant: ['Double Major BSE', 'Innovation & Entrepreneurship certificate', 'Durham, NC']
     }
   ];
 

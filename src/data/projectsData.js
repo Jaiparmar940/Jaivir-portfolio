@@ -1427,7 +1427,7 @@ Implementing the 8 specific requirements for the ME424 final project required co
 **Approach / Solution**  
 - Architected master-slave system: Main board (WiFi, HTTP UI, WebSocket, OTA, stepper drivers via TB6600 for 6 axes with dual synced motors on Stage 2), Sensor board (limit switches, Hall sensor for Stage 5, tool ID via ADC), MOSFET board (power control for MAG/VAC/SAW with PWM for BLDC driver)
 - Implemented robust command protocols over UART (115200 baud) with ACKs, state reporting, and error handling
-- Developed advanced motion commands (`syncabs`, homing sequences `home sN`, soft zeroing, ramping, max speed control) for precise synchronized playback
+- Developed advanced motion commands (syncabs, homing sequences home sN, soft zeroing, ramping, max speed control) for precise synchronized playback
 - Built full-featured web app supporting manual jogging, pose recording (all 6 axes at once), sequence composition (poses + delays + MOSFET actions), localStorage/JSON persistence, auto-homing
 - Integrated analog tool ID, limit switch logic, comprehensive debugging via serial and web dashboard
 - Created Wokwi simulation model and extensive documentation for reproducibility
@@ -1570,7 +1570,7 @@ Traditional portfolio optimization (e.g. mean-variance) fails to account for cha
 - Production-ready platform with interactive UI enabling rapid iteration on portfolios and policies.
 - Robust backtesting and regime-aware optimization that outperforms static approaches in varying market conditions.
 - Centralized results dashboard and export capabilities for analysis and client reporting.
-- Easy deployment via `make start` with full support for research notebooks, API, and web workflows.
+- Easy deployment via make start with full support for research notebooks, API, and web workflows.
 - Inspired by Bridgewater All Weather strategy; extensible for ESG, multi-currency, and real-time use cases.
 
 **Leadership & Collaboration**  
@@ -1583,7 +1583,7 @@ Traditional portfolio optimization (e.g. mean-variance) fails to account for cha
 Quantitative Finance, Portfolio Optimization, Regime Detection (HMM/LSTM/GMM), Walk-Forward Backtesting, Risk Management (CVaR, Turnover), Machine Learning, Streamlit, FastAPI, Python, Pandas, Feature Engineering, Policy Management, Backtesting Frameworks, Data Visualization, API Development
 
 **Selected Artifacts**  
-[GitHub Repository](https://github.com/Jaiparmar940/allweather-quant-lab) · [Live Demo](http://localhost:8501) (via `make start`) · [Research Notebooks](https://github.com/Jaiparmar940/allweather-quant-lab/tree/main/research) · [API Documentation](<url>)
+[GitHub Repository](https://github.com/Jaiparmar940/allweather-quant-lab) · [Live Demo](http://localhost:8501) (via make start) · [Research Notebooks](https://github.com/Jaiparmar940/allweather-quant-lab/tree/main/research) · [API Documentation](<url>)
 
 **Call to Action**  
 See my tailored résumé for quantitative research, ML engineering, or fintech product roles.`,
