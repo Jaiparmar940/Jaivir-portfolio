@@ -7,7 +7,7 @@ import { projectsData } from '../data/projectsData';
 import './Home.css';
 
 const Home = () => {
-  const { config, isLoading, error } = usePersona();
+  const { persona, config, isLoading, error } = usePersona();
   
   // Debug logging
   console.log('Home component: config =', config);
@@ -62,7 +62,28 @@ const Home = () => {
 
   // Dynamic features based on persona
   const getFeatures = () => {
-    if (config.shortName === 'YC') {
+    if (persona === 'yc2026') {
+      return [
+        {
+          icon: FiCode,
+          title: 'Product & Full-Stack',
+          description: 'Shipping web and mobile products with AI, analytics, and growth loops from prototype to users',
+          link: '/projects'
+        },
+        {
+          icon: FiTrendingUp,
+          title: 'Energy & Quant Systems',
+          description: 'Forecasting, optimization, and data pipelines for markets, batteries, and portfolio decisions',
+          link: '/projects'
+        },
+        {
+          icon: FiSettings,
+          title: 'Robotics & Embedded',
+          description: 'Multi-board control, real-time motion, and hardware–software systems built end to end',
+          link: '/projects'
+        }
+      ];
+    } else if (config.shortName === 'YC') {
       return [
         {
           icon: FiTrendingUp,
@@ -228,7 +249,11 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="section-title">
-                {config.shortName === 'YC' || config.shortName === 'Quant' ? 'Featured Projects' : `Featured ${config.name} Projects`}
+                {persona === 'yc2026'
+                  ? 'Featured Innovation Projects'
+                  : config.shortName === 'YC' || config.shortName === 'Quant'
+                  ? 'Featured Projects'
+                  : `Featured ${config.name} Projects`}
               </h2>
               <p className="section-subtitle">
                 {config.subhead}
@@ -285,7 +310,9 @@ const Home = () => {
           >
             <h2 className="section-title">What I Do</h2>
             <p className="section-subtitle">
-              {config.shortName === 'YC' 
+              {persona === 'yc2026'
+                ? 'Products and systems across software, energy markets, and robotics—from prototype to production'
+                : config.shortName === 'YC' 
                 ? 'Building and scaling ventures that solve real problems and create lasting impact'
                 : config.shortName === 'CS'
                 ? 'Building scalable software solutions and AI-driven applications with modern technologies'
@@ -332,7 +359,9 @@ const Home = () => {
           >
             <h2 className="section-title">Quick Access</h2>
             <p className="section-subtitle">
-              {config.shortName === 'YC' 
+              {persona === 'yc2026'
+                ? 'Explore featured builds in software, energy, and robotics'
+                : config.shortName === 'YC' 
                 ? 'Explore my entrepreneurial ventures and business building experience'
                 : config.shortName === 'CS'
                 ? 'Explore my software development and AI/ML engineering projects'
@@ -351,9 +380,9 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3>{config.shortName === 'YC' ? 'My Ventures' : config.shortName === 'CS' ? 'My Code' : config.shortName === 'Build' ? 'My Designs' : 'Investment Analysis'}</h3>
-              <p>{config.shortName === 'YC' ? 'Entrepreneurial projects and business ventures I\'ve founded and scaled' : config.shortName === 'CS' ? 'Software development projects and AI/ML applications I\'ve built' : config.shortName === 'Build' ? 'Mechanical engineering projects and integrated systems I\'ve designed' : 'Financial modeling, valuation, and market research projects'}</p>
-              <Link to="/projects" className="btn btn-primary">{config.shortName === 'YC' ? 'View Ventures' : config.shortName === 'CS' ? 'View Code' : config.shortName === 'Build' ? 'View Designs' : 'View Analysis'}</Link>
+              <h3>{persona === 'yc2026' ? 'Projects' : config.shortName === 'YC' ? 'My Ventures' : config.shortName === 'CS' ? 'My Code' : config.shortName === 'Build' ? 'My Designs' : 'Investment Analysis'}</h3>
+              <p>{persona === 'yc2026' ? 'AI products, energy intelligence, robotics, and full-stack ventures from idea to deployment' : config.shortName === 'YC' ? 'Entrepreneurial projects and business ventures I\'ve founded and scaled' : config.shortName === 'CS' ? 'Software development projects and AI/ML applications I\'ve built' : config.shortName === 'Build' ? 'Mechanical engineering projects and integrated systems I\'ve designed' : 'Financial modeling, valuation, and market research projects'}</p>
+              <Link to="/projects" className="btn btn-primary">{persona === 'yc2026' ? 'View Projects' : config.shortName === 'YC' ? 'View Ventures' : config.shortName === 'CS' ? 'View Code' : config.shortName === 'Build' ? 'View Designs' : 'View Analysis'}</Link>
             </motion.div>
 
             <motion.div
@@ -364,7 +393,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h3>Resume</h3>
-              <p>{config.shortName === 'YC' ? 'Entrepreneurial experience and business building track record' : config.shortName === 'CS' ? 'Computer Science experience and technical qualifications' : config.shortName === 'Build' ? 'Mechanical Engineering and Computer Science dual-degree experience' : 'Investment analysis experience and qualifications'}</p>
+              <p>{persona === 'yc2026' ? 'Technical leadership across software, energy, and robotics' : config.shortName === 'YC' ? 'Entrepreneurial experience and business building track record' : config.shortName === 'CS' ? 'Computer Science experience and technical qualifications' : config.shortName === 'Build' ? 'Mechanical Engineering and Computer Science dual-degree experience' : 'Investment analysis experience and qualifications'}</p>
               <a href={config.resumeUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Resume</a>
             </motion.div>
 
@@ -375,9 +404,9 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h3>{config.shortName === 'YC' ? 'About Me' : config.shortName === 'CS' ? 'About Me' : config.shortName === 'Build' ? 'About Me' : 'Research'}</h3>
-              <p>{config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : config.shortName === 'CS' ? 'My technical background and software engineering journey' : config.shortName === 'Build' ? 'My dual-degree engineering background and product development journey' : 'Quantitative analysis and financial modeling research'}</p>
-              <Link to={config.shortName === 'YC' ? '/about' : config.shortName === 'CS' ? '/about' : config.shortName === 'Build' ? '/about' : '/lab-reports'} className="btn btn-primary">{config.shortName === 'YC' ? 'Learn More' : config.shortName === 'CS' ? 'Learn More' : config.shortName === 'Build' ? 'Learn More' : 'View Research'}</Link>
+              <h3>{persona === 'yc2026' || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'About Me' : 'Research'}</h3>
+              <p>{persona === 'yc2026' ? 'Background in building products at the intersection of software, markets, and hardware' : config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : config.shortName === 'CS' ? 'My technical background and software engineering journey' : config.shortName === 'Build' ? 'My dual-degree engineering background and product development journey' : 'Quantitative analysis and financial modeling research'}</p>
+              <Link to={persona === 'yc2026' || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? '/about' : '/lab-reports'} className="btn btn-primary">{persona === 'yc2026' || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'Learn More' : 'View Research'}</Link>
             </motion.div>
           </div>
         </div>

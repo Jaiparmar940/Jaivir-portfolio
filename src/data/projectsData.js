@@ -50,8 +50,7 @@ See my tailored résumé for product/consulting roles: <url>`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image3.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/impression/image4.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/impression/image5.jpeg`
+      `${process.env.PUBLIC_URL}/static/projects/impression/image4.jpeg`
     ]
   },
   {
@@ -1478,7 +1477,10 @@ See my tailored résumé for robotics, embedded systems, mechatronics, or automa
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image3.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image4.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image5.jpeg`
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image5.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image6.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image7.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image8.jpeg`
     ]
   },
   {
@@ -1553,7 +1555,23 @@ See my tailored résumé for energy tech, quantitative ML, or startup technical 
       `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image3.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image4.jpeg`
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image4.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image5.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image6.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image7.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image8.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image9.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image10.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image11.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image12.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image13.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image14.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image15.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image16.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image17.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image18.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image19.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image20.jpeg`
     ]
   },
   {
