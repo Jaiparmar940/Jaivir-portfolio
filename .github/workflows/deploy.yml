@@ -19,11 +19,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: false  # Explicitly disable (removed orphaned Jaivir-portfolio gitlink)
         
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'  # Updated from 18 to address Node 20 deprecation warnings (runner will default to 24 soon)
           cache: 'npm'
           
       - name: Install dependencies
