@@ -1409,6 +1409,64 @@ See my tailored résumé for this role: <url>`,
     images: [
       `${process.env.PUBLIC_URL}/static/projects/custom-cpu-logisim/image1.jpeg`
     ]
+  },
+  {
+    id: 25,
+    title: 'ME424 5-DOF Robotic Arm with Multi-Board ESP32 Control',
+    category: 'engineering, robotics, embedded systems',
+    description: 'Built firmware and web UI for a 5-DOF robotic arm using three ESP32 boards coordinated via UART. Features synchronized stepper control (TB6600), limit switch homing, hot-swappable tools (electromagnet, vacuum, circular saw), WebSocket/HTTP dashboard, sequence programming, OTA updates, and Web Serial interface.',
+    longDescription: `# ME424 5-DOF Robotic Arm — Multi-Board ESP32 Firmware (Spring 2026)
+**Role:** Lead Embedded Systems & Robotics Engineer
+
+**Overview**  
+Developed a complete distributed control system for a 5-degree-of-freedom robotic arm with interchangeable tool heads. Three ESP32 boards (Main, Sensor, MOSFET) communicate over UART to manage 6 stepper motors, multiple sensors, power switching for tools, WiFi-enabled web interface, and precise motion sequences. The system supports hot-swapping tools via an 8-pin magnetic wrist connector.
+
+**Problem / Challenge**  
+Implementing the 8 specific requirements for the ME424 final project required coordinating real-time motor control, sensor feedback, tool actuation, and a rich user interface across multiple microcontrollers. Challenges included reliable UART inter-board communication, synchronized multi-axis motion with ramping, tool identification and power management, OTA updates, and building an intuitive web-based HMI using Web Serial and WebSockets while meeting real-time constraints and safety requirements.
+
+**Approach / Solution**  
+- Architected master-slave system: Main board (WiFi, HTTP UI, WebSocket, OTA, stepper drivers via TB6600 for 6 axes with dual synced motors on Stage 2), Sensor board (limit switches, Hall sensor for Stage 5, tool ID via ADC), MOSFET board (power control for MAG/VAC/SAW with PWM for BLDC driver)
+- Implemented robust command protocols over UART (115200 baud) with ACKs, state reporting, and error handling
+- Developed advanced motion commands (`syncabs`, homing sequences `home sN`, soft zeroing, ramping, max speed control) for precise synchronized playback
+- Built full-featured web app supporting manual jogging, pose recording (all 6 axes at once), sequence composition (poses + delays + MOSFET actions), localStorage/JSON persistence, auto-homing
+- Integrated analog tool ID, limit switch logic, comprehensive debugging via serial and web dashboard
+- Created Wokwi simulation model and extensive documentation for reproducibility
+
+**Impact / Results**  
+- Successfully completed all 8 ME424 UI and control requirements
+- Achieved reliable synchronized 5-DOF motion with configurable speed profiles and safety homing
+- Enabled rapid prototyping and iteration through web UI, OTA firmware updates, and simulation
+- Demonstrated professional-grade embedded systems engineering with multi-board architecture, real-time control, and user-friendly HMI
+- Produced well-documented, modular codebase suitable for extension or demonstration
+
+**Leadership & Collaboration**  
+- Owned end-to-end system design across mechanical integration, electrical, firmware, UI, and documentation
+- Designed and iterated on custom inter-board communication protocols based on hardware testing
+- Created comprehensive README with pinouts, architecture diagrams, upload instructions, and protocol specs
+- Balanced performance, reliability, safety, and usability across complex distributed real-time system
+
+**Skills Applied**  
+Embedded C++, ESP32, PlatformIO, UART protocols, Stepper motor control, TB6600 drivers, MOSFET & PWM control, WebSocket, HTTP server, Web Serial API, OTA updates, real-time systems, robotics, mechatronics, motion planning, sensor integration, technical documentation, HMI development
+
+**Selected Artifacts**  
+[GitHub Repository](https://github.com/Jaiparmar940/me424-robot) · [Web Control Interface](https://github.com/Jaiparmar940/me424-robot/tree/main/app) · [Wokwi Model](https://wokwi.com/projects/new/esp32) · [Full Documentation](https://github.com/Jaiparmar940/me424-robot/blob/main/README.md)
+
+**Call to Action**  
+See my tailored résumé for robotics, embedded systems, mechatronics, or automation engineering roles.`,
+    technologies: ['ESP32', 'C++', 'PlatformIO', 'UART', 'Stepper Motors', 'TB6600', 'WebSocket', 'Web Serial', 'OTA', 'MOSFET', 'PWM', 'Robotics', 'Mechatronics', 'Embedded Systems', 'Motion Control', 'Real-time Programming'],
+    image: 'https://picsum.photos/400/250?random=25',
+    github: 'https://github.com/Jaiparmar940/me424-robot',
+    live: null,
+    featured: false,
+    hasDetailPage: true,
+    detailSlug: 'me424-robot',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image1.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image2.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image3.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image4.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image5.jpeg`
+    ]
   }
 ];
 
