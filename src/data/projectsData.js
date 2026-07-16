@@ -1466,13 +1466,14 @@ Embedded C++, ESP32, PlatformIO, UART protocols, Stepper motor control, TB6600 d
 **Call to Action**  
 See my tailored résumé for robotics, embedded systems, mechatronics, or automation engineering roles.`,
     technologies: ['ESP32', 'C++', 'PlatformIO', 'UART', 'Stepper Motors', 'TB6600', 'WebSocket', 'Web Serial', 'OTA', 'MOSFET', 'PWM', 'Robotics', 'Mechatronics', 'Embedded Systems', 'Motion Control', 'Real-time Programming'],
-    image: 'https://picsum.photos/400/250?random=25',
+    image: `${process.env.PUBLIC_URL}/static/projects/me424-robot/demo.gif`,
     github: 'https://github.com/Jaiparmar940/me424-robot',
     live: null,
     featured: false,
     hasDetailPage: true,
     detailSlug: 'autonomous-surgical-robot',
     images: [
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/demo.gif`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image3.jpeg`,
