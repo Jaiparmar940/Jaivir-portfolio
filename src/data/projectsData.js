@@ -158,7 +158,14 @@ Full-stack development, security architecture, API design, financial systems, au
     live: null,
     featured: true,
     hasDetailPage: true,
-    detailSlug: 'banking-application-detail'
+    detailSlug: 'banking-application-detail',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/banking-application-detail/preview.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/banking-application-detail/preview-1.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/banking-application-detail/preview-2.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/banking-application-detail/preview-3.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/banking-application-detail/preview-4.webp`
+    ]
   },
   {
     id: 4,
