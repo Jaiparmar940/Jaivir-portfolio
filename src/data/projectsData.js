@@ -747,10 +747,10 @@ Automotive tuning, ECU mapping, exhaust systems, catalytic converters, ethanol s
   },
   {
     id: 14,
-    title: 'Comprehensive Vehicle Restoration & Resale Business',
+    title: 'Comprehensive Vehicle Restoration & Resale Side Business',
     category: 'business',
-    description: 'Established a profitable vehicle restoration business sourcing damaged cars and motorcycles from Facebook Marketplace, performing comprehensive restorations, and reselling for significant profit margins. Successfully restored and sold 25+ vehicles with an average 23% profit margin.',
-    longDescription: `# Comprehensive Vehicle Restoration & Resale Business (2020 - Present)
+    description: 'Established a profitable vehicle restoration side business sourcing damaged cars and motorcycles from Facebook Marketplace, performing comprehensive restorations, and reselling for significant profit margins. Successfully restored and sold 25+ vehicles with an average 23% profit margin.',
+    longDescription: `# Comprehensive Vehicle Restoration & Resale Side Business (2020 - Present)
 **Role:** Founder & Lead Operator
 
 **Overview**  
@@ -782,13 +782,14 @@ Market analysis, pricing strategy, ops optimization, quality control, financial 
 
 `,
     technologies: ['Automotive Restoration', 'Motorcycle Mechanics', 'Engine Rebuilding', 'Business Development', 'Market Analysis', 'Profit Optimization', 'Quality Control', 'Mechanical Engineering', 'Parts Sourcing', 'Entrepreneurship', 'Facebook Marketplace', 'Vehicle Diagnostics', 'Body Work', 'Paint & Finishing', 'Financial Management'],
-    image: 'https://picsum.photos/400/250?random=14',
+    image: `${process.env.PUBLIC_URL}/static/projects/vehicle-restoration-business/snow.png`,
     github: null,
     live: null,
     featured: true,
     hasDetailPage: true,
     detailSlug: 'vehicle-restoration-business',
     images: [
+      `${process.env.PUBLIC_URL}/static/projects/vehicle-restoration-business/snow.png`,
       `${process.env.PUBLIC_URL}/static/projects/vehicle-restoration-business/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/vehicle-restoration-business/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/vehicle-restoration-business/image3.jpeg`,
@@ -1540,7 +1541,7 @@ Traditional portfolio optimization (e.g. mean-variance) fails to account for cha
 Quantitative Finance, Portfolio Optimization, Regime Detection (HMM/LSTM/GMM), Walk-Forward Backtesting, Risk Management (CVaR, Turnover), Machine Learning, Streamlit, FastAPI, Python, Pandas, Feature Engineering, Policy Management, Backtesting Frameworks, Data Visualization, API Development
 
 **Selected Artifacts**  
-[GitHub Repository](https://github.com/Jaiparmar940/allweather-quant-lab) · [Research Notebooks](https://github.com/Jaiparmar940/allweather-quant-lab/tree/main/research)
+[initial brainstorming public repository](https://github.com/Jaiparmar940/allweather-quant-lab)
 
 `,
     technologies: ['Python', 'Streamlit', 'FastAPI', 'Pandas', 'HMM', 'LSTM', 'GMM', 'GMV Optimization', 'Omega Ratio', 'Walk-Forward Backtesting', 'CVaR', 'Regime Detection', 'Quantitative Finance', 'Risk Management'],

@@ -69,7 +69,7 @@ const Resume = () => {
     },
     {
       title: 'Founder & Lead Operator',
-      company: 'Comprehensive Vehicle Restoration & Resale Business',
+      company: 'Comprehensive Vehicle Restoration & Resale Side Business',
       period: '2020 - Present',
       location: 'Multiple Locations, United States',
       description: [
