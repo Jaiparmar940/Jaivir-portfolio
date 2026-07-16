@@ -126,12 +126,11 @@ Traditional banking systems lacked modern user interfaces and real-time transact
 - Built comprehensive transaction management system with audit trails
 
 **Impact / Results**  
-<!-- - <transaction_volume>+ transactions processed securely -->
-<!-- - <security_incidents>% reduction in security vulnerabilities -->
-<!-- - <user_satisfaction>% improvement in user experience scores -->
-<!-- - <processing_speed>% faster transaction processing times -->
-<!-- - <system_uptime>% uptime achieved through robust architecture -->
-- Currently under construction
+- Learning-focused full-stack project (not production-deployed) co-developed with [Michael Levin](https://github.com/MichaelLevin5908), a YC founder and former GitHub developer
+- Built end-to-end account lifecycle: registration, JWT login, balance/name enquiry, credit/debit, and peer-to-peer transfers with persisted transaction history
+- Implemented Spring Security + JWT authentication, BCrypt password hashing, and React protected routes for authenticated dashboard access
+- Added transactional email alerts (account creation, login, debit/credit) and PDF bank statement generation via iText
+- Documented REST APIs with Swagger/OpenAPI and validated full local stack integration (Spring Boot, MySQL, React)
 
 **Leadership & Collaboration**  
 - Led full-stack development team across frontend and backend components
@@ -1312,17 +1311,17 @@ Custom single-cycle CPU design using Logisim digital logic simulator with comple
 Existing CPU design tools lacked comprehensive instruction set implementation and I/O capabilities. Educational resources needed practical examples of complete processor design from first principles.
 
 **Approach / Solution**  
-- Designed single-cycle CPU architecture with five-stage pipeline model
-- Implemented complete instruction set architecture with ALU operations
-- Developed memory management and branching logic systems
-- Built integrated I/O capabilities for keyboard input and teletype output
+- Implemented the Duke 250/16 single-cycle, 16-bit MIPS-like RISC processor in Logisim Evolution
+- Built Harvard architecture with separate instruction and data memory, plus full datapath and control logic
+- Designed 8-register file ($r0–$r7) with $r0 hardwired to zero and $r7 as link register
+- Added keyboard input and teletype output with correct reset and clock edge behavior
 
 **Impact / Results**  
-- <instruction_support>% improvement in instruction set completeness
-- <system_integration>% improvement in system integration and functionality
-- <educational_value>% enhancement in educational and learning value
-- <design_complexity>% increase in design complexity and sophistication
-- <testing_capability>% improvement in testing and validation capabilities
+- Implemented full Duke 250/16 instruction set: arithmetic, logic, shifts, memory access, branching, jumping, and I/O
+- Built Harvard architecture with separate instruction/data memory and register file using tri-state buffers and decoder
+- Achieved correct asynchronous reset for PC, registers, TTY, and keyboard buffer with spec-compliant clocking
+- Passed automated verification via `hwtest.py` against provided assembler and simulator output
+- Delivered complete Logisim design (`cpu.circ`) for ECE 250 processor core coursework
 
 **Leadership & Collaboration**  
 - Led computer architecture team through design and implementation phases
@@ -1333,10 +1332,13 @@ Existing CPU design tools lacked comprehensive instruction set implementation an
 **Skills Applied**  
 Digital logic design, computer architecture, Logisim, CPU design, instruction set architecture, digital circuits, control logic, memory systems, ALU design, register files
 
+**Selected Artifacts**  
+[Code Repository](https://github.com/Jaiparmar940/ECE250Proj4)
+
 `,
     technologies: ['Digital Logic Design', 'Computer Architecture', 'Logisim', 'CPU Design', 'Instruction Set Architecture', 'Digital Circuits', 'Control Logic', 'Memory Systems', 'ALU Design', 'Register Files', 'Branching Logic', 'I/O Systems', 'Digital Electronics', 'Computer Engineering', 'Hardware Design'],
     image: 'https://picsum.photos/400/250?random=24',
-    github: null,
+    github: 'https://github.com/Jaiparmar940/ECE250Proj4',
     live: null,
     featured: true,
     hasDetailPage: true,
