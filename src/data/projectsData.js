@@ -563,20 +563,7 @@ Stock harmonic balancers were insufficient for high-performance applications, ca
 - Implemented precision installation techniques ensuring proper alignment and torque
 - Developed performance tuning protocols for maximum engine efficiency
 
-**Impact / Results**  
-- <vibration_reduction>% reduction in engine vibrations at high RPM
-- <performance_improvement>% increase in engine power output
-- <smoothness_rating>% improvement in engine smoothness and drivability
-- <installation_accuracy>% improvement in installation precision and alignment
-- <durability_enhancement>% increase in component lifespan and reliability
-
-**Leadership & Collaboration**  
-- Led automotive engineering team through design and installation phases
-- Collaborated with performance specialists for optimal tuning parameters
-- Resolved vibration challenges through systematic analysis and iteration
-- Implemented quality control processes ensuring installation accuracy
-
-**Skills Applied**  
+**Skills Applied**
 Automotive engineering, harmonic balancing, engine design, vibration analysis, precision installation, performance tuning, Corvette modifications, mechanical assembly
 
 `,
