@@ -311,11 +311,11 @@ Fixed-height pump installations limited operational flexibility and maintenance 
 - Implemented height adjustment mechanism for operational flexibility
 
 **Impact / Results**  
-- <load_capacity>% increase in maximum supported load capacity
-- <safety_factor>% improvement in structural safety margins
-- <adjustment_range>% increase in height adjustment range
-- <maintenance_time>% reduction in pump maintenance time
-- <structural_failures>% reduction in support system failures
+- Withstood a 115 lbf operating load without visible bending, buckling, or failure.
+- Achieved just 0.508 mm of measured deflection, beating the 1 mm requirement by 49%.
+- Predicted physical deflection within ~1% using analytical beam calculations.
+- Reduced platform weight by 30% through a custom I-beam redesign while maintaining nearly unchanged stiffness.
+- Delivered a 3.8 lb, 19-inch prototype for $142.53, meeting all load, size, weight, and budget requirements.
 
 **Leadership & Collaboration**  
 - Led structural analysis team through design and validation phases
