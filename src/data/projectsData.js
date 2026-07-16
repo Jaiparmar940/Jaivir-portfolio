@@ -1157,12 +1157,6 @@ Visually impaired individuals lacked real-time assistance for object identificat
 - Configured a 300×300 input pipeline with a 0.5 confidence threshold, gaining hands-on experience with model inputs, quantization, and inference tradeoffs on mobile hardware.
 - Deepened practical understanding of the end-to-end CV workflow — camera capture, preprocessing, on-device inference, and rendering — as a foundation for later college coursework.
 
-**Leadership & Collaboration**  
-- Led mobile AI development team through app development and testing
-- Collaborated with accessibility specialists for optimal user experience
-- Resolved performance challenges through TensorFlow Lite optimization
-- Implemented user testing protocols ensuring accessibility standards
-
 **Skills Applied**  
 Android development, TensorFlow Lite, computer vision, machine learning, real-time processing, accessibility design, Java/Kotlin, OpenCV, audio processing, camera integration
 
