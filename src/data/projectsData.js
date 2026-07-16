@@ -1052,7 +1052,7 @@ Construction management, building codes compliance, electrical design, lighting 
     title: 'VisionAssist - AI-Powered Object Recognition for Visually Impaired',
     category: 'software',
     description: 'Developed an Android application using TensorFlow and real-time object recognition to help visually impaired users locate and identify objects in their environment through their phone\'s camera.',
-    longDescription: `# VisionAssist - AI-Powered Object Recognition for Visually Impaired (2022 - 2023)
+    longDescription: `# VisionAssist - AI-Powered Object Recognition for Visually Impaired (2019)
 **Role:** Mobile AI Developer & Accessibility Specialist
 
 **Overview**  
