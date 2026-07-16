@@ -74,7 +74,7 @@ function IEFinalReflection() {
   };
 
   return (
-    <div id="ie-final-reflection-root" className="ie-portfolio">
+    <div id="ie-final-reflection-root" className="ie-portfolio" data-theme={dark ? 'dark' : 'light'}>
       <header className="ie-nav-wrap">
         <nav className="ie-nav">
           <span className="ie-nav-title">
