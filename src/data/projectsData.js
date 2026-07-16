@@ -244,7 +244,7 @@ Pricing opacity and inconsistent quality created margin risk and long repair cyc
 - Listed, advertised, and sold units through an eBay storefront
 
 **Impact / Results**  
-- $100K+ revenue; 42% average profit margin across 50+ transactions
+- $100K+ revenue; 42% average profit margin across 100+ transactions
 - 200+ five-star client reviews; 100% satisfaction rate maintained
 - ROI improved +12% through freight shipping contracts
 - Scaled from local to international markets within 18 months
