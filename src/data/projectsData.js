@@ -882,20 +882,7 @@ Existing dining table designs lacked the sophisticated aesthetic and structural 
 - Conducted material selection analysis for optimal strength and aesthetics
 - Implemented structural engineering principles ensuring long-term durability
 
-**Impact / Results**  
-- <design_sophistication>% improvement in aesthetic design quality
-- <structural_integrity>% improvement in structural strength and durability
-- <material_efficiency>% optimization in material usage and cost
-- <manufacturing_readiness>% improvement in manufacturing feasibility
-- <aesthetic_appeal>% enhancement in visual appeal and marketability
-
-**Leadership & Collaboration**  
-- Led product design team through conceptualization and modeling phases
-- Collaborated with structural engineers for optimal design integrity
-- Resolved design challenges through iterative CAD modeling
-- Implemented quality control processes ensuring design standards
-
-**Skills Applied**  
+**Skills Applied**
 SolidWorks, 3D CAD modeling, product design, structural engineering, material analysis, furniture design, design engineering, 3D visualization, engineering documentation, luxury product development
 
 `,
