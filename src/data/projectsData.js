@@ -667,13 +667,6 @@ Boat was in non-operational condition with multiple mechanical failures across e
 - Performed electrical system overhaul ensuring safety and reliability
 - Executed mechanical repairs including engine, outdrive, and trailer systems
 
-**Impact / Results**  
-- <restoration_completeness>% restoration of vessel to operational condition
-- <system_reliability>% improvement in mechanical system reliability
-- <safety_enhancement>% improvement in safety and compliance standards
-- <value_restoration>% increase in vessel resale value
-- <operational_efficiency>% improvement in overall operational efficiency
-
 **Leadership & Collaboration**  
 - Led marine restoration team through complex multi-system repair process
 - Collaborated with electrical specialists for system overhaul
