@@ -452,10 +452,11 @@ Traditional propulsion systems were ineffective on loose sand surfaces. Existing
 - Increased testing throughput by organizing a parallel reset process for string winding, sand preparation, and vehicle weighing.
 
 **Leadership & Collaboration**  
-- Led mechanical design team through iterative prototyping process
-- Collaborated with materials experts for optimal component selection
-- Resolved traction challenges through systematic testing and refinement
-- Implemented data-driven design optimization methodology
+- Helped establish a fast, consensus-driven design process that kept the team aligned while evaluating multiple competing concepts.
+- Organized testing around parallel roles for string setup, sand preparation, and vehicle weighing, increasing trial throughput and accelerating iteration.
+- Encouraged the team to validate ideas experimentally rather than eliminate concepts prematurely, leading to evidence-based design decisions.
+- Collaborated across mechanical design, prototyping, and testing to diagnose friction, traction, and stalling issues and convert observations into concrete design changes.
+- Contributed to a team culture of rapid iteration, shared ownership, and unanimous decision-making throughout development.
 
 **Skills Applied**  
 Mechanical design, prototyping, gear systems, traction analysis, iterative design, sand vehicle engineering, mousetrap mechanics, SolidWorks
