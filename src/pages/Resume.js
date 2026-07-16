@@ -7,7 +7,7 @@ import './Resume.css';
 const Resume = () => {
   const contactInfo = [
     { icon: FiMail, label: 'Email', value: 'jay.parmar@duke.edu', link: 'mailto:jay.parmar@duke.edu' },
-    { icon: FiMapPin, label: 'Location', value: 'Durham, NC' },
+    { icon: FiMapPin, label: 'Location', value: 'San Francisco, CA' },
     { icon: FiGlobe, label: 'LinkedIn', value: 'linkedin.com/in/Jaivir-Parmar', link: 'https://linkedin.com/in/Jaivir-Parmar' }
   ];
 

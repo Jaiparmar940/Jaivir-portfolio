@@ -243,7 +243,7 @@ const About = () => {
               <div className="info-list">
                 <div className="info-item">
                   <FiMapPin />
-                  <span>Santa Maria, CA</span>
+                  <span>San Francisco, CA</span>
                 </div>
                 <div className="info-item">
                   <FiMail />
