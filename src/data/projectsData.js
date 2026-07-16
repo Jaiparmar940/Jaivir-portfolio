@@ -812,12 +812,6 @@ Standard closet systems lacked customization for specific space requirements and
 - <aesthetic_rating>% improvement in aesthetic appeal and design quality
 - <functionality>% enhancement in storage functionality and organization
 
-**Leadership & Collaboration**  
-- Led custom fabrication team through design and construction phases
-- Collaborated with interior designers for optimal aesthetic integration
-- Resolved space constraints through innovative design solutions
-- Implemented quality control processes ensuring construction standards
-
 **Skills Applied**  
 Woodworking, engineered wood, custom fabrication, carpentry, design engineering, material selection, precision cutting, assembly techniques, interior design, structural planning
 
