@@ -338,6 +338,9 @@ export function getPersonaProjects(persona, allProjects) {
       console.warn('getPersonaProjects: Missing config or projects, returning empty arrays');
       return { featured: [], others: [], personal: [] };
     }
+
+    // Exclude projects explicitly marked as hidden from all sections
+    allProjects = allProjects.filter(p => !p.hidden);
     
     // Get featured projects for this persona
     const featuredIds = new Set(config.featuredProjectsPage);

@@ -1099,6 +1099,7 @@ Android development, TensorFlow Lite, computer vision, machine learning, real-ti
   },
   {
     id: 22,
+    hidden: true,
     title: 'Hackerspace - Public Workshop Construction & Community Fabrication Lab',
     category: 'engineering',
     description: 'Designed and constructed a public workshop facility called "Hackerspace" in collaboration with a local fabrication shop, creating a community resource for makers, engineers, and entrepreneurs to access professional-grade tools and equipment.',
