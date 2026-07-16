@@ -1153,6 +1153,7 @@ Community development, workshop design, fabrication shop collaboration, safety s
   },
   {
     id: 23,
+    hidden: true,
     title: 'Project Pure - Clean Water Initiative for Central America',
     category: 'charity',
     description: 'Developed and implemented a comprehensive clean water solution for Central American communities using coagulating agents, chlorine tablets, rainwater collection systems, and well construction to provide sustainable access to safe drinking water.',
