@@ -780,7 +780,7 @@ Market inefficiency between damaged vehicle sellers and restoration buyers creat
 - Built reputation through high customer satisfaction
 
 **Skills Applied**  
-Market analysis, pricing strategy, ops optimization, quality control, financial management, supply chain, automotive engineering, Excel
+Market analysis, pricing strategy, quality control, financial management, automotive engineering, Excel
 
 `,
     technologies: ['Automotive Restoration', 'Motorcycle Mechanics', 'Engine Rebuilding', 'Business Development', 'Market Analysis', 'Profit Optimization', 'Quality Control', 'Mechanical Engineering', 'Parts Sourcing', 'Entrepreneurship', 'Facebook Marketplace', 'Vehicle Diagnostics', 'Body Work', 'Paint & Finishing', 'Financial Management'],
