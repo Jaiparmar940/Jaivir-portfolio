@@ -36,17 +36,17 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4 className="footer-subtitle">Connect</h4>
-            <div className="social-links">
+            <div className="footer-connect-links">
               {socialLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="social-link"
+                  className="footer-connect-link"
                   aria-label={link.name}
                 >
-                  <link.icon />
+                  <link.icon aria-hidden="true" />
                 </a>
               ))}
             </div>
