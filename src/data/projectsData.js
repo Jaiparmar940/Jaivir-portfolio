@@ -445,11 +445,11 @@ Traditional propulsion systems were ineffective on loose sand surfaces. Existing
 - Built iterative prototyping process for rapid design optimization
 
 **Impact / Results**  
-- <distance_improvement>% increase in maximum travel distance on sand
-- <traction_efficiency>% improvement in sand traction performance
-- <power_transfer>% optimization in mousetrap spring energy utilization
-- <design_iterations>+ prototype iterations completed for optimization
-- <performance_consistency>% improvement in repeatable performance
+- Designed and fabricated a single-mousetrap-powered sand vehicle that traveled 40 inches while weighing only 0.939 lb.
+- Delivered one of the top-performing designs in the class evaluation.
+- Improved range through iterative testing of wheel geometry, traction, drivetrain orientation, sled configurations, and pulley mechanisms.
+- Eliminated drivetrain stalling by angling the mousetrap and converting the vehicle to a rear-wheel-drive tricycle layout.
+- Increased testing throughput by organizing a parallel reset process for string winding, sand preparation, and vehicle weighing.
 
 **Leadership & Collaboration**  
 - Led mechanical design team through iterative prototyping process
