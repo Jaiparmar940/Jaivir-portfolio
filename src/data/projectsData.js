@@ -4,7 +4,7 @@ export const projectsData = [
     title: 'Impression — AI-Driven Dating Profile Optimization',
     category: 'software, business',
     description: 'Founder & Lead Developer of an AI-driven platform for optimizing dating profiles using real-time A/B testing and GPT API integration.',
-    longDescription: `# Impression — AI-Driven Dating Profile Optimization (Jul 2025 - Present)
+    longDescription: `# Impression — AI-Driven Dating Profile Optimization (Jul 2025 - Sept 2025)
 **Role:** Founder & Lead Developer
 
 **Overview**  
@@ -24,6 +24,7 @@ Users lacked actionable insight to improve match rates; existing tools were subj
 - Feature adoption +50% post-token incentives implementation
 - Feedback loop time -60% via real-time analytics dashboard
 - 382% increase in profile match rates
+- Shut down when distribution stalled
 
 **Leadership & Collaboration**  
 - Led 4-person beta team including developers, designers, and data analysts
@@ -37,8 +38,7 @@ A/B testing, growth strategy, user research, funnel analysis, pricing experiment
 **Selected Artifacts**  
 [Live Demo](https://impressiondating.com) · [Code](https://github.com/Jaiparmar940/SwipeFix)
 
-**Call to Action**  
-See my tailored résumé for product/consulting roles`,
+`,
     technologies: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
     image: `${process.env.PUBLIC_URL}/static/projects/impression/demo2.gif`,
     github: 'https://github.com/Jaiparmar940/SwipeFix',
@@ -96,8 +96,7 @@ Mobile development, product management, real-time systems, user experience desig
 **Selected Artifacts**  
 [Code Repository](https://github.com/Jaiparmar940/workly.git)
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['SwiftUI', 'React Native', 'Firebase', 'Python', 'Firestore'],
     image: 'https://picsum.photos/400/250?random=2',
     github: 'https://github.com/Jaiparmar940/workly.git',
@@ -146,8 +145,7 @@ Full-stack development, security architecture, API design, financial systems, au
 **Selected Artifacts**  
 [Code Repository](https://github.com/Jaiparmar940/banking_application)
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Spring Boot', 'React', 'Spring Security', 'JWT', 'REST APIs'],
     image: 'https://picsum.photos/400/250?random=3',
     github: 'https://github.com/Jaiparmar940/banking_application',
@@ -177,12 +175,11 @@ Traditional options pricing models (Black-Scholes) failed to capture market sent
 - Built comprehensive data pipeline processing historical options and market data
 
 **Impact / Results**  
-<!-- - <prediction_accuracy>% improvement over traditional Black-Scholes models -->
-<!-- - <model_performance>% accuracy in options price prediction -->
-<!-- - <data_processing>+ data points processed and analyzed -->
-<!-- - <sentiment_correlation>% correlation between sentiment and price movements -->
-<!-- - <trading_alpha>% alpha generation in backtesting scenarios -->
-- Currently under construction
+- Combined 1-hour stock trend accuracy of 52.14% across 280 prediction intervals (146 correct / 134 incorrect); not statistically significant vs. chance (p = 0.23)
+- Statistically significant uptrend accuracy of 68.26% (114 / 166); downtrend accuracy only 28.32%
+- Index trend accuracy of 69.64% (39 / 56), with uptrend accuracy of 78.72% (37 / 47)
+- Simulated trading returned +2.26% marginal profit over 14 market hours (66 trades; 40 profitable; p = 0.042)
+- Buy signals were profitable 60.61% of the time; processed 100,000+ price data points into 336 forecast intervals
 
 **Leadership & Collaboration**  
 - Led independent research project from data collection to model deployment
@@ -191,20 +188,26 @@ Traditional options pricing models (Black-Scholes) failed to capture market sent
 - Implemented rigorous backtesting framework for model validation
 
 **Skills Applied**  
-Quantitative analysis, machine learning, financial modeling, data science, sentiment analysis, Python, TensorFlow, Pandas
+Quantitative analysis, machine learning, financial modeling, data science, sentiment analysis, Python, TensorFlow, Pandas, SARIMAx, Statsmodels
 
 **Selected Artifacts**  
 [Code Repository](https://github.com/Jaiparmar940/ann-trading)
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Python', 'TensorFlow', 'Pandas', 'Sentiment Analysis', 'SARIMA'],
-    image: 'https://picsum.photos/400/250?random=4',
+    image: `${process.env.PUBLIC_URL}/static/projects/ann-trade/image1.png`,
     github: 'https://github.com/Jaiparmar940/ann-trading',
     live: null,
     featured: false,
     hasDetailPage: true,
-    detailSlug: 'ann-trade-detail'
+    detailSlug: 'ann-trade-detail',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/ann-trade/image1.png`,
+      `${process.env.PUBLIC_URL}/static/projects/ann-trade/image2.png`,
+      `${process.env.PUBLIC_URL}/static/projects/ann-trade/image3.png`,
+      `${process.env.PUBLIC_URL}/static/projects/ann-trade/image4.png`,
+      `${process.env.PUBLIC_URL}/static/projects/ann-trade/image5.png`
+    ]
   },
   {
     id: 5,
@@ -228,22 +231,19 @@ Pricing opacity and inconsistent quality created margin risk and long repair cyc
 
 **Impact / Results**  
 - $100K+ revenue; 42% average profit margin across 50+ transactions
-- Turnaround time -30% via standardized workflows and lean methodology
 - 50+ five-star client reviews; 100% satisfaction rate maintained
-- ROI improved +25% through optimized pricing models
+- ROI improved +12% through freight shipping contracts
 - Scaled from local to international markets within 18 months
 
 **Leadership & Collaboration**  
 - Owned end-to-end operations from sourcing to delivery across 8 countries
-- Coordinated 12+ technicians, logistics providers, and regulatory consultants
 - Resolved pricing conflicts through data-driven negotiations with hospital administrators
 - Weekly stakeholder alignment calls with international shipping partners
 
 **Skills Applied**  
 Market analysis, pricing strategy, ops optimization, financial modeling, stakeholder management, risk assessment, Excel, Salesforce
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance', 'International Logistics', 'Financial Modeling', 'Process Optimization', 'Stakeholder Management', 'Risk Assessment'],
     image: 'https://picsum.photos/400/250?random=5',
     github: null,
@@ -318,8 +318,7 @@ Fixed-height pump installations limited operational flexibility and maintenance 
 **Skills Applied**  
 Structural analysis, mechanical design, CAD modeling, stress analysis, static equilibrium, industrial engineering, SolidWorks
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Static Equilibrium Analysis', 'Stress Analysis', 'Structural Design', 'Mechanical Engineering', 'CAD Modeling'],
     image: 'https://picsum.photos/400/250?random=6',
     github: null,
@@ -371,8 +370,7 @@ Manual block stacking operations were time-consuming and error-prone in manufact
 **Skills Applied**  
 Robotics engineering, computer vision, machine learning, autonomous systems, CAD modeling, Java, OpenCV, TensorFlow, Vuforia
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Java', 'OpenCV', 'TensorFlow', 'Vuforia', 'CAD Modeling', 'Robotics', 'Computer Vision', 'Machine Learning', 'Autonomous Systems'],
     image: 'https://picsum.photos/400/250?random=7',
     github: null,
@@ -450,8 +448,7 @@ Traditional propulsion systems were ineffective on loose sand surfaces. Existing
 **Skills Applied**  
 Mechanical design, prototyping, gear systems, traction analysis, iterative design, sand vehicle engineering, mousetrap mechanics, SolidWorks
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Mechanical Design', 'Prototyping', 'Gear Systems', 'Traction Analysis', 'Iterative Design', 'Sand Vehicle Engineering', 'Mousetrap Mechanics'],
     image: 'https://picsum.photos/400/250?random=8',
     github: null,
@@ -503,8 +500,7 @@ Commercial mining hardware was expensive and often inefficient. Existing GPU res
 **Skills Applied**  
 Hardware manufacturing, GPU optimization, server design, cooling systems, power management, operations management, cryptocurrency mining, hardware assembly
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Hardware Manufacturing', 'GPU Restoration', 'Mining Optimization', 'Server Design', 'Cooling Systems', 'Power Management', 'Cryptocurrency Mining', 'Hardware Assembly'],
     image: 'https://picsum.photos/400/250?random=9',
     github: null,
@@ -571,8 +567,7 @@ Stock harmonic balancers were insufficient for high-performance applications, ca
 **Skills Applied**  
 Automotive engineering, harmonic balancing, engine design, vibration analysis, precision installation, performance tuning, Corvette modifications, mechanical assembly
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Automotive Engineering', 'Harmonic Balancing', 'Engine Design', 'Vibration Analysis', 'Precision Installation', 'Performance Tuning', 'Corvette Modifications', 'Mechanical Assembly'],
     image: 'https://picsum.photos/400/250?random=10',
     github: null,
@@ -607,11 +602,10 @@ Piano lyre system and hammer mechanism were malfunctioning, causing poor sound q
 - Developed quality control processes ensuring consistent performance
 
 **Impact / Results**  
-- <sound_quality>% improvement in piano sound quality and tone
-- <mechanical_reliability>% increase in mechanical system reliability
-- <repair_accuracy>% improvement in precision repair accuracy
-- <performance_consistency>% enhancement in consistent performance
-- <restoration_quality>% improvement in overall restoration quality
+- All keys working
+- Lyre mechanism completed and functional
+- Restored the vintage player mechanism
+- Modernized it to work with modern computers
 
 **Leadership & Collaboration**  
 - Led precision instrument restoration team through complex repair process
@@ -622,8 +616,7 @@ Piano lyre system and hammer mechanism were malfunctioning, causing poor sound q
 **Skills Applied**  
 Piano mechanics, precision repair, mechanical restoration, sound engineering, fine motor skills, instrument maintenance, mechanical assembly, quality control
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Piano Mechanics', 'Precision Repair', 'Mechanical Restoration', 'Sound Engineering', 'Fine Motor Skills', 'Instrument Maintenance', 'Mechanical Assembly', 'Quality Control'],
     image: 'https://picsum.photos/400/250?random=11',
     github: null,
@@ -679,8 +672,7 @@ Boat was in non-operational condition with multiple mechanical failures across e
 **Skills Applied**  
 Marine engineering, trailer mechanics, electrical systems, carburetor rebuilding, outdrive maintenance, impeller systems, U-joint repair, marine restoration, mechanical overhaul
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Marine Engineering', 'Trailer Mechanics', 'Electrical Systems', 'Carburetor Rebuilding', 'Outdrive Maintenance', 'Impeller Systems', 'U-Joint Repair', 'Marine Restoration', 'Mechanical Overhaul'],
     image: 'https://picsum.photos/400/250?random=12',
     github: null,
@@ -740,8 +732,7 @@ Stock BMW M4 G83 performance was limited by factory tuning and restrictive exhau
 **Skills Applied**  
 Automotive tuning, ECU mapping, exhaust systems, catalytic converters, ethanol sensors, piggyback tuners, custom air intakes, performance optimization, BMW modifications, welding
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Automotive Tuning', 'ECU Mapping', 'Exhaust Systems', 'Catalytic Converters', 'Ethanol Sensors', 'Piggyback Tuners', 'Custom Air Intakes', 'Performance Optimization', 'BMW Modifications', 'Welding'],
     image: 'https://picsum.photos/400/250?random=13',
     github: null,
@@ -789,8 +780,7 @@ Market inefficiency between damaged vehicle sellers and restoration buyers creat
 **Skills Applied**  
 Market analysis, pricing strategy, ops optimization, quality control, financial management, supply chain, automotive engineering, Excel
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Automotive Restoration', 'Motorcycle Mechanics', 'Engine Rebuilding', 'Business Development', 'Market Analysis', 'Profit Optimization', 'Quality Control', 'Mechanical Engineering', 'Parts Sourcing', 'Entrepreneurship', 'Facebook Marketplace', 'Vehicle Diagnostics', 'Body Work', 'Paint & Finishing', 'Financial Management'],
     image: 'https://picsum.photos/400/250?random=14',
     github: null,
@@ -853,8 +843,7 @@ Standard closet systems lacked customization for specific space requirements and
 **Skills Applied**  
 Woodworking, engineered wood, custom fabrication, carpentry, design engineering, material selection, precision cutting, assembly techniques, interior design, structural planning
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Woodworking', 'Engineered Wood', 'Custom Fabrication', 'Carpentry', 'Design Engineering', 'Material Selection', 'Precision Cutting', 'Assembly Techniques', 'Interior Design', 'Structural Planning'],
     image: 'https://picsum.photos/400/250?random=15',
     github: null,
@@ -909,8 +898,7 @@ Mercedes E300 steering system was malfunctioning with poor responsiveness and al
 **Skills Applied**  
 Automotive engineering, steering systems, rack and pinion, Mercedes diagnostics, precision installation, alignment procedures, automotive repair, steering geometry, quality control, mechanical assembly
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Automotive Engineering', 'Steering Systems', 'Rack and Pinion', 'Mercedes Diagnostics', 'Precision Installation', 'Alignment Procedures', 'Automotive Repair', 'Steering Geometry', 'Quality Control', 'Mechanical Assembly'],
     image: 'https://picsum.photos/400/250?random=16',
     github: null,
@@ -959,8 +947,7 @@ Existing dining table designs lacked the sophisticated aesthetic and structural 
 **Skills Applied**  
 SolidWorks, 3D CAD modeling, product design, structural engineering, material analysis, furniture design, design engineering, 3D visualization, engineering documentation, luxury product development
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['SolidWorks', '3D CAD Modeling', 'Product Design', 'Structural Engineering', 'Material Analysis', 'Furniture Design', 'Design Engineering', '3D Visualization', 'Engineering Documentation', 'Luxury Product Development'],
     image: 'https://picsum.photos/400/250?random=17',
     github: null,
@@ -1011,8 +998,7 @@ Existing material handling equipment was insufficient for heavy boulder transpor
 **Skills Applied**  
 SolidWorks CAD, heavy equipment design, prototype development, stress analysis, structural engineering, mechanical design, load testing, terrain adaptation, engineering validation, product development lifecycle
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['SolidWorks CAD', 'Heavy Equipment Design', 'Prototype Development', 'Stress Analysis', 'Structural Engineering', 'Mechanical Design', 'Load Testing', 'Terrain Adaptation', 'Engineering Validation', 'Product Development Lifecycle'],
     image: 'https://picsum.photos/400/250?random=18',
     github: null,
@@ -1065,8 +1051,7 @@ McDonald's Happy Meal toys required strict design limitations and safety complia
 **Skills Applied**  
 SolidWorks CAD, injection molding design, 3D printing, product safety standards, child safety compliance, rapid prototyping, manufacturing design, regulatory compliance, toy design engineering, quality assurance
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['SolidWorks CAD', 'Injection Molding Design', '3D Printing', 'Product Safety Standards', 'Child Safety Compliance', 'Rapid Prototyping', 'Manufacturing Design', 'Regulatory Compliance', 'Toy Design Engineering', 'Quality Assurance'],
     image: 'https://picsum.photos/400/250?random=19',
     github: null,
@@ -1121,8 +1106,7 @@ Existing workshop facilities lacked proper building code compliance and speciali
 **Skills Applied**  
 Construction management, building codes compliance, electrical design, lighting systems, foundation engineering, soil compaction, waterproofing systems, workshop design, safety standards, project planning
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Construction Management', 'Building Codes Compliance', 'Electrical Design', 'Lighting Systems', 'Foundation Engineering', 'Soil Compaction', 'Waterproofing Systems', 'Workshop Design', 'Safety Standards', 'Project Planning', 'Concrete Engineering', 'Drainage Systems', 'Ventilation Design', 'Code Inspection', 'Quality Control'],
     image: 'https://picsum.photos/400/250?random=20',
     github: null,
@@ -1181,8 +1165,7 @@ Android development, TensorFlow Lite, computer vision, machine learning, real-ti
 **Selected Artifacts**  
 [Code Repository](https://github.com/Jaiparmar940/VisionAI)
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Android Development', 'TensorFlow Lite', 'Computer Vision', 'Machine Learning', 'Real-time Processing', 'Accessibility Design', 'Java/Kotlin', 'OpenCV', 'Audio Processing', 'Camera Integration', 'Mobile AI', 'Object Detection', 'Neural Networks', 'User Experience Design', 'Assistive Technology'],
     image: 'https://picsum.photos/400/250?random=21',
     github: 'https://github.com/Jaiparmar940/VisionAI',
@@ -1238,8 +1221,7 @@ Local makers and entrepreneurs lacked access to professional-grade tools and equ
 **Skills Applied**  
 Community development, workshop design, fabrication shop collaboration, safety systems design, tool library management, community outreach, project planning, resource sharing
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Community Development', 'Workshop Design', 'Fabrication Shop Collaboration', 'Safety Systems Design', 'Tool Library Management', 'Community Outreach', 'Project Planning', 'Resource Sharing', 'Workshop Layout', 'Safety Training Programs', 'Digital Fabrication', '3D Printing Integration', 'Electronics Workstations', 'Metalworking Equipment', 'Woodworking Tools'],
     image: 'https://picsum.photos/400/250?random=22',
     github: null,
@@ -1294,8 +1276,7 @@ Central American communities lacked access to clean, safe drinking water, leadin
 **Skills Applied**  
 Water purification, coagulation technology, chlorine disinfection, rainwater harvesting, well construction, community development, sustainable engineering, water quality testing, local materials, solar pumping
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Water Purification', 'Coagulation Technology', 'Chlorine Disinfection', 'Rainwater Harvesting', 'Well Construction', 'Community Development', 'Sustainable Engineering', 'Water Quality Testing', 'Local Materials', 'Solar Pumping', 'First-Flush Systems', 'Storage Tank Design', 'Distribution Networks', 'Community Training', 'Monitoring Systems'],
     image: 'https://picsum.photos/400/250?random=23',
     github: null,
@@ -1352,8 +1333,7 @@ Existing CPU design tools lacked comprehensive instruction set implementation an
 **Skills Applied**  
 Digital logic design, computer architecture, Logisim, CPU design, instruction set architecture, digital circuits, control logic, memory systems, ALU design, register files
 
-**Call to Action**  
-See my tailored résumé for this role`,
+`,
     technologies: ['Digital Logic Design', 'Computer Architecture', 'Logisim', 'CPU Design', 'Instruction Set Architecture', 'Digital Circuits', 'Control Logic', 'Memory Systems', 'ALU Design', 'Register Files', 'Branching Logic', 'I/O Systems', 'Digital Electronics', 'Computer Engineering', 'Hardware Design'],
     image: 'https://picsum.photos/400/250?random=24',
     github: null,
@@ -1406,11 +1386,9 @@ Embedded C++, ESP32, PlatformIO, UART protocols, Stepper motor control, TB6600 d
 **Selected Artifacts**  
 - [GitHub Repo](https://github.com/Jaiparmar940/me424-robot)
 - [App Interface](https://github.com/Jaiparmar940/me424-robot/tree/main/app)
-- [Wokwi Simulation](https://wokwi.com/projects/new/esp32)
 - [Full Documentation](https://github.com/Jaiparmar940/me424-robot/blob/main/README.md)
 
-**Call to Action**  
-See my tailored résumé for robotics, embedded systems, mechatronics, or automation engineering roles.`,
+`,
     technologies: ['ESP32', 'C++', 'PlatformIO', 'UART', 'Stepper Motors', 'TB6600', 'WebSocket', 'Web Serial', 'OTA', 'MOSFET', 'PWM', 'Robotics', 'Mechatronics', 'Embedded Systems', 'Motion Control', 'Real-time Programming'],
     image: `${process.env.PUBLIC_URL}/static/projects/me424-robot/demo.gif`,
     github: 'https://github.com/Jaiparmar940/me424-robot',
@@ -1564,8 +1542,7 @@ Quantitative Finance, Portfolio Optimization, Regime Detection (HMM/LSTM/GMM), W
 **Selected Artifacts**  
 [GitHub Repository](https://github.com/Jaiparmar940/allweather-quant-lab) · [Research Notebooks](https://github.com/Jaiparmar940/allweather-quant-lab/tree/main/research)
 
-**Call to Action**  
-See my tailored résumé for quantitative research, ML engineering, or fintech product roles.`,
+`,
     technologies: ['Python', 'Streamlit', 'FastAPI', 'Pandas', 'HMM', 'LSTM', 'GMM', 'GMV Optimization', 'Omega Ratio', 'Walk-Forward Backtesting', 'CVaR', 'Regime Detection', 'Quantitative Finance', 'Risk Management'],
     image: 'https://picsum.photos/400/250?random=27',
     github: 'https://github.com/Jaiparmar940/allweather-quant-lab',

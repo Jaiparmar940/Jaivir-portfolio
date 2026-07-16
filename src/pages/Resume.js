@@ -62,7 +62,7 @@ const Resume = () => {
       location: 'Santa Maria, CA',
       description: [
         'Built and scaled medical equipment resale business, generating $100K+ revenue with 42% profit margin',
-        'Applied pricing and arbitrage models across fragmented marketplaces, improving ROI by 25%',
+        'Applied pricing and arbitrage models across fragmented marketplaces, improving ROI by 12% through freight shipping contracts',
         'Negotiated global procurement, oversaw repairs, and delivered to underfunded healthcare systems, achieving 50+ five-star client reviews',
         'Directed operations across sourcing, restoration, logistics, and sales, reducing repair cycle time by 30%'
       ]
