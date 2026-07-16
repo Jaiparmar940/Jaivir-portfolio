@@ -98,12 +98,21 @@ Mobile development, product management, real-time systems, user experience desig
 
 `,
     technologies: ['SwiftUI', 'React Native', 'Firebase', 'Python', 'Firestore'],
-    image: 'https://picsum.photos/400/250?random=2',
+    image: `${process.env.PUBLIC_URL}/static/projects/workly-detail/preview-1.webp`,
     github: 'https://github.com/Jaiparmar940/workly.git',
     live: null,
     featured: true,
     hasDetailPage: true,
-    detailSlug: 'workly-detail'
+    detailSlug: 'workly-detail',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/workly-detail/preview-1.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/workly-detail/preview-2.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/workly-detail/preview-3.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/workly-detail/preview-4.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/workly-detail/preview-5.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/workly-detail/preview.webp`,
+      `${process.env.PUBLIC_URL}/static/projects/workly-detail/screenshot17841830408188.png`
+    ]
   },
   {
     id: 3,
@@ -1033,13 +1042,6 @@ McDonald's Happy Meal toys required strict design limitations and safety complia
 - Implemented 3D printing for rapid prototyping and design validation
 - Ensured compliance with child safety regulations and standards
 - Developed manufacturing design optimized for injection molding process
-
-**Impact / Results**  
-- <safety_compliance>% improvement in child safety compliance standards
-- <manufacturing_feasibility>% improvement in injection molding feasibility
-- <design_optimization>% optimization in design for manufacturing constraints
-- <prototype_efficiency>% improvement in rapid prototyping efficiency
-- <regulatory_approval>% improvement in regulatory approval success rate
 
 **Leadership & Collaboration**  
 - Led product design team through safety compliance and manufacturing phases
