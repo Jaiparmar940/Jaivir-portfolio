@@ -601,7 +601,6 @@ Piano lyre system and hammer mechanism were malfunctioning, causing poor sound q
 - Diagnosed mechanical issues in lyre system and hammer mechanism
 - Performed precision repairs using specialized piano restoration techniques
 - Implemented fine-tuning adjustments for optimal sound quality
-- Developed quality control processes ensuring consistent performance
 
 **Impact / Results**  
 - All keys working
