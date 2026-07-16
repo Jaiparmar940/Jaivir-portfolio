@@ -28,7 +28,6 @@ Users lacked actionable insight to improve match rates; existing tools were subj
 
 **Leadership & Collaboration**  
 - Conducted weekly user interviews to align roadmap with pilot findings
-- Coordinated with GPT API team for integration optimization and cost management
 - Resolved technical architecture conflicts through rapid prototyping and user testing
 
 **Skills Applied**  
