@@ -70,12 +70,12 @@ const Resume = () => {
     {
       title: 'Founder & Lead Operator',
       company: 'Comprehensive Vehicle Restoration & Resale Side Business',
-      period: '2020 - Present',
+      period: '2020-2026',
       location: 'Multiple Locations, United States',
       description: [
-        'Procured, restored, and resold 25+ vehicles, consistently achieving 23% average profit margins',
+        'Procured, restored, and resold 18 vehicles, consistently achieving 15% average profit margins',
         'Managed sourcing, diagnostics, budgeting, restoration, and client negotiations in full end-to-end business model',
-        'Introduced lean workflows and standardized repair practices, reducing turnaround time by 20%'
+        'Developed daily systematic AI monitoring for Facebook Marketplace for undervalued vehicles'
       ]
     },
     {

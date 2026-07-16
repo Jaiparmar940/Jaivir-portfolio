@@ -252,11 +252,11 @@ Market analysis, pricing strategy, ops optimization, financial modeling, stakeho
     hasDetailPage: true,
     detailSlug: 'jpcommerce-detail',
     images: [
+      `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image5.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image3.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image4.jpeg`,
-      `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image5.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image6.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image7.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/jpcommerce/image8.jpeg`,
@@ -749,8 +749,8 @@ Automotive tuning, ECU mapping, exhaust systems, catalytic converters, ethanol s
     id: 14,
     title: 'Comprehensive Vehicle Restoration & Resale Side Business',
     category: 'business',
-    description: 'Established a profitable vehicle restoration side business sourcing damaged cars and motorcycles from Facebook Marketplace, performing comprehensive restorations, and reselling for significant profit margins. Successfully restored and sold 25+ vehicles with an average 23% profit margin.',
-    longDescription: `# Comprehensive Vehicle Restoration & Resale Side Business (2020 - Present)
+    description: 'Established a profitable vehicle restoration side business sourcing damaged cars and motorcycles from Facebook Marketplace, performing comprehensive restorations, and reselling for significant profit margins. Successfully restored and sold 18 vehicles with an average 15% profit margin.',
+    longDescription: `# Comprehensive Vehicle Restoration & Resale Side Business (2020-2026)
 **Role:** Founder & Lead Operator
 
 **Overview**  
@@ -760,22 +760,21 @@ Automotive restoration venture sourcing damaged vehicles from online marketplace
 Market inefficiency between damaged vehicle sellers and restoration buyers created arbitrage opportunities. Vehicle owners lacked restoration expertise and time, while buyers wanted quality restored vehicles without premium dealer markups.
 
 **Approach / Solution**  
-- Developed systematic sourcing strategy monitoring Facebook Marketplace daily for undervalued vehicles
+- Developed daily systematic AI monitoring for Facebook Marketplace for undervalued vehicles
 - Built damage assessment framework to evaluate repair costs vs. market value before acquisition
-- Standardized restoration workflows reducing turnaround time by 20%
+- Personally diagnosed and repaired vast majority of defects, saving significant costs on labor
 - Established supplier relationships for parts procurement and cost optimization
 
 **Impact / Results**  
-- 25+ vehicles restored and sold across multiple locations in United States
-- 23% average profit margin maintained across all transactions
-- Turnaround time -20% via lean workflow implementation
+- 18 vehicles restored and sold across multiple locations in United States
+- 15% average profit margin maintained across all transactions
 - $132,520 in cumulative sales revenue
 
 **Leadership & Collaboration**  
 - Managed end-to-end operations from sourcing to final sale across multiple states
 - Coordinated with mechanics, body shops, and parts suppliers for quality restoration
 - Resolved quality control conflicts through standardized inspection protocols
-- Built reputation through consistent delivery and customer satisfaction
+- Built reputation through high customer satisfaction
 
 **Skills Applied**  
 Market analysis, pricing strategy, ops optimization, quality control, financial management, supply chain, automotive engineering, Excel
