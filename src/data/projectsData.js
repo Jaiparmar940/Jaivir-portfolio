@@ -45,9 +45,9 @@ A/B testing, growth strategy, user research, funnel analysis, pricing experiment
     hasDetailPage: true,
     detailSlug: 'impression-detail',
     images: [
+      `${process.env.PUBLIC_URL}/static/projects/impression/demo1.gif`,
       `${process.env.PUBLIC_URL}/static/projects/impression/demo2.gif`,
       `${process.env.PUBLIC_URL}/static/projects/impression/demo3.gif`,
-      `${process.env.PUBLIC_URL}/static/projects/impression/demo1.gif`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image3.jpeg`,
