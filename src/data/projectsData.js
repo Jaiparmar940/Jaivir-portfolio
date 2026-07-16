@@ -1474,6 +1474,9 @@ See my tailored résumé for robotics, embedded systems, mechatronics, or automa
     detailSlug: 'autonomous-surgical-robot',
     images: [
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/demo.gif`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image9.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image10.jpeg`,
+      `${process.env.PUBLIC_URL}/static/projects/me424-robot/image11.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/me424-robot/image3.jpeg`,
