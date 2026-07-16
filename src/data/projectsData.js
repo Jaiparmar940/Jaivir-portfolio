@@ -40,13 +40,16 @@ A/B testing, growth strategy, user research, funnel analysis, pricing experiment
 **Call to Action**  
 See my tailored résumé for product/consulting roles`,
     technologies: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
-    image: `${process.env.PUBLIC_URL}/static/projects/impression/image1.jpeg`,
+    image: `${process.env.PUBLIC_URL}/static/projects/impression/demo2.gif`,
     github: 'https://github.com/Jaiparmar940/SwipeFix',
     live: 'https://impressiondating.com',
     featured: true,
     hasDetailPage: true,
     detailSlug: 'impression-detail',
     images: [
+      `${process.env.PUBLIC_URL}/static/projects/impression/demo2.gif`,
+      `${process.env.PUBLIC_URL}/static/projects/impression/demo3.gif`,
+      `${process.env.PUBLIC_URL}/static/projects/impression/demo1.gif`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/impression/image3.jpeg`,
@@ -1443,25 +1446,25 @@ See my tailored résumé for robotics, embedded systems, mechatronics, or automa
 Worked directly on the architecture, market strategy, and machine-learning pipeline for an energy intelligence platform focused on optimizing battery energy storage systems (BESS) in wholesale electricity markets. The platform uses congestion forecasting, locational price prediction, and optimization algorithms to identify profitable charging and discharging opportunities while improving grid reliability.
 
 **Key Contributions**  
-* Researched and modeled wholesale electricity market mechanics, including PJM nodal pricing, congestion dynamics, negative pricing events, renewable curtailment, and battery arbitrage opportunities.  
-* Designed an end-to-end forecasting pipeline combining market data, weather forecasts, renewable generation forecasts, and transmission constraints to predict locational marginal prices (LMPs) and grid congestion events.  
-* Developed forecasting architecture using machine learning techniques including Temporal Fusion Transformers (TFT), LightGBM, XGBoost, quantile forecasting, and probabilistic congestion modeling.    
-* Designed battery dispatch optimization frameworks using constrained optimization, reinforcement learning, and genetic algorithm approaches to maximize energy arbitrage profits while accounting for battery degradation, efficiency losses, and operational constraints.  
-* Helped define the company’s product roadmap, positioning Grid Intelligence as a congestion-native intelligence layer spanning forecasting, dispatch recommendations, and financial congestion risk analytics.  
-* Conducted competitive analysis across major industry platforms including Tesla Autobidder, Fluence Mosaic, Tyba, Yes Energy, Wood Mackenzie, and S&P Global to identify market gaps and differentiation opportunities.  
-* Created system architecture for data ingestion, feature engineering, probabilistic forecasting, dispatch recommendation generation, dashboard visualization, and API-based integrations.  
+- Researched and modeled wholesale electricity market mechanics, including PJM nodal pricing, congestion dynamics, negative pricing events, renewable curtailment, and battery arbitrage opportunities.  
+- Designed an end-to-end forecasting pipeline combining market data, weather forecasts, renewable generation forecasts, and transmission constraints to predict locational marginal prices (LMPs) and grid congestion events.  
+- Developed forecasting architecture using machine learning techniques including Temporal Fusion Transformers (TFT), LightGBM, XGBoost, quantile forecasting, and probabilistic congestion modeling.    
+- Designed battery dispatch optimization frameworks using constrained optimization, reinforcement learning, and genetic algorithm approaches to maximize energy arbitrage profits while accounting for battery degradation, efficiency losses, and operational constraints.  
+- Helped define the company’s product roadmap, positioning Grid Intelligence as a congestion-native intelligence layer spanning forecasting, dispatch recommendations, and financial congestion risk analytics.  
+- Conducted competitive analysis across major industry platforms including Tesla Autobidder, Fluence Mosaic, Tyba, Yes Energy, Wood Mackenzie, and S&P Global to identify market gaps and differentiation opportunities.  
+- Created system architecture for data ingestion, feature engineering, probabilistic forecasting, dispatch recommendation generation, dashboard visualization, and API-based integrations.  
 
 **Technical Highlights**  
-* Electricity market forecasting
-* Locational Marginal Pricing (LMP) modeling
-* Battery Energy Storage Systems (BESS)
-* Optimization & Operations Research
-* Time-series machine learning
-* Congestion forecasting
-* Reinforcement Learning (PPO/DQN)
-* Quantile prediction & uncertainty estimation
-* Energy market analytics
-* Product strategy and competitive intelligence
+- Electricity market forecasting
+- Locational Marginal Pricing (LMP) modeling
+- Battery Energy Storage Systems (BESS)
+- Optimization & Operations Research
+- Time-series machine learning
+- Congestion forecasting
+- Reinforcement Learning (PPO/DQN)
+- Quantile prediction & uncertainty estimation
+- Energy market analytics
+- Product strategy and competitive intelligence
 
 **Problem / Challenge**  
 Wholesale electricity markets are volatile with complex nodal pricing, transmission congestion, renewable variability, and battery operational constraints. Battery storage operators lacked accurate localized forecasts and optimization tools to capitalize on arbitrage opportunities while supporting grid reliability and decarbonization.
@@ -1488,9 +1491,7 @@ Electricity market forecasting, LMP modeling, BESS optimization, Temporal Fusion
 
 **Selected Artifacts**  
 [Technical Documentation](https://github.com/Jaiparmar940/grid-intelligence)
-
-**Call to Action**  
-See my tailored résumé for energy tech, quantitative ML, or startup technical leadership roles.`,
+`,
     technologies: ['Energy Markets', 'LMP Modeling', 'BESS', 'Temporal Fusion Transformers', 'XGBoost', 'LightGBM', 'Reinforcement Learning', 'PPO', 'Quantile Forecasting', 'Congestion Analysis', 'Operations Research', 'Python', 'Product Strategy'],
     image: `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image1.jpeg`,
     github: 'https://github.com/Jaiparmar940/grid-intelligence',
