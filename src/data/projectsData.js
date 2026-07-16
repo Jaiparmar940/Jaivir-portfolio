@@ -1515,13 +1515,15 @@ The knowledge that separates a good technician from a parts-swapper is tacit: wh
 
 `,
     technologies: ['Inspect AI', 'RL Environments', 'Evals', 'Python', 'LLM Agents', 'Simulation', 'Physics Modeling', 'Benchmarking'],
-    image: 'https://picsum.photos/400/250?random=28',
+    image: `${process.env.PUBLIC_URL}/static/projects/no-start-env/results.svg`,
     github: 'https://github.com/Jaiparmar940/rlenv',
     live: null,
     featured: true,
     hasDetailPage: true,
     detailSlug: 'no-start-env',
-    images: []
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/no-start-env/results.svg`
+    ]
   }
 ];
 

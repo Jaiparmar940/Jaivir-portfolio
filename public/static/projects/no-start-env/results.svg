@@ -1,0 +1,64 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="800" height="500" fill="#ffffff"/>
+
+  <!-- Title block -->
+  <text x="60" y="62" font-size="20" font-weight="700" fill="#1f2937">no-start-env — mean score by model</text>
+  <text x="60" y="84" font-size="13" fill="#6b7280">9 models &#215; 5 fault scenarios &#215; 5 epochs, uncoached prompts &#183; score 0&#8211;100 &#183; July 2026</text>
+
+  <!-- Gridlines -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="210" y1="100" x2="210" y2="424"/>
+    <line x1="342.5" y1="100" x2="342.5" y2="424"/>
+    <line x1="475" y1="100" x2="475" y2="424"/>
+    <line x1="607.5" y1="100" x2="607.5" y2="424"/>
+    <line x1="740" y1="100" x2="740" y2="424"/>
+  </g>
+
+  <!-- Axis tick labels -->
+  <g font-size="12" fill="#6b7280" text-anchor="middle">
+    <text x="210" y="444">0</text>
+    <text x="342.5" y="444">25</text>
+    <text x="475" y="444">50</text>
+    <text x="607.5" y="444">75</text>
+    <text x="740" y="444">100</text>
+  </g>
+
+  <!-- Bars -->
+  <g fill="#2563eb">
+    <rect x="210" y="110" width="455.8" height="16" rx="3"/>
+    <rect x="210" y="146" width="436.2" height="16" rx="3"/>
+    <rect x="210" y="182" width="397.0" height="16" rx="3"/>
+    <rect x="210" y="218" width="394.9" height="16" rx="3"/>
+    <rect x="210" y="254" width="316.4" height="16" rx="3"/>
+    <rect x="210" y="290" width="211.5" height="16" rx="3"/>
+    <rect x="210" y="326" width="121.9" height="16" rx="3"/>
+    <rect x="210" y="362" width="110.8" height="16" rx="3"/>
+    <rect x="210" y="398" width="38.2" height="16" rx="3"/>
+  </g>
+
+  <!-- Model labels -->
+  <g font-size="13" fill="#1f2937" text-anchor="end">
+    <text x="200" y="123">Claude Fable 5</text>
+    <text x="200" y="159">GPT-5.5</text>
+    <text x="200" y="195">Grok 4</text>
+    <text x="200" y="231">Claude Sonnet 5</text>
+    <text x="200" y="267">Gemini 3.5 Flash</text>
+    <text x="200" y="303">Claude Haiku 4.5</text>
+    <text x="200" y="339">Ministral 3B</text>
+    <text x="200" y="375">Qwen 2.5 7B</text>
+    <text x="200" y="411">Llama 3.1 8B</text>
+  </g>
+
+  <!-- Value labels -->
+  <g font-size="12" font-weight="600" fill="#374151">
+    <text x="673.8" y="123">86.0</text>
+    <text x="654.2" y="159">82.3</text>
+    <text x="615" y="195">74.9</text>
+    <text x="612.9" y="231">74.5</text>
+    <text x="534.4" y="267">59.7</text>
+    <text x="429.5" y="303">39.9</text>
+    <text x="339.9" y="339">23.0</text>
+    <text x="328.8" y="375">20.9</text>
+    <text x="256.2" y="411">7.2</text>
+  </g>
+</svg>

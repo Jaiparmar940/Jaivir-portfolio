@@ -351,20 +351,6 @@ const ProjectDetail = ({ project }) => {
               </div>
             )}
             
-            {/* Debug info */}
-            <div style={{ 
-              position: 'absolute', 
-              top: '10px', 
-              left: '10px', 
-              background: 'rgba(0,0,0,0.7)', 
-              color: 'white', 
-              padding: '5px', 
-              fontSize: '12px',
-              zIndex: 10
-            }}>
-              Debug: {project.images ? `${project.images.length} images` : 'No images array'}
-            </div>
-            
             {project.images && project.images.length > 0 ? (
               <img 
                 src={project.images[selectedImage]} 
