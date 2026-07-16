@@ -27,7 +27,6 @@ Users lacked actionable insight to improve match rates; existing tools were subj
 - Shut down when distribution stalled
 
 **Leadership & Collaboration**  
-- Led 4-person beta team including developers, designers, and data analysts
 - Conducted weekly user interviews to align roadmap with pilot findings
 - Coordinated with GPT API team for integration optimization and cost management
 - Resolved technical architecture conflicts through rapid prototyping and user testing
