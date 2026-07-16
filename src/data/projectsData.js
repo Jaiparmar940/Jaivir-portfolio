@@ -653,7 +653,7 @@ Piano mechanics, precision repair, mechanical restoration, sound engineering, fi
     category: 'engineering',
     description: 'Restored a boat for resale, performing comprehensive repairs including trailer axle restoration, electrical system overhaul, carburetor rebuild, outdrive seal replacement, impeller installation, and U-joint repairs. Successfully restored the vessel to operational condition.',
     longDescription: `# Complete Boat Restoration & Mechanical Overhaul (2020 - 2021)
-**Role:** Marine Restoration Specialist & Mechanical Engineer
+**Role:** Mechanical Engineer
 
 **Overview**  
 Comprehensive boat restoration project involving complete mechanical overhaul and system restoration. Serves marine restoration industry requiring full vessel rehabilitation and mechanical system optimization.
@@ -668,10 +668,8 @@ Boat was in non-operational condition with multiple mechanical failures across e
 - Executed mechanical repairs including engine, outdrive, and trailer systems
 
 **Leadership & Collaboration**  
-- Led marine restoration team through complex multi-system repair process
 - Collaborated with electrical specialists for system overhaul
 - Resolved mechanical challenges through systematic diagnosis and repair
-- Implemented quality control processes ensuring restoration standards
 
 **Skills Applied**  
 Marine engineering, trailer mechanics, electrical systems, carburetor rebuilding, outdrive maintenance, impeller systems, U-joint repair, marine restoration, mechanical overhaul
