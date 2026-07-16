@@ -33,7 +33,7 @@ const Resume = () => {
       ]
     },
     {
-      title: 'Quantitative Research Intern',
+      title: 'Software Engineering Intern',
       company: 'DeWitt Capital Management',
       period: 'May 2025 - Aug 2025',
       location: 'New York, NY',
@@ -107,7 +107,7 @@ const Resume = () => {
     {
       degree: 'B.S. Computer Science, B.S.E. Mechanical Engineering, Innovation & Entrepreneurship',
       school: 'Duke University',
-      period: 'Expected May 2026',
+      period: 'Graduated May 2026',
       relevant: ['Double Major BSE', 'Innovation & Entrepreneurship certificate', 'Durham, NC']
     }
   ];
