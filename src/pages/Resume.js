@@ -46,7 +46,7 @@ const Resume = () => {
     {
       title: 'Founder & Lead Developer',
       company: 'Impression AI',
-      period: 'Jul 2025 - Present',
+      period: 'Jul 2025 - Sept 2025',
       location: 'Santa Maria, CA',
       description: [
         'Launched mobile platform with 200+ pilot users for real-time A/B testing of dating profiles',

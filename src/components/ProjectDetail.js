@@ -13,11 +13,69 @@ const ProjectDetail = ({ project }) => {
   console.log('First image path:', project?.images?.[0]); // Debug log
   console.log('All image paths:', project?.images?.map(img => img)); // Debug log
 
+  // Render inline markdown: **bold**, [label](url)
+  const formatInlineMarkdown = (text) => {
+    if (!text) return null;
+
+    // Drop placeholder / localhost links before parsing
+    let cleanedText = text
+      .replace(/\[[^\]]+\]\(\s*<url>\s*\)/gi, '')
+      .replace(/\[[^\]]+\]\(https?:\/\/localhost[^)]*\)/gi, '')
+      .replace(/\s*[·•|]\s*[·•|]+\s*/g, ' · ')
+      .replace(/^\s*[·•|]\s*/, '')
+      .replace(/\s*[·•|]\s*$/, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+
+    if (!cleanedText) return null;
+
+    const parts = [];
+    const tokenRegex = /(\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*)/g;
+    let lastIndex = 0;
+    let match;
+    let key = 0;
+
+    while ((match = tokenRegex.exec(cleanedText)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(cleanedText.slice(lastIndex, match.index));
+      }
+
+      if (match[2] !== undefined) {
+        const label = match[2];
+        const url = match[3].trim();
+        parts.push(
+          <a
+            key={`link-${key++}`}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#2563eb', textDecoration: 'underline', fontWeight: 500 }}
+          >
+            {label}
+          </a>
+        );
+      } else if (match[4] !== undefined) {
+        parts.push(
+          <strong key={`bold-${key++}`} style={{ color: '#1f2937', fontWeight: 600 }}>
+            {match[4]}
+          </strong>
+        );
+      }
+
+      lastIndex = match.index + match[0].length;
+    }
+
+    if (lastIndex < cleanedText.length) {
+      parts.push(cleanedText.slice(lastIndex));
+    }
+
+    return parts.length ? parts : null;
+  };
+
   // Function to format rich text content
   const formatRichText = (text) => {
     if (!text) return null;
     
-    // Split by lines to handle the new format
     const lines = text.split('\n');
     const elements = [];
     let currentIndex = 0;
@@ -25,10 +83,9 @@ const ProjectDetail = ({ project }) => {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
       
-      // Skip empty lines
       if (line === '') continue;
       
-      // Check if it's a main heading (starts with #)
+      // Main heading
       if (line.startsWith('# ')) {
         const headingText = line.replace('# ', '');
         elements.push(
@@ -45,9 +102,9 @@ const ProjectDetail = ({ project }) => {
           </h1>
         );
       }
-      // Check if it's a section heading (starts with ** and ends with **)
-      else if (line.startsWith('**') && line.endsWith('**')) {
-        const headingText = line.replace(/\*\*/g, '');
+      // Section heading: entire line wrapped in **...**
+      else if (line.startsWith('**') && line.endsWith('**') && !line.slice(2, -2).includes('**')) {
+        const headingText = line.slice(2, -2);
         elements.push(
           <h2 key={currentIndex++} style={{ 
             fontSize: '1.5rem', 
@@ -62,9 +119,12 @@ const ProjectDetail = ({ project }) => {
           </h2>
         );
       }
-      // Check if it's a bullet point (starts with -)
-      else if (line.startsWith('- ')) {
-        const bulletText = line.replace('- ', '');
+      // Bullet points (- or *)
+      else if (line.startsWith('- ') || line.startsWith('* ')) {
+        const bulletText = line.slice(2);
+        const inline = formatInlineMarkdown(bulletText);
+        if (inline === null) continue;
+
         elements.push(
           <div key={currentIndex++} style={{ 
             marginBottom: '0.75rem',
@@ -87,13 +147,16 @@ const ProjectDetail = ({ project }) => {
               lineHeight: '1.6', 
               color: '#4b5563' 
             }}>
-              {bulletText}
+              {inline}
             </span>
           </div>
         );
       }
-      // Regular paragraph
+      // Regular paragraph (supports **Role:** and [links](url))
       else {
+        const inline = formatInlineMarkdown(line);
+        if (inline === null) continue;
+
         elements.push(
           <p key={currentIndex++} style={{ 
             fontSize: '1rem', 
@@ -102,7 +165,7 @@ const ProjectDetail = ({ project }) => {
             marginBottom: '1.5rem',
             textAlign: 'left'
           }}>
-            {line}
+            {inline}
           </p>
         );
       }

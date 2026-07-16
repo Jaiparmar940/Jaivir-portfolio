@@ -38,7 +38,7 @@ A/B testing, growth strategy, user research, funnel analysis, pricing experiment
 [Live Demo](https://impressiondating.com) · [Code](https://github.com/Jaiparmar940/SwipeFix)
 
 **Call to Action**  
-See my tailored résumé for product/consulting roles: <url>`,
+See my tailored résumé for product/consulting roles`,
     technologies: ['TypeScript', 'React', 'Firebase', 'GPT API', 'Cloud Functions'],
     image: `${process.env.PUBLIC_URL}/static/projects/impression/image1.jpeg`,
     github: 'https://github.com/Jaiparmar940/SwipeFix',
@@ -91,10 +91,10 @@ Job seekers struggled with fragmented application processes and poor communicati
 Mobile development, product management, real-time systems, user experience design, cross-platform architecture, SwiftUI, React Native, Firebase
 
 **Selected Artifacts**  
-[Code Repository](https://github.com/Jaiparmar940/workly.git) · [Demo Video](<url>)
+[Code Repository](https://github.com/Jaiparmar940/workly.git)
 
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['SwiftUI', 'React Native', 'Firebase', 'Python', 'Firestore'],
     image: 'https://picsum.photos/400/250?random=2',
     github: 'https://github.com/Jaiparmar940/workly.git',
@@ -141,10 +141,10 @@ Traditional banking systems lacked modern user interfaces and real-time transact
 Full-stack development, security architecture, API design, financial systems, authentication, Spring Boot, React, JWT
 
 **Selected Artifacts**  
-[Code Repository](https://github.com/Jaiparmar940/banking_application) · [API Documentation](<url>)
+[Code Repository](https://github.com/Jaiparmar940/banking_application)
 
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Spring Boot', 'React', 'Spring Security', 'JWT', 'REST APIs'],
     image: 'https://picsum.photos/400/250?random=3',
     github: 'https://github.com/Jaiparmar940/banking_application',
@@ -191,10 +191,10 @@ Traditional options pricing models (Black-Scholes) failed to capture market sent
 Quantitative analysis, machine learning, financial modeling, data science, sentiment analysis, Python, TensorFlow, Pandas
 
 **Selected Artifacts**  
-[Code Repository](https://github.com/Jaiparmar940/ann-trading) · [Research Paper](<url>)
+[Code Repository](https://github.com/Jaiparmar940/ann-trading)
 
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Python', 'TensorFlow', 'Pandas', 'Sentiment Analysis', 'SARIMA'],
     image: 'https://picsum.photos/400/250?random=4',
     github: 'https://github.com/Jaiparmar940/ann-trading',
@@ -239,11 +239,8 @@ Pricing opacity and inconsistent quality created margin risk and long repair cyc
 **Skills Applied**  
 Market analysis, pricing strategy, ops optimization, financial modeling, stakeholder management, risk assessment, Excel, Salesforce
 
-**Selected Artifacts**  
-[Business Metrics](<url>) · [Process Documentation](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance', 'International Logistics', 'Financial Modeling', 'Process Optimization', 'Stakeholder Management', 'Risk Assessment'],
     image: 'https://picsum.photos/400/250?random=5',
     github: null,
@@ -318,11 +315,8 @@ Fixed-height pump installations limited operational flexibility and maintenance 
 **Skills Applied**  
 Structural analysis, mechanical design, CAD modeling, stress analysis, static equilibrium, industrial engineering, SolidWorks
 
-**Selected Artifacts**  
-[CAD Models](<url>) · [Analysis Reports](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Static Equilibrium Analysis', 'Stress Analysis', 'Structural Design', 'Mechanical Engineering', 'CAD Modeling'],
     image: 'https://picsum.photos/400/250?random=6',
     github: null,
@@ -374,11 +368,8 @@ Manual block stacking operations were time-consuming and error-prone in manufact
 **Skills Applied**  
 Robotics engineering, computer vision, machine learning, autonomous systems, CAD modeling, Java, OpenCV, TensorFlow, Vuforia
 
-**Selected Artifacts**  
-[CAD Models](<url>) · [Demo Video](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Java', 'OpenCV', 'TensorFlow', 'Vuforia', 'CAD Modeling', 'Robotics', 'Computer Vision', 'Machine Learning', 'Autonomous Systems'],
     image: 'https://picsum.photos/400/250?random=7',
     github: null,
@@ -456,11 +447,8 @@ Traditional propulsion systems were ineffective on loose sand surfaces. Existing
 **Skills Applied**  
 Mechanical design, prototyping, gear systems, traction analysis, iterative design, sand vehicle engineering, mousetrap mechanics, SolidWorks
 
-**Selected Artifacts**  
-[Design Models](<url>) · [Testing Data](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Mechanical Design', 'Prototyping', 'Gear Systems', 'Traction Analysis', 'Iterative Design', 'Sand Vehicle Engineering', 'Mousetrap Mechanics'],
     image: 'https://picsum.photos/400/250?random=8',
     github: null,
@@ -512,11 +500,8 @@ Commercial mining hardware was expensive and often inefficient. Existing GPU res
 **Skills Applied**  
 Hardware manufacturing, GPU optimization, server design, cooling systems, power management, operations management, cryptocurrency mining, hardware assembly
 
-**Selected Artifacts**  
-[Server Specifications](<url>) · [Performance Data](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Hardware Manufacturing', 'GPU Restoration', 'Mining Optimization', 'Server Design', 'Cooling Systems', 'Power Management', 'Cryptocurrency Mining', 'Hardware Assembly'],
     image: 'https://picsum.photos/400/250?random=9',
     github: null,
@@ -583,11 +568,8 @@ Stock harmonic balancers were insufficient for high-performance applications, ca
 **Skills Applied**  
 Automotive engineering, harmonic balancing, engine design, vibration analysis, precision installation, performance tuning, Corvette modifications, mechanical assembly
 
-**Selected Artifacts**  
-[Design Specifications](<url>) · [Performance Data](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Automotive Engineering', 'Harmonic Balancing', 'Engine Design', 'Vibration Analysis', 'Precision Installation', 'Performance Tuning', 'Corvette Modifications', 'Mechanical Assembly'],
     image: 'https://picsum.photos/400/250?random=10',
     github: null,
@@ -637,11 +619,8 @@ Piano lyre system and hammer mechanism were malfunctioning, causing poor sound q
 **Skills Applied**  
 Piano mechanics, precision repair, mechanical restoration, sound engineering, fine motor skills, instrument maintenance, mechanical assembly, quality control
 
-**Selected Artifacts**  
-[Repair Documentation](<url>) · [Performance Analysis](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Piano Mechanics', 'Precision Repair', 'Mechanical Restoration', 'Sound Engineering', 'Fine Motor Skills', 'Instrument Maintenance', 'Mechanical Assembly', 'Quality Control'],
     image: 'https://picsum.photos/400/250?random=11',
     github: null,
@@ -697,11 +676,8 @@ Boat was in non-operational condition with multiple mechanical failures across e
 **Skills Applied**  
 Marine engineering, trailer mechanics, electrical systems, carburetor rebuilding, outdrive maintenance, impeller systems, U-joint repair, marine restoration, mechanical overhaul
 
-**Selected Artifacts**  
-[Restoration Documentation](<url>) · [Performance Analysis](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Marine Engineering', 'Trailer Mechanics', 'Electrical Systems', 'Carburetor Rebuilding', 'Outdrive Maintenance', 'Impeller Systems', 'U-Joint Repair', 'Marine Restoration', 'Mechanical Overhaul'],
     image: 'https://picsum.photos/400/250?random=12',
     github: null,
@@ -761,11 +737,8 @@ Stock BMW M4 G83 performance was limited by factory tuning and restrictive exhau
 **Skills Applied**  
 Automotive tuning, ECU mapping, exhaust systems, catalytic converters, ethanol sensors, piggyback tuners, custom air intakes, performance optimization, BMW modifications, welding
 
-**Selected Artifacts**  
-[Performance Data](<url>) · [Modification Documentation](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Automotive Tuning', 'ECU Mapping', 'Exhaust Systems', 'Catalytic Converters', 'Ethanol Sensors', 'Piggyback Tuners', 'Custom Air Intakes', 'Performance Optimization', 'BMW Modifications', 'Welding'],
     image: 'https://picsum.photos/400/250?random=13',
     github: null,
@@ -813,11 +786,8 @@ Market inefficiency between damaged vehicle sellers and restoration buyers creat
 **Skills Applied**  
 Market analysis, pricing strategy, ops optimization, quality control, financial management, supply chain, automotive engineering, Excel
 
-**Selected Artifacts**  
-[Restoration Portfolio](<url>) · [Process Documentation](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Automotive Restoration', 'Motorcycle Mechanics', 'Engine Rebuilding', 'Business Development', 'Market Analysis', 'Profit Optimization', 'Quality Control', 'Mechanical Engineering', 'Parts Sourcing', 'Entrepreneurship', 'Facebook Marketplace', 'Vehicle Diagnostics', 'Body Work', 'Paint & Finishing', 'Financial Management'],
     image: 'https://picsum.photos/400/250?random=14',
     github: null,
@@ -880,11 +850,8 @@ Standard closet systems lacked customization for specific space requirements and
 **Skills Applied**  
 Woodworking, engineered wood, custom fabrication, carpentry, design engineering, material selection, precision cutting, assembly techniques, interior design, structural planning
 
-**Selected Artifacts**  
-[Design Plans](<url>) · [Construction Photos](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Woodworking', 'Engineered Wood', 'Custom Fabrication', 'Carpentry', 'Design Engineering', 'Material Selection', 'Precision Cutting', 'Assembly Techniques', 'Interior Design', 'Structural Planning'],
     image: 'https://picsum.photos/400/250?random=15',
     github: null,
@@ -939,11 +906,8 @@ Mercedes E300 steering system was malfunctioning with poor responsiveness and al
 **Skills Applied**  
 Automotive engineering, steering systems, rack and pinion, Mercedes diagnostics, precision installation, alignment procedures, automotive repair, steering geometry, quality control, mechanical assembly
 
-**Selected Artifacts**  
-[Repair Documentation](<url>) · [Alignment Data](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Automotive Engineering', 'Steering Systems', 'Rack and Pinion', 'Mercedes Diagnostics', 'Precision Installation', 'Alignment Procedures', 'Automotive Repair', 'Steering Geometry', 'Quality Control', 'Mechanical Assembly'],
     image: 'https://picsum.photos/400/250?random=16',
     github: null,
@@ -992,11 +956,8 @@ Existing dining table designs lacked the sophisticated aesthetic and structural 
 **Skills Applied**  
 SolidWorks, 3D CAD modeling, product design, structural engineering, material analysis, furniture design, design engineering, 3D visualization, engineering documentation, luxury product development
 
-**Selected Artifacts**  
-[CAD Models](<url>) · [Design Documentation](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['SolidWorks', '3D CAD Modeling', 'Product Design', 'Structural Engineering', 'Material Analysis', 'Furniture Design', 'Design Engineering', '3D Visualization', 'Engineering Documentation', 'Luxury Product Development'],
     image: 'https://picsum.photos/400/250?random=17',
     github: null,
@@ -1047,11 +1008,8 @@ Existing material handling equipment was insufficient for heavy boulder transpor
 **Skills Applied**  
 SolidWorks CAD, heavy equipment design, prototype development, stress analysis, structural engineering, mechanical design, load testing, terrain adaptation, engineering validation, product development lifecycle
 
-**Selected Artifacts**  
-[CAD Models](<url>) · [Testing Data](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['SolidWorks CAD', 'Heavy Equipment Design', 'Prototype Development', 'Stress Analysis', 'Structural Engineering', 'Mechanical Design', 'Load Testing', 'Terrain Adaptation', 'Engineering Validation', 'Product Development Lifecycle'],
     image: 'https://picsum.photos/400/250?random=18',
     github: null,
@@ -1104,11 +1062,8 @@ McDonald's Happy Meal toys required strict design limitations and safety complia
 **Skills Applied**  
 SolidWorks CAD, injection molding design, 3D printing, product safety standards, child safety compliance, rapid prototyping, manufacturing design, regulatory compliance, toy design engineering, quality assurance
 
-**Selected Artifacts**  
-[CAD Models](<url>) · [Safety Documentation](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['SolidWorks CAD', 'Injection Molding Design', '3D Printing', 'Product Safety Standards', 'Child Safety Compliance', 'Rapid Prototyping', 'Manufacturing Design', 'Regulatory Compliance', 'Toy Design Engineering', 'Quality Assurance'],
     image: 'https://picsum.photos/400/250?random=19',
     github: null,
@@ -1163,11 +1118,8 @@ Existing workshop facilities lacked proper building code compliance and speciali
 **Skills Applied**  
 Construction management, building codes compliance, electrical design, lighting systems, foundation engineering, soil compaction, waterproofing systems, workshop design, safety standards, project planning
 
-**Selected Artifacts**  
-[Construction Plans](<url>) · [Compliance Documentation](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Construction Management', 'Building Codes Compliance', 'Electrical Design', 'Lighting Systems', 'Foundation Engineering', 'Soil Compaction', 'Waterproofing Systems', 'Workshop Design', 'Safety Standards', 'Project Planning', 'Concrete Engineering', 'Drainage Systems', 'Ventilation Design', 'Code Inspection', 'Quality Control'],
     image: 'https://picsum.photos/400/250?random=20',
     github: null,
@@ -1224,10 +1176,10 @@ Visually impaired individuals lacked real-time assistance for object identificat
 Android development, TensorFlow Lite, computer vision, machine learning, real-time processing, accessibility design, Java/Kotlin, OpenCV, audio processing, camera integration
 
 **Selected Artifacts**  
-[Code Repository](https://github.com/Jaiparmar940/VisionAI) · [Demo Video](<url>)
+[Code Repository](https://github.com/Jaiparmar940/VisionAI)
 
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Android Development', 'TensorFlow Lite', 'Computer Vision', 'Machine Learning', 'Real-time Processing', 'Accessibility Design', 'Java/Kotlin', 'OpenCV', 'Audio Processing', 'Camera Integration', 'Mobile AI', 'Object Detection', 'Neural Networks', 'User Experience Design', 'Assistive Technology'],
     image: 'https://picsum.photos/400/250?random=21',
     github: 'https://github.com/Jaiparmar940/VisionAI',
@@ -1283,11 +1235,8 @@ Local makers and entrepreneurs lacked access to professional-grade tools and equ
 **Skills Applied**  
 Community development, workshop design, fabrication shop collaboration, safety systems design, tool library management, community outreach, project planning, resource sharing
 
-**Selected Artifacts**  
-[Facility Plans](<url>) · [Community Impact Report](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Community Development', 'Workshop Design', 'Fabrication Shop Collaboration', 'Safety Systems Design', 'Tool Library Management', 'Community Outreach', 'Project Planning', 'Resource Sharing', 'Workshop Layout', 'Safety Training Programs', 'Digital Fabrication', '3D Printing Integration', 'Electronics Workstations', 'Metalworking Equipment', 'Woodworking Tools'],
     image: 'https://picsum.photos/400/250?random=22',
     github: null,
@@ -1342,11 +1291,8 @@ Central American communities lacked access to clean, safe drinking water, leadin
 **Skills Applied**  
 Water purification, coagulation technology, chlorine disinfection, rainwater harvesting, well construction, community development, sustainable engineering, water quality testing, local materials, solar pumping
 
-**Selected Artifacts**  
-[Project Documentation](<url>) · [Community Impact Report](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Water Purification', 'Coagulation Technology', 'Chlorine Disinfection', 'Rainwater Harvesting', 'Well Construction', 'Community Development', 'Sustainable Engineering', 'Water Quality Testing', 'Local Materials', 'Solar Pumping', 'First-Flush Systems', 'Storage Tank Design', 'Distribution Networks', 'Community Training', 'Monitoring Systems'],
     image: 'https://picsum.photos/400/250?random=23',
     github: null,
@@ -1403,11 +1349,8 @@ Existing CPU design tools lacked comprehensive instruction set implementation an
 **Skills Applied**  
 Digital logic design, computer architecture, Logisim, CPU design, instruction set architecture, digital circuits, control logic, memory systems, ALU design, register files
 
-**Selected Artifacts**  
-[Logisim Models](<url>) · [Design Documentation](<url>)
-
 **Call to Action**  
-See my tailored résumé for this role: <url>`,
+See my tailored résumé for this role`,
     technologies: ['Digital Logic Design', 'Computer Architecture', 'Logisim', 'CPU Design', 'Instruction Set Architecture', 'Digital Circuits', 'Control Logic', 'Memory Systems', 'ALU Design', 'Register Files', 'Branching Logic', 'I/O Systems', 'Digital Electronics', 'Computer Engineering', 'Hardware Design'],
     image: 'https://picsum.photos/400/250?random=24',
     github: null,
@@ -1544,13 +1487,13 @@ Wholesale electricity markets are volatile with complex nodal pricing, transmiss
 Electricity market forecasting, LMP modeling, BESS optimization, Temporal Fusion Transformers, XGBoost/LightGBM, Reinforcement Learning (PPO/DQN), Quantile Forecasting, Congestion Analysis, Operations Research, Time-Series ML, Product Strategy, Competitive Intelligence, Python, Energy Analytics
 
 **Selected Artifacts**  
-[Technical Documentation](https://github.com/Jaiparmar940/grid-intelligence) · [Model Architecture](<url>) · [Competitive Analysis](<url>)
+[Technical Documentation](https://github.com/Jaiparmar940/grid-intelligence)
 
 **Call to Action**  
 See my tailored résumé for energy tech, quantitative ML, or startup technical leadership roles.`,
     technologies: ['Energy Markets', 'LMP Modeling', 'BESS', 'Temporal Fusion Transformers', 'XGBoost', 'LightGBM', 'Reinforcement Learning', 'PPO', 'Quantile Forecasting', 'Congestion Analysis', 'Operations Research', 'Python', 'Product Strategy'],
-    image: 'https://picsum.photos/400/250?random=26',
-    github: null,
+    image: `${process.env.PUBLIC_URL}/static/projects/grid-intelligence/image1.jpeg`,
+    github: 'https://github.com/Jaiparmar940/grid-intelligence',
     live: null,
     featured: true,
     hasDetailPage: true,
@@ -1618,7 +1561,7 @@ Traditional portfolio optimization (e.g. mean-variance) fails to account for cha
 Quantitative Finance, Portfolio Optimization, Regime Detection (HMM/LSTM/GMM), Walk-Forward Backtesting, Risk Management (CVaR, Turnover), Machine Learning, Streamlit, FastAPI, Python, Pandas, Feature Engineering, Policy Management, Backtesting Frameworks, Data Visualization, API Development
 
 **Selected Artifacts**  
-[GitHub Repository](https://github.com/Jaiparmar940/allweather-quant-lab) · [Live Demo](http://localhost:8501) (via make start) · [Research Notebooks](https://github.com/Jaiparmar940/allweather-quant-lab/tree/main/research) · [API Documentation](<url>)
+[GitHub Repository](https://github.com/Jaiparmar940/allweather-quant-lab) · [Research Notebooks](https://github.com/Jaiparmar940/allweather-quant-lab/tree/main/research)
 
 **Call to Action**  
 See my tailored résumé for quantitative research, ML engineering, or fintech product roles.`,
