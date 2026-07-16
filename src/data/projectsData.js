@@ -1089,6 +1089,7 @@ Android development, TensorFlow Lite, computer vision, machine learning, real-ti
     hasDetailPage: true,
     detailSlug: 'visionassist-app',
     images: [
+      `${process.env.PUBLIC_URL}/static/projects/visionassist-app/preview-5.webp`,
       `${process.env.PUBLIC_URL}/static/projects/visionassist-app/image1.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/visionassist-app/image2.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/visionassist-app/image3.jpeg`,
