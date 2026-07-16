@@ -803,14 +803,6 @@ Standard closet systems lacked customization for specific space requirements and
 - Designed custom closet system optimized for specific space dimensions
 - Selected engineered wood materials for optimal strength and cost efficiency
 - Implemented precision cutting and assembly techniques for perfect fit
-- Applied interior design principles for aesthetic appeal and functionality
-
-**Impact / Results**  
-- <space_utilization>% improvement in closet space utilization
-- <cost_efficiency>% reduction in cost compared to custom commercial solutions
-- <fit_accuracy>% improvement in precision fit and installation
-- <aesthetic_rating>% improvement in aesthetic appeal and design quality
-- <functionality>% enhancement in storage functionality and organization
 
 **Skills Applied**  
 Woodworking, engineered wood, custom fabrication, carpentry, design engineering, material selection, precision cutting, assembly techniques, interior design, structural planning
