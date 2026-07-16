@@ -1148,12 +1148,11 @@ Visually impaired individuals lacked real-time assistance for object identificat
 - Integrated accessibility features including voice commands and haptic feedback
 
 **Impact / Results**  
-<!-- - <recognition_accuracy>% accuracy in object identification across 100+ categories -->
-<!-- - <processing_speed>% improvement in real-time processing performance -->
-<!-- - <user_independence>% improvement in user independence and safety -->
-<!-- - <accessibility_rating>% improvement in accessibility and usability scores -->
-<!-- - <performance_optimization>% optimization in mobile AI performance -->
-- Currently under construction
+- Built as a pre-college, self-directed learning project to explore computer vision and real-time object identification — not intended for production deployment.
+- Delivered a working Android (Java) prototype that runs a quantized TensorFlow Lite SSD MobileNet model fully on-device.
+- Performed live camera-based detection across the 80 everyday COCO object categories, drawing labeled bounding boxes in real time.
+- Configured a 300×300 input pipeline with a 0.5 confidence threshold, gaining hands-on experience with model inputs, quantization, and inference tradeoffs on mobile hardware.
+- Deepened practical understanding of the end-to-end CV workflow — camera capture, preprocessing, on-device inference, and rendering — as a foundation for later college coursework.
 
 **Leadership & Collaboration**  
 - Led mobile AI development team through app development and testing
