@@ -846,20 +846,7 @@ Mercedes E300 steering system was malfunctioning with poor responsiveness and al
 - Installed new steering components with proper alignment procedures
 - Implemented quality control processes ensuring optimal functionality
 
-**Impact / Results**  
-- <steering_responsiveness>% improvement in steering responsiveness and control
-- <alignment_accuracy>% improvement in wheel alignment and geometry
-- <system_reliability>% increase in steering system reliability
-- <installation_precision>% improvement in installation precision and accuracy
-- <safety_enhancement>% improvement in vehicle safety and handling
-
-**Leadership & Collaboration**  
-- Led automotive repair team through complex steering system replacement
-- Collaborated with alignment specialists for optimal steering geometry
-- Resolved installation challenges through systematic approach
-- Implemented quality control protocols ensuring repair standards
-
-**Skills Applied**  
+**Skills Applied**
 Automotive engineering, steering systems, rack and pinion, Mercedes diagnostics, precision installation, alignment procedures, automotive repair, steering geometry, quality control, mechanical assembly
 
 `,
