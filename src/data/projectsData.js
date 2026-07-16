@@ -249,19 +249,14 @@ Pricing opacity and inconsistent quality created margin risk and long repair cyc
 - ROI improved +12% through freight shipping contracts
 - Scaled from local to international markets within 18 months
 
-**Leadership & Collaboration**  
-- Owned end-to-end operations from sourcing to delivery across 8 countries
-- Resolved pricing conflicts through data-driven negotiations with hospital administrators
-- Weekly stakeholder alignment calls with international shipping partners
-
 **Skills Applied**  
-Market analysis, pricing strategy, ops optimization, financial modeling, stakeholder management, risk assessment, Excel, Salesforce
+Market analysis, pricing strategy, financial modeling, risk assessment, Excel
 
 **Selected Artifacts**  
 [Visit my eBay storefront](https://www.ebay.com/usr/jpcommerce)
 
 `,
-    technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance', 'International Logistics', 'Financial Modeling', 'Process Optimization', 'Stakeholder Management', 'Risk Assessment'],
+    technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance', 'International Logistics', 'Financial Modeling', 'Process Optimization', 'Risk Assessment'],
     image: 'https://picsum.photos/400/250?random=5',
     github: null,
     live: null,
