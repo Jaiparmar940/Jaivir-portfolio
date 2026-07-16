@@ -700,12 +700,12 @@ Stock BMW M4 G83 performance was limited by factory tuning and restrictive exhau
 - Implemented ethanol sensor system for flexible fuel tuning
 - Developed custom ECU mapping for optimal performance and reliability
 
-**Impact / Results**  
-- <power_increase>% increase in engine power output
-- <torque_improvement>% improvement in torque delivery
-- <exhaust_flow>% improvement in exhaust flow efficiency
-- <fuel_flexibility>% improvement in fuel flexibility and tuning range
-- <performance_consistency>% improvement in consistent performance
+**Impact / Results**
+- 103 WHP gains on 93 octane, 197 WHP gains on E40 mixture (dyno confirmed)
+- Up to 18% torque increase
+- 10°F average reduction in IAT with installed cold air intake
+- 40% maximum tested ethanol mixture compatibility
+- 0.4 second improvement on 0-60 launch (from 3.2s to 2.8s)
 
 **Skills Applied**
 Automotive tuning, ECU mapping, exhaust systems, catalytic converters, ethanol sensors, piggyback tuners, custom air intakes, performance optimization, BMW modifications, welding
