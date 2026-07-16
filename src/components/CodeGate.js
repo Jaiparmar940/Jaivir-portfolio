@@ -71,9 +71,6 @@ const CodeGate = () => {
             </div>
             <h1>Portfolio Access</h1>
             <p>Enter your access code to view the portfolio</p>
-            <p className="access-code-hint">
-              Tip: share links like jaivirparmar.com/#/yc2026/project-detail/grid-intelligence
-            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="code-form">
