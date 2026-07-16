@@ -1022,20 +1022,7 @@ Existing workshop facilities lacked proper building code compliance and speciali
 - Conducted soil analysis and proper compaction for foundation integrity
 - Developed waterproofing and ventilation systems for optimal working conditions
 
-**Impact / Results**  
-- <building_compliance>% improvement in building code compliance standards
-- <safety_enhancement>% improvement in safety and OSHA compliance
-- <electrical_efficiency>% improvement in electrical system efficiency
-- <workspace_optimization>% optimization in workspace layout and functionality
-- <construction_quality>% improvement in overall construction quality
-
-**Leadership & Collaboration**  
-- Led construction project team through all phases from design to completion
-- Collaborated with electrical and structural engineers for optimal systems
-- Resolved building code compliance challenges through systematic approach
-- Implemented quality control processes ensuring construction standards
-
-**Skills Applied**  
+**Skills Applied**
 Construction management, building codes compliance, electrical design, lighting systems, foundation engineering, soil compaction, waterproofing systems, workshop design, safety standards, project planning
 
 `,
