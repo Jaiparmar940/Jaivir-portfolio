@@ -412,7 +412,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h3>{isFounder || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'About Me' : 'Research'}</h3>
-              <p>{isFounder ? 'From building machines at 12 to building evals for physical-systems AI' : config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : config.shortName === 'CS' ? 'My technical background and software engineering journey' : config.shortName === 'Build' ? 'My dual-degree engineering background and product development journey' : 'Quantitative analysis and financial modeling research'}</p>
+              <p>{isFounder ? 'From rebuilding engines at 12 to creating evals for physical-systems AI' : config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : config.shortName === 'CS' ? 'My technical background and software engineering journey' : config.shortName === 'Build' ? 'My dual-degree engineering background and product development journey' : 'Quantitative analysis and financial modeling research'}</p>
               <Link to={isFounder || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? '/about' : '/lab-reports'} className="btn btn-primary">{isFounder || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'Learn More' : 'View Research'}</Link>
             </motion.div>
           </div>
