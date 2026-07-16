@@ -484,7 +484,7 @@ Mechanical design, prototyping, gear systems, traction analysis, iterative desig
     title: 'Crypto Mining Server Manufacturing & GPU Optimization',
     category: 'engineering, business',
     description: 'Manufactured custom servers for cryptocurrency mining operations using restored and optimized GPUs. Designed and built mining rigs with enhanced cooling systems and power management for optimal mining performance.',
-    longDescription: `# Crypto Mining Server Manufacturing & GPU Optimization (2020 - 2022)
+    longDescription: `# Crypto Mining Server Manufacturing & GPU Optimization (2019)
 **Role:** Hardware Engineer & Operations Manager
 
 **Overview**  
@@ -494,23 +494,18 @@ Custom cryptocurrency mining server manufacturing operation specializing in GPU 
 Commercial mining hardware was expensive and often inefficient. Existing GPU restoration processes lacked systematic optimization for mining performance, resulting in suboptimal hash rates and power consumption.
 
 **Approach / Solution**  
-- Developed systematic GPU restoration process improving performance by 25%
-- Designed custom server chassis with enhanced cooling and power management
-- Implemented mining optimization algorithms for maximum hash rate efficiency
-- Built scalable manufacturing process for high-volume production
+- Sourced GPUs locally and online
+- Built new high end servers and servers with used components (better affordability and more popular)
+- Often used superseded Xeon processors for affordability with exceptional performance
+- Server configuration allowed for ECC RAM which was abundant and affordable
+- Pre-assembled with popular spec configurations and supplied occasional custom orders
 
 **Impact / Results**  
-- <hash_rate_improvement>% increase in mining hash rates through optimization
-- <power_efficiency>% improvement in power consumption per hash
-- <server_production>+ custom mining servers manufactured and deployed
-- <cost_reduction>% reduction in hardware costs through restoration process
-- <uptime_improvement>% improvement in server uptime and reliability
-
-**Leadership & Collaboration**  
-- Led hardware manufacturing team across design, assembly, and testing phases
-- Collaborated with electrical engineers for optimal power management systems
-- Resolved cooling challenges through innovative thermal management design
-- Implemented quality control processes ensuring consistent performance standards
+- 4 repeat customers
+- ~$15,000 in net profit
+- Over 30 sales via eBay
+- 100% customer satisfaction with no returns requested
+- Storefront eventually transformed to a [medical device refurbishment business](/project-detail/jpcommerce-detail) when GPU mining became obsolete
 
 **Skills Applied**  
 Hardware manufacturing, GPU optimization, server design, cooling systems, power management, operations management, cryptocurrency mining, hardware assembly
