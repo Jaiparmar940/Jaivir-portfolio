@@ -75,12 +75,12 @@ Job seekers struggled with fragmented application processes and poor communicati
 - Created comprehensive admin pipeline for job posting management and analytics
 
 **Impact / Results**  
-<!-- - <user_count>+ active users across iOS and Android platforms -->
-<!-- - <match_success_rate>% improvement in job-candidate matching accuracy -->
-<!-- - <communication_efficiency>% reduction in time-to-hire through integrated messaging -->
-<!-- - <admin_productivity>% increase in employer job posting efficiency -->
-<!-- - <user_retention>% monthly active user retention rate -->
-- Currently under construction
+- Built a cross-platform mobile app in React Native with Expo, using Expo Router tab-based navigation and a fully TypeScript-typed codebase.
+- Backed the app with Firebase Firestore, modeling users, jobs, applications, and AI-generated job matches as dedicated collections.
+- Implemented an AI-powered matching algorithm that scores job-candidate fit by skills alignment, location/remote compatibility, experience and rating, and interest overlap, returning percentage match scores with reasoning.
+- Developed a comprehensive job-posting flow supporting 30+ categories, multiple job types (one-time, part-time, full-time, contract, internship), complexity levels, on-site/remote options, and budget ranges.
+- Added end-to-end application tracking with status states (Pending, Accepted, Rejected, Withdrawn), rate proposals, and job history, plus theme-aware UI components with dark/light mode support.
+- Project was archived due to marketplace-related onboarding issues.
 
 **Leadership & Collaboration**  
 - Led cross-platform development team coordinating iOS and Android development
