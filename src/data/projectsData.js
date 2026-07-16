@@ -991,11 +991,12 @@ Existing material handling equipment was insufficient for heavy boulder transpor
 - Developed terrain adaptation mechanisms for uneven surface navigation
 
 **Impact / Results**  
-- <load_capacity>% increase in maximum transportable load capacity
-- <terrain_adaptability>% improvement in uneven terrain navigation
-- <safety_enhancement>% improvement in operator safety and risk reduction
-- <efficiency_gain>% improvement in material handling efficiency
-- <structural_reliability>% improvement in device reliability and durability
+- Defined four validation criteria for client delivery: lifting capability, maneuverability, lifting height, and durability (cost modeled separately)
+- Committed to final wheelbarrow design using a pulley system to center rock load above the main wheel for one-person operation
+- Lifting tests validated securing varied loads (20–50 lb scaled prototype objects, sand-filled baskets, and natural rocks) without slippage or component failure
+- Maneuverability targets: travel 50+ yards over rough terrain and 4–5% slopes; complete 100 ft routes in under 2 minutes with no more than 2 redirects and no tip-overs across grass, gravel, and concrete
+- Lifting height target: raise rocks up to 300 lbs at least 2 feet for wall placement, with isolated component testing (rollers, straps, wood) at 50 lb intervals to 300+ lbs
+- Durability plan for 1:2 medium-fidelity prototype: 175 lb scaled loads, 100 winch cycles, 100 terrain trials over 50 yards, and overnight static load testing before full-scale build
 
 **Leadership & Collaboration**  
 - Led heavy equipment design team through CAD modeling and prototyping
