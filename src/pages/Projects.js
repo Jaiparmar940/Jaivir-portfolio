@@ -85,7 +85,7 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="page-title">{config.name} Projects</h1>
+          <h1 className="page-title">{persona === 'yc2026' || config.shortName === 'SWE' ? 'Projects' : `${config.name} Projects`}</h1>
           <p className="page-subtitle">
             {config.subhead}
           </p>
@@ -101,7 +101,7 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <h2 className="section-title">
-                {persona === 'yc2026' ? 'Innovative Projects' : config.shortName === 'Quant' ? 'Featured Projects' : `Featured ${config.name} Projects`}
+                {persona === 'yc2026' || config.shortName === 'SWE' || config.shortName === 'Quant' ? 'Featured Projects' : `Featured ${config.name} Projects`}
               </h2>
             </motion.div>
 

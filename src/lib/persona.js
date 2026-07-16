@@ -118,39 +118,39 @@ export const personaConfigs = {
   swe: {
     name: 'Software Engineer',
     shortName: 'SWE',
-    headline: 'Software Engineer • Full-Stack Developer • AI Specialist',
-    subhead: 'Building scalable applications and AI-driven solutions that create real business value',
+    headline: 'Founder • Hardware + ML Engineer',
+    subhead: 'The benchmark, the energy forecasting stack, the robot arm, and the hardware business',
     proofStats: [
-      { label: 'Projects Built', value: '15+' },
-      { label: 'Technologies', value: '20+' },
-      { label: 'Years Experience', value: '3+' }
+      { label: 'Models benchmarked on my published eval', value: '9' },
+      { label: 'Revenue, bootstrapped hardware resale business', value: '$100k+' },
+      { label: 'Rows of energy data behind my forecasting stack', value: '100M+' }
     ],
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
-    featuredProjectsPage: [5, 14, 22, 1, 2, 3, 21], // Top SWE projects
-    description: 'Full-stack developer passionate about building scalable applications, mobile apps, and AI-driven solutions. Experience with React, Node.js, Python, and cloud technologies.',
+    featuredHomeProjects: [28, 26, 25, 5], // no-start-env benchmark, Grid Intelligence, Robotic Arm, JPcommerce
+    featuredProjectsPage: [28, 26, 25, 5, 14, 22, 1],
+    description: 'I build RL environments and evaluations that teach AI systems physical-world reasoning — fault diagnosis, triage, and procedural tasks. Duke ME + CS. I\'ve been fixing and building physical machines since I was 12, and writing the software around them just as long.',
     resumeUrl: '/resume.pdf'
   },
   yc2026: {
     name: 'Software Engineer',
     shortName: 'SWE',
-    headline: 'Software Engineer • Full-Stack Developer • AI Specialist',
-    subhead: 'Building scalable applications and AI-driven solutions that create real business value',
+    headline: 'Founder • Hardware + ML Engineer',
+    subhead: 'The benchmark, the energy forecasting stack, the robot arm, and the hardware business',
     proofStats: [
-      { label: 'Projects Built', value: '15+' },
-      { label: 'Technologies', value: '20+' },
-      { label: 'Years Experience', value: '3+' }
+      { label: 'Models benchmarked on my published eval', value: '9' },
+      { label: 'Revenue, bootstrapped hardware resale business', value: '$100k+' },
+      { label: 'Rows of energy data behind my forecasting stack', value: '100M+' }
     ],
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [26, 1, 25, 5],
-    featuredProjectsPage: [26, 1, 25, 5],
-    otherProjects: [14, 22, 3, 21, 4, 6, 7, 8, 9, 18, 19, 23, 24, 27, 2],
+    featuredHomeProjects: [28, 26, 25, 5], // no-start-env benchmark, Grid Intelligence, Robotic Arm, JPcommerce
+    featuredProjectsPage: [28, 26, 25, 5],
+    otherProjects: [1, 14, 22, 3, 21, 4, 6, 7, 8, 9, 18, 19, 23, 24, 27, 2],
     personalProjects: [10, 11, 12, 13, 17, 16, 15, 20],
-    description: 'Full-stack developer passionate about building scalable applications, mobile apps, and AI-driven solutions. Experience with React, Node.js, Python, and cloud technologies.',
+    description: 'I build RL environments and evaluations that teach AI systems physical-world reasoning — fault diagnosis, triage, and procedural tasks. Duke ME + CS. I\'ve been fixing and building physical machines since I was 12, and writing the software around them just as long.',
     resumeUrl: '/resume.pdf'
   },
   quant: {

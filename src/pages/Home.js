@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiCode, FiTrendingUp, FiSettings, FiFileText } from 'react-icons/fi';
+import { FiArrowRight, FiCode, FiTrendingUp, FiSettings, FiFileText, FiTool, FiTarget } from 'react-icons/fi';
 import { usePersona } from '../contexts/PersonaContext';
 import { projectsData } from '../data/projectsData';
 import './Home.css';
@@ -60,26 +60,29 @@ const Home = () => {
 
   console.log('Home component: featuredProjects =', featuredProjects);
 
+  // The founder positioning covers the yc2026 deep link and the default SWE persona
+  const isFounder = persona === 'yc2026' || config.shortName === 'SWE';
+
   // Dynamic features based on persona
   const getFeatures = () => {
-    if (persona === 'yc2026') {
+    if (isFounder) {
       return [
         {
+          icon: FiTool,
+          title: 'Physical Systems',
+          description: 'Diagnosing and repairing real machines — medical equipment, vehicles to the ECU level, CNC-machined parts. The tacit knowledge that never makes it into training data.',
+          link: '/projects'
+        },
+        {
+          icon: FiTarget,
+          title: 'RL Environments & Evals',
+          description: 'Simulated environments where physical reasoning becomes trainable and measurable: physics-grounded scenarios, cheat-resistant graders, verifiable rewards.',
+          link: '/project-detail/no-start-env'
+        },
+        {
           icon: FiCode,
-          title: 'Product & Full-Stack',
-          description: 'Shipping web and mobile products with AI, analytics, and growth loops from prototype to users',
-          link: '/projects'
-        },
-        {
-          icon: FiTrendingUp,
-          title: 'Energy & Quant Systems',
-          description: 'Forecasting, optimization, and data pipelines for markets, batteries, and portfolio decisions',
-          link: '/projects'
-        },
-        {
-          icon: FiSettings,
-          title: 'Robotics & Embedded',
-          description: 'Multi-board control, real-time motion, and hardware–software systems built end to end',
+          title: 'ML & Software Systems',
+          description: 'Forecasting and optimization at scale — 7,000+ electrical nodes, 100M+ rows — plus the full-stack tooling around it. Firmware to frontend.',
           link: '/projects'
         }
       ];
@@ -210,6 +213,12 @@ const Home = () => {
               </motion.div>
 
               <div className="hero-actions">
+                {isFounder && (
+                  <Link to="/project-detail/no-start-env" className="btn btn-primary">
+                    Current Work
+                    <FiArrowRight />
+                  </Link>
+                )}
                 <Link to={config.ctaLink} className="btn btn-primary">
                   {config.cta}
                   <FiArrowRight />
@@ -249,9 +258,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="section-title">
-                {persona === 'yc2026'
-                  ? 'Featured Innovation Projects'
-                  : config.shortName === 'YC' || config.shortName === 'Quant'
+                {isFounder || config.shortName === 'YC' || config.shortName === 'Quant'
                   ? 'Featured Projects'
                   : `Featured ${config.name} Projects`}
               </h2>
@@ -310,9 +317,9 @@ const Home = () => {
           >
             <h2 className="section-title">What I Do</h2>
             <p className="section-subtitle">
-              {persona === 'yc2026'
-                ? 'Products and systems across software, energy markets, and robotics—from prototype to production'
-                : config.shortName === 'YC' 
+              {isFounder
+                ? 'Hardware hands, ML systems, and the software in between'
+                : config.shortName === 'YC'
                 ? 'Building and scaling ventures that solve real problems and create lasting impact'
                 : config.shortName === 'CS'
                 ? 'Building scalable software solutions and AI-driven applications with modern technologies'
@@ -359,9 +366,9 @@ const Home = () => {
           >
             <h2 className="section-title">Quick Access</h2>
             <p className="section-subtitle">
-              {persona === 'yc2026'
-                ? 'Explore featured builds in software, energy, and robotics'
-                : config.shortName === 'YC' 
+              {isFounder
+                ? 'The eval, the projects behind it, and the resume'
+                : config.shortName === 'YC'
                 ? 'Explore my entrepreneurial ventures and business building experience'
                 : config.shortName === 'CS'
                 ? 'Explore my software development and AI/ML engineering projects'
@@ -380,9 +387,9 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3>{persona === 'yc2026' ? 'Projects' : config.shortName === 'YC' ? 'My Ventures' : config.shortName === 'CS' ? 'My Code' : config.shortName === 'Build' ? 'My Designs' : 'Investment Analysis'}</h3>
-              <p>{persona === 'yc2026' ? 'AI products, energy intelligence, robotics, and full-stack ventures from idea to deployment' : config.shortName === 'YC' ? 'Entrepreneurial projects and business ventures I\'ve founded and scaled' : config.shortName === 'CS' ? 'Software development projects and AI/ML applications I\'ve built' : config.shortName === 'Build' ? 'Mechanical engineering projects and integrated systems I\'ve designed' : 'Financial modeling, valuation, and market research projects'}</p>
-              <Link to="/projects" className="btn btn-primary">{persona === 'yc2026' ? 'View Projects' : config.shortName === 'YC' ? 'View Ventures' : config.shortName === 'CS' ? 'View Code' : config.shortName === 'Build' ? 'View Designs' : 'View Analysis'}</Link>
+              <h3>{isFounder ? 'Projects' : config.shortName === 'YC' ? 'My Ventures' : config.shortName === 'CS' ? 'My Code' : config.shortName === 'Build' ? 'My Designs' : 'Investment Analysis'}</h3>
+              <p>{isFounder ? 'The benchmark, energy forecasting, robotics, and the hardware businesses that came first' : config.shortName === 'YC' ? 'Entrepreneurial projects and business ventures I\'ve founded and scaled' : config.shortName === 'CS' ? 'Software development projects and AI/ML applications I\'ve built' : config.shortName === 'Build' ? 'Mechanical engineering projects and integrated systems I\'ve designed' : 'Financial modeling, valuation, and market research projects'}</p>
+              <Link to="/projects" className="btn btn-primary">{isFounder ? 'View Projects' : config.shortName === 'YC' ? 'View Ventures' : config.shortName === 'CS' ? 'View Code' : config.shortName === 'Build' ? 'View Designs' : 'View Analysis'}</Link>
             </motion.div>
 
             <motion.div
@@ -393,7 +400,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h3>Resume</h3>
-              <p>{persona === 'yc2026' ? 'Technical leadership across software, energy, and robotics' : config.shortName === 'YC' ? 'Entrepreneurial experience and business building track record' : config.shortName === 'CS' ? 'Computer Science experience and technical qualifications' : config.shortName === 'Build' ? 'Mechanical Engineering and Computer Science dual-degree experience' : 'Investment analysis experience and qualifications'}</p>
+              <p>{isFounder ? 'Work history across hardware, ML, and software' : config.shortName === 'YC' ? 'Entrepreneurial experience and business building track record' : config.shortName === 'CS' ? 'Computer Science experience and technical qualifications' : config.shortName === 'Build' ? 'Mechanical Engineering and Computer Science dual-degree experience' : 'Investment analysis experience and qualifications'}</p>
               <a href={config.resumeUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Resume</a>
             </motion.div>
 
@@ -404,9 +411,9 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h3>{persona === 'yc2026' || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'About Me' : 'Research'}</h3>
-              <p>{persona === 'yc2026' ? 'Background in building products at the intersection of software, markets, and hardware' : config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : config.shortName === 'CS' ? 'My technical background and software engineering journey' : config.shortName === 'Build' ? 'My dual-degree engineering background and product development journey' : 'Quantitative analysis and financial modeling research'}</p>
-              <Link to={persona === 'yc2026' || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? '/about' : '/lab-reports'} className="btn btn-primary">{persona === 'yc2026' || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'Learn More' : 'View Research'}</Link>
+              <h3>{isFounder || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'About Me' : 'Research'}</h3>
+              <p>{isFounder ? 'From building machines at 12 to building evals for physical-systems AI' : config.shortName === 'YC' ? 'My entrepreneurial journey and business philosophy' : config.shortName === 'CS' ? 'My technical background and software engineering journey' : config.shortName === 'Build' ? 'My dual-degree engineering background and product development journey' : 'Quantitative analysis and financial modeling research'}</p>
+              <Link to={isFounder || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? '/about' : '/lab-reports'} className="btn btn-primary">{isFounder || config.shortName === 'YC' || config.shortName === 'CS' || config.shortName === 'Build' ? 'Learn More' : 'View Research'}</Link>
             </motion.div>
           </div>
         </div>

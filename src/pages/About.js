@@ -46,11 +46,10 @@ const About = () => {
       };
     } else {
       return {
-        'Programming Languages': ['Java', 'JavaScript', 'Python', 'C++', 'TypeScript', 'Swift'],
-        'Web & Mobile Development': ['React', 'React Native', 'SwiftUI', 'Firebase', 'Spring Boot', 'Node.js'],
-        'Finance & Analytics': ['Time-series Analysis', 'ANN Forecasting', 'Sentiment Analysis', 'Market Modeling', 'SARIMA'],
-        'Engineering Tools': ['SolidWorks', 'AutoCAD', 'CNC Machining', 'FEA', 'MATLAB', 'Fusion360'],
-        'Business & Leadership': ['Entrepreneurship', 'Project Management', 'Technical Leadership', 'Problem Solving']
+        'ML & RL': ['Reinforcement Learning', 'RL Environment Design', 'Evals / Benchmarking (Inspect)', 'Time-Series Forecasting', 'PyTorch', 'XGBoost'],
+        'Hardware & Fabrication': ['Electromechanical Diagnosis & Repair', 'CNC Machining', 'CAD (SolidWorks, Fusion360)', 'FEA', 'Embedded (ESP32, UART, OTA)'],
+        'Software': ['Python', 'TypeScript', 'Java', 'C++', 'React', 'Node.js', 'FastAPI', 'Firebase'],
+        'Systems & Data': ['Constrained Optimization', 'Data Pipelines (100M+ rows)', 'Simulation', 'Physics Modeling']
       };
     }
   };
@@ -61,7 +60,7 @@ const About = () => {
     {
       degree: 'B.S. Computer Science, B.S.E. Mechanical Engineering, Innovation & Entrepreneurship',
       school: 'Duke University',
-      year: 'Expected May 2026'
+      year: 'Graduated May 2026'
     }
   ];
 
@@ -212,7 +211,7 @@ const About = () => {
               ? 'Quantitative analyst specializing in systematic trading, algorithmic strategies, and risk management for financial markets'
               : config?.shortName === 'Build'
               ? 'Double-major Mechanical Engineer and Computer Scientist building innovative products with integrated hardware and software solutions'
-              : 'Strategic problem-solver with proven business impact, combining analytical rigor with entrepreneurial execution'
+              : 'Founder building RL environments and evaluations for physical-systems AI'
             }
           </p>
         </motion.div>
@@ -268,11 +267,10 @@ const About = () => {
                     that solve real problems.
                   </p>
                   <p>
-                    I've founded and scaled multiple profitable businesses, starting with JPcommerce, a resale and 
-                    market arbitrage venture that generated $100,000+ in revenue with 42% profit margins. Most recently, 
-                    I launched Impression, an AI-driven optimization platform where I identified a $2.8B market 
-                    opportunity and built a product that delivers measurable value to users through data-driven 
-                    experimentation and strategic product development.
+                    I've founded and scaled multiple profitable businesses, starting with JPcommerce, a medical
+                    equipment repair and resale business that generated $100,000+ in revenue over five years. Most
+                    recently, I launched Impression, an AI-driven optimization platform, building the product end to
+                    end through data-driven experimentation.
                   </p>
                   <p>
                     My approach to entrepreneurship combines technical innovation with market validation. I believe in 
@@ -379,24 +377,26 @@ const About = () => {
               ) : (
                 <>
                   <p>
-                    I am a recent graduate from Duke University who earned a double major in Computer Science and Mechanical Engineering 
-                    with a certificate in Innovation & Entrepreneurship. This blend of technical and analytical training equips 
-                    me to approach complex business problems with both quantitative rigor and creative problem-solving. I am currently spending time to explore the startup space, with a focus in financial technology.
+                    I'm a recent Duke graduate (Computer Science + Mechanical Engineering) and the founder of my company,
+                    where I build{' '}
+                    <a href="https://github.com/Jaiparmar940/rlenv" target="_blank" rel="noopener noreferrer">
+                      reinforcement-learning environments and evaluations
+                    </a>{' '}
+                    that teach AI systems physical-world reasoning — the diagnostic and procedural knowledge that lives
+                    in technicians' hands and never makes it into training data.
                   </p>
                   <p>
-                    I have a track record of building ventures that generate measurable business value. As founder of 
-                    Impression, an AI-driven optimization platform, I identified a $2.8B market opportunity and delivered 
-                    tangible user outcomes through data-driven experimentation and product strategy. As Technical Lead at Grid Intelligence, I co-founded a B2B SaaS startup with Duke peers, configuring and fine-tuning ML models for localized energy demand and pricing prediction across 7,000+ electrical nodes using 100M+ rows of data; this informed battery storage optimization and helped raise $100k in non-dilutive funding. Earlier, I launched JPcommerce, a resale and market arbitrage business that generated $100,000+ in revenue with 42% profit margins by uncovering inefficiencies in fragmented markets and implementing operational improvements.
+                    That thesis comes directly from my own history. At 12, I built and sold cryptocurrency mining servers
+                    to support my family. That business evolved into JPcommerce, where I spent five years sourcing broken
+                    medical equipment — sterilizers, digital x-ray machines — repairing it myself, and selling it to
+                    private practices and underfunded health systems internationally: $100k+ in revenue. In college I was
+                    technical lead at Grid Intelligence, a B2B energy startup, where I built demand and pricing forecasting
+                    across 7,000+ electrical nodes on 100M+ rows of data. I've also built a 5-DOF robotic arm end to end,
+                    firmware through control dashboard.
                   </p>
                   <p>
-                    Across these experiences, I learned to think like an investor and consultant: spotting opportunities 
-                    in overlooked markets, analyzing data to guide strategic decisions, and executing with operational 
-                    discipline to unlock value.
-                  </p>
-                  <p>
-                    I am passionate about solving high-impact business challenges at the intersection of technology, 
-                    strategy, and investment, whether that means optimizing growth, improving operations, or guiding 
-                    organizations through their most critical decisions to achieve sustainable results.
+                    The pattern across all of it: physical systems, and the software that understands them. That's the gap
+                    in frontier AI I'm now working on full time.
                   </p>
                 </>
               )}

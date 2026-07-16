@@ -56,13 +56,13 @@ const Resume = () => {
       ]
     },
     {
-      title: 'Founder & Data-Driven Strategist',
-      company: 'JPcommerce — Market Arbitrage Business',
+      title: 'Founder',
+      company: 'JPcommerce — Medical Equipment Repair & Resale',
       period: 'Mar 2020 - May 2025',
       location: 'Santa Maria, CA',
       description: [
-        'Built and scaled medical equipment resale business, generating $100K+ revenue with 42% profit margin',
-        'Applied pricing and arbitrage models across fragmented marketplaces, improving ROI by 12% through freight shipping contracts',
+        'Built medical equipment repair and resale business, generating $100K+ revenue over five years',
+        'Modeled pricing across fragmented marketplaces, improving ROI by 12% through freight shipping contracts',
         'Negotiated global procurement, oversaw repairs, and delivered to underfunded healthcare systems, achieving 50+ five-star client reviews',
         'Directed operations across sourcing, restoration, logistics, and sales, reducing repair cycle time by 30%'
       ]

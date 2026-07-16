@@ -224,14 +224,14 @@ Quantitative analysis, machine learning, financial modeling, data science, senti
     id: 5,
     title: 'JPcommerce — Medical Equipment Resale Business',
     category: 'business, engineering',
-    description: 'Self-started business generating $100,000+ revenue through procurement, restoration, and resale of medical equipment with 42% profit margin.',
+    description: 'Bootstrapped business: sourced broken medical equipment — sterilizers, digital x-ray machines — repaired it myself, and sold it to private practices and underfunded health systems internationally. $100,000+ revenue over five years.',
     longDescription: `# JPcommerce — Medical Equipment Resale Business (Mar 2020 - May 2025)
-**Role:** Founder & Data-Driven Strategist
+**Role:** Founder
 
 [Visit my eBay storefront](https://www.ebay.com/usr/jpcommerce)
 
-**Overview**  
-Resale venture refurbishing medical equipment for clinics and buyers in fragmented markets. Enabled underfunded healthcare facilities to access quality equipment at 30-50% below retail prices through systematic market arbitrage.
+**Overview**
+Repair and resale business for medical equipment serving clinics and buyers in fragmented markets. Enabled underfunded healthcare facilities to access quality equipment at 30-50% below retail prices by sourcing broken units and repairing them myself.
 
 **Problem / Challenge**  
 Pricing opacity and inconsistent quality created margin risk and long repair cycles. Healthcare facilities in developing markets faced equipment shortages while developed markets had underutilized assets with no efficient redistribution mechanism.
@@ -361,23 +361,25 @@ Autonomous robotic system designed to collect and stack blocks to build towers u
 Manual block stacking operations were time-consuming and error-prone in manufacturing environments. Existing robotic systems lacked the intelligence to adapt to varying block positions and stacking patterns.
 
 **Approach / Solution**  
+- Competed in FTC competition as a one man team, managing design, fabrication, programming, documentation, and outreach alone
 - Developed computer vision system using OpenCV for real-time block detection and tracking
 - Implemented machine learning algorithms using TensorFlow for pattern recognition
 - Built autonomous navigation system using Vuforia for spatial awareness
+- Modelled entire robot in SolidWorks prior to construction
 - Designed comprehensive CAD model for mechanical system optimization
 
 **Impact / Results**  
-- <stacking_accuracy>% accuracy in autonomous block stacking operations
-- <processing_speed>% improvement in block detection and processing speed
-- <autonomous_operation>% reduction in manual intervention requirements
-- <error_reduction>% reduction in stacking errors compared to manual operations
-- <system_reliability>% uptime achieved through robust autonomous operation
+- Founded a one-person FTC robotics team and independently led the robot's CAD, mechanical design, fabrication, assembly, and software development.
+- Took the robot from concept to competition in approximately three months despite late registration, limited funding, and no initial workshop access.
+- Fabricated custom aluminum components using waterjet cutting and manual machining, avoiding costly commercial CNC services.
+- Rapidly redesigned the intake around unavailable parts and repaired mechanical failures during competition.
+- Finished 7th at the team's first FTC meet, including a match win immediately after an in-event lift repair.
+- Won Rockwell Collins Design award for most innovative robotic design at qualifier meet, qualified for state tournament but cancelled due to COVID
 
 **Leadership & Collaboration**  
-- Led interdisciplinary team combining mechanical, software, and AI engineering
-- Collaborated with computer vision experts for optimal image processing algorithms
-- Resolved integration challenges between hardware and software components
-- Implemented comprehensive testing protocols for autonomous system validation
+- Following state championship qualifications, outreached and established partnership with Dunn School's robotics team who was eliminated
+- Integrated teams together and delegated tasks for complete robot redesign in two weeks
+- Outreached to lower grades in the school to teach them about robotics and encourage students to eventually join the program
 
 **Skills Applied**  
 Robotics engineering, computer vision, machine learning, autonomous systems, CAD modeling, Java, OpenCV, TensorFlow, Vuforia
@@ -1473,6 +1475,53 @@ Quantitative Finance, Portfolio Optimization, Regime Detection (HMM/LSTM/GMM), W
       `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image3.jpeg`,
       `${process.env.PUBLIC_URL}/static/projects/omega-portfolio-engine/image4.jpeg`
     ]
+  },
+  {
+    id: 28,
+    title: 'no-start-env — Physical-Systems Diagnostic Benchmark for LLM Agents',
+    category: 'machine learning, RL environments, evals',
+    description: 'A simulated vehicle electrical no-start environment where LLM agents diagnose faults with realistic tools — measurements, cranks, part swaps — scored by a cheat-resistant grader. Built on Inspect AI. 9 models benchmarked across 5 fault scenarios, 225 episodes; best-to-worst spread of 78.8 points.',
+    longDescription: `# no-start-env — Physical-Systems Diagnostic Benchmark for LLM Agents (2026)
+**Role:** Founder & sole author — current full-time work
+
+**What it is**
+A reinforcement-learning environment and published evaluation for physical-world diagnostic reasoning. The agent gets a vehicle that won't start and the tools a technician would have — voltage measurements, crank attempts, visual inspection, CAN bus reads, part replacement — and has to find the root cause, fix it, and verify the fix. Built on Inspect AI so labs can run it directly. This is the first public artifact of my company, which builds RL environments and evaluations that teach AI systems physical-world reasoning.
+
+**Why a diagnostic benchmark**
+The knowledge that separates a good technician from a parts-swapper is tacit: which measurement to take first, when a plausible reading is a red herring, when a fix is actually verified. That knowledge never makes it into training data, and models trained on text guess plausibly instead of measuring. The grader is built so plausible guessing loses:
+
+- Scoring: root cause 60 / parts discipline 25 / cost efficiency 15
+- Replacing parts before any measurement caps the score at 40
+- Full credit requires the root-cause part replaced and a successful start verifying the repair
+- Each wrong part replaced costs 8 points
+- Reliability is reported as pass^k — full root-cause credit in every epoch, because a model that is right two times out of three is not deployable
+
+**Results (July 2026)**
+- 9 models × 5 fault scenarios × 5 epochs = 225 episodes, all on uncoached prompts
+- Best-to-worst spread: 78.8 points (top model mean 86.0, bottom 7.2)
+- Frontier models have cleared the easy/medium tier (root cause correct in 59/60 episodes) but the hard tier — compound and intermittent faults — carries the separation: 15/40 at the frontier
+- The open 3B–8B tier, the weight class that runs on-device or on-robot, averages 17.0/100
+- A leak and integrity audit of all 225 transcripts is published with the results: zero ground-truth leakage in agent-visible text, deterministic environment, uncoached single-revision prompt
+
+**Design details**
+- Deterministic, physics-grounded world model with documented fault physics
+- 16 failure modes across battery, grounds, ignition, and ECU/CAN subsystems, including red-herring and compound-fault scenarios
+- Cost model benchmarked against expert-technician baseline times
+
+**Selected Artifacts**
+- [GitHub Repo](https://github.com/Jaiparmar940/rlenv)
+- [Benchmark Results](https://github.com/Jaiparmar940/rlenv/blob/main/results/results.md)
+- [Leak & Integrity Audit](https://github.com/Jaiparmar940/rlenv/blob/main/results/audit.md)
+
+`,
+    technologies: ['Inspect AI', 'RL Environments', 'Evals', 'Python', 'LLM Agents', 'Simulation', 'Physics Modeling', 'Benchmarking'],
+    image: 'https://picsum.photos/400/250?random=28',
+    github: 'https://github.com/Jaiparmar940/rlenv',
+    live: null,
+    featured: true,
+    hasDetailPage: true,
+    detailSlug: 'no-start-env',
+    images: []
   }
 ];
 
