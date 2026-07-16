@@ -140,8 +140,6 @@ Traditional banking systems lacked modern user interfaces and real-time transact
 - Documented REST APIs with Swagger/OpenAPI and validated full local stack integration (Spring Boot, MySQL, React)
 
 **Leadership & Collaboration**  
-- Led full-stack development team across frontend and backend components
-- Collaborated with security team to implement comprehensive authentication
 - Resolved complex data synchronization challenges between frontend and backend
 - Implemented code review processes ensuring security best practices
 
