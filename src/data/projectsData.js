@@ -707,13 +707,7 @@ Stock BMW M4 G83 performance was limited by factory tuning and restrictive exhau
 - <fuel_flexibility>% improvement in fuel flexibility and tuning range
 - <performance_consistency>% improvement in consistent performance
 
-**Leadership & Collaboration**  
-- Led automotive performance team through complex modification process
-- Collaborated with ECU specialists for optimal tuning parameters
-- Resolved integration challenges between custom components
-- Implemented quality control processes ensuring performance standards
-
-**Skills Applied**  
+**Skills Applied**
 Automotive tuning, ECU mapping, exhaust systems, catalytic converters, ethanol sensors, piggyback tuners, custom air intakes, performance optimization, BMW modifications, welding
 
 `,
