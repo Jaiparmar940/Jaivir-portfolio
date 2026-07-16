@@ -606,12 +606,6 @@ Piano lyre system and hammer mechanism were malfunctioning, causing poor sound q
 - Restored the vintage player mechanism
 - Modernized it to work with modern computers
 
-**Leadership & Collaboration**  
-- Led precision instrument restoration team through complex repair process
-- Collaborated with sound engineers for optimal acoustic performance
-- Resolved mechanical challenges through systematic diagnosis and repair
-- Implemented quality control protocols ensuring restoration standards
-
 **Skills Applied**  
 Piano mechanics, precision repair, mechanical restoration, sound engineering, fine motor skills, instrument maintenance, mechanical assembly, quality control
 
