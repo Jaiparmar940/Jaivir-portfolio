@@ -36,88 +36,77 @@ export function setStickyPersona(persona) {
   document.cookie = `persona=${persona}; Max-Age=${60*60*24*30}; Path=/; SameSite=Lax`;
 }
 
+const VALID_PERSONAS = ['swe','quant','consulting','engineering','banking','yc','yc2026','code','build','ie'];
+
+export const POST_AUTH_REDIRECT_KEY = 'postAuthRedirect';
+
+/** Parse hash/path route segments for HashRouter (#/a/b -> ['a','b']). */
+export function getRouteParts() {
+  const hash = window.location.hash || '';
+  if (hash.startsWith('#')) {
+    const withoutHash = hash.slice(1);
+    const pathOnly = withoutHash.split('?')[0];
+    return pathOnly.split('/').filter(Boolean);
+  }
+  return window.location.pathname.split('/').filter(Boolean);
+}
+
+/**
+ * If the first route segment is a valid access code, return
+ * { persona, code, restPath } where restPath is everything after the code
+ * (e.g. /yc2026/project-detail/x -> restPath /project-detail/x).
+ */
+export function getAccessCodeFromRoute() {
+  const parts = getRouteParts();
+  if (parts.length === 0) return null;
+
+  const code = parts[0];
+  const persona = personaFromCode(code);
+  if (!persona) return null;
+
+  const restPath = parts.length > 1 ? `/${parts.slice(1).join('/')}` : '/';
+  return { persona, code, restPath };
+}
+
 export function detectPersona() {
   try {
-    console.log('detectPersona: Starting detection...');
-    console.log('detectPersona: Current URL:', window.location.href);
-    console.log('detectPersona: Current pathname:', window.location.pathname);
-    console.log('detectPersona: Current hash:', window.location.hash);
-    
-    // 1) Check for sticky persona first
-    const stickyPersona = getStickyPersona();
-    if (stickyPersona) {
-      console.log('detectPersona: Using sticky persona:', stickyPersona);
-      return stickyPersona;
-    }
-    
-    // 2) Check URL path for access code
-    const pathParts = window.location.pathname.split('/').filter(Boolean);
-    console.log('detectPersona: Path parts:', pathParts);
-    
-    if (pathParts.length > 0) {
-      const code = pathParts[0];
-      console.log('detectPersona: Checking path code:', code);
-      
-      const persona = personaFromCode(code);
-      console.log('detectPersona: personaFromCode result:', persona);
-      
-      if (persona) {
-        console.log('detectPersona: Valid code found, setting persona:', persona);
-        setStickyPersona(persona);
-        return persona;
-      } else {
-        console.log('detectPersona: Invalid code in path:', code);
-      }
-    }
-    
-    // 2b) Check hash for access code (for hash-based routing)
-    if (window.location.hash) {
-      const hashParts = window.location.hash.substring(1).split('/').filter(Boolean);
-      console.log('detectPersona: Hash parts:', hashParts);
-      
-      if (hashParts.length > 0) {
-        const code = hashParts[0];
-        console.log('detectPersona: Checking hash code:', code);
-        
-        const persona = personaFromCode(code);
-        console.log('detectPersona: personaFromCode result from hash:', persona);
-        
-        if (persona) {
-          console.log('detectPersona: Valid code found in hash, setting persona:', persona);
-          setStickyPersona(persona);
-          return persona;
-        } else {
-          console.log('detectPersona: Invalid code in hash:', code);
-        }
-      }
-    }
-    
-    // 3) querystring override (for testing)
-    const params = new URLSearchParams(window.location?.search || '');
-    const q = params.get('track');
-    console.log('detectPersona: Query param track =', q);
-    
-    if (q && ['swe','quant','consulting','engineering','banking','yc','yc2026','code','build','ie'].includes(q)) {
-      console.log('detectPersona: Using query param persona:', q);
-      setStickyPersona(q);
-      return q;
+    // 1) Access code in URL (password-first deep links) — preferred over sticky
+    const fromRoute = getAccessCodeFromRoute();
+    if (fromRoute) {
+      setStickyPersona(fromRoute.persona);
+      return fromRoute.persona;
     }
 
-    // 4) subdomain (legacy support)
+    // 2) Query param (?code= or ?track=), including inside the hash
+    const search =
+      window.location.search ||
+      (window.location.hash.includes('?')
+        ? `?${window.location.hash.split('?')[1]}`
+        : '');
+    const params = new URLSearchParams(search.startsWith('?') ? search.slice(1) : search);
+    const q = params.get('code') || params.get('track');
+    if (q) {
+      const persona = personaFromCode(q) || (VALID_PERSONAS.includes(q.toLowerCase()) ? q.toLowerCase() : null);
+      if (persona) {
+        setStickyPersona(persona);
+        return persona;
+      }
+    }
+
+    // 3) Sticky persona (localStorage / cookie)
+    const stickyPersona = getStickyPersona();
+    if (stickyPersona) {
+      return stickyPersona;
+    }
+
+    // 4) Subdomain (legacy)
     const host = window.location?.hostname || '';
-    console.log('detectPersona: Hostname =', host);
-    
     const first = host.split('.')[0]?.toLowerCase();
-    console.log('detectPersona: First part of hostname =', first);
-    
     if (subToPersona[first]) {
-      console.log('detectPersona: Using subdomain persona:', subToPersona[first]);
       setStickyPersona(subToPersona[first]);
       return subToPersona[first];
     }
 
-    // 5) No valid persona found
-    console.log('detectPersona: No valid persona found, returning null');
     return null;
   } catch (error) {
     console.error('detectPersona: Error detecting persona:', error);

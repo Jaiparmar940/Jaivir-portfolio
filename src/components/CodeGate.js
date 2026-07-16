@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiLock, FiArrowRight, FiEye, FiEyeOff } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 import { usePersona } from '../contexts/PersonaContext';
-import { personaFromCode, setStickyPersona } from '../lib/persona';
+import { personaFromCode } from '../lib/persona-codes';
+import { setStickyPersona, POST_AUTH_REDIRECT_KEY } from '../lib/persona';
 import './CodeGate.css';
 
 const CodeGate = () => {
   const { updatePersona } = usePersona();
+  const navigate = useNavigate();
   const [code, setCode] = useState('');
   const [showCode, setShowCode] = useState(false);
   const [error, setError] = useState('');
@@ -17,23 +20,30 @@ const CodeGate = () => {
     setError('');
     setIsLoading(true);
 
-    // Simulate a small delay for better UX
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 400));
 
     const trimmed = code.trim();
     const persona = personaFromCode(trimmed);
 
     if (persona) {
-      setError('');
-      const isIEPortfolioCode = trimmed.toLowerCase() === 'innovation';
-      if (isIEPortfolioCode) {
-        setStickyPersona('ie');
-        updatePersona('ie');
-        window.location.hash = '#/ie-portfolio';
-        return;
+      setStickyPersona(persona);
+      updatePersona(persona);
+
+      let target = '/';
+      try {
+        const saved = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY);
+        if (saved) {
+          target = saved;
+          sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY);
+        }
+      } catch {}
+
+      if (trimmed.toLowerCase() === 'innovation' && target === '/') {
+        target = '/ie-portfolio';
       }
+
       setIsLoading(false);
-      window.location.hash = `#/${trimmed}`;
+      navigate(target, { replace: true });
     } else {
       setError('Invalid access code. Please try again.');
       setIsLoading(false);
@@ -61,7 +71,9 @@ const CodeGate = () => {
             </div>
             <h1>Portfolio Access</h1>
             <p>Enter your access code to view the portfolio</p>
-            <p className="access-code-hint">Access code is the word following "jaivirparmar.com/" in your URL</p>
+            <p className="access-code-hint">
+              Tip: share links like jaivirparmar.com/#/yc2026/project-detail/grid-intelligence
+            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="code-form">

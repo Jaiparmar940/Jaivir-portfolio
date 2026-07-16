@@ -11,33 +11,58 @@ export const usePersona = () => {
   return context;
 };
 
-export const PersonaProvider = ({ children }) => {
-  const [persona, setPersona] = useState(null);
-  const [config, setConfig] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+const createInitialAuthState = () => {
+  try {
+    const detectedPersona = detectPersona();
+    if (detectedPersona) {
+      return {
+        persona: detectedPersona,
+        config: getPersonaConfig(detectedPersona),
+        isAuthenticated: true,
+        isLoading: false,
+        error: null
+      };
+    }
+  } catch (err) {
+    return {
+      persona: null,
+      config: null,
+      isAuthenticated: false,
+      isLoading: false,
+      error: err
+    };
+  }
 
-  // Function to check and update persona
+  return {
+    persona: null,
+    config: null,
+    isAuthenticated: false,
+    isLoading: false,
+    error: null
+  };
+};
+
+export const PersonaProvider = ({ children }) => {
+  const initial = createInitialAuthState();
+  const [persona, setPersona] = useState(initial.persona);
+  const [config, setConfig] = useState(initial.config);
+  const [isLoading, setIsLoading] = useState(initial.isLoading);
+  const [error, setError] = useState(initial.error);
+  const [isAuthenticated, setIsAuthenticated] = useState(initial.isAuthenticated);
+
   const checkPersona = () => {
     try {
-      console.log('PersonaProvider: Checking persona...');
-      console.log('PersonaProvider: Current hash in checkPersona:', window.location.hash);
       const detectedPersona = detectPersona();
-      console.log('PersonaProvider: Detected persona:', detectedPersona);
-      
+
       if (detectedPersona) {
         const personaConfig = getPersonaConfig(detectedPersona);
-        console.log('PersonaProvider: Got config:', personaConfig);
-        
         setPersona(detectedPersona);
         setConfig(personaConfig);
         setIsAuthenticated(true);
       } else {
-        console.log('PersonaProvider: No valid persona detected, showing CodeGate');
         setIsAuthenticated(false);
       }
-      
+
       setIsLoading(false);
     } catch (err) {
       console.error('PersonaProvider: Error checking persona:', err);
@@ -48,47 +73,27 @@ export const PersonaProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    // Initial check
     checkPersona();
 
-    // Listen for hash changes
     const handleHashChange = () => {
-      console.log('PersonaProvider: Hash changed, re-checking persona...');
-      console.log('PersonaProvider: New hash:', window.location.hash);
       checkPersona();
     };
 
-    // Listen for popstate (back/forward button)
     const handlePopState = () => {
-      console.log('PersonaProvider: PopState event, re-checking persona...');
-      console.log('PersonaProvider: New hash after popstate:', window.location.hash);
       checkPersona();
     };
 
-    // Listen for location changes (React Router)
-    const handleLocationChange = () => {
-      console.log('PersonaProvider: Location changed, re-checking persona...');
-      console.log('PersonaProvider: New location:', window.location.href);
-      checkPersona();
-    };
-
-    console.log('PersonaProvider: Setting up event listeners...');
     window.addEventListener('hashchange', handleHashChange);
     window.addEventListener('popstate', handlePopState);
-    window.addEventListener('popstate', handleLocationChange);
 
-    // Cleanup
     return () => {
-      console.log('PersonaProvider: Cleaning up event listeners...');
       window.removeEventListener('hashchange', handleHashChange);
       window.removeEventListener('popstate', handlePopState);
-      window.removeEventListener('popstate', handleLocationChange);
     };
   }, []);
 
   const updatePersona = (newPersona) => {
     try {
-      console.log('PersonaProvider: Updating persona to:', newPersona);
       const newConfig = getPersonaConfig(newPersona);
       setPersona(newPersona);
       setConfig(newConfig);
@@ -119,12 +124,6 @@ export const PersonaProvider = ({ children }) => {
     isAuthenticated,
     logout
   };
-
-  console.log('PersonaProvider: Rendering with value:', value);
-
-  if (error) {
-    console.error('PersonaProvider: Rendering with error:', error);
-  }
 
   return (
     <PersonaContext.Provider value={value}>
