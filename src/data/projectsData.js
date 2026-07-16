@@ -228,6 +228,8 @@ Quantitative analysis, machine learning, financial modeling, data science, senti
     longDescription: `# JPcommerce — Medical Equipment Resale Business (Mar 2020 - May 2025)
 **Role:** Founder & Data-Driven Strategist
 
+[Visit my eBay storefront](https://www.ebay.com/usr/jpcommerce)
+
 **Overview**  
 Resale venture refurbishing medical equipment for clinics and buyers in fragmented markets. Enabled underfunded healthcare facilities to access quality equipment at 30-50% below retail prices through systematic market arbitrage.
 
@@ -235,14 +237,15 @@ Resale venture refurbishing medical equipment for clinics and buyers in fragment
 Pricing opacity and inconsistent quality created margin risk and long repair cycles. Healthcare facilities in developing markets faced equipment shortages while developed markets had underutilized assets with no efficient redistribution mechanism.
 
 **Approach / Solution**  
-- Built dynamic pricing model analyzing geographic price disparities across 15+ markets
-- Standardized triage workflow reducing equipment evaluation time by 40%
-- Negotiated global supply agreements with hospital administrators and procurement officers
-- Instituted QA checklists and certification processes for regulatory compliance
+- Sourced over 100 dated and defective medical devices from online and local sources (used or for parts)
+- Purchased devices and personally repaired/restored them by hand
+- Ordered all necessary parts or sourced through other assemblies
+- Packed or crated for freight shipping
+- Listed, advertised, and sold units through an eBay storefront
 
 **Impact / Results**  
 - $100K+ revenue; 42% average profit margin across 50+ transactions
-- 50+ five-star client reviews; 100% satisfaction rate maintained
+- 200+ five-star client reviews; 100% satisfaction rate maintained
 - ROI improved +12% through freight shipping contracts
 - Scaled from local to international markets within 18 months
 
@@ -253,6 +256,9 @@ Pricing opacity and inconsistent quality created margin risk and long repair cyc
 
 **Skills Applied**  
 Market analysis, pricing strategy, ops optimization, financial modeling, stakeholder management, risk assessment, Excel, Salesforce
+
+**Selected Artifacts**  
+[Visit my eBay storefront](https://www.ebay.com/usr/jpcommerce)
 
 `,
     technologies: ['Market Analysis', 'Equipment Restoration', 'E-commerce', 'Negotiation', 'Quality Assurance', 'International Logistics', 'Financial Modeling', 'Process Optimization', 'Stakeholder Management', 'Risk Assessment'],
