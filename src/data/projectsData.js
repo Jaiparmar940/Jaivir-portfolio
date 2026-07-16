@@ -1322,8 +1322,8 @@ Existing CPU design tools lacked comprehensive instruction set implementation an
 - Implemented full Duke 250/16 instruction set: arithmetic, logic, shifts, memory access, branching, jumping, and I/O
 - Built Harvard architecture with separate instruction/data memory and register file using tri-state buffers and decoder
 - Achieved correct asynchronous reset for PC, registers, TTY, and keyboard buffer with spec-compliant clocking
-- Passed automated verification via `hwtest.py` against provided assembler and simulator output
-- Delivered complete Logisim design (`cpu.circ`) for ECE 250 processor core coursework
+- Passed automated verification via 'hwtest.py' against provided assembler and simulator output
+- Delivered complete Logisim design ('cpu.circ') for ECE 250 processor core coursework
 
 **Leadership & Collaboration**  
 - Led computer architecture team through design and implementation phases
