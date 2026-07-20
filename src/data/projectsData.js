@@ -1481,7 +1481,7 @@ Quantitative Finance, Portfolio Optimization, Regime Detection (HMM/LSTM/GMM), W
 **Role:** Founder & sole author — current full-time work
 
 **What it is**
-A reinforcement-learning environment and published evaluation for physical-world diagnostic reasoning. The agent gets a vehicle that won't start and the tools a technician would have — voltage measurements, crank attempts, visual inspection, CAN bus reads, part replacement — and has to find the root cause, fix it, and verify the fix. Built on Inspect AI so labs can run it directly. This is the first public artifact of my company, which builds RL environments and evaluations that teach AI systems physical-world reasoning.
+A reinforcement-learning environment and published evaluation for physical-world diagnostic reasoning. The agent gets a vehicle that won't start and the tools a technician would have — voltage measurements, crank attempts, visual inspection, CAN bus reads, part replacement — and has to find the root cause, fix it, and verify the fix. Built on Inspect AI so labs can run it directly. This is the first public artifact of [Second Nature](https://snlabs.dev), my company that builds RL environments for physical decision processes.
 
 **Why a diagnostic benchmark**
 The knowledge that separates a good technician from a parts-swapper is tacit: which measurement to take first, when a plausible reading is a red herring, when a fix is actually verified. That knowledge never makes it into training data, and models trained on text guess plausibly instead of measuring. The grader is built so plausible guessing loses:
@@ -1505,6 +1505,7 @@ The knowledge that separates a good technician from a parts-swapper is tacit: wh
 - Cost model benchmarked against expert-technician baseline times
 
 **Selected Artifacts**
+- [Second Nature](https://snlabs.dev)
 - [GitHub Repo](https://github.com/Jaiparmar940/rlenv)
 - [Benchmark Results](https://github.com/Jaiparmar940/rlenv/blob/main/results/results.md)
 - [Leak & Integrity Audit](https://github.com/Jaiparmar940/rlenv/blob/main/results/audit.md)
@@ -1513,7 +1514,7 @@ The knowledge that separates a good technician from a parts-swapper is tacit: wh
     technologies: ['Inspect AI', 'RL Environments', 'Evals', 'Python', 'LLM Agents', 'Simulation', 'Physics Modeling', 'Benchmarking'],
     image: `${process.env.PUBLIC_URL}/static/projects/no-start-env/results.svg`,
     github: 'https://github.com/Jaiparmar940/rlenv',
-    live: null,
+    live: 'https://snlabs.dev',
     featured: true,
     hasDetailPage: true,
     detailSlug: 'no-start-env',
