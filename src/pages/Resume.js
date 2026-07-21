@@ -24,7 +24,7 @@ const Resume = () => {
     {
       title: 'Technical Lead',
       company: 'Grid Intelligence',
-      period: 'Aug 2025 - May 2026',
+      period: 'Jan 2026 - May 2026',
       location: 'Durham, NC',
       description: [
         'Led technical team for early-stage B2B SaaS startup with Duke peers predicting localized energy demand and pricing to optimize utility battery storage charge/discharge cycles',
