@@ -541,6 +541,7 @@ Hardware manufacturing, GPU optimization, server design, cooling systems, power 
   },
   {
     id: 10,
+    hidden: true,
     title: 'C6 Corvette Harmonic Balancer Design & Installation',
     category: 'engineering',
     description: 'Designed and installed a custom harmonic balancer for a C6 Corvette engine. Engineered the balancer to reduce engine vibrations and improve performance through precise balancing and proper installation techniques.',
