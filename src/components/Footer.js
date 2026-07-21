@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Jaivir</h3>
             <p className="footer-description">
-              Software Engineer, Quantitative Researcher, and Mechanical Engineering Student at Duke University
+              Startup Founder
             </p>
           </div>
           

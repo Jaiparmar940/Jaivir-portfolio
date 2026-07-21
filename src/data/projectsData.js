@@ -22,7 +22,6 @@ Users lacked actionable insight to improve match rates; existing tools were subj
 **Impact / Results**  
 - 200+ beta users across two pilot cohorts
 - Feature adoption +50% post-token incentives implementation
-- 82% increase in profile match rates
 - Shut down when distribution stalled
 
 **Leadership & Collaboration**  
