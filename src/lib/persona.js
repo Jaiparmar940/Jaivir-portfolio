@@ -128,8 +128,8 @@ export const personaConfigs = {
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [29, 28, 26, 25, 5], // Lucent, no-start-env benchmark, Grid Intelligence, Robotic Arm, JPcommerce
-    featuredProjectsPage: [29, 28, 26, 25, 5, 14, 22, 1],
+    featuredHomeProjects: [28, 26, 25, 5], // no-start-env benchmark, Grid Intelligence, Robotic Arm, JPcommerce
+    featuredProjectsPage: [28, 26, 25, 5, 14, 22, 1],
     description: 'I build RL environments and evaluations that teach AI systems physical-world reasoning — fault diagnosis, triage, and procedural tasks. Duke ME + CS. I\'ve been fixing and building physical machines since I was 12, and writing the software around them just as long.',
     resumeUrl: '/resume.pdf'
   },
@@ -146,9 +146,9 @@ export const personaConfigs = {
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [29, 28, 26, 25, 5], // Lucent, no-start-env benchmark, Grid Intelligence, Robotic Arm, JPcommerce
-    featuredProjectsPage: [29, 28, 26, 25, 5],
-    otherProjects: [1, 14, 22, 3, 21, 4, 6, 7, 8, 9, 18, 19, 23, 24, 27, 2],
+    featuredHomeProjects: [28, 26, 25, 5], // no-start-env benchmark, Grid Intelligence, Robotic Arm, JPcommerce
+    featuredProjectsPage: [28, 26, 25, 5],
+    otherProjects: [1, 29, 14, 22, 3, 21, 4, 6, 7, 8, 9, 18, 19, 23, 24, 27, 2],
     personalProjects: [10, 11, 12, 13, 17, 16, 15, 20],
     description: 'I build RL environments and evaluations that teach AI systems physical-world reasoning — fault diagnosis, triage, and procedural tasks. Duke ME + CS. I\'ve been fixing and building physical machines since I was 12, and writing the software around them just as long.',
     resumeUrl: '/resume.pdf'
@@ -242,9 +242,9 @@ export const personaConfigs = {
     cta: 'View My Ventures',
     ctaLink: '/projects',
     primaryColor: 'green',
-    featuredHomeProjects: [29, 5, 14, 22, 18], // Lucent, JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
-    featuredProjectsPage: [29, 5, 14, 22, 1, 2], // Lucent, JPcommerce, Vehicle Restoration, Hackerspace, Impression, Workly
-    otherProjects: [3, 4, 21, 23, 24, 6, 7, 8, 9], // Banking App, ANN Trade, Vision AI, Project Pure, CPU, Pump Platform, Autonomous Robot, Mousetrap, Crypto Mining
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 1, 2], // JPcommerce, Vehicle Restoration, Hackerspace, Impression, Workly
+    otherProjects: [29, 3, 4, 21, 23, 24, 6, 7, 8, 9], // Lucent, Banking App, ANN Trade, Vision AI, Project Pure, CPU, Pump Platform, Autonomous Robot, Mousetrap, Crypto Mining
     personalProjects: [10, 11, 12, 13, 15, 16, 17, 20, 18, 19], // All the moved projects plus remaining personal ones
     description: 'Serial entrepreneur with a track record of identifying market opportunities and building profitable ventures. Founded and scaled multiple businesses from concept to revenue, with expertise in product development, market strategy, and operational execution.',
     resumeUrl: '/resume.pdf'
@@ -262,9 +262,9 @@ export const personaConfigs = {
     cta: 'View My Code',
     ctaLink: '/projects',
     primaryColor: 'blue',
-    featuredHomeProjects: [29, 5, 14, 22, 18], // Lucent, JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
-    featuredProjectsPage: [29, 5, 14, 22, 1, 2, 3, 4, 21], // Top CS projects: Lucent, JPcommerce, Vehicle Restoration, Hackerspace, Impression, Workly, Banking App, ANN Trade Programming, VisionAssist
-    otherProjects: [6, 7, 8, 9, 19, 23, 24], // Pump Support Platform, Autonomous Robot, Mousetrap Car, Crypto Mining, McDonald's Toy, Project Pure, CPU Design
+    featuredHomeProjects: [5, 14, 22, 18], // JPcommerce, Vehicle Restoration, Hackerspace, Heavy Boulder
+    featuredProjectsPage: [5, 14, 22, 1, 2, 3, 4, 21], // Top CS projects: JPcommerce, Vehicle Restoration, Hackerspace, Impression, Workly, Banking App, ANN Trade Programming, VisionAssist
+    otherProjects: [29, 6, 7, 8, 9, 19, 23, 24], // Lucent, Pump Support Platform, Autonomous Robot, Mousetrap Car, Crypto Mining, McDonald's Toy, Project Pure, CPU Design
     personalProjects: [8, 10, 11, 12, 13, 15, 16, 17, 20], // All remaining projects including Workshop
     description: 'Computer Science engineer passionate about building scalable software solutions, AI/ML applications, and full-stack development. Experience with modern web technologies, mobile development, and cloud platforms.',
     resumeUrl: '/resume.pdf'

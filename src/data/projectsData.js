@@ -1574,7 +1574,7 @@ TypeScript, Next.js, React, PostgreSQL, Drizzle ORM, AWS S3, Stripe, LLM prompt 
     image: `${process.env.PUBLIC_URL}/static/projects/lucent/hero.svg`,
     github: 'https://github.com/Jaiparm940/lucent',
     live: null,
-    featured: true,
+    featured: false,
     hasDetailPage: true,
     detailSlug: 'lucent-cardiology-second-opinions',
     images: [
