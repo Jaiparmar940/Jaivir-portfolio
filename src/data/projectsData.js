@@ -1332,7 +1332,7 @@ Embedded C++, ESP32, PlatformIO, UART protocols, Stepper motor control, TB6600 d
     description: 'Energy intelligence platform using congestion forecasting, LMP prediction, and optimization algorithms to maximize BESS arbitrage profits while enhancing grid reliability. Built ML pipeline with TFT, XGBoost, RL, and constrained optimization across 7k+ nodes and 100M+ rows of data.',
     longDescription: `# Grid Intelligence - Energy Market Forecasting & Battery Dispatch Optimization Platform (Jan 2026 - May 2026)
 
-**Role:** Technical Lead & ML Engineer
+**Role:** Technical Lead
 
 **Overview**  
 Worked directly on the architecture, market strategy, and machine-learning pipeline for an energy intelligence platform focused on optimizing battery energy storage systems (BESS) in wholesale electricity markets. The platform uses congestion forecasting, locational price prediction, and optimization algorithms to identify profitable charging and discharging opportunities while improving grid reliability.
