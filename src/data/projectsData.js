@@ -1520,6 +1520,66 @@ The knowledge that separates a good technician from a parts-swapper is tacit: wh
     images: [
       `${process.env.PUBLIC_URL}/static/projects/no-start-env/results.svg`
     ]
+  },
+  {
+    id: 29,
+    title: 'Lucent — Cross-Border Cardiology Second Opinions',
+    category: 'Healthcare, Full-Stack Engineering, Applied AI',
+    description: 'Built an AI-assisted healthcare platform that organizes complex cardiac records, evaluates case completeness, and connects patients in India with American cardiologists for physician-delivered second opinions.',
+    longDescription: `# Lucent — AI-Assisted Cardiology Second-Opinion Platform (Summer 2026)
+**Role:** Founder & Lead Full-Stack Engineer
+
+**Overview**
+Built a healthcare platform that connects patients in India with American cardiologists for second opinions on major cardiac decisions — bypass surgery versus stenting, abnormal stress tests, reduced ejection fraction, and CT/calcium score findings. Patients upload medical records in whatever form they have them (PDFs, phone photos of printed reports, scanned records, DICOM studies, angiogram videos), and the platform classifies each document, extracts structured clinical data, and scores whether the case contains enough information for a physician to render an opinion. Physicians receive an organized, review-ready case with document annotation, opinion drafting, and video recording tools. 26,000+ lines of TypeScript across 208 files and 18 database tables.
+
+Explicitly not a diagnostic engine: the AI handles intake, organization, and completeness checking. Every medical opinion comes from a licensed physician.
+
+**Problem / Challenge**
+The bottleneck in cross-border second opinions is not physician availability — it is incomplete records. A cardiologist cannot advise on bypass versus stenting without coronary anatomy, ventricular function, and ischemia testing, and patients rarely know that. Cases arrive missing critical studies, physicians spend unpaid time chasing records, and turnaround collapses.
+
+The naive fix — one universal checklist — fails immediately, because required data diverges sharply by condition: a valve case needs gradients and valve area, an atrial fibrillation case needs stroke-risk inputs and anticoagulation status, and neither needs what the other does. Compounding this, the source documents are adversarial to parse: multi-hospital formats, no standard schema, scanned pages requiring OCR, and clinical values buried in prose. Records are also PHI belonging to patients who have not yet paid, creating retention and consent obligations before a case even reaches a physician.
+
+**Approach / Solution**
+- Built a four-tier document extraction pipeline that escalates only as needed — content-hash cache → local regex/heuristics → text LLM → vision LLM on rasterized pages — with OCR fallback (Tesseract) and PDF rasterization for scanned documents, minimizing cost per document while preserving accuracy on hard inputs
+- Designed an LLM classifier covering 11 cardiology document types (angiography, echo, ECG, labs, medication reconciliation, consultation notes, stress tests, ambulatory rhythm monitors, cardiac CT, cardiac MRI, device interrogation) across three independent signals: filename patterns, content keyword scoring, and LLM classification
+- Extracted structured clinical entities — medications with doses, lab results, coronary lesions, valve findings, diagnoses, procedures, symptoms, and scalar measurements — each carrying a confidence level and a source citation quoting the originating document, so every fact shown to a physician is traceable back to the page it came from
+- Replaced the flat checklist with a modular completeness engine: an always-active core module plus condition modules (coronary disease, heart failure, arrhythmia, atrial fibrillation, valvular disease) that activate from extracted clinical data rather than patient self-description, since the referral documents are a far stronger signal than a patient's paraphrase
+- Encoded 46 requirements (24 critical) grounded in ACC/AHA and ESC guidelines, each with a patient-facing explanation of why it matters, whether a document or the patient can supply it, and a targeted follow-up question
+- Made module activation confidence-scored: ambiguous cases surface a disambiguation question to the patient instead of silently guessing a pathway, and patient answers feed back into the readiness score
+- Built the physician workspace: DICOM/PDF/video viewer with persistent annotations (region boxes, highlights, text spans, Cornerstone.js measurements, timestamped video notes), opinion drafting with cited findings, video opinion recording with auto-generated slide decks, real-time messaging over server-sent events, availability scheduling, and specialty-weighted case matching with capacity limits
+- Implemented the compliance layer as a first-class concern: AES-256-GCM encryption at rest for patient identifiers, hashed date-of-birth lookups, versioned consent records capturing terms and privacy versions with hashed IP, an append-only audit event log, TTL-based case expiry with a scheduled cleanup job, and soft deletes so physician opinions outlive the anonymous case data
+
+**Impact / Results**
+- Delivered an end-to-end platform: patient intake, document upload to S3, extraction, completeness scoring, Stripe payment, physician matching, review, and opinion delivery
+- Reduced the completeness problem from a single generic checklist to condition-specific requirements across six clinical modules, so a valve patient is never asked for coronary data they do not need — and a valve patient's gradient requirement is never silently skipped
+- Extraction tiering keeps the expensive vision-LLM path reserved for documents that actually need it; cached and locally-parseable documents never reach a paid model
+- Traceable extraction means a physician can verify any extracted value against the source document rather than trusting the model — a prerequisite for clinical adoption
+- Shipped the modular completeness refactor with a regression test suite covering pathway activation, false-positive guards, and patient-input handling; the engine now correctly produces zero coronary requirements for a pure valve case, which the previous default-to-CAD behavior got wrong
+
+**Leadership & Collaboration**
+- Owned the full product from problem definition through architecture, implementation, and clinical-requirements research across frontend, backend, data model, AI pipeline, and compliance
+- Made and documented the core architectural call — route clinical modules from extracted document data rather than patient self-description — after determining that patient descriptions of their own cardiac condition are too unreliable to drive a requirements checklist
+- Directed guideline research (ACC/AHA, ESC, procedure appropriate-use criteria) into a structured per-module requirements specification, then implemented it as typed, testable code
+- Designed the schema boundary between anonymous, TTL-expiring patient cases and durable physician opinions, so clinical work product survives patient data retention limits
+- Structured delivery as reviewable, stacked pull requests with tests and migration notes rather than monolithic commits
+
+**Skills Applied**
+TypeScript, Next.js, React, PostgreSQL, Drizzle ORM, AWS S3, Stripe, LLM prompt engineering, structured data extraction, OCR, DICOM imaging, Cornerstone.js, server-sent events, real-time messaging, AES-256-GCM encryption, authentication and session design, healthcare compliance, clinical informatics, cardiology domain modeling, guideline research, test-driven refactoring, product architecture
+
+**Selected Artifacts**
+- [GitHub Repo](https://github.com/Jaiparmar940/lucent)
+
+`,
+    technologies: ['Next.js 16', 'React 19', 'TypeScript', 'PostgreSQL', 'Drizzle ORM', 'AWS S3', 'Stripe', 'Cornerstone.js', 'DICOM', 'Tesseract OCR', 'pdf.js', 'LLM Extraction', 'Server-Sent Events', 'AES-256-GCM', 'Tailwind CSS', 'Healthcare Compliance', 'Clinical Informatics', 'Full-Stack Engineering'],
+    image: `${process.env.PUBLIC_URL}/static/projects/lucent/hero.svg`,
+    github: 'https://github.com/Jaiparm940/lucent',
+    live: null,
+    featured: true,
+    hasDetailPage: true,
+    detailSlug: 'lucent-cardiology-second-opinions',
+    images: [
+      `${process.env.PUBLIC_URL}/static/projects/lucent/hero.svg`
+    ]
   }
 ];
 
