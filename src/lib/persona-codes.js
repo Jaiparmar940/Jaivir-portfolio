@@ -9,7 +9,7 @@ export const CODE_MAP = {
   'yc2025': 'yc',
   'yc2026': 'yc2026',
   'code': 'code',
-  'build': 'build',
+  'build': 'yc2026',
   'innovation': 'ie',
   /* 'ie-portfolio' intentionally not a code — only "innovation" grants I&E access */
 };
